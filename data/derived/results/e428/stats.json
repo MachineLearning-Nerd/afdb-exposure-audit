@@ -1,0 +1,77 @@
+{
+ "A": {
+  "class_counts": {
+   "NOVEL": 25,
+   "QUERY_FAILED": 0,
+   "SAME_ACCESSION": 28,
+   "SEQ30": 25,
+   "SEQ95": 4
+  },
+  "n": 82,
+  "n_close_training_era": 32,
+  "n_no_accession": 7,
+  "n_train_chains": 1266,
+  "n_train_chains_with_sifts_accession": 1249,
+  "released_on_or_before_esmfold_cutoff": 40,
+  "train_split_same_accession": 3,
+  "train_split_search_failed": 0,
+  "train_split_seq30": 10,
+  "train_split_seq95": 5
+ },
+ "T": {
+  "P1_rmsd": {
+   "ci95": [
+    -0.41200000000000003,
+    0.5340000000000001
+   ],
+   "diff_median_close_minus_other": -0.10899999999999999,
+   "median_close": 0.847,
+   "median_other": 0.956,
+   "n_close": 24,
+   "n_other": 77,
+   "perm_p_two_sided": 0.3758624137586241,
+   "tested": true
+  },
+  "S2_plddt": {
+   "ci95": [
+    -2.893500000000003,
+    0.9099999999999966
+   ],
+   "diff_median_close_minus_other": -0.758499999999998,
+   "median_close": 93.1885,
+   "median_other": 93.947,
+   "n_close": 24,
+   "n_other": 77,
+   "perm_p_two_sided": 0.31996800319968005,
+   "tested": true
+  },
+  "S3_ols_log_rmsd": {
+   "ci95_close": [
+    -0.5320545110612446,
+    0.011144578934109408
+   ],
+   "coef_close": -0.2536933031609646,
+   "coef_plddt": -0.07167347199188961,
+   "n": 101,
+   "n_boot_used": 10000
+  },
+  "S4_median_rmsd_by_class": {
+   "NOVEL": 0.943,
+   "SAME_ACCESSION": 0.757,
+   "SEQ30": 1.2505000000000002,
+   "SEQ95": 0.873
+  },
+  "class_counts": {
+   "NOVEL": 49,
+   "QUERY_FAILED": 1,
+   "SAME_ACCESSION": 9,
+   "SEQ30": 28,
+   "SEQ95": 15
+  },
+  "n": 102,
+  "n_no_accession": 2,
+  "n_query_failed": 1
+ },
+ "registration": "docs/e428_registration.md",
+ "utc": "2026-10-09T11:10:40.371853+00:00"
+}

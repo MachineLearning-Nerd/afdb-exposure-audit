@@ -149,6 +149,20 @@ No registered, frozen or historical file was edited.
   this revision adds (220 checks: 157 recomputed, 43 reconciled, 20 re-read).
   README: check counts, the unchecked-items list and a note on the
   unreleased post-2022 selection step.
+- **Revision 7 (2026-10-09).** `paper/` replaced by the source's revision 7
+  (git `b5fa9f00`): new Section 6.4 measures homology exposure in two published
+  evaluations (registered analysis e428; focused referee review, two rounds).
+  Added from the source (git `3d1e5ebb`, results doc at `b5fa9f00`): the e428
+  registration and proof, code, independent audit and its script, results
+  write-up, per-chain classes, statistics and request receipts, the AlphaFlow
+  split files (MIT, with the upstream `LICENSE` fetched at commit `0408d7c8`),
+  the RCSB record of the removed entry 7DRH, and the e428 response cache.
+  `data/derived/results/e428/t_structures.json` is the source file with the
+  `rmsd` and `plddt` fields removed (values from the Terwilliger et al.
+  workbook, which is not redistributed). `code/paper_numbers.py`: new section
+  `rev7()` with 16 checks (236 checks: 168 recomputed, 45 reconciled,
+  23 re-read). README: e428 entries in the identifiers, check counts,
+  repository map, withheld items, web sources and licences.
 
 ## Copied files
 
@@ -327,4 +341,21 @@ earlier stamped version was recovered.
 | `registrations/verification/REGISTRATION_A4_de0e7a32.md` | `paper/arxiv/verification/REGISTRATION.md` | `74cc5059eeff4340143f24ee9a5e21565004a523cd36bb06237b62017a5f3969` | identical | git `de0e7a32` (OTS-stamped version) |
 | `registrations/verification/REGISTRATION_A4_de0e7a32.md.ots` | `paper/arxiv/verification/REGISTRATION.md.ots` | `4d67f7ba90b2c26b469140f42bd8c3c96ba6538e326811f2633580a43fd03b17` | identical | = `c261d0fe` (upgraded proof; first-release SHA-256 below) |
 
-Plus 2,047 cached API response files under `data/derived/data/paper_verification/http/` (1,096), `data/derived/paper/arxiv/verification/cache/v2c/http/` (136) and `data/derived/paper/arxiv/verification/cache/v5/http/` (815), each byte-identical to the file of the same name in the source repository (each file's name is the SHA-256 of its request; its `sha256` field is the SHA-256 of the response body).
+| `registrations/e428_registration.md` | `docs/e428_registration.md` | `2a2cc1e7b2c59efefc6a57a4cfdea29ea47a812f44474c5fe6fdd67110bf8661` | identical | = HEAD |
+| `registrations/e428_registration.md.ots` | `docs/e428_registration.md.ots` | `8ba02bdb5ed7353813f1fa816dd606cd536c5ffd34fe7231718a29060372bd3f` | identical | = HEAD |
+| `code/experiments/e428_exposure_audit.py` | `experiments/e428_exposure_audit.py` | `82965c631a63928a5f7cc4b7e9a48e8a1d57ba2745dd28f8a744acd27409bb72` | identical | = HEAD |
+| `audits/e428/audit_e428.md` | `docs/audit_e428.md` | `ab2e2955c34b7df7766da968a9f7d4fb313f18b40d7565e22739f590505ed265` | identical | = HEAD |
+| `audits/e428/audit_e428.py` | `experiments/audit_e428.py` | `d1e9f13b5b400b32f0e820abdf51d79c7f1c6a5cbf66d5e4756fd4cf55851a0e` | identical | = HEAD |
+| `audits/e428/e428_results.md` | `docs/e428_results.md` | `0f2c3754e1e119842d6f93b9eb408d2b838856eb38635d7082edb9508f615d99` | identical | = HEAD |
+| `data/derived/results/e428/a_chains.json` | `results/e428/a_chains.json` | `82706cd06f72aded34472f8c6249c00c7dfb5d68f47c3ab7f6aaf009def82289` | identical | = HEAD |
+| `data/derived/results/e428/stats.json` | `results/e428/stats.json` | `1f1c3fbfb6e2e26d9ce5fa050352851f6250bd623da6e6d974d4002fce1f5b7e` | identical | = HEAD |
+| `data/derived/results/e428/receipts.json` | `results/e428/receipts.json` | `9240acc21ed158489463445cd803fe68cf17e4a4dbaac077355e45b39b734a99` | identical | = HEAD |
+| `data/derived/results/e428/t_structures.json` | `results/e428/t_structures.json` | `ebf29c8502086d52af7b3ad27c37c3aff1a3b6b7cc794b4a8ad67c6ba3d8157e` | differs (see Revision 7) | derived (rmsd, plddt removed) |
+| `data/derived/data/e428/alphaflow/atlas_train.csv` | `data/e428/alphaflow/atlas_train.csv` | `f9618d3195a6ed48a42eeece38efcd6d4485ef07231a2a0b9886e7b5f488a4f4` | identical | = HEAD |
+| `data/derived/data/e428/alphaflow/atlas_val.csv` | `data/e428/alphaflow/atlas_val.csv` | `a4399b4004c694c7760fdffcf3e2db983278bbfd40c2c72f3357ddc91c42383c` | identical | = HEAD |
+| `data/derived/data/e428/alphaflow/atlas_test.csv` | `data/e428/alphaflow/atlas_test.csv` | `c5029649db0b7ff6ba41be6094341dde1ecd3036f07b011df4fe05ba2b305a9c` | identical | = HEAD |
+| `data/derived/data/e428/alphaflow/SHA256SUMS` | `data/e428/alphaflow/SHA256SUMS` | `f7cfdbef1c670f1d4421bfe5f58860a0d6f83e54ad6e164911ca89a1331f405e` | identical | = HEAD |
+| `data/derived/data/e428/alphaflow/repo_commit.txt` | `data/e428/alphaflow/repo_commit.txt` | `2a8e9d76b30fe98cd59707aa84021821dcc837de7d01a6e8fe382d5db34415ae` | identical | not tracked |
+| `data/derived/data/e428/holdings/7DRH_removed.json` | `data/e428/holdings/7DRH_removed.json` | `631f4664bcc26fdef447977cee2bd72dbfcce71ec245cefa603a09a47469d652` | identical | = HEAD |
+
+Plus 4,280 cached API response files under `data/derived/data/paper_verification/http/` (1,096), `data/derived/paper/arxiv/verification/cache/v2c/http/` (136), `data/derived/paper/arxiv/verification/cache/v5/http/` (815) and `data/derived/data/e428/http/` (2,233), each byte-identical to the file of the same name in the source repository (each file's name is the SHA-256 of its request; its `sha256` field is the SHA-256 of the response body).

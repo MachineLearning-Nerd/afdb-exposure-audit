@@ -1,0 +1,2337 @@
+[
+ {
+  "accessions": [
+   "Q96BY9"
+  ],
+  "before_esmfold_cutoff": true,
+  "class": "NOVEL",
+  "name": "6o2v_A",
+  "no_accession": false,
+  "release": "2019-05-29",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 135,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "Q746G4"
+  ],
+  "before_esmfold_cutoff": false,
+  "class": "SEQ30",
+  "name": "7ead_A",
+  "no_accession": false,
+  "release": "2022-03-09",
+  "same_accession": 0,
+  "seq30": 2,
+  "seq30_ids": [
+   "2JE2",
+   "2JE3"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 135,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "Q8DPV2"
+  ],
+  "before_esmfold_cutoff": true,
+  "class": "NOVEL",
+  "name": "6uof_A",
+  "no_accession": false,
+  "release": "2019-11-06",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 119,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "A0A3S8UVN5"
+  ],
+  "before_esmfold_cutoff": false,
+  "class": "SEQ30",
+  "name": "6lus_A",
+  "no_accession": false,
+  "release": "2020-12-02",
+  "same_accession": 0,
+  "seq30": 7,
+  "seq30_ids": [
+   "2I8B",
+   "3V7O",
+   "5DVW",
+   "5T3T",
+   "5T3W",
+   "5VAO",
+   "5VAP"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 133,
+  "train_split_same_accession": [],
+  "train_split_seq30": [
+   "5VAP"
+  ],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "G0S5H7"
+  ],
+  "before_esmfold_cutoff": true,
+  "class": "SEQ30",
+  "name": "6qj0_A",
+  "no_accession": false,
+  "release": "2019-07-03",
+  "same_accession": 0,
+  "seq30": 8,
+  "seq30_ids": [
+   "1XEW",
+   "1XEX",
+   "3KTA",
+   "3ZGX",
+   "4I99",
+   "5H66",
+   "5H67",
+   "5XNS"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 412,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "Q9UM54"
+  ],
+  "before_esmfold_cutoff": true,
+  "class": "SAME_ACCESSION",
+  "name": "6j56_A",
+  "no_accession": false,
+  "release": "2019-08-21",
+  "same_accession": 5,
+  "seq30": 2,
+  "seq30_ids": [
+   "2KIA",
+   "3H8D"
+  ],
+  "seq95": 1,
+  "seq95_ids": [
+   "3H8D"
+  ],
+  "seqlen": 129,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "A0A0H2XGN0"
+  ],
+  "before_esmfold_cutoff": false,
+  "class": "NOVEL",
+  "name": "7ec1_A",
+  "no_accession": false,
+  "release": "2021-03-24",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 505,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "P0AEX9",
+   "Q9NZC2"
+  ],
+  "before_esmfold_cutoff": false,
+  "class": "SAME_ACCESSION",
+  "name": "6xds_A",
+  "no_accession": false,
+  "release": "2021-02-17",
+  "same_accession": 253,
+  "seq30": 302,
+  "seq30_ids": [
+   "1A7L",
+   "1ANF",
+   "1DMB",
+   "1EZ9",
+   "1EZO",
+   "1EZP",
+   "1FQA",
+   "1FQB",
+   "1FQC",
+   "1FQD",
+   "1HSJ",
+   "1IUD",
+   "1JVX",
+   "1JVY",
+   "1JW4",
+   "1JW5",
+   "1LAX",
+   "1LLS",
+   "1MDP",
+   "1MDQ"
+  ],
+  "seq95": 221,
+  "seq95_ids": [
+   "1A7L",
+   "1ANF",
+   "1DMB",
+   "1EZ9",
+   "1EZO",
+   "1EZP",
+   "1FQA",
+   "1FQB",
+   "1FQC",
+   "1FQD",
+   "1HSJ",
+   "1JVX",
+   "1JVY",
+   "1JW4",
+   "1JW5",
+   "1LAX",
+   "1LLS",
+   "1MDQ",
+   "1MG1",
+   "1MH3"
+  ],
+  "seqlen": 492,
+  "train_split_same_accession": [
+   "5hz7_A"
+  ],
+  "train_split_seq30": [
+   "2XZ3",
+   "5HZ7"
+  ],
+  "train_split_seq95": [
+   "2XZ3",
+   "5HZ7"
+  ]
+ },
+ {
+  "accessions": [
+   "P0AEX9",
+   "Q8T5C5"
+  ],
+  "before_esmfold_cutoff": false,
+  "class": "SAME_ACCESSION",
+  "name": "6xrx_A",
+  "no_accession": false,
+  "release": "2021-03-24",
+  "same_accession": 250,
+  "seq30": 297,
+  "seq30_ids": [
+   "1A7L",
+   "1ANF",
+   "1DMB",
+   "1EZ9",
+   "1EZO",
+   "1EZP",
+   "1FQA",
+   "1FQB",
+   "1FQC",
+   "1FQD",
+   "1HSJ",
+   "1IUD",
+   "1JVX",
+   "1JVY",
+   "1JW4",
+   "1JW5",
+   "1LAX",
+   "1LLS",
+   "1MDP",
+   "1MDQ"
+  ],
+  "seq95": 254,
+  "seq95_ids": [
+   "1A7L",
+   "1ANF",
+   "1DMB",
+   "1EZ9",
+   "1EZO",
+   "1EZP",
+   "1FQA",
+   "1FQB",
+   "1FQC",
+   "1FQD",
+   "1JVX",
+   "1JVY",
+   "1JW4",
+   "1JW5",
+   "1LAX",
+   "1LLS",
+   "1MDP",
+   "1MDQ",
+   "1MH3",
+   "1MH4"
+  ],
+  "seqlen": 554,
+  "train_split_same_accession": [
+   "5hz7_A"
+  ],
+  "train_split_seq30": [
+   "2XZ3",
+   "5HZ7"
+  ],
+  "train_split_seq95": [
+   "2XZ3"
+  ]
+ },
+ {
+  "accessions": [
+   "O66841"
+  ],
+  "before_esmfold_cutoff": true,
+  "class": "SEQ30",
+  "name": "6q9c_B",
+  "no_accession": false,
+  "release": "2019-06-26",
+  "same_accession": 0,
+  "seq30": 20,
+  "seq30_ids": [
+   "2FUG",
+   "2YBB",
+   "3I9V",
+   "3IAM",
+   "3IAS",
+   "3M9S",
+   "4HEA",
+   "5GPN",
+   "5GUP",
+   "5LC5",
+   "5LDW",
+   "5LDX",
+   "5LNK",
+   "5O31",
+   "5XF9",
+   "5XFA",
+   "5XTB",
+   "5XTD",
+   "5XTH",
+   "5XTI"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 418,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "P11978"
+  ],
+  "before_esmfold_cutoff": true,
+  "class": "SAME_ACCESSION",
+  "name": "6rrv_A",
+  "no_accession": false,
+  "release": "2019-09-18",
+  "same_accession": 3,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 127,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "Q01515"
+  ],
+  "before_esmfold_cutoff": false,
+  "class": "SEQ30",
+  "name": "7lao_A",
+  "no_accession": false,
+  "release": "2021-01-20",
+  "same_accession": 0,
+  "seq30": 11,
+  "seq30_ids": [
+   "2NYG",
+   "3SMA",
+   "5HT0",
+   "6BBR",
+   "6BBZ",
+   "6BC2",
+   "6BC3",
+   "6BC4",
+   "6BC5",
+   "6BC6",
+   "6BC7"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 271,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "A0A0H3JU78"
+  ],
+  "before_esmfold_cutoff": false,
+  "class": "NOVEL",
+  "name": "6l4l_A",
+  "no_accession": false,
+  "release": "2020-10-21",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 281,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "Q15582"
+  ],
+  "before_esmfold_cutoff": false,
+  "class": "SAME_ACCESSION",
+  "name": "7asg_A",
+  "no_accession": false,
+  "release": "2020-12-23",
+  "same_accession": 5,
+  "seq30": 11,
+  "seq30_ids": [
+   "1NYO",
+   "1W7D",
+   "1W7E",
+   "1X3B",
+   "2LTB",
+   "2LTC",
+   "2MXA",
+   "2VXP",
+   "5NV6",
+   "5WT7",
+   "5Y6P"
+  ],
+  "seq95": 5,
+  "seq95_ids": [
+   "1X3B",
+   "2LTB",
+   "2LTC",
+   "2VXP",
+   "5NV6"
+  ],
+  "seqlen": 594,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "Q6MQ71"
+  ],
+  "before_esmfold_cutoff": true,
+  "class": "SEQ30",
+  "name": "6kty_A",
+  "no_accession": false,
+  "release": "2019-10-09",
+  "same_accession": 0,
+  "seq30": 1,
+  "seq30_ids": [
+   "5H5T"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 196,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "O28415"
+  ],
+  "before_esmfold_cutoff": false,
+  "class": "SAME_ACCESSION",
+  "name": "6vjg_A",
+  "no_accession": false,
+  "release": "2020-09-02",
+  "same_accession": 3,
+  "seq30": 3,
+  "seq30_ids": [
+   "3WZG",
+   "3WZH",
+   "3WZI"
+  ],
+  "seq95": 3,
+  "seq95_ids": [
+   "3WZG",
+   "3WZH",
+   "3WZI"
+  ],
+  "seqlen": 110,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [],
+  "before_esmfold_cutoff": false,
+  "class": "SEQ30",
+  "name": "6sms_A",
+  "no_accession": true,
+  "release": "2021-02-10",
+  "same_accession": 0,
+  "seq30": 22,
+  "seq30_ids": [
+   "1ACC",
+   "1T6B",
+   "1TZN",
+   "1TZO",
+   "2J42",
+   "3HVD",
+   "3J9C",
+   "3KWV",
+   "3MHZ",
+   "3Q8A",
+   "3Q8B",
+   "3Q8C",
+   "3Q8E",
+   "3Q8F",
+   "3TEW",
+   "3TEX",
+   "3TEY",
+   "3TEZ",
+   "4EE2",
+   "4H2A"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 724,
+  "sifts_failed": true,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "P23921"
+  ],
+  "before_esmfold_cutoff": false,
+  "class": "SAME_ACCESSION",
+  "name": "6l3r_E",
+  "no_accession": false,
+  "release": "2020-10-28",
+  "same_accession": 9,
+  "seq30": 31,
+  "seq30_ids": [
+   "1ZYZ",
+   "1ZZD",
+   "2CVS",
+   "2CVT",
+   "2CVU",
+   "2CVV",
+   "2CVW",
+   "2CVX",
+   "2CVY",
+   "2EUD",
+   "2WGH",
+   "2ZLF",
+   "2ZLG",
+   "3HNC",
+   "3HND",
+   "3HNE",
+   "3HNF",
+   "3K8T",
+   "3PAW",
+   "3RSR"
+  ],
+  "seq95": 9,
+  "seq95_ids": [
+   "2WGH",
+   "3HNC",
+   "3HND",
+   "3HNE",
+   "3HNF",
+   "4X3V",
+   "5D1Y",
+   "5TUS",
+   "6AUI"
+  ],
+  "seqlen": 669,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "H3ZKG9"
+  ],
+  "before_esmfold_cutoff": false,
+  "class": "SEQ30",
+  "name": "7qsu_A",
+  "no_accession": false,
+  "release": "2022-03-30",
+  "same_accession": 0,
+  "seq30": 1,
+  "seq30_ids": [
+   "4O1S"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 374,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "Q8PDA8"
+  ],
+  "before_esmfold_cutoff": false,
+  "class": "SAME_ACCESSION",
+  "name": "7p46_A",
+  "no_accession": false,
+  "release": "2021-10-06",
+  "same_accession": 6,
+  "seq30": 7,
+  "seq30_ids": [
+   "1YW0",
+   "2NOX",
+   "2NW7",
+   "2NW8",
+   "2NW9",
+   "3BK9",
+   "3E08"
+  ],
+  "seq95": 6,
+  "seq95_ids": [
+   "1YW0",
+   "2NW7",
+   "2NW8",
+   "2NW9",
+   "3BK9",
+   "3E08"
+  ],
+  "seqlen": 282,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "P72583"
+  ],
+  "before_esmfold_cutoff": false,
+  "class": "SAME_ACCESSION",
+  "name": "7e2s_A",
+  "no_accession": false,
+  "release": "2021-08-25",
+  "same_accession": 3,
+  "seq30": 6,
+  "seq30_ids": [
+   "1Y6I",
+   "1Z3X",
+   "1Z3Y",
+   "4XKB",
+   "4XKC",
+   "4YKB"
+  ],
+  "seq95": 3,
+  "seq95_ids": [
+   "1Y6I",
+   "4XKB",
+   "4XKC"
+  ],
+  "seqlen": 233,
+  "train_split_same_accession": [
+   "1y6i_A"
+  ],
+  "train_split_seq30": [
+   "1Y6I"
+  ],
+  "train_split_seq95": [
+   "1Y6I"
+  ]
+ },
+ {
+  "accessions": [
+   "P04918"
+  ],
+  "before_esmfold_cutoff": true,
+  "class": "SAME_ACCESSION",
+  "name": "6pxz_B",
+  "no_accession": false,
+  "release": "2019-08-28",
+  "same_accession": 1,
+  "seq30": 3,
+  "seq30_ids": [
+   "4IP8",
+   "4IP9",
+   "4Q5G"
+  ],
+  "seq95": 1,
+  "seq95_ids": [
+   "4Q5G"
+  ],
+  "seqlen": 104,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "A0ABY7R491"
+  ],
+  "before_esmfold_cutoff": true,
+  "class": "NOVEL",
+  "name": "6ovk_R",
+  "no_accession": false,
+  "release": "2020-03-04",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 219,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "Q9RQB6"
+  ],
+  "before_esmfold_cutoff": true,
+  "class": "NOVEL",
+  "name": "6ndw_B",
+  "no_accession": false,
+  "release": "2019-08-14",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 178,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "Q5JTJ3"
+  ],
+  "before_esmfold_cutoff": true,
+  "class": "NOVEL",
+  "name": "6pce_B",
+  "no_accession": false,
+  "release": "2019-10-02",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 70,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "D9IEF7",
+   "Q5VT66"
+  ],
+  "before_esmfold_cutoff": false,
+  "class": "SAME_ACCESSION",
+  "name": "7p41_D",
+  "no_accession": false,
+  "release": "2021-08-18",
+  "same_accession": 11,
+  "seq30": 701,
+  "seq30_ids": [
+   "102L",
+   "103L",
+   "104L",
+   "107L",
+   "108L",
+   "109L",
+   "110L",
+   "111L",
+   "112L",
+   "113L",
+   "114L",
+   "115L",
+   "118L",
+   "119L",
+   "120L",
+   "122L",
+   "123L",
+   "125L",
+   "126L",
+   "127L"
+  ],
+  "seq95": 638,
+  "seq95_ids": [
+   "102L",
+   "103L",
+   "104L",
+   "107L",
+   "108L",
+   "109L",
+   "110L",
+   "111L",
+   "112L",
+   "113L",
+   "114L",
+   "115L",
+   "118L",
+   "119L",
+   "120L",
+   "122L",
+   "123L",
+   "125L",
+   "126L",
+   "127L"
+  ],
+  "seqlen": 448,
+  "train_split_same_accession": [],
+  "train_split_seq30": [
+   "4EPI"
+  ],
+  "train_split_seq95": [
+   "4EPI"
+  ]
+ },
+ {
+  "accessions": [
+   "B5KM66"
+  ],
+  "before_esmfold_cutoff": true,
+  "class": "SAME_ACCESSION",
+  "name": "6h86_A",
+  "no_accession": false,
+  "release": "2019-05-08",
+  "same_accession": 1,
+  "seq30": 1,
+  "seq30_ids": [
+   "4R3Q"
+  ],
+  "seq95": 1,
+  "seq95_ids": [
+   "4R3Q"
+  ],
+  "seqlen": 88,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "Q92793"
+  ],
+  "before_esmfold_cutoff": false,
+  "class": "SAME_ACCESSION",
+  "name": "7jfl_C",
+  "no_accession": false,
+  "release": "2020-09-09",
+  "same_accession": 77,
+  "seq30": 7,
+  "seq30_ids": [
+   "1JJS",
+   "1KBH",
+   "1ZOQ",
+   "2C52",
+   "2KKJ",
+   "2L14",
+   "5JEM"
+  ],
+  "seq95": 7,
+  "seq95_ids": [
+   "1JJS",
+   "1KBH",
+   "1ZOQ",
+   "2C52",
+   "2KKJ",
+   "2L14",
+   "5JEM"
+  ],
+  "seqlen": 47,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "A0A0Q2QQ54"
+  ],
+  "before_esmfold_cutoff": true,
+  "class": "NOVEL",
+  "name": "6iah_A",
+  "no_accession": false,
+  "release": "2019-08-14",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 240,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "Q86UW9"
+  ],
+  "before_esmfold_cutoff": false,
+  "class": "SEQ30",
+  "name": "6y2x_A",
+  "no_accession": false,
+  "release": "2020-09-02",
+  "same_accession": 0,
+  "seq30": 2,
+  "seq30_ids": [
+   "1V87",
+   "3PG6"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 235,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "Q1XBV1"
+  ],
+  "before_esmfold_cutoff": false,
+  "class": "NOVEL",
+  "name": "7nmq_A",
+  "no_accession": false,
+  "release": "2021-04-07",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 365,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "P08358"
+  ],
+  "before_esmfold_cutoff": false,
+  "class": "NOVEL",
+  "name": "6xb3_H",
+  "no_accession": false,
+  "release": "2020-11-25",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 241,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "P33755"
+  ],
+  "before_esmfold_cutoff": true,
+  "class": "NOVEL",
+  "name": "6jwh_A",
+  "no_accession": false,
+  "release": "2019-12-25",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 473,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "Q39575"
+  ],
+  "before_esmfold_cutoff": true,
+  "class": "SEQ30",
+  "name": "6l4p_B",
+  "no_accession": false,
+  "release": "2020-02-19",
+  "same_accession": 0,
+  "seq30": 1,
+  "seq30_ids": [
+   "2RR7"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 145,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "Q9BT73"
+  ],
+  "before_esmfold_cutoff": true,
+  "class": "SAME_ACCESSION",
+  "name": "6jpt_A",
+  "no_accession": false,
+  "release": "2019-05-29",
+  "same_accession": 1,
+  "seq30": 1,
+  "seq30_ids": [
+   "2Z5E"
+  ],
+  "seq95": 1,
+  "seq95_ids": [
+   "2Z5E"
+  ],
+  "seqlen": 122,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "A0A915Q983"
+  ],
+  "before_esmfold_cutoff": false,
+  "class": "NOVEL",
+  "name": "7a66_B",
+  "no_accession": false,
+  "release": "2022-03-23",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 86,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [],
+  "before_esmfold_cutoff": true,
+  "class": "SEQ30",
+  "name": "6okd_C",
+  "no_accession": true,
+  "release": "2020-04-15",
+  "same_accession": 0,
+  "seq30": 53,
+  "seq30_ids": [
+   "1BCC",
+   "1BE3",
+   "1BGY",
+   "1L0L",
+   "1L0N",
+   "1NTK",
+   "1NTM",
+   "1NTZ",
+   "1NU1",
+   "1PP9",
+   "1PPJ",
+   "1QCR",
+   "1SQB",
+   "1SQP",
+   "1SQQ",
+   "1SQV",
+   "1SQX",
+   "2A06",
+   "2BCC",
+   "2FYU"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 51,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "P38107"
+  ],
+  "before_esmfold_cutoff": true,
+  "class": "NOVEL",
+  "name": "6in7_A",
+  "no_accession": false,
+  "release": "2019-07-24",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 81,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "P0AD68"
+  ],
+  "before_esmfold_cutoff": false,
+  "class": "SAME_ACCESSION",
+  "name": "7onn_A",
+  "no_accession": false,
+  "release": "2021-08-04",
+  "same_accession": 2,
+  "seq30": 29,
+  "seq30_ids": [
+   "3EQU",
+   "3EQV",
+   "3OC2",
+   "3OCL",
+   "3OCN",
+   "3PBN",
+   "3PBO",
+   "3PBQ",
+   "3PBR",
+   "3PBS",
+   "3PBT",
+   "3UE3",
+   "4BJP",
+   "4FSF",
+   "4KQO",
+   "4KQQ",
+   "4KQR",
+   "4L0L",
+   "4OOL",
+   "4OOM"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 410,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "P9WF43"
+  ],
+  "before_esmfold_cutoff": true,
+  "class": "SAME_ACCESSION",
+  "name": "6ono_C",
+  "no_accession": false,
+  "release": "2019-11-27",
+  "same_accession": 1,
+  "seq30": 1,
+  "seq30_ids": [
+   "5OAY"
+  ],
+  "seq95": 1,
+  "seq95_ids": [
+   "5OAY"
+  ],
+  "seqlen": 76,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "A0A0H2ZK44"
+  ],
+  "before_esmfold_cutoff": true,
+  "class": "NOVEL",
+  "name": "6d7y_A",
+  "no_accession": false,
+  "release": "2019-05-01",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 96,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "Q9HD34"
+  ],
+  "before_esmfold_cutoff": true,
+  "class": "SAME_ACCESSION",
+  "name": "6odd_B",
+  "no_accession": false,
+  "release": "2019-11-27",
+  "same_accession": 4,
+  "seq30": 4,
+  "seq30_ids": [
+   "5USR",
+   "5WGB",
+   "5WKP",
+   "5WLW"
+  ],
+  "seq95": 4,
+  "seq95_ids": [
+   "5USR",
+   "5WGB",
+   "5WKP",
+   "5WLW"
+  ],
+  "seqlen": 74,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "P25924"
+  ],
+  "before_esmfold_cutoff": true,
+  "class": "SAME_ACCESSION",
+  "name": "6p5x_B",
+  "no_accession": false,
+  "release": "2020-02-26",
+  "same_accession": 3,
+  "seq30": 13,
+  "seq30_ids": [
+   "1CBF",
+   "1PJQ",
+   "1PJS",
+   "1PJT",
+   "1S4D",
+   "1V9A",
+   "1VA0",
+   "1VE2",
+   "2CBF",
+   "2YBO",
+   "2YBQ",
+   "3NDC",
+   "3NEI"
+  ],
+  "seq95": 3,
+  "seq95_ids": [
+   "1PJQ",
+   "1PJS",
+   "1PJT"
+  ],
+  "seqlen": 457,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "Q05086"
+  ],
+  "before_esmfold_cutoff": true,
+  "class": "SAME_ACCESSION",
+  "name": "6tgk_C",
+  "no_accession": false,
+  "release": "2020-02-26",
+  "same_accession": 6,
+  "seq30": 30,
+  "seq30_ids": [
+   "1C4Z",
+   "1D5F",
+   "1ND7",
+   "1ZVD",
+   "2ONI",
+   "2XBB",
+   "2XBF",
+   "3G1N",
+   "3H1D",
+   "3JVZ",
+   "3JW0",
+   "3OLM",
+   "3PT3",
+   "3TUG",
+   "4BBN",
+   "4BE8",
+   "4LCD",
+   "4Y07",
+   "5C7J",
+   "5C7M"
+  ],
+  "seq95": 2,
+  "seq95_ids": [
+   "1C4Z",
+   "1D5F"
+  ],
+  "seqlen": 105,
+  "train_split_same_accession": [],
+  "train_split_seq30": [
+   "3H1D"
+  ],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "A0A0E4AYE7"
+  ],
+  "before_esmfold_cutoff": false,
+  "class": "NOVEL",
+  "name": "7dmn_A",
+  "no_accession": false,
+  "release": "2021-10-06",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 377,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "Q96PU5"
+  ],
+  "before_esmfold_cutoff": false,
+  "class": "SAME_ACCESSION",
+  "name": "7lp1_A",
+  "no_accession": false,
+  "release": "2021-07-28",
+  "same_accession": 9,
+  "seq30": 68,
+  "seq30_ids": [
+   "1E0M",
+   "1EG3",
+   "1EG4",
+   "1I5H",
+   "1JMQ",
+   "1K5R",
+   "1K9Q",
+   "1K9R",
+   "1TK7",
+   "1WMV",
+   "1WR3",
+   "1WR4",
+   "1WR7",
+   "1YIU",
+   "1YMZ",
+   "1ZCN",
+   "2DJY",
+   "2DMV",
+   "2EZ5",
+   "2F21"
+  ],
+  "seq95": 1,
+  "seq95_ids": [
+   "1WR7"
+  ],
+  "seqlen": 39,
+  "train_split_same_accession": [],
+  "train_split_seq30": [
+   "3L4H"
+  ],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "Q08945"
+  ],
+  "before_esmfold_cutoff": false,
+  "class": "SAME_ACCESSION",
+  "name": "6l34_A",
+  "no_accession": false,
+  "release": "2020-10-14",
+  "same_accession": 3,
+  "seq30": 47,
+  "seq30_ids": [
+   "1AAB",
+   "1CG7",
+   "1CKT",
+   "1GT0",
+   "1HMA",
+   "1HME",
+   "1HMF",
+   "1HSM",
+   "1HSN",
+   "1I11",
+   "1J3C",
+   "1J3D",
+   "1J3X",
+   "1J5N",
+   "1LWM",
+   "1NHM",
+   "1NHN",
+   "1O4X",
+   "1QRV",
+   "1WXL"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 68,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "A0A0Q9KFZ4"
+  ],
+  "before_esmfold_cutoff": false,
+  "class": "SEQ30",
+  "name": "7ned_A",
+  "no_accession": false,
+  "release": "2021-02-24",
+  "same_accession": 0,
+  "seq30": 6,
+  "seq30_ids": [
+   "1UWK",
+   "1UWL",
+   "1W1U",
+   "1X87",
+   "2FKN",
+   "2V7G"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 546,
+  "train_split_same_accession": [],
+  "train_split_seq30": [
+   "1UWK"
+  ],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "D8QCG9"
+  ],
+  "before_esmfold_cutoff": false,
+  "class": "SAME_ACCESSION",
+  "name": "7s86_A",
+  "no_accession": false,
+  "release": "2021-12-29",
+  "same_accession": 1,
+  "seq30": 1,
+  "seq30_ids": [
+   "2NBH"
+  ],
+  "seq95": 1,
+  "seq95_ids": [
+   "2NBH"
+  ],
+  "seqlen": 99,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [],
+  "before_esmfold_cutoff": false,
+  "class": "SEQ30",
+  "name": "6l8s_A",
+  "no_accession": true,
+  "release": "2020-05-27",
+  "same_accession": 0,
+  "seq30": 12,
+  "seq30_ids": [
+   "1HC1",
+   "1HCY",
+   "1LL1",
+   "1LLA",
+   "1NOL",
+   "1OXY",
+   "3HHS",
+   "3IXV",
+   "3IXW",
+   "3WJM",
+   "4L37",
+   "4YZW"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 650,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "A0A0B4ND47"
+  ],
+  "before_esmfold_cutoff": false,
+  "class": "SEQ30",
+  "name": "7bwf_B",
+  "no_accession": false,
+  "release": "2020-05-20",
+  "same_accession": 0,
+  "seq30": 1,
+  "seq30_ids": [
+   "2A6Q"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 92,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "P52129"
+  ],
+  "before_esmfold_cutoff": false,
+  "class": "SAME_ACCESSION",
+  "name": "7aex_A",
+  "no_accession": false,
+  "release": "2021-06-09",
+  "same_accession": 1,
+  "seq30": 1,
+  "seq30_ids": [
+   "4I8O"
+  ],
+  "seq95": 1,
+  "seq95_ids": [
+   "4I8O"
+  ],
+  "seqlen": 275,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [],
+  "before_esmfold_cutoff": true,
+  "class": "NOVEL",
+  "name": "6d7y_B",
+  "no_accession": true,
+  "release": "2019-05-01",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 155,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "P0CI27"
+  ],
+  "before_esmfold_cutoff": true,
+  "class": "NOVEL",
+  "name": "6e7e_A",
+  "no_accession": false,
+  "release": "2019-07-10",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 169,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "P0DTD1"
+  ],
+  "before_esmfold_cutoff": false,
+  "class": "SEQ30",
+  "name": "7k7p_B",
+  "no_accession": false,
+  "release": "2020-09-30",
+  "same_accession": 0,
+  "seq30": 2,
+  "seq30_ids": [
+   "2GDT",
+   "2HSX"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 118,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "P0DTD1"
+  ],
+  "before_esmfold_cutoff": true,
+  "class": "SEQ95",
+  "name": "7buy_A",
+  "no_accession": false,
+  "release": "2020-04-29",
+  "same_accession": 0,
+  "seq30": 57,
+  "seq30_ids": [
+   "1UJ1",
+   "1UK2",
+   "1UK3",
+   "1UK4",
+   "1WOF",
+   "1Z1I",
+   "2A5A",
+   "2A5I",
+   "2A5K",
+   "2AMD",
+   "2AMQ",
+   "2BX3",
+   "2BX4",
+   "2C3S",
+   "2DUC",
+   "2GT7",
+   "2GTB",
+   "2GX4",
+   "2GZ7",
+   "2GZ8"
+  ],
+  "seq95": 57,
+  "seq95_ids": [
+   "1UJ1",
+   "1UK2",
+   "1UK3",
+   "1UK4",
+   "1WOF",
+   "1Z1I",
+   "2A5A",
+   "2A5I",
+   "2A5K",
+   "2AMD",
+   "2AMQ",
+   "2BX3",
+   "2BX4",
+   "2C3S",
+   "2DUC",
+   "2GT7",
+   "2GTB",
+   "2GX4",
+   "2GZ7",
+   "2GZ8"
+  ],
+  "seqlen": 306,
+  "train_split_same_accession": [],
+  "train_split_seq30": [
+   "2H2Z"
+  ],
+  "train_split_seq95": [
+   "2H2Z"
+  ]
+ },
+ {
+  "accessions": [
+   "P0DTD1"
+  ],
+  "before_esmfold_cutoff": true,
+  "class": "SEQ95",
+  "name": "6yhu_B",
+  "no_accession": false,
+  "release": "2020-04-29",
+  "same_accession": 0,
+  "seq30": 3,
+  "seq30_ids": [
+   "2AHM",
+   "3UB0",
+   "5F22"
+  ],
+  "seq95": 2,
+  "seq95_ids": [
+   "2AHM",
+   "5F22"
+  ],
+  "seqlen": 117,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "Q9F0J8"
+  ],
+  "before_esmfold_cutoff": true,
+  "class": "NOVEL",
+  "name": "6h49_A",
+  "no_accession": false,
+  "release": "2019-08-28",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 157,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "P26332"
+  ],
+  "before_esmfold_cutoff": false,
+  "class": "SAME_ACCESSION",
+  "name": "7aqx_A",
+  "no_accession": false,
+  "release": "2021-11-03",
+  "same_accession": 2,
+  "seq30": 1,
+  "seq30_ids": [
+   "1VSG"
+  ],
+  "seq95": 1,
+  "seq95_ids": [
+   "1VSG"
+  ],
+  "seqlen": 364,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "Q38DE2"
+  ],
+  "before_esmfold_cutoff": false,
+  "class": "SEQ30",
+  "name": "7c45_A",
+  "no_accession": false,
+  "release": "2021-04-07",
+  "same_accession": 0,
+  "seq30": 2,
+  "seq30_ids": [
+   "2IHX",
+   "5A9E"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 302,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "S5ZIQ9"
+  ],
+  "before_esmfold_cutoff": true,
+  "class": "SAME_ACCESSION",
+  "name": "6gus_A",
+  "no_accession": false,
+  "release": "2019-05-29",
+  "same_accession": 1,
+  "seq30": 3,
+  "seq30_ids": [
+   "3ZH5",
+   "3ZH6",
+   "3ZH7"
+  ],
+  "seq95": 3,
+  "seq95_ids": [
+   "3ZH5",
+   "3ZH6",
+   "3ZH7"
+  ],
+  "seqlen": 155,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "O66842"
+  ],
+  "before_esmfold_cutoff": true,
+  "class": "SEQ30",
+  "name": "6q9c_A",
+  "no_accession": false,
+  "release": "2019-06-26",
+  "same_accession": 0,
+  "seq30": 19,
+  "seq30_ids": [
+   "2AUV",
+   "2FUG",
+   "2YBB",
+   "3I9V",
+   "3IAM",
+   "3IAS",
+   "3M9S",
+   "4HEA",
+   "5GPN",
+   "5GUP",
+   "5LC5",
+   "5LDW",
+   "5LDX",
+   "5LNK",
+   "5O31",
+   "5XTB",
+   "5XTD",
+   "5XTH",
+   "5XTI"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 155,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "P64506"
+  ],
+  "before_esmfold_cutoff": false,
+  "class": "NOVEL",
+  "name": "7n0j_E",
+  "no_accession": false,
+  "release": "2022-03-09",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 101,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "B6YWC3"
+  ],
+  "before_esmfold_cutoff": true,
+  "class": "NOVEL",
+  "name": "6o6y_A",
+  "no_accession": false,
+  "release": "2019-07-31",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 440,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "P0DTD1"
+  ],
+  "before_esmfold_cutoff": false,
+  "class": "SEQ30",
+  "name": "6zsl_B",
+  "no_accession": false,
+  "release": "2020-07-29",
+  "same_accession": 0,
+  "seq30": 1,
+  "seq30_ids": [
+   "5WWP"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 603,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "Q2FZ58"
+  ],
+  "before_esmfold_cutoff": false,
+  "class": "SEQ95",
+  "name": "7rm7_A",
+  "no_accession": false,
+  "release": "2022-03-02",
+  "same_accession": 0,
+  "seq30": 902,
+  "seq30_ids": [
+   "1FG5",
+   "1G8O",
+   "1G93",
+   "1GYU",
+   "1J6Y",
+   "1JK0",
+   "1M94",
+   "1OD0",
+   "1OIF",
+   "1OIM",
+   "1OIN",
+   "1OTM",
+   "1OTN",
+   "1OTO",
+   "1P0R",
+   "1P5J",
+   "1S7F",
+   "1SI7",
+   "1T57",
+   "1U6H"
+  ],
+  "seq95": 127,
+  "seq95_ids": [
+   "1SI7",
+   "1X19",
+   "1X1A",
+   "1X1B",
+   "1X1C",
+   "1X1D",
+   "1Y08",
+   "1Y7O",
+   "1Z63",
+   "1Z6A",
+   "2BZE",
+   "2J63",
+   "2JG1",
+   "2JGV",
+   "2JYL",
+   "2KSS",
+   "2L6E",
+   "2LMR",
+   "2LXE",
+   "2O1B"
+  ],
+  "seqlen": 228,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [],
+  "before_esmfold_cutoff": false,
+  "class": "SEQ30",
+  "name": "6ypi_A",
+  "no_accession": true,
+  "release": "2021-04-28",
+  "same_accession": 0,
+  "seq30": 8,
+  "seq30_ids": [
+   "1YZM",
+   "1Z0K",
+   "3V1A",
+   "3V1B",
+   "3V1C",
+   "3V1D",
+   "3V1E",
+   "3V1F"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 97,
+  "sifts_failed": true,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "C1CYP4"
+  ],
+  "before_esmfold_cutoff": true,
+  "class": "NOVEL",
+  "name": "6ro6_A",
+  "no_accession": false,
+  "release": "2019-10-09",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 58,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "Q4DJ68"
+  ],
+  "before_esmfold_cutoff": false,
+  "class": "SEQ30",
+  "name": "7mf4_A",
+  "no_accession": false,
+  "release": "2021-07-28",
+  "same_accession": 0,
+  "seq30": 15,
+  "seq30_ids": [
+   "1DO8",
+   "1EFK",
+   "1EFL",
+   "1GQ2",
+   "1GZ3",
+   "1GZ4",
+   "1LLQ",
+   "1O0S",
+   "1PJ2",
+   "1PJ3",
+   "1PJ4",
+   "1PJL",
+   "1QR6",
+   "2AW5",
+   "3WJA"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 554,
+  "train_split_same_accession": [],
+  "train_split_seq30": [
+   "1O0S"
+  ],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [],
+  "before_esmfold_cutoff": false,
+  "class": "SEQ30",
+  "name": "7jrq_A",
+  "no_accession": true,
+  "release": "2021-01-13",
+  "same_accession": 0,
+  "seq30": 2,
+  "seq30_ids": [
+   "5TGW",
+   "5TGY"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 131,
+  "sifts_failed": true,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "A0A3F3RXI7"
+  ],
+  "before_esmfold_cutoff": false,
+  "class": "NOVEL",
+  "name": "7wab_A",
+  "no_accession": false,
+  "release": "2022-01-12",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 484,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [],
+  "before_esmfold_cutoff": true,
+  "class": "SEQ30",
+  "name": "5znj_A",
+  "no_accession": true,
+  "release": "2019-05-29",
+  "same_accession": 0,
+  "seq30": 8,
+  "seq30_ids": [
+   "2I4L",
+   "2I4M",
+   "2I4N",
+   "2I4O",
+   "2J3L",
+   "2J3M",
+   "3OP6",
+   "5UCM"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 567,
+  "sifts_failed": true,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "Q8ZQT5"
+  ],
+  "before_esmfold_cutoff": true,
+  "class": "SEQ95",
+  "name": "6pnv_A",
+  "no_accession": false,
+  "release": "2019-07-17",
+  "same_accession": 0,
+  "seq30": 9,
+  "seq30_ids": [
+   "1C5K",
+   "1CRZ",
+   "2HQS",
+   "2IVZ",
+   "2W8B",
+   "3IAX",
+   "4JML",
+   "4PWZ",
+   "4R40"
+  ],
+  "seq95": 7,
+  "seq95_ids": [
+   "1C5K",
+   "1CRZ",
+   "2HQS",
+   "2IVZ",
+   "2W8B",
+   "3IAX",
+   "4JML"
+  ],
+  "seqlen": 411,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "Q2YNC2"
+  ],
+  "before_esmfold_cutoff": true,
+  "class": "NOVEL",
+  "name": "6rwt_A",
+  "no_accession": false,
+  "release": "2019-09-18",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 184,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "A0ABF7PG24"
+  ],
+  "before_esmfold_cutoff": true,
+  "class": "SEQ30",
+  "name": "6oz1_A",
+  "no_accession": false,
+  "release": "2020-04-22",
+  "same_accession": 0,
+  "seq30": 11,
+  "seq30_ids": [
+   "5MSC",
+   "5MSD",
+   "5MSO",
+   "5MSP",
+   "5MSQ",
+   "5MSR",
+   "5MSS",
+   "5MST",
+   "5MSU",
+   "5MSV",
+   "5MSW"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 643,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "Q9L069"
+  ],
+  "before_esmfold_cutoff": true,
+  "class": "SEQ30",
+  "name": "6nl2_A",
+  "no_accession": false,
+  "release": "2020-01-15",
+  "same_accession": 0,
+  "seq30": 5,
+  "seq30_ids": [
+   "2X0O",
+   "2X0P",
+   "2X0Q",
+   "5O7O",
+   "6CN7"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 594,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "Q5ZTL4"
+  ],
+  "before_esmfold_cutoff": false,
+  "class": "SAME_ACCESSION",
+  "name": "6p5h_A",
+  "no_accession": false,
+  "release": "2020-05-27",
+  "same_accession": 1,
+  "seq30": 2,
+  "seq30_ids": [
+   "5SUJ",
+   "5TSC"
+  ],
+  "seq95": 1,
+  "seq95_ids": [
+   "5TSC"
+  ],
+  "seqlen": 105,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "B2HM00"
+  ],
+  "before_esmfold_cutoff": true,
+  "class": "NOVEL",
+  "name": "6q10_A",
+  "no_accession": false,
+  "release": "2019-08-14",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 155,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "P08650"
+  ],
+  "before_esmfold_cutoff": true,
+  "class": "SEQ30",
+  "name": "6jv8_A",
+  "no_accession": false,
+  "release": "2020-04-22",
+  "same_accession": 0,
+  "seq30": 26,
+  "seq30_ids": [
+   "1C5A",
+   "1CFA",
+   "1KJS",
+   "2A73",
+   "3HQA",
+   "3HQB",
+   "3KLS",
+   "3KM9",
+   "3PRX",
+   "4E0S",
+   "4HW5",
+   "4HWJ",
+   "4I6O",
+   "4P39",
+   "4P3A",
+   "4P3B",
+   "4UU9",
+   "4WB2",
+   "4WB3",
+   "5B4P"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 76,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "D0EM60"
+  ],
+  "before_esmfold_cutoff": false,
+  "class": "SAME_ACCESSION",
+  "name": "6lrd_A",
+  "no_accession": false,
+  "release": "2020-08-26",
+  "same_accession": 3,
+  "seq30": 7,
+  "seq30_ids": [
+   "1IR6",
+   "2ZXO",
+   "2ZXP",
+   "2ZXR",
+   "5F54",
+   "5F55",
+   "5F56"
+  ],
+  "seq95": 3,
+  "seq95_ids": [
+   "5F54",
+   "5F55",
+   "5F56"
+  ],
+  "seqlen": 705,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "A0A0S4IKF4"
+  ],
+  "before_esmfold_cutoff": true,
+  "class": "NOVEL",
+  "name": "6tly_A",
+  "no_accession": false,
+  "release": "2019-12-25",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 99,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ },
+ {
+  "accessions": [
+   "Q9KM24"
+  ],
+  "before_esmfold_cutoff": false,
+  "class": "SAME_ACCESSION",
+  "name": "7la6_A",
+  "no_accession": false,
+  "release": "2021-01-27",
+  "same_accession": 1,
+  "seq30": 1,
+  "seq30_ids": [
+   "4R7Q"
+  ],
+  "seq95": 1,
+  "seq95_ids": [
+   "4R7Q"
+  ],
+  "seqlen": 221,
+  "train_split_same_accession": [],
+  "train_split_seq30": [],
+  "train_split_seq95": []
+ }
+]

@@ -1,0 +1,1 @@
+{"method": "GET", "url": "https://data.rcsb.org/rest/v1/core/entry/7DRH", "request_body": null, "status": 404, "body": "{\"status\":404,\"message\":\"No data found for entryId: 7DRH\",\"link\":\"https://data.rcsb.org/redoc/index.html\"}", "sha256": "af59867c1d9542eea03f079b64b2f616c331aa88ddd4575abe3ca40358bbb1be", "utc": "2026-10-09T10:33:47.562812+00:00"}

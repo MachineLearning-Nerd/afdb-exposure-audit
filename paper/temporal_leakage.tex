@@ -23,25 +23,28 @@ Samma Labs\\
 \maketitle
 
 \begin{abstract}
-Comparisons of AlphaFold Database (AFDB) models with experimental structures
-underpin knowledge of pLDDT, AlphaFold's prediction of the local distance
-difference test (lDDT). Two problems can distort them silently: exposure,
-when the reference or a close relative was available to the model in
-training or as a template, and wrong residue correspondence, when residues
-are paired with wrong reference atoms. Of 868 ATLAS proteins, 791 (91\%) had no reference released after AlphaFold2's training
-cutoff. In the first four batches of a preregistered census of X-ray PDB
-entries released after 2026-09-11, 87 of 138 proteins (63\%) had a
-same-protein or $\ge$95\%-identical structure predating the cutoff, 10
-(7\%) had no relative at $\ge$30\% identity, and 45 models (33\%) were
-given a same-protein template. In an earlier, exploratory census, proteins
-with such relatives had slightly higher lDDT and pLDDT and no detectable
-difference in confident errors (pLDDT $\ge$ 90, lDDT $<$ 0.60). Our pipeline showed the correspondence error: for some chains it mapped residues in label
-numbering but looked atoms up in author numbering. Correction changed the median lDDT of 188 of 488 chain segments (151 by more than 0.2) and removed
-spurious confident errors mimicking overconfidence. A preregistered coverage
-test of conformal intervals for lDDT, which does not use pLDDT, failed on original values; we withdraw that outcome. A rerun registered after the
-error and a preliminary result were known meets the preregistered rule on
-corrected values: mean coverage 0.8945 and 0.9456 at nominal 0.90 and 0.95,
-against thresholds of 0.8914 and 0.9449.
+Comparisons of AlphaFold Database models with experimental structures underpin
+knowledge of pLDDT, AlphaFold's predicted local distance difference test
+(lDDT). Two problems can distort them silently: exposure, when the reference
+or a close relative was available to the model in training or as a template,
+and wrong residue correspondence, when residues are paired with wrong
+reference atoms. Of 868 ATLAS proteins, 91\% had no reference released after
+AlphaFold2's training cutoff. In the first four batches of a preregistered
+census of X-ray PDB entries released after 2026-09-11, 87 of 138 proteins
+(63\%) had a same-protein or $\ge$95\%-identical structure predating the
+cutoff, and 45 models (33\%) were given a same-protein template. In an
+exploratory census, proteins with such relatives had slightly higher lDDT and
+pLDDT and no detectable difference in confident errors (pLDDT $\ge$ 90, lDDT
+$<$ 0.60). In a published date-split test set, at least 30 of 82 chains had
+such a relative; in a published template-free comparison, accuracy was not
+clearly higher with one. For some chains our pipeline mapped residues in label
+numbering but read atoms by author numbering. Correction changed the median
+lDDT of 188 of 488 chain segments and removed spurious confident errors
+mimicking overconfidence. A preregistered test of conformal intervals for
+lDDT, which does not use pLDDT, failed on original values; we withdraw that
+outcome. A rerun registered after the error and a preliminary result were
+known meets the rule on corrected values: mean coverage 0.8945 and 0.9456 at
+nominal 0.90 and 0.95 (thresholds 0.8914 and 0.9449).
 \end{abstract}
 
 \section{Introduction}
@@ -97,8 +100,8 @@ the most common errors are simple ones, such as row or column offsets
 \citep{baggerly2009}. A shifted correspondence produces numbers that look
 like results.
 
-We measure the first problem in two corpora and report an instance of the
-second from our own pipeline. Our contributions are the following.
+We measure the first problem in two corpora and two published evaluations,
+and report an instance of the second from our own pipeline. Our contributions are the following.
 \begin{enumerate}\setlength{\itemsep}{1pt}
 \item A decomposition of exposure into training eligibility, template
       exposure and homology exposure, with a measurement for each. For AFDB
@@ -122,6 +125,14 @@ second from our own pipeline. Our contributions are the following.
       margin and a share of \emph{confident errors} (residues with pLDDT
       $\ge$ 90 and lDDT $<$ 0.60) that we could not distinguish from that of
       other proteins (Section~\ref{sec:homology}).
+\item In two published evaluations, at least 30 of the 82 test chains in
+      the date-split ATLAS test set of AlphaFlow \citep{jing2024alphaflow}
+      have a close relative in the training-era PDB (32 if matches to fusion
+      partners are counted). In a template-free comparison with new crystal
+      structures \citep{terwilliger2024}, high accuracy was also observed
+      among structures with no detected relative, and we found no clear
+      accuracy advantage associated with a close relative
+      (Section~\ref{sec:published}).
 \item In our census pipeline, a fallback that built the residue map in
       label numbering while looking atoms up by author numbering shifted the
       pairing of whole runs of residues and created residues with high pLDDT
@@ -371,7 +382,9 @@ proteins (99.4\%) predate their model.
 ATLAS was built to describe dynamics, and reusing it to study AlphaFold
 error requires an explicit exposure control. The obvious control is to keep
 only references released after the cutoff. Section~\ref{sec:homology} asks,
-on a separate set of newly released structures, how much that achieves.
+on a separate set of newly released structures, how much that achieves, and
+Section~\ref{sec:published} applies the same question to a published ATLAS
+test split.
 
 \section{A post-cutoff release does not imply an unseen protein}
 \label{sec:homology}
@@ -380,7 +393,8 @@ This section measures the homology and template channels in the
 preregistered census, whose references were all released after both
 cutoffs (Sections~\ref{sec:homexp} and~\ref{sec:tmplexp}). It then asks, in
 the post-2022 census, whether exposure goes with higher agreement
-(Section~\ref{sec:effect}).
+(Section~\ref{sec:effect}), and measures homology exposure in two published
+evaluations (Section~\ref{sec:published}).
 
 \begin{table}[tbp]
 \centering
@@ -470,6 +484,78 @@ apart on this measure. These are associations in a small sample: proteins with c
 census because its registration also makes predictions about coverage within
 pLDDT bins that are not yet evaluated, and comparing pLDDT with lDDT there
 first would compromise their blindness.
+
+\subsection{Two published evaluations}
+\label{sec:published}
+
+To see how common homology exposure is outside our own censuses, and
+whether it goes with accuracy, we measured it in two published evaluations
+that use structures released after a training cutoff. The plan was registered
+and timestamped before any exposure query was sent; it discloses that one
+summary of each data set (an overall median and a count of release dates) had
+already been looked at. It uses the classes of Section~\ref{sec:setup}, except
+that the query is the evaluated chain's own sequence rather than the
+canonical UniProt sequence. As in Section~\ref{sec:effect}, a \emph{close
+relative} is a same-protein structure or one at $\ge$95\% identity in the
+training-era PDB. An independent recomputation with separately written code
+reproduced the counts and medians below and, with different random seeds,
+the statistical conclusion.
+
+\paragraph{Template-free predictions of new crystal structures.}
+\citet{terwilliger2024} compared AlphaFold predictions made without templates
+with crystal structures released between December 2021 and May 2022, using
+the first chain of each entry. They report a median C$\alpha$ root-mean-square
+deviation (r.m.s.d.) of 1.0\,\AA{} between prediction and deposited model,
+lower than the 2.3\,\AA{} of DeepMind's own analysis of recent structures,
+``perhaps due to the high confidence in prediction in our sample''. Their text
+describes this analysis as using all 215 structures of their earlier study; in
+the workbook released with the paper, the reported median is 0.954\,\AA{},
+computed over a list of 102 structures with a free R value of 0.30 or lower.
+We used that list. As a proxy for the authors' first chain we took the
+protein entity with the lowest identifier. One entry, 7DRH, has since been
+removed from the PDB and could not be classed. Of the other 101 structures,
+24 have a close relative. Their median r.m.s.d.\ was 0.847\,\AA{}, against
+0.956\,\AA{} for the other 77. The difference, $-0.11$\,\AA{} (95\% bootstrap
+interval $-0.41$ to 0.53; permutation $p = 0.38$), does not meet our
+registered criterion, an interval entirely below zero, and the comparison has
+little power. The 49 structures with no relative found at $\ge$30\% identity
+had a median of 0.943\,\AA{}. High accuracy was therefore also observed among
+structures with no detected training-era relative, and we found no clear
+accuracy advantage associated with a close relative. This observational
+comparison cannot rule out an effect of exposure, and it does not test the
+authors' explanation, but it gives no sign that their low r.m.s.d.\ depends
+on exposure.
+
+\paragraph{A date-split test set for ensemble generators.} AlphaFlow and
+ESMFlow \citep{jing2024alphaflow} are fine-tuned from AlphaFold2 and ESMFold
+and then on ATLAS (Section~\ref{sec:atlas}). Their ATLAS split is by date,
+with training and validation cutoffs of 2018-05-01 and 2019-05-01. Its test
+set holds the 82 chains whose entries were deposited after 2019-05-01 (two
+longer chains excluded), and the paper describes these test proteins as
+having ``minimal structural overlap with the training ensembles, providing a
+stringent test of generalization''. The split uses no homology filter. In the
+released split files, 32 of the 82 test chains (39\%) have a close relative
+in the training-era PDB, 28 a structure of the same protein and 4 one at
+$\ge$95\% identity. A further 25 have a relative at $\ge$30\% identity, and 25
+have none found. Three of the 32 are fusion constructs, which carry two
+UniProt accessions, and the registered rule counts a match to either. For
+two of them, a fusion with maltose-binding protein and one with T4 lysozyme,
+the close match is a structure of the fusion partner. Thirty test chains
+(37\%) therefore have a close match supported by the protein of interest;
+the registered, fusion-inclusive count is 32. This range is a post hoc
+sensitivity bound: we did not rerun the sequence searches on the proteins of
+interest alone. Against AlphaFlow's own training split (1{,}266 chains in the
+released file; the paper gives 1{,}265), five test chains have a relative at
+$\ge$95\% identity and ten one at $\ge$30\%. Three of the five matches go
+through a fusion partner. The other two are a structure of the same protein
+and, for the SARS-CoV-2 main protease, the main protease of SARS-CoV, which is
+at least 95\% identical. Near-identical sequence overlap with the MD training
+split is therefore small, in line with the paper's description, whereas close
+relatives in the training-era PDB are common. In addition, 40 of the 82 test
+entries were released on or before 2020-05-01, the ESMFold training cutoff
+stated by \citet{jing2024alphaflow}, and so are training-eligible for
+ESMFold. These counts describe the split. We did not analyse per-target
+results and make no claim that the reported performance is inflated.
 
 \section{A residue-correspondence error created spurious confident errors}
 \label{sec:defect}
@@ -717,7 +803,7 @@ Check & What it catches & How & Evidence here \\
 \midrule
 \rc Training eligibility & \rc Possible training example & \rc Release date on or before 2018-04-30 & \rc ATLAS: 791 of 868 proteins training-eligible (Section~\ref{sec:atlas}) \tabularnewline
 \rc Template exposure & \rc Same protein as template & \rc Template list in the model file, mapped through SIFTS & \rc Preregistered census: 45 of 138 models (Section~\ref{sec:homology}) \tabularnewline
-\rc Homology exposure & \rc Close training-era relative & \rc Sequence search of the training-era PDB & \rc Preregistered census: 87 of 138 proteins with a same-protein or $\ge$95\%-identical relative; 10 with none at $\ge$30\% (Section~\ref{sec:homology}) \tabularnewline
+\rc Homology exposure & \rc Close training-era relative & \rc Sequence search of the training-era PDB & \rc Preregistered census: 87 of 138 proteins with a same-protein or $\ge$95\%-identical relative; 10 with none at $\ge$30\% (Section~\ref{sec:homology}); AlphaFlow's ATLAS test split: 30 of 82 test chains, 32 counting fusion partners (Section~\ref{sec:published}) \tabularnewline
 \rc Identity check & \rc Register shifts & \rc Amino acids of each pair match; reject offset-mapped SIFTS segments with $>$10\% mismatches & \rc Under a register shift only about 5--7\% of pairs match by chance, so the segment rule rejects shifted segments; the per-pair check alone kept chance matches in the post-2022 census (Sections~\ref{sec:detect}, \ref{sec:post2022}) \tabularnewline
 \rc lDDT distribution & \rc Gross corruption & \rc Compare the share of lDDT $<$ 0.60 with a separate set & \rc 31.9\% original, against 2.6\% in the corrected post-2022 census (Section~\ref{sec:detect}) \tabularnewline
 \rc Chain consistency & \rc Shifts in one chain & \rc Compare median lDDT across an entry's chains (flag differences $\ge$0.4) & \rc 13 entries flagged, 9qj6 missed (Section~\ref{sec:detect}) \tabularnewline
@@ -737,7 +823,10 @@ the evidence for each. We recommend the following.
       (Section~\ref{sec:homology}).
 \item Stratify results by sequence identity to the training-era PDB
       \citep{buttenschoen2024}, or split data by similarity
-      \citep{joeres2025datasail} (Section~\ref{sec:homology}).
+      \citep{joeres2025datasail} (Sections~\ref{sec:homology}
+      and~\ref{sec:published}). When the query is a chain, check fusion
+      constructs: a match to the fusion partner is not a relative of the
+      protein of interest.
 \item Pair residues in one numbering scheme, preferably from per-residue mappings where available, check amino-acid identity for every pair, reject any SIFTS segment with more than 10\% mismatches,
       and run the coarser checks of Table~\ref{tab:checks} before any
       downstream analysis (Section~\ref{sec:detect}).
@@ -775,7 +864,7 @@ coverage comparison is not made on identical residues
 (Section~\ref{sec:scope}), and because the correction changes which proteins are scored, the same seeds do not give the same splits, so the two results are not a paired comparison. The corrected coverage result comes from a rerun
 registered after a preliminary result was known, and it passes at 0.95 by
 less than half an MCSE (Section~\ref{sec:p5}). The numbering fallback is documented in one pipeline, ours. The trigger rates we report (Section~\ref{sec:detect}) describe this census, and
-we have not examined whether any published analysis is affected. The post-2022 census scored chain~A only, and the step that selected its 168 entries is not released. The census model list rests on metadata dates (Section~\ref{sec:setup}). The bootstrap intervals of Section~\ref{sec:effect} resample proteins and ignore relatedness between them. Finally, the three exposure channels overlap and do not cover every route (Section~\ref{sec:channels}).
+we have not examined whether any published analysis is affected by it. For the two published evaluations of Section~\ref{sec:published} we measured homology exposure only, apart from counting entries released before ESMFold's cutoff; we used a proxy for the first chain of each Terwilliger et al.\ entry; the registered rule classes a fusion chain by any of its accessions, and the 30-chain lower bound is post hoc; and the r.m.s.d.\ comparison has little power and is observational. The post-2022 census scored chain~A only, and the step that selected its 168 entries is not released. The census model list rests on metadata dates (Section~\ref{sec:setup}). The bootstrap intervals of Section~\ref{sec:effect} resample proteins and ignore relatedness between them. Finally, the three exposure channels overlap and do not cover every route (Section~\ref{sec:channels}).
 
 \section{Conclusion}
 
@@ -785,7 +874,9 @@ seen, and that the residues being compared are the same residues. In ATLAS,
 census, whose references all post-date the training cutoff, 63\% of proteins had a
 same-protein or $\ge$95\%-identical structure in the training-era PDB. In an
 exploratory comparison on an earlier census, proteins with such a relative
-had slightly higher lDDT and higher pLDDT. In our own pipeline a numbering fallback, with no
+had slightly higher lDDT and higher pLDDT. In a published date-split test set,
+at least 30 of 82 test chains had such a relative, while in a published
+template-free comparison we found no clear accuracy advantage with one. In our own pipeline a numbering fallback, with no
 SIFTS-segment identity check to catch it, made accurate predictions look
 like confident errors. A preregistered coverage prediction, which does not
 use pLDDT, failed on the resulting values; a rerun registered after the
@@ -807,7 +898,7 @@ its registration, code and output files. The correction notice is a dated
 document, timestamped like the registrations, that withdraws the original
 outcome of the coverage test and states why. Registrations and intermediate
 outputs carry timestamped hashes. The repository also holds the reports of
-the independent checks of Sections~\ref{sec:scope} and~\ref{sec:p5}, each
+the independent checks of Sections~\ref{sec:published}, \ref{sec:scope} and~\ref{sec:p5}, each
 made with separately written code.
 
 \begin{table}[!h]
@@ -842,11 +933,11 @@ Date (2026) & Event \\
 The registrations with their timestamp proofs, the analysis code, the
 derived residue-level tables, the SHA-256 hashes of the downloaded files and
 web responses, and the reports of the independent checks are available at
-\url{https://github.com/MachineLearning-Nerd/afdb-exposure-audit}. A script in the repository runs 220 checks: 157 recompute numbers in this paper from the row-level tables and cached responses, 43 check stored outputs against those recomputations, and 20 compare numbers in the paper with stored outputs. It checks numbers, not the prose. The census's other registered predictions have not been evaluated; its evaluation outputs, which contain fields for them, are withheld until the census closes. Raw files from the PDB, AFDB, PDBe/SIFTS,
+\url{https://github.com/MachineLearning-Nerd/afdb-exposure-audit}. A script in the repository runs 236 checks: 168 recompute numbers in this paper from the row-level tables and cached responses, 45 check stored outputs against those recomputations, and 23 compare numbers in the paper with stored outputs. It checks numbers, not the prose. The census's other registered predictions have not been evaluated; its evaluation outputs, which contain fields for them, are withheld until the census closes. Raw files from the PDB, AFDB, PDBe/SIFTS,
 UniProt and ATLAS are not redistributed but can be re-fetched, and the
 recorded hashes identify the exact files used. The ATLAS counts in
 Sections~\ref{sec:setup} and~\ref{sec:atlas} are computed from released
-tables. One intermediate step, which sorted the 869 proteins into two lists for a separate, unpublished study (this paper uses both lists), reads a file that is not released, so that step cannot be rerun; its outputs are included. Likewise, the step that selected the 168 entries of the post-2022 census is not released; the resulting list is.
+tables. One intermediate step, which sorted the 869 proteins into two lists for a separate, unpublished study (this paper uses both lists), reads a file that is not released, so that step cannot be rerun; its outputs are included. Likewise, the step that selected the 168 entries of the post-2022 census is not released; the resulting list is. For Section~\ref{sec:published}, the registration, code, per-chain classes and AlphaFlow split files are released; the workbook of \citet{terwilliger2024} is not redistributed, but its source and hash are recorded.
 
 \bibliographystyle{plainnat}
 {\raggedright\small

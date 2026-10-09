@@ -53,7 +53,7 @@ from pathlib import Path
 import numpy as np
 from scipy.stats import spearmanr
 
-EXPECTED_CHECKS = 220
+EXPECTED_CHECKS = 236
 ROOT = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("data/derived")
 AUD = ROOT.resolve().parent.parent / "audits"   # <release>/audits next to <release>/data/derived
 VER = "paper/arxiv/verification"
@@ -1137,6 +1137,83 @@ def rev6():
           ",".join(sorted(o_ok - accs)) or MISSING, "results/e421 + results/e427/e421_relabel")
 
 
+def rev7():
+    """Revision 7: homology exposure in two published evaluations (Sec. 6.4; registration e428)"""
+    import csv
+    t = load("results/e428/t_structures.json")
+    a = load("results/e428/a_chains.json")
+    st = load("results/e428/stats.json")
+    cache = Cache("data/e428/http")
+    close_ = ("SAME_ACCESSION", "SEQ95")
+    src = "results/e428 per-chain classes"
+    tc = Counter(r["class"] for r in t)
+    classed = [r for r in t if r["class"] != "QUERY_FAILED"]
+    check("RECOMPUTED", "Sec6.4", "Terwilliger: structures classed / with a close relative", "101/24",
+          f"{len(classed)}/{sum(r['class'] in close_ for r in classed)}", src)
+    check("RECOMPUTED", "Sec6.4", "Terwilliger: structures with no relative at >=30%", 49, tc["NOVEL"], src)
+    failed = [r["pdb"] for r in t if r["class"] == "QUERY_FAILED"]
+    st_, _ = cache.get("GET", "https://data.rcsb.org/rest/v1/core/entry/7DRH")
+    check("RECOMPUTED", "Sec6.4", "Terwilliger: unclassed entry and its RCSB entry status", "7DRH: 404",
+          f"{','.join(failed)}: {st_}", "results/e428 + e428 HTTP cache")
+    reconcile("Sec6.4", "Terwilliger class counts: stats.json vs per-structure file",
+              st["T"]["class_counts"], {k: tc.get(k, 0) for k in st["T"]["class_counts"]},
+              "results/e428/stats.json")
+    ac = Counter(r["class"] for r in a)
+    n_close = sum(r["class"] in close_ for r in a)
+    check("RECOMPUTED", "Sec6.4", "AlphaFlow test: chains with a close relative / total", "32/82",
+          f"{n_close}/{len(a)}", src)
+    check("RECOMPUTED", "Sec6.4", "AlphaFlow test: same protein / >=95% / >=30% / none", "28/4/25/25",
+          f"{ac['SAME_ACCESSION']}/{ac['SEQ95']}/{ac['SEQ30']}/{ac['NOVEL']}", src)
+    reconcile("Sec6.4", "AlphaFlow class counts: stats.json vs per-chain file",
+              st["A"]["class_counts"], {k: ac.get(k, 0) for k in st["A"]["class_counts"]},
+              "results/e428/stats.json")
+    # Fusion constructs: chains with two UniProt accessions. The fusion partners are identified by name
+    # (maltose-binding protein P0AEX9, T4 lysozyme D9IEF7); the other accession is the protein of interest.
+    tags = {"P0AEX9", "D9IEF7"}
+    fusions = [r for r in a if len(r["accessions"]) > 1]
+    own = 0
+    for r in fusions:
+        n = 0
+        for acc in (x for x in r["accessions"] if x not in tags):
+            q = {"query": {"type": "group", "logical_operator": "and", "nodes": [
+                {"type": "terminal", "service": "text", "parameters": {
+                    "attribute": "rcsb_polymer_entity_container_identifiers.reference_sequence_identifiers"
+                                 ".database_accession", "operator": "exact_match", "value": acc}},
+                {"type": "terminal", "service": "text", "parameters": {
+                    "attribute": "rcsb_accession_info.initial_release_date", "operator": "less_or_equal",
+                    "value": f"{CUTOFF}T23:59:59Z"}}]},
+                "return_type": "entry", "request_options": {"return_all_hits": True, "results_verbosity": "compact"}}
+            s_, body = cache.get("POST", "https://search.rcsb.org/rcsbsearch/v2/query", json.dumps(q, sort_keys=True))
+            if s_ not in (200, 204):
+                raise MissingInput(f"e428 cache lacks the same-accession search for {acc}")
+            n += 0 if s_ == 204 else len(json.loads(body).get("result_set", []))
+        own += r["class"] in close_ and n > 0
+    tag_only = sum(r["class"] in close_ for r in fusions) - own
+    lo = n_close - tag_only
+    check("RECOMPUTED", "Sec6.4", "AlphaFlow: fusion chains / close only via the fusion partner", "3/2",
+          f"{len(fusions)}/{tag_only}", "per-chain file + e428 HTTP cache")
+    check("RECOMPUTED", "Sec6.4", "AlphaFlow: close match via protein of interest / fusion-inclusive", "30 (37%)/32 (39%)",
+          f"{lo} ({round(100 * lo / len(a))}%)/{n_close} ({round(100 * n_close / len(a))}%)", src)
+    check("RECOMPUTED", "Sec6.4", "AlphaFlow: test chains with train-split relative, same acc/>=95%/>=30%",
+          "3/5/10", "/".join(str(sum(bool(r[k]) for r in a)) for k in
+                              ("train_split_same_accession", "train_split_seq95", "train_split_seq30")), src)
+    check("RECOMPUTED", "Sec6.4", "AlphaFlow: >=95% train-split overlaps not via a fusion partner",
+          "7buy_A,7e2s_A", ",".join(sorted(r["name"] for r in a if r["train_split_seq95"] and r not in fusions)), src)
+    rows = {s: list(csv.DictReader((ROOT / f"data/e428/alphaflow/atlas_{s}.csv").open())) for s in ("train", "test")}
+    check("RECOMPUTED", "Sec6.4", "AlphaFlow: chains in the released train split file", 1266, len(rows["train"]),
+          "data/e428/alphaflow/atlas_train.csv")
+    check("RECOMPUTED", "Sec6.4", "AlphaFlow: test entries released on or before 2020-05-01", 40,
+          sum(r["release_date"] <= "2020-05-01" for r in rows["test"]), "data/e428/alphaflow/atlas_test.csv")
+    p1 = st["T"]["P1_rmsd"]
+    check("RE-READ", "Sec6.4", "Terwilliger: median r.m.s.d. close (n) / other (n)", "0.847 (24)/0.956 (77)",
+          f"{p1['median_close']} ({p1['n_close']})/{p1['median_other']} ({p1['n_other']})", "results/e428/stats.json")
+    check("RE-READ", "Sec6.4", "Terwilliger: difference, 95% interval, permutation p", "-0.11 (-0.41 to 0.53), 0.38",
+          f"{p1['diff_median_close_minus_other']:.2f} ({p1['ci95'][0]:.2f} to {p1['ci95'][1]:.2f}), "
+          f"{p1['perm_p_two_sided']:.2f}", "results/e428/stats.json")
+    check("RE-READ", "Sec6.4", "Terwilliger: median r.m.s.d. with no relative found", 0.943,
+          st["T"]["S4_median_rmsd_by_class"]["NOVEL"], "results/e428/stats.json")
+
+
 def run_section(fn):
     print(f"\n# {fn.__doc__}")
     try:
@@ -1155,7 +1232,7 @@ def main():
         return 2
     needs = {trigger: "orig", homology: "orig", templates: "class", effect: "class", coverage: "orig",
              crosscheck: "orig"}
-    for fn in (atlas, ledgers, trigger, homology, templates, effect, post2022, coverage, crosscheck, rev6):
+    for fn in (atlas, ledgers, trigger, homology, templates, effect, post2022, coverage, crosscheck, rev6, rev7):
         if fn in needs and needs[fn] not in S:
             ERRORS.append(f"{fn.__name__}: not run (a prerequisite section failed)")
             print(f"\nERROR | {fn.__name__} not run: a prerequisite section failed")

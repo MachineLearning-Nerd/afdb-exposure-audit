@@ -1,0 +1,2692 @@
+[
+ {
+  "accessions": [
+   "S4YJ13"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7E0M",
+  "release": "2021-12-22",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 391
+ },
+ {
+  "accessions": [
+   "Q1LBR9"
+  ],
+  "class": "SEQ30",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7FHR",
+  "release": "2021-12-15",
+  "same_accession": 0,
+  "seq30": 2,
+  "seq30_ids": [
+   "2B1X",
+   "2B24"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 441
+ },
+ {
+  "accessions": [
+   "P49321"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7V6P",
+  "release": "2021-12-29",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 283
+ },
+ {
+  "accessions": [
+   "Q769D3"
+  ],
+  "class": "SEQ95",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7LJH",
+  "release": "2021-12-08",
+  "same_accession": 0,
+  "seq30": 994,
+  "seq30_ids": [
+   "1BB9",
+   "1EHW",
+   "1GWN",
+   "1J6Y",
+   "1JJR",
+   "1L9X",
+   "1M9N",
+   "1NAE",
+   "1OD0",
+   "1OIM",
+   "1OTN",
+   "1OZ0",
+   "1T3K",
+   "1T7N",
+   "1T7O",
+   "1T7Q",
+   "1TE4",
+   "1U6H",
+   "1W4T",
+   "1W4Z"
+  ],
+  "seq95": 513,
+  "seq95_ids": [
+   "1BB9",
+   "1GWN",
+   "1NAE",
+   "1OTN",
+   "1T7N",
+   "1T7O",
+   "1T7Q",
+   "1U6H",
+   "1W4T",
+   "1X9A",
+   "1XWJ",
+   "1YX3",
+   "1Z5Z",
+   "1ZKQ",
+   "1ZW9",
+   "1ZWH",
+   "2BZ2",
+   "2CM1",
+   "2EWG",
+   "2FQ6"
+  ],
+  "seqlen": 425
+ },
+ {
+  "accessions": [
+   "Q9Y224"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7P3A",
+  "release": "2021-12-22",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 103
+ },
+ {
+  "accessions": [
+   "P13699"
+  ],
+  "class": "SAME_ACCESSION",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7V38",
+  "release": "2021-12-15",
+  "same_accession": 11,
+  "seq30": 1008,
+  "seq30_ids": [
+   "1E42",
+   "1EHW",
+   "1JE3",
+   "1JJR",
+   "1JK0",
+   "1JYK",
+   "1KU1",
+   "1L2J",
+   "1M9N",
+   "1NJ1",
+   "1NJ2",
+   "1NJ5",
+   "1NJ6",
+   "1O6Y",
+   "1OZ0",
+   "1QZ2",
+   "1RH0",
+   "1RI7",
+   "1RLH",
+   "1RY2"
+  ],
+  "seq95": 514,
+  "seq95_ids": [
+   "1E42",
+   "1JE3",
+   "1JYK",
+   "1KU1",
+   "1L2J",
+   "1QZ2",
+   "1RH0",
+   "1RY2",
+   "1S7F",
+   "1SIX",
+   "1SMC",
+   "1T3K",
+   "1T57",
+   "1TZ7",
+   "1U6H",
+   "1UAM",
+   "1VKJ",
+   "1WC1",
+   "1WC6",
+   "1WWR"
+  ],
+  "seqlen": 249
+ },
+ {
+  "accessions": [
+   "P13699"
+  ],
+  "class": "SAME_ACCESSION",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7V3B",
+  "release": "2021-12-15",
+  "same_accession": 11,
+  "seq30": 1009,
+  "seq30_ids": [
+   "1E42",
+   "1EHW",
+   "1JE3",
+   "1JJR",
+   "1JK0",
+   "1JYK",
+   "1KU1",
+   "1L2J",
+   "1M9N",
+   "1NJ1",
+   "1NJ2",
+   "1NJ5",
+   "1NJ6",
+   "1O6Y",
+   "1OZ0",
+   "1QZ2",
+   "1RH0",
+   "1RI7",
+   "1RLH",
+   "1RY2"
+  ],
+  "seq95": 515,
+  "seq95_ids": [
+   "1E42",
+   "1JE3",
+   "1JYK",
+   "1KU1",
+   "1L2J",
+   "1QZ2",
+   "1RH0",
+   "1RY2",
+   "1S7F",
+   "1SIX",
+   "1SMC",
+   "1T3K",
+   "1T57",
+   "1TZ7",
+   "1U6H",
+   "1UAM",
+   "1VKJ",
+   "1WC1",
+   "1WC6",
+   "1WWR"
+  ],
+  "seqlen": 249
+ },
+ {
+  "accessions": [
+   "B4UN32"
+  ],
+  "class": "SEQ95",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7O9P",
+  "release": "2021-12-15",
+  "same_accession": 0,
+  "seq30": 851,
+  "seq30_ids": [
+   "1BB9",
+   "1J6Y",
+   "1JJR",
+   "1NAE",
+   "1NYN",
+   "1O8S",
+   "1OD0",
+   "1OD3",
+   "1OIF",
+   "1OIM",
+   "1OIN",
+   "1OTM",
+   "1OTN",
+   "1OTO",
+   "1P5J",
+   "1QYU",
+   "1TYY",
+   "1UZ1",
+   "1W3J",
+   "1WC1"
+  ],
+  "seq95": 534,
+  "seq95_ids": [
+   "1J6Y",
+   "1NAE",
+   "1O8S",
+   "1OD0",
+   "1OD3",
+   "1OIF",
+   "1OIM",
+   "1OIN",
+   "1OTM",
+   "1OTN",
+   "1OTO",
+   "1P5J",
+   "1QYU",
+   "1UZ1",
+   "1W3J",
+   "1X24",
+   "1Z5Z",
+   "1Z63",
+   "1Z6A",
+   "1ZCL"
+  ],
+  "seqlen": 360
+ },
+ {
+  "accessions": [
+   "P08677"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7RLZ",
+  "release": "2022-01-26",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 18
+ },
+ {
+  "accessions": [
+   "P0DV83"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7QDV",
+  "release": "2022-03-09",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 100
+ },
+ {
+  "accessions": [
+   "L7PFJ6"
+  ],
+  "class": "SEQ30",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7EWJ",
+  "release": "2022-02-16",
+  "same_accession": 0,
+  "seq30": 7,
+  "seq30_ids": [
+   "2MF2",
+   "4HKE",
+   "4MZM",
+   "4MZP",
+   "4MZT",
+   "4OF1",
+   "5DLO"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 116
+ },
+ {
+  "accessions": [
+   "Q9HDC5"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7RW4",
+  "release": "2022-02-23",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 342
+ },
+ {
+  "accessions": [
+   "A0A0R6L508"
+  ],
+  "class": "SAME_ACCESSION",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7WAA",
+  "release": "2022-03-16",
+  "same_accession": 9,
+  "seq30": 18,
+  "seq30_ids": [
+   "4KAV",
+   "4KAY",
+   "4TN0",
+   "5FGN",
+   "5GOV",
+   "5GRR",
+   "5K4P",
+   "5LRM",
+   "5LRN",
+   "5MX9",
+   "5YLC",
+   "5YLE",
+   "5YLF",
+   "5ZJV",
+   "6BNC",
+   "6BND",
+   "6BNE",
+   "6BNF"
+  ],
+  "seq95": 9,
+  "seq95_ids": [
+   "5GOV",
+   "5GRR",
+   "5K4P",
+   "5LRM",
+   "5LRN",
+   "5YLC",
+   "5YLE",
+   "5YLF",
+   "5ZJV"
+  ],
+  "seqlen": 336
+ },
+ {
+  "accessions": [
+   "A0A6B9HEI0"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7KDX",
+  "release": "2022-01-12",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 681
+ },
+ {
+  "accessions": [
+   "A0A8S4QI86"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7FIU",
+  "release": "2022-04-06",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 293
+ },
+ {
+  "accessions": [
+   "A0QP93"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7N3V",
+  "release": "2022-04-13",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 310
+ },
+ {
+  "accessions": [
+   "Q8TEP8"
+  ],
+  "class": "SAME_ACCESSION",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7PTB",
+  "release": "2022-04-06",
+  "same_accession": 1,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 352
+ },
+ {
+  "accessions": [],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": true,
+  "pdb": "7DTR",
+  "release": "2022-01-19",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 171
+ },
+ {
+  "accessions": [
+   "Q8I224"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7AOJ",
+  "release": "2022-04-13",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 179
+ },
+ {
+  "accessions": [
+   "A0A2S0PEL5"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7RC2",
+  "release": "2022-03-30",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 384
+ },
+ {
+  "accessions": [
+   "A0A2D2D5M1"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7TCR",
+  "release": "2022-03-23",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 268
+ },
+ {
+  "accessions": [
+   "A2RM80"
+  ],
+  "class": "SEQ95",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7WJA",
+  "release": "2022-03-30",
+  "same_accession": 0,
+  "seq30": 939,
+  "seq30_ids": [
+   "1FG5",
+   "1G8O",
+   "1G93",
+   "1GYU",
+   "1JJR",
+   "1JK0",
+   "1NAE",
+   "1OD0",
+   "1OD3",
+   "1OIF",
+   "1OIM",
+   "1OIN",
+   "1OTM",
+   "1OTO",
+   "1P5J",
+   "1Q1C",
+   "1S7F",
+   "1TE4",
+   "1UMQ",
+   "1UZ1"
+  ],
+  "seq95": 184,
+  "seq95_ids": [
+   "1JJR",
+   "1NAE",
+   "1OD3",
+   "1OTM",
+   "1OTO",
+   "1S7F",
+   "1ZKQ",
+   "1ZW9",
+   "1ZWH",
+   "2BZE",
+   "2C3F",
+   "2CDO",
+   "2CDP",
+   "2E3C",
+   "2FXS",
+   "2IUN",
+   "2KAV",
+   "2KGO",
+   "2LXE",
+   "2O1B"
+  ],
+  "seqlen": 759
+ },
+ {
+  "accessions": [
+   "Q5JDQ4"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7VNX",
+  "release": "2022-05-04",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 223
+ },
+ {
+  "accessions": [
+   "Q5ZCD5"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7X8V",
+  "release": "2022-04-06",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 195
+ },
+ {
+  "accessions": [
+   "A0ABV1F9I3"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7RAW",
+  "release": "2022-04-13",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 251
+ },
+ {
+  "accessions": [
+   "A0ABV1FBZ4"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7RPY",
+  "release": "2022-04-13",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 256
+ },
+ {
+  "accessions": [
+   "A0A0R4IMY7"
+  ],
+  "class": "SEQ30",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7AOV",
+  "release": "2022-03-02",
+  "same_accession": 0,
+  "seq30": 8,
+  "seq30_ids": [
+   "5WP6",
+   "6BCJ",
+   "6BCL",
+   "6BCO",
+   "6BCQ",
+   "6BPQ",
+   "6BQR",
+   "6BQV"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 424
+ },
+ {
+  "accessions": [
+   "P0DX74"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7TB5",
+  "release": "2022-01-19",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 299
+ },
+ {
+  "accessions": [
+   "A0ABX9U2B8"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7T8L",
+  "release": "2022-05-18",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 291
+ },
+ {
+  "accessions": [
+   "L8PIV2"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7VWK",
+  "release": "2022-06-08",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 260
+ },
+ {
+  "accessions": [
+   "Q7U3N0"
+  ],
+  "class": "SEQ30",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7NE9",
+  "release": "2022-03-02",
+  "same_accession": 0,
+  "seq30": 8,
+  "seq30_ids": [
+   "1MZB",
+   "2FE3",
+   "2O03",
+   "2RGV",
+   "2W57",
+   "3EYY",
+   "3F8N",
+   "3MWM"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 134
+ },
+ {
+  "accessions": [
+   "H2J4R1"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7NQD",
+  "release": "2022-05-04",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 222
+ },
+ {
+  "accessions": [],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": true,
+  "pdb": "7S5L",
+  "release": "2022-06-08",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 393
+ },
+ {
+  "accessions": [
+   "Q5ZZD0"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7WBK",
+  "release": "2022-06-15",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 415
+ },
+ {
+  "accessions": [
+   "P41705"
+  ],
+  "class": "SEQ95",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7X77",
+  "release": "2022-06-22",
+  "same_accession": 0,
+  "seq30": 69,
+  "seq30_ids": [
+   "1RY6",
+   "1ZLG",
+   "2XVG",
+   "2XVK",
+   "2XVL",
+   "2XXL",
+   "3FPE",
+   "3FPF",
+   "3FPG",
+   "3FPH",
+   "3FPJ",
+   "3O31",
+   "3PMQ",
+   "3SXP",
+   "3TTO",
+   "3TTQ",
+   "3U48",
+   "3U4A",
+   "3UCP",
+   "3UFH"
+  ],
+  "seq95": 13,
+  "seq95_ids": [
+   "1ZLG",
+   "3PMQ",
+   "3UCP",
+   "3UFH",
+   "3UFK",
+   "4LMH",
+   "4QO1",
+   "4UT6",
+   "4UT9",
+   "4UTA",
+   "4UTB",
+   "4UTC",
+   "4WP0"
+  ],
+  "seqlen": 378
+ },
+ {
+  "accessions": [
+   "A0A494V3J7"
+  ],
+  "class": "SEQ30",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7E3Z",
+  "release": "2021-12-22",
+  "same_accession": 0,
+  "seq30": 4,
+  "seq30_ids": [
+   "3FLA",
+   "3FLB",
+   "3QMV",
+   "3QMW"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 261
+ },
+ {
+  "accessions": [
+   "A0A2I1C3W8"
+  ],
+  "class": "SEQ95",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7F0O",
+  "release": "2022-04-20",
+  "same_accession": 0,
+  "seq30": 1073,
+  "seq30_ids": [
+   "1I39",
+   "1I3A",
+   "1J6Y",
+   "1JJR",
+   "1JK0",
+   "1M1M",
+   "1M9N",
+   "1MX3",
+   "1NJ1",
+   "1NJ2",
+   "1NJ5",
+   "1NJ6",
+   "1O6Y",
+   "1OQV",
+   "1OZ0",
+   "1Q1C",
+   "1QYU",
+   "1RI7",
+   "1RLH",
+   "1S7F"
+  ],
+  "seq95": 139,
+  "seq95_ids": [
+   "1I39",
+   "1I3A",
+   "1Q1C",
+   "1S9Q",
+   "1TFC",
+   "1VJB",
+   "1VSU",
+   "1VSV",
+   "1WLT",
+   "2ADB",
+   "2CCG",
+   "2ELB",
+   "2GCN",
+   "2GCO",
+   "2GCP",
+   "2HWV",
+   "2J9R",
+   "2P7A",
+   "2P7G",
+   "2P7Z"
+  ],
+  "seqlen": 171
+ },
+ {
+  "accessions": [
+   "U2RWV7"
+  ],
+  "class": "SEQ30",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7V1Q",
+  "release": "2021-12-29",
+  "same_accession": 0,
+  "seq30": 491,
+  "seq30_ids": [
+   "1AE1",
+   "1AHH",
+   "1AHI",
+   "1CYD",
+   "1DOH",
+   "1E3S",
+   "1E3W",
+   "1E6W",
+   "1E7W",
+   "1E92",
+   "1EDO",
+   "1FMC",
+   "1G0N",
+   "1G0O",
+   "1G6K",
+   "1GCO",
+   "1GEE",
+   "1GEG",
+   "1GZ6",
+   "1HDC"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 251
+ },
+ {
+  "accessions": [
+   "P06560"
+  ],
+  "class": "SEQ30",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7ETX",
+  "release": "2022-05-11",
+  "same_accession": 0,
+  "seq30": 43,
+  "seq30_ids": [
+   "1A53",
+   "1I4N",
+   "1IGS",
+   "1J5T",
+   "1JCM",
+   "1JUK",
+   "1JUL",
+   "1LBF",
+   "1LBL",
+   "1PII",
+   "1V5X",
+   "1VC4",
+   "2C3Z",
+   "2KZH",
+   "3HOJ",
+   "3NYZ",
+   "3NZ1",
+   "3QJA",
+   "3T40",
+   "3T44"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 482
+ },
+ {
+  "accessions": [
+   "P06560"
+  ],
+  "class": "SEQ30",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7ETY",
+  "release": "2022-05-11",
+  "same_accession": 0,
+  "seq30": 43,
+  "seq30_ids": [
+   "1A53",
+   "1I4N",
+   "1IGS",
+   "1J5T",
+   "1JCM",
+   "1JUK",
+   "1JUL",
+   "1LBF",
+   "1LBL",
+   "1PII",
+   "1V5X",
+   "1VC4",
+   "2C3Z",
+   "2KZH",
+   "3HOJ",
+   "3NYZ",
+   "3NZ1",
+   "3QJA",
+   "3T40",
+   "3T44"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 482
+ },
+ {
+  "accessions": [
+   "R5MX27"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7ECD",
+  "release": "2022-01-19",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 272
+ },
+ {
+  "accessions": [
+   "A7ZAJ3"
+  ],
+  "class": "SEQ30",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7DXN",
+  "release": "2022-01-19",
+  "same_accession": 0,
+  "seq30": 1,
+  "seq30_ids": [
+   "3HXJ"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 374
+ },
+ {
+  "accessions": [
+   "P0C037"
+  ],
+  "class": "SEQ30",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7EYJ",
+  "release": "2022-02-09",
+  "same_accession": 0,
+  "seq30": 2,
+  "seq30_ids": [
+   "2OYZ",
+   "3HQX"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 95
+ },
+ {
+  "accessions": [
+   "A7HS36"
+  ],
+  "class": "SEQ95",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7E4D",
+  "release": "2022-02-02",
+  "same_accession": 0,
+  "seq30": 159,
+  "seq30_ids": [
+   "1JPH",
+   "1JPI",
+   "1JPK",
+   "1JR2",
+   "1K8W",
+   "1NG3",
+   "1NG4",
+   "1NWA",
+   "1T3O",
+   "1TYG",
+   "1UOZ",
+   "1V3T",
+   "1V3U",
+   "1V3V",
+   "1VJ1",
+   "1YX4",
+   "1YX5",
+   "1YX6",
+   "1ZL3",
+   "1ZSV"
+  ],
+  "seq95": 32,
+  "seq95_ids": [
+   "1JPH",
+   "1JPI",
+   "1JPK",
+   "1NG3",
+   "1NG4",
+   "1NWA",
+   "2APO",
+   "2AXQ",
+   "2BTW",
+   "2BU3",
+   "2C07",
+   "2Q2T",
+   "2Q2U",
+   "2XCI",
+   "2XCU",
+   "3A4U",
+   "3JZF",
+   "3JZI",
+   "3LBC",
+   "3LBM"
+  ],
+  "seqlen": 362
+ },
+ {
+  "accessions": [
+   "Q39057"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7WSJ",
+  "release": "2022-03-02",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 111
+ },
+ {
+  "accessions": [
+   "Q5JJ92"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7FI3",
+  "release": "2022-04-13",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 732
+ },
+ {
+  "accessions": [
+   "A0ABF7PJN2"
+  ],
+  "class": "SEQ95",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7WNN",
+  "release": "2022-04-06",
+  "same_accession": 0,
+  "seq30": 994,
+  "seq30_ids": [
+   "1IG3",
+   "1JK0",
+   "1JYK",
+   "1JYL",
+   "1K4J",
+   "1KFT",
+   "1KZF",
+   "1L2J",
+   "1M1M",
+   "1M94",
+   "1MU7",
+   "1MU9",
+   "1MX3",
+   "1NOP",
+   "1OXN",
+   "1OXQ",
+   "1OY7",
+   "1P0R",
+   "1P5Q",
+   "1PM3"
+  ],
+  "seq95": 496,
+  "seq95_ids": [
+   "1JYK",
+   "1JYL",
+   "1K4J",
+   "1KZF",
+   "1L2J",
+   "1M94",
+   "1MU7",
+   "1MU9",
+   "1MX3",
+   "1NOP",
+   "1P0R",
+   "1P5Q",
+   "1PM3",
+   "1QZ2",
+   "1RFF",
+   "1RFI",
+   "1RG1",
+   "1RG2",
+   "1RGT",
+   "1RGU"
+  ],
+  "seqlen": 336
+ },
+ {
+  "accessions": [
+   "Q818B4"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7VGM",
+  "release": "2022-04-27",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 592
+ },
+ {
+  "accessions": [
+   "P08965"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7EIO",
+  "release": "2022-04-06",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 154
+ },
+ {
+  "accessions": [
+   "A4F9D7"
+  ],
+  "class": "SEQ30",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7V9N",
+  "release": "2022-05-11",
+  "same_accession": 0,
+  "seq30": 75,
+  "seq30_ids": [
+   "1Z1W",
+   "1Z5H",
+   "2H8N",
+   "2O94",
+   "2Q7E",
+   "2Q7G",
+   "2QYG",
+   "2WGN",
+   "2ZCE",
+   "2ZIN",
+   "3HUI",
+   "3K3K",
+   "3Q7J",
+   "3VQW",
+   "3VQX",
+   "3VQY",
+   "3WXY",
+   "3WY0",
+   "4BW9",
+   "4CH4"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 884
+ },
+ {
+  "accessions": [
+   "Q8T9T4"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7TVC",
+  "release": "2022-05-25",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 127
+ },
+ {
+  "accessions": [
+   "O15392"
+  ],
+  "class": "SAME_ACCESSION",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7LBK",
+  "release": "2022-01-12",
+  "same_accession": 21,
+  "seq30": 117,
+  "seq30_ids": [
+   "1C9Q",
+   "1E31",
+   "1F3H",
+   "1F9X",
+   "1G3F",
+   "1G73",
+   "1I3O",
+   "1I4O",
+   "1I51",
+   "1KMC",
+   "1M4M",
+   "1NW9",
+   "1OXN",
+   "1OXQ",
+   "1OY7",
+   "1QBH",
+   "1SDZ",
+   "1SE0",
+   "1TFQ",
+   "1TFT"
+  ],
+  "seq95": 21,
+  "seq95_ids": [
+   "1E31",
+   "1F3H",
+   "1XOX",
+   "2QFA",
+   "2RAW",
+   "2RAX",
+   "3UEC",
+   "3UED",
+   "3UEE",
+   "3UEF",
+   "3UEG",
+   "3UEH",
+   "3UEI",
+   "3UIG",
+   "3UIH",
+   "3UII",
+   "3UIJ",
+   "3UIK",
+   "4A0I",
+   "4A0J"
+  ],
+  "seqlen": 146
+ },
+ {
+  "accessions": [
+   "Q9Q2N9"
+  ],
+  "class": "SEQ30",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7E6V",
+  "release": "2022-06-29",
+  "same_accession": 0,
+  "seq30": 2,
+  "seq30_ids": [
+   "5GQ1",
+   "5GRB"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 223
+ },
+ {
+  "accessions": [
+   "H7GE39"
+  ],
+  "class": "SEQ30",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7B3N",
+  "release": "2022-06-22",
+  "same_accession": 0,
+  "seq30": 5,
+  "seq30_ids": [
+   "3NE8",
+   "4BIN",
+   "4RN7",
+   "5EMI",
+   "5J72"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 177
+ },
+ {
+  "accessions": [
+   "Q8A3E1"
+  ],
+  "class": "SEQ30",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7BLL",
+  "release": "2022-03-02",
+  "same_accession": 0,
+  "seq30": 5,
+  "seq30_ids": [
+   "3KEZ",
+   "5CJZ",
+   "5CK0",
+   "5CK1",
+   "5MQP"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 639
+ },
+ {
+  "accessions": [
+   "Q8VZ10"
+  ],
+  "class": "SEQ30",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7DJJ",
+  "release": "2022-06-08",
+  "same_accession": 0,
+  "seq30": 14,
+  "seq30_ids": [
+   "1ST9",
+   "1SU9",
+   "2F9S",
+   "2H1B",
+   "2H1D",
+   "2HYX",
+   "2LJA",
+   "3C71",
+   "3C73",
+   "3GL3",
+   "4EVM",
+   "4HQS",
+   "4NMU",
+   "5CYY"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 667
+ },
+ {
+  "accessions": [
+   "Q665A4"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7DMS",
+  "release": "2021-12-08",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 94
+ },
+ {
+  "accessions": [
+   "Q933N0"
+  ],
+  "class": "SEQ30",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7DQX",
+  "release": "2022-01-26",
+  "same_accession": 0,
+  "seq30": 11,
+  "seq30_ids": [
+   "1FFU",
+   "1FFV",
+   "1N5W",
+   "1N60",
+   "1N61",
+   "1N62",
+   "1N63",
+   "1T3Q",
+   "1ZXI",
+   "3HRD",
+   "4ZOH"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 794
+ },
+ {
+  "class": "QUERY_FAILED",
+  "pdb": "7DRH"
+ },
+ {
+  "accessions": [
+   "A0A100JVX1"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7DRI",
+  "release": "2022-06-29",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 493
+ },
+ {
+  "accessions": [
+   "A0A0L8SKF9"
+  ],
+  "class": "SEQ30",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7E1D",
+  "release": "2022-02-09",
+  "same_accession": 0,
+  "seq30": 36,
+  "seq30_ids": [
+   "1GXP",
+   "1GXQ",
+   "1P2F",
+   "1QQI",
+   "1YS6",
+   "1YS7",
+   "2D1V",
+   "2GWR",
+   "2HWV",
+   "2M1B",
+   "2MLK",
+   "2NAZ",
+   "2OQR",
+   "2PMU",
+   "2RV8",
+   "2Z33",
+   "2ZXJ",
+   "3Q9V",
+   "3R0J",
+   "3RJP"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 96
+ },
+ {
+  "accessions": [
+   "P72035"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7E85",
+  "release": "2022-03-02",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 119
+ },
+ {
+  "accessions": [
+   "P0AGJ2"
+  ],
+  "class": "SEQ95",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7EDC",
+  "release": "2022-03-23",
+  "same_accession": 0,
+  "seq30": 1045,
+  "seq30_ids": [
+   "1GWN",
+   "1GYU",
+   "1IPA",
+   "1JYK",
+   "1JYL",
+   "1KFT",
+   "1KU1",
+   "1L2J",
+   "1L9X",
+   "1NAE",
+   "1O8S",
+   "1OD3",
+   "1OQV",
+   "1Q40",
+   "1Q42",
+   "1QZ2",
+   "1RH0",
+   "1RRZ",
+   "1RY2",
+   "1S3Z"
+  ],
+  "seq95": 506,
+  "seq95_ids": [
+   "1KFT",
+   "1KU1",
+   "1L2J",
+   "1L9X",
+   "1QZ2",
+   "1RRZ",
+   "1S3Z",
+   "1S5K",
+   "1S60",
+   "1SNY",
+   "1T57",
+   "1TZ7",
+   "1VKJ",
+   "1W4T",
+   "1WC0",
+   "1WC3",
+   "1WC4",
+   "1WC5",
+   "1X9A",
+   "1XET"
+  ],
+  "seqlen": 249
+ },
+ {
+  "accessions": [
+   "A0A0H2ZLJ7"
+  ],
+  "class": "SEQ30",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7EJG",
+  "release": "2022-04-06",
+  "same_accession": 0,
+  "seq30": 3,
+  "seq30_ids": [
+   "3KBR",
+   "5HPQ",
+   "6BQE"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 237
+ },
+ {
+  "accessions": [
+   "B7LCY2"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7ES4",
+  "release": "2022-05-11",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 375
+ },
+ {
+  "accessions": [
+   "A0A8B3DGT3"
+  ],
+  "class": "SEQ30",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7ESI",
+  "release": "2022-02-09",
+  "same_accession": 0,
+  "seq30": 3,
+  "seq30_ids": [
+   "4AR1",
+   "4ARF",
+   "5O7E"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 613
+ },
+ {
+  "accessions": [
+   "A0A2G5I8W0"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7EUS",
+  "release": "2022-05-25",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 333
+ },
+ {
+  "accessions": [
+   "Q5ZSR1"
+  ],
+  "class": "SEQ95",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7EW8",
+  "release": "2022-06-01",
+  "same_accession": 0,
+  "seq30": 959,
+  "seq30_ids": [
+   "1BB9",
+   "1FG5",
+   "1G8O",
+   "1G93",
+   "1IG3",
+   "1J6Y",
+   "1JJR",
+   "1L2J",
+   "1NAE",
+   "1O8S",
+   "1OD0",
+   "1OD3",
+   "1OIF",
+   "1OIM",
+   "1OIN",
+   "1OTM",
+   "1OTN",
+   "1OTO",
+   "1P5J",
+   "1QYU"
+  ],
+  "seq95": 624,
+  "seq95_ids": [
+   "1J6Y",
+   "1NAE",
+   "1O8S",
+   "1OD0",
+   "1OD3",
+   "1OIF",
+   "1OIM",
+   "1OIN",
+   "1OTM",
+   "1OTN",
+   "1OTO",
+   "1P5J",
+   "1QYU",
+   "1UZ1",
+   "1W3J",
+   "1Z63",
+   "1Z6A",
+   "1ZDL",
+   "1ZKQ",
+   "1ZW9"
+  ],
+  "seqlen": 494
+ },
+ {
+  "accessions": [
+   "A0A0P7R7Y1"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7EXX",
+  "release": "2022-06-01",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 444
+ },
+ {
+  "accessions": [
+   "X5EQ00"
+  ],
+  "class": "SEQ95",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7F2A",
+  "release": "2022-06-15",
+  "same_accession": 0,
+  "seq30": 5,
+  "seq30_ids": [
+   "5NV8",
+   "5WXI",
+   "5WXJ",
+   "5WXK",
+   "5XVR"
+  ],
+  "seq95": 4,
+  "seq95_ids": [
+   "5WXI",
+   "5WXJ",
+   "5WXK",
+   "5XVR"
+  ],
+  "seqlen": 382
+ },
+ {
+  "accessions": [
+   "Q8R612"
+  ],
+  "class": "SEQ30",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7FJG",
+  "release": "2022-06-15",
+  "same_accession": 0,
+  "seq30": 3,
+  "seq30_ids": [
+   "1OJ7",
+   "1VLJ",
+   "4QGS"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 385
+ },
+ {
+  "accessions": [
+   "Q7Z2W4"
+  ],
+  "class": "SAME_ACCESSION",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7KZH",
+  "release": "2021-12-15",
+  "same_accession": 2,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 202
+ },
+ {
+  "accessions": [
+   "Q5ZTM4"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7LSV",
+  "release": "2022-01-26",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 178
+ },
+ {
+  "accessions": [
+   "Q8VYI3"
+  ],
+  "class": "SEQ95",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7MKU",
+  "release": "2022-05-11",
+  "same_accession": 0,
+  "seq30": 946,
+  "seq30_ids": [
+   "1BB9",
+   "1IQ6",
+   "1J6Y",
+   "1JJR",
+   "1KFT",
+   "1NAE",
+   "1NYN",
+   "1O8S",
+   "1OD0",
+   "1OD3",
+   "1OIF",
+   "1OIM",
+   "1OIN",
+   "1OTM",
+   "1OTN",
+   "1OTO",
+   "1P5J",
+   "1PN2",
+   "1PN4",
+   "1QYU"
+  ],
+  "seq95": 462,
+  "seq95_ids": [
+   "1BB9",
+   "1P5J",
+   "1QYU",
+   "1W4Z",
+   "1YX3",
+   "1Z5Z",
+   "2EWG",
+   "2FI7",
+   "2FK7",
+   "2FK8",
+   "2G0I",
+   "2G0J",
+   "2GCO",
+   "2GCP",
+   "2GMW",
+   "2HGL",
+   "2HGM",
+   "2HVV",
+   "2HVW",
+   "2I19"
+  ],
+  "seqlen": 329
+ },
+ {
+  "accessions": [
+   "A0QQ38"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7NAZ",
+  "release": "2022-03-02",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 300
+ },
+ {
+  "accessions": [
+   "A0A3Q8Q3X3"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7NCY",
+  "release": "2022-03-02",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 136
+ },
+ {
+  "accessions": [
+   "Q8GGG1"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7NXG",
+  "release": "2022-03-30",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 463
+ },
+ {
+  "accessions": [
+   "P02883"
+  ],
+  "class": "SAME_ACCESSION",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7O51",
+  "release": "2022-04-20",
+  "same_accession": 128,
+  "seq30": 143,
+  "seq30_ids": [
+   "1AUN",
+   "1DU5",
+   "1LR2",
+   "1LR3",
+   "1LXZ",
+   "1LY0",
+   "1PCV",
+   "1PP3",
+   "1RQW",
+   "1THI",
+   "1THU",
+   "1THV",
+   "1THW",
+   "1Z3Q",
+   "2A7I",
+   "2AHN",
+   "2BLR",
+   "2BLU",
+   "2D8O",
+   "2D8P"
+  ],
+  "seq95": 130,
+  "seq95_ids": [
+   "1LR2",
+   "1LR3",
+   "1LXZ",
+   "1LY0",
+   "1PP3",
+   "1RQW",
+   "1THI",
+   "1THU",
+   "1THV",
+   "1THW",
+   "2A7I",
+   "2BLR",
+   "2BLU",
+   "2D8O",
+   "2D8P",
+   "2G4Y",
+   "2OQN",
+   "2PE7",
+   "2VHK",
+   "2VHR"
+  ],
+  "seqlen": 207
+ },
+ {
+  "accessions": [
+   "A0A0B7GNW3"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7O5Y",
+  "release": "2022-04-20",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 140
+ },
+ {
+  "accessions": [
+   "Q9VE55"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7OC3",
+  "release": "2022-05-04",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 212
+ },
+ {
+  "accessions": [
+   "A0A2S2B4P9"
+  ],
+  "class": "SEQ30",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7OOM",
+  "release": "2022-06-08",
+  "same_accession": 0,
+  "seq30": 11,
+  "seq30_ids": [
+   "2K3Q",
+   "2LPI",
+   "2LPJ",
+   "2LTH",
+   "2MX8",
+   "2MX9",
+   "3LR2",
+   "3LR6",
+   "3LR8",
+   "3LRD",
+   "4FBS"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 135
+ },
+ {
+  "accessions": [
+   "A0A0N9M5Z3"
+  ],
+  "class": "SEQ95",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7OQ6",
+  "release": "2022-06-22",
+  "same_accession": 0,
+  "seq30": 588,
+  "seq30_ids": [
+   "1CL6",
+   "1CMJ",
+   "1CMN",
+   "1EGY",
+   "1EHE",
+   "1EHF",
+   "1EHG",
+   "1EUP",
+   "1F24",
+   "1F25",
+   "1F26",
+   "1GED",
+   "1GEI",
+   "1GEJ",
+   "1JFB",
+   "1JFC",
+   "1JIN",
+   "1JIO",
+   "1JIP",
+   "1LFK"
+  ],
+  "seq95": 269,
+  "seq95_ids": [
+   "2EWG",
+   "2F9T",
+   "2F9W",
+   "2FI7",
+   "2G0I",
+   "2G0J",
+   "2IUM",
+   "2IUN",
+   "2LEA",
+   "2LEB",
+   "2LEC",
+   "2NT8",
+   "2OGD",
+   "2P1C",
+   "2PAN",
+   "2Q7F",
+   "2V4H",
+   "2VBF",
+   "2VBG",
+   "2WST"
+  ],
+  "seqlen": 443
+ },
+ {
+  "accessions": [
+   "Q9NQ86"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7QS4",
+  "release": "2022-05-04",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 230
+ },
+ {
+  "accessions": [
+   "Q2FZ58"
+  ],
+  "class": "SEQ95",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7RM7",
+  "release": "2022-03-02",
+  "same_accession": 0,
+  "seq30": 902,
+  "seq30_ids": [
+   "1FG5",
+   "1G8O",
+   "1G93",
+   "1GYU",
+   "1J6Y",
+   "1JK0",
+   "1M94",
+   "1OD0",
+   "1OIF",
+   "1OIM",
+   "1OIN",
+   "1OTM",
+   "1OTN",
+   "1OTO",
+   "1P0R",
+   "1P5J",
+   "1S7F",
+   "1SI7",
+   "1T57",
+   "1U6H"
+  ],
+  "seq95": 127,
+  "seq95_ids": [
+   "1SI7",
+   "1X19",
+   "1X1A",
+   "1X1B",
+   "1X1C",
+   "1X1D",
+   "1Y08",
+   "1Y7O",
+   "1Z63",
+   "1Z6A",
+   "2BZE",
+   "2J63",
+   "2JG1",
+   "2JGV",
+   "2JYL",
+   "2KSS",
+   "2L6E",
+   "2LMR",
+   "2LXE",
+   "2O1B"
+  ],
+  "seqlen": 228
+ },
+ {
+  "accessions": [
+   "A6T700"
+  ],
+  "class": "SEQ30",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7T7J",
+  "release": "2022-01-12",
+  "same_accession": 0,
+  "seq30": 23,
+  "seq30_ids": [
+   "1BJN",
+   "1BJO",
+   "1BT4",
+   "1W23",
+   "1W3U",
+   "2BHX",
+   "2BI1",
+   "2BI2",
+   "2BI3",
+   "2BI5",
+   "2BI9",
+   "2BIA",
+   "2BIE",
+   "2BIG",
+   "2C0R",
+   "3E77",
+   "3M5U",
+   "3QBO",
+   "3QM2",
+   "4AZJ"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 370
+ },
+ {
+  "accessions": [
+   "Q5NH24"
+  ],
+  "class": "SEQ95",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7TBS",
+  "release": "2022-01-05",
+  "same_accession": 0,
+  "seq30": 1414,
+  "seq30_ids": [
+   "1G7O",
+   "1Q7R",
+   "1SF9",
+   "1SFS",
+   "1SU1",
+   "1TO9",
+   "1TT4",
+   "1U8X",
+   "1UFH",
+   "1X7F",
+   "1Y2I",
+   "1YB5",
+   "1YSJ",
+   "1Z05",
+   "1ZKP",
+   "1ZSW",
+   "1ZSY",
+   "2AE8",
+   "2AP1",
+   "2AR7"
+  ],
+  "seq95": 889,
+  "seq95_ids": [
+   "1Q7R",
+   "1SF9",
+   "1SFS",
+   "1SU1",
+   "1TO9",
+   "1X7F",
+   "1Y2I",
+   "1YB5",
+   "1Z05",
+   "1ZKP",
+   "2AE8",
+   "2AP1",
+   "2ATV",
+   "2AW5",
+   "2BAS",
+   "2BIJ",
+   "2BLE",
+   "2BT2",
+   "2BTP",
+   "2C46"
+  ],
+  "seqlen": 238
+ },
+ {
+  "accessions": [
+   "A0A5P8YGV9"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7TEM",
+  "release": "2022-01-19",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 427
+ },
+ {
+  "accessions": [
+   "A0A2U2H063"
+  ],
+  "class": "SEQ30",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7TFQ",
+  "release": "2022-01-19",
+  "same_accession": 0,
+  "seq30": 12,
+  "seq30_ids": [
+   "1J1L",
+   "2P17",
+   "3ACL",
+   "4ERO",
+   "4EWA",
+   "4EWD",
+   "4EWE",
+   "4GUL",
+   "4HLT",
+   "5JCT",
+   "6D0G",
+   "6D0P"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 292
+ },
+ {
+  "accessions": [
+   "Q57CD7"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7TJ1",
+  "release": "2022-01-26",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 156
+ },
+ {
+  "accessions": [
+   "A0ACD7U4L1"
+  ],
+  "class": "SEQ30",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7TL5",
+  "release": "2022-02-02",
+  "same_accession": 0,
+  "seq30": 12,
+  "seq30_ids": [
+   "2CFU",
+   "2CFZ",
+   "2CG2",
+   "2CG3",
+   "2YHE",
+   "4AV7",
+   "4AXH",
+   "4NUR",
+   "4PDX",
+   "5A23",
+   "5AIJ",
+   "5AJL"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 633
+ },
+ {
+  "accessions": [
+   "A0A5P8YK04"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7TMU",
+  "release": "2022-02-02",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 150
+ },
+ {
+  "accessions": [
+   "A0A5M4AV20"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7TOG",
+  "release": "2022-04-13",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 386
+ },
+ {
+  "accessions": [
+   "A0A1M6XU10"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7TOJ",
+  "release": "2022-04-13",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 387
+ },
+ {
+  "accessions": [
+   "A0A380PDL3"
+  ],
+  "class": "SEQ30",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7TRV",
+  "release": "2022-02-09",
+  "same_accession": 0,
+  "seq30": 10,
+  "seq30_ids": [
+   "2H99",
+   "2H9B",
+   "3HHG",
+   "3K1M",
+   "3K1N",
+   "3K1P",
+   "3M1E",
+   "3MZ1",
+   "4IHS",
+   "4IHT"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 90
+ },
+ {
+  "accessions": [
+   "A0A380PDL3"
+  ],
+  "class": "SEQ30",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7TRW",
+  "release": "2022-02-09",
+  "same_accession": 0,
+  "seq30": 4,
+  "seq30_ids": [
+   "3MZ1",
+   "5FHK",
+   "5X0N",
+   "5X0O"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 217
+ },
+ {
+  "accessions": [
+   "A9DF82"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7TT9",
+  "release": "2022-02-16",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 116
+ },
+ {
+  "accessions": [
+   "A0A2U2H2N4"
+  ],
+  "class": "SAME_ACCESSION",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7TWC",
+  "release": "2022-02-16",
+  "same_accession": 1,
+  "seq30": 4,
+  "seq30_ids": [
+   "2CSG",
+   "2DBI",
+   "2DBN",
+   "4RGK"
+  ],
+  "seq95": 1,
+  "seq95_ids": [
+   "4RGK"
+  ],
+  "seqlen": 418
+ },
+ {
+  "accessions": [
+   "A0A332H2K8"
+  ],
+  "class": "SEQ30",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7TZP",
+  "release": "2022-03-02",
+  "same_accession": 0,
+  "seq30": 466,
+  "seq30_ids": [
+   "1AE1",
+   "1AHH",
+   "1AHI",
+   "1E3S",
+   "1E3W",
+   "1E6W",
+   "1EDO",
+   "1FMC",
+   "1G6K",
+   "1GCO",
+   "1GEE",
+   "1GEG",
+   "1GZ6",
+   "1HDC",
+   "1HXH",
+   "1I01",
+   "1IY8",
+   "1JA9",
+   "1K2W",
+   "1NFF"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 247
+ },
+ {
+  "accessions": [
+   "Q6NJK4"
+  ],
+  "class": "SAME_ACCESSION",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7UNN",
+  "release": "2022-04-20",
+  "same_accession": 2,
+  "seq30": 3,
+  "seq30_ids": [
+   "3GYK",
+   "4PWO",
+   "4PWP"
+  ],
+  "seq95": 2,
+  "seq95_ids": [
+   "4PWO",
+   "4PWP"
+  ],
+  "seqlen": 260
+ },
+ {
+  "accessions": [
+   "Q5ZZD0"
+  ],
+  "class": "NOVEL",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7W3S",
+  "release": "2022-04-06",
+  "same_accession": 0,
+  "seq30": 0,
+  "seq30_ids": [],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 413
+ },
+ {
+  "accessions": [
+   "A0A979HMS8"
+  ],
+  "class": "SEQ30",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "7WDQ",
+  "release": "2022-06-01",
+  "same_accession": 0,
+  "seq30": 6,
+  "seq30_ids": [
+   "1TW2",
+   "1TW3",
+   "4WXH",
+   "5EEG",
+   "5EEH",
+   "5JR3"
+  ],
+  "seq95": 0,
+  "seq95_ids": [],
+  "seqlen": 337
+ },
+ {
+  "accessions": [
+   "P12868"
+  ],
+  "class": "SEQ95",
+  "entity_id": 1,
+  "no_accession": false,
+  "pdb": "8CUK",
+  "release": "2022-05-25",
+  "same_accession": 0,
+  "seq30": 8,
+  "seq30_ids": [
+   "2V7S",
+   "2XBZ",
+   "3O7B",
+   "3U37",
+   "4DEV",
+   "4M75",
+   "5GHE",
+   "5L0W"
+  ],
+  "seq95": 2,
+  "seq95_ids": [
+   "4M75",
+   "5L0W"
+  ],
+  "seqlen": 379
+ }
+]

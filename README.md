@@ -15,6 +15,9 @@ preregistered census of PDB entries released after 11 September 2026; and
 atoms indexed by `auth_seq_id`) that manufactured confident "errors" and made
 a preregistered conformal-coverage prediction fail. The original result is
 retracted; on corrected labels the registered rerun meets the prediction.
+A registered side analysis (e428) measures homology exposure in two published
+evaluations: the template-free comparison of Terwilliger et al. (2024) and
+the date-split ATLAS test set of AlphaFlow (Jing et al., 2024).
 
 Everything needed to trace each number in the paper is here: the analysis
 code (byte-identical to the registered versions), the registrations with
@@ -28,7 +31,8 @@ shipped as request-keyed caches, so those analyses run offline.
 Internal analysis identifiers used throughout (paper, Appendix A):
 **e420** ATLAS exposure; **e421** exploratory post-2022 census;
 **e422** preregistered census (dispatch/evaluation chain e422–e426);
-**e427** residue-numbering repair, replay, relabel and corrected P5 rerun.
+**e427** residue-numbering repair, replay, relabel and corrected P5 rerun;
+**e428** homology exposure in two published evaluations (paper Section 6.4).
 **V1–V7** are the paper-verification analyses registered in
 `registrations/verification/REGISTRATION.md`.
 
@@ -37,14 +41,14 @@ Internal analysis identifiers used throughout (paper, Appendix A):
 ```sh
 python3.12 -m venv .venv && . .venv/bin/activate
 pip install -r requirements.txt
-python -I code/paper_numbers.py      # 220 checks of the paper's numbers -> "220/220 checks OK" / "ALL CHECKS OK"
+python -I code/paper_numbers.py      # 236 checks of the paper's numbers -> "236/236 checks OK" / "ALL CHECKS OK"
 python -I code/reproduce_p5.py       # Table 3 from the ledgers -> "ALL MATCH" with the registered evaluator
 ```
 
 `paper_numbers.py` prints one line per check with its class, the value in
 the paper, the value obtained, and the source:
 
-- **RECOMPUTED (157)**: computed by the script itself from row- or
+- **RECOMPUTED (168)**: computed by the script itself from row- or
   request-level inputs in `data/derived/` — the census ledgers, the e420
   receipts (release dates against 2018-04-30 and the AFDB
   `modelCreatedDate`), the e421 census rows, the RCSB/UniProt caches (the V2/
@@ -54,25 +58,28 @@ the paper, the value obtained, and the source:
   percentile), the post-2022 AFDB model table (model types), and the
   chance identity of residue pairs under a register shift (corrected ledger
   plus cached UniProt sequences), the census flow from enumerated entries to
-  scored proteins (checkpoint counts), and the PDBe SIFTS chains of template
-  6SWU. P5 means, MCSEs and thresholds are
+  scored proteins (checkpoint counts), the PDBe SIFTS chains of template
+  6SWU, and for Section 6.4 the e428 per-chain exposure classes, the fusion
+  constructs' own accessions against the cached same-accession searches and
+  the counts in the released AlphaFlow split files. P5 means, MCSEs and thresholds are
   recomputed with the script's own implementation of the registered
   protocol. Percentages use computed numerators.
-- **RECONCILED (43)**: a stored output compared with that recomputation at
+- **RECONCILED (45)**: a stored output compared with that recomputation at
   1e-12 (for example the V1/V2/V5/V6 outputs, the post-2022 `summary.json`,
   the registered evaluator's P5 mean, MCSE and threshold, the two P5
   reimplementations cited in Section 7.5, the per-segment row counts and
   medians of the biotite cross-check against the shipped ledger), or a
   stored summary compared with its own per-record fields (V7, the
   independent label audit, the replay report, the excluded-residue counts,
-  the e420 manifest), plus the canonical digests of the 8 ledger
+  the e420 manifest, the e428 class counts in `stats.json`), plus the canonical digests of the 8 ledger
   checkpoints.
-- **RE-READ (20)**: numbers that need raw third-party files not shipped
+- **RE-READ (23)**: numbers that need raw third-party files not shipped
   here (the 9qj6 SIFTS segment and the raw-file realignment for Figure 1,
   the V7 trigger counts, the 36-segment independent label audit, the
   biotite cross-check, its count of SIFTS segments per scored chain segment
   and the 16 + 57 excluded residues in `audits/label_crosscheck_biotite/`,
-  and the V5 count of templates confirmed by chain name); each is also covered by a RECONCILED
+  the V5 count of templates confirmed by chain name, and the three r.m.s.d.
+  statistics of Section 6.4, which need the Terwilliger et al. workbook); each is also covered by a RECONCILED
   check where the shipped data allow one.
 
 Not checked by the script: design parameters stated as definitions (lDDT
@@ -86,13 +93,17 @@ rather than in a data file, the 12
 planned batches, the ATLAS archive and check dates (2026-08-30, 2026-09-04),
 and the registration and amendment dates of the Appendix A timeline (9–10
 September), which are attested by the `.ots` proofs rather than by a data
-file. The paper's data statement describes
-the 220 checks by class (157 / 43 / 20).
+file, and the facts quoted from the two published evaluations in Section 6.4
+(their 1.0 Å and 2.3 Å medians, release and deposition windows, the
+workbook median of 0.954 Å over 102 structures, the AlphaFlow and ESMFold
+cutoffs, and the 1,265 training ensembles stated in the AlphaFlow paper), which are recorded with their sources in
+`audits/e428/e428_results.md` ("Source check"). The paper's data statement describes
+the 236 checks by class (168 / 45 / 23).
 
 The script imports nothing from `code/experiments`, `code/verification` or
-`reproduce_p5.py`. It exits 0 only if all 220 checks ran and passed, 1 if a
+`reproduce_p5.py`. It exits 0 only if all 236 checks ran and passed, 1 if a
 check differs, and 2 if an input is missing, a section fails, or the number of
-checks is not 220. `reproduce_p5.py` is a standalone implementation of the
+checks is not 236. `reproduce_p5.py` is a standalone implementation of the
 registered P5 protocol (it imports nothing from `code/experiments/`). Before
 computing, it verifies each ledger checkpoint's stored canonical digest and
 its `MANIFEST.sha256` entry; it then requires the mean, MCSE and threshold to
@@ -119,7 +130,7 @@ pLDDT-binned error rates are reported in the paper and recomputed here.
 paper/                       temporal_leakage.tex (final), references.bib, rendered PDF,
                              figures/rev4/*.pdf (final figures) and figures/rev3/*.pdf (earlier revision)   (0.5 MB)
 code/
-  experiments/               registered pipeline code e420*, e421*, e422*–e427* (byte-identical;
+  experiments/               registered pipeline code e420*, e421*, e422*–e428* (byte-identical;
                              e421_conformal.py is included only because the e422 freeze binds it
                              as the source of the registered pLDDT grid)
   tests/                     registered unit tests for e422–e427 (run in a work root, see below)
@@ -132,7 +143,8 @@ code/
   tools/extract_v5_template_table.py  how the AFDB template table was produced (new)
   tools/extract_e421_model_table.py   how the post-2022 AFDB model table was produced (new)
 audits/                      independent audit write-ups and scripts (historical, unchanged), and
-                             label_crosscheck_biotite/ (new: biotite cross-check of the corrected labels)
+                             label_crosscheck_biotite/ (new: biotite cross-check of the corrected labels),
+                             e428/ (results write-up, independent audit and its script)
 registrations/               registrations, freeze/dispatch/binding/receipt records, correction
                              of record, runbook, verification registration, and .ots proofs   (0.4 MB)
   stamped_versions/          earlier exact versions of records whose OTS proof stamps that version
@@ -157,6 +169,10 @@ data/
                              the 413 AFDB template PDB IDs (V5)
     paper/arxiv/verification/v5_afdb_template_table.json
                              templates, software and target of the 138 AFDB model files (V5 input)
+    results/e428/            per-chain exposure classes of the two published evaluations
+                             (Terwilliger r.m.s.d./pLDDT values removed), statistics, request receipts
+    data/e428/               AlphaFlow split files (MIT, with its LICENSE), RCSB/PDBe response cache,
+                             RCSB record of the removed entry 7DRH
     p5_batch04_outcomes.json key-selected P5 outcome blocks of the two batch-4 evaluations
   fetch/                     fetch_raw.py + README: re-fetch raw inputs and verify SHA-256
 ```
@@ -231,7 +247,7 @@ script is kept byte-identical and does not test this;
 ### Verified for this release (2026-10-09)
 
 Offline (network namespace disabled), from a copy of the release tree:
-`paper_numbers.py` 208/208 (147 RECOMPUTED, 43 RECONCILED, 18 RE-READ) at revision 4; revision 6 added 12 checks (section `rev6()`: census flow, ATLAS network errors, sample composition, confident-error counts, template chain names, the post-2022 protein no longer scored), and 220/220 pass;
+`paper_numbers.py` 208/208 (147 RECOMPUTED, 43 RECONCILED, 18 RE-READ) at revision 4; revision 6 added 12 checks (section `rev6()`: census flow, ATLAS network errors, sample composition, confident-error counts, template chain names, the post-2022 protein no longer scored), and revision 7 added 16 (section `rev7()`: the two published evaluations of Section 6.4); 236/236 pass;
 `reproduce_p5.py` verifies the 8 checkpoint digests and manifest entries and
 matches the registered evaluator's mean, MCSE and threshold to 1e-12 on both
 ledgers. 23 injected faults (including a receipt release date moved across
@@ -286,6 +302,15 @@ reproduced the reviewer's cross-check output exactly (494 of 495 segments).
   38.6 MB of AFDB model files V5 reads, plus the e420 and e421 source bytes):
   re-fetch with `data/fetch/fetch_raw.py`. The template information V5 takes
   from the AFDB files is shipped as `v5_afdb_template_table.json`.
+- **The Terwilliger et al. workbook** (`AlphaFoldCrystal_M.xlsx`, SHA-256
+  `7b3e1473b99e1575019d8c095d292d6a96de702c36580241cf85932e7d69d143`, from
+  https://phenix-online.org/phenix_data/terwilliger/alphafold_crystallography_2022/)
+  carries no licence statement, so it and the per-structure r.m.s.d. and pLDDT
+  values taken from it are not redistributed; `results/e428/t_structures.json`
+  keeps the IDs and exposure classes. Download the workbook to
+  `data/derived/data/e428/terwilliger/` (unzipped copy in `x/`) to rerun
+  `code/experiments/e428_exposure_audit.py` or `audits/e428/audit_e428.py`;
+  the latter expects the `data/e428/` layout of the project repository.
 - **Not part of this paper**: the ATLAS label-run pool freeze
   (`results/e420/pool_freeze.json`, 36 MB, OpenTimestamps-stamped) and the rule
   files `docs/g1_successor_*` that `e420_label_run.py` reads belong to a
@@ -379,11 +404,14 @@ proof sits next to the version it stamps. `registrations/verification/REGISTRATI
 
 ## Web sources cited in the paper
 
-Archived 2026-10-08 (not redistributed; re-fetch and compare):
+Archived 2026-10-08, Section 6.4 sources 2026-10-09 (not redistributed unless
+stated; re-fetch and compare):
 
 | Source | URL | SHA-256 |
 |---|---|---|
 | AFDB FAQ text (templates released before 2021-02-15) | https://alphafold.ebi.ac.uk/chunk-7VK47MF2.js | `63fbdfbee9b98701104042203dcb31afa8ee76b24c5c0d6d5f0b37b578c14684` |
+| Terwilliger et al. workbook (Section 6.4; not redistributed) | https://phenix-online.org/phenix_data/terwilliger/alphafold_crystallography_2022/ | `7b3e1473b99e1575019d8c095d292d6a96de702c36580241cf85932e7d69d143` |
+| AlphaFlow split files (Section 6.4; shipped, MIT) | https://github.com/bjing2016/alphaflow at commit `0408d7c89dac444a43a9089d7427ce470b0a5e67` | `data/derived/data/e428/alphaflow/SHA256SUMS` |
 | PDBe AFDB release notes (v6 metadata; coordinates from v4) | https://www.ebi.ac.uk/pdbe/news/alphafold-database-release-notes | `0ba8ab8c500a15b055e735b3bf9925cc4468736ccb5b6c3c8b72bf9f9a0dda63` |
 
 ## Licences
@@ -400,7 +428,9 @@ Archived 2026-10-08 (not redistributed; re-fetch and compare):
   `registrations/e420_registration.md`; see the ATLAS website,
   https://www.dsimb.inserm.fr/ATLAS); `data/derived/results/e420/` lists ATLAS
   entries and chains and is therefore distributed under CC BY-NC 4.0 terms for
-  its ATLAS-derived content.
+  its ATLAS-derived content. The AlphaFlow split files in
+  `data/derived/data/e428/alphaflow/` are MIT-licensed (Copyright (c) 2024
+  Bowen Jing, Bonnie Berger, Tommi Jaakkola; notice in `LICENSE` there).
 
 ## Citation
 

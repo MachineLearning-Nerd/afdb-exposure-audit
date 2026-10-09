@@ -1,0 +1,1 @@
+{"method": "GET", "url": "https://www.ebi.ac.uk/pdbe/api/mappings/uniprot/6ypi", "request_body": null, "status": 404, "body": "{\"message\":\"Requested endpoint does not contain any data\"}", "sha256": "bfcfc5f99948c8bb91701ed43b6343e0ff35b747de68db58971d8af560dfae33", "utc": "2026-10-09T11:08:27.540373+00:00"}
