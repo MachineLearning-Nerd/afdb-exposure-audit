@@ -53,7 +53,7 @@ from pathlib import Path
 import numpy as np
 from scipy.stats import spearmanr
 
-EXPECTED_CHECKS = 208
+EXPECTED_CHECKS = 220
 ROOT = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("data/derived")
 AUD = ROOT.resolve().parent.parent / "audits"   # <release>/audits next to <release>/data/derived
 VER = "paper/arxiv/verification"
@@ -1088,6 +1088,55 @@ def crosscheck():
           f"{round(100 * min(fr))}-{round(100 * max(fr))}", f"corrected ledger + UniProt cache, {len(fr)} shifts")
 
 
+def rev6():
+    """Revision 6 additions: census flow, sample composition, template chain names (Sec. 4, 6, 7.4)"""
+    man = load("results/e420/source_availability_manifest.json")["rows"]
+    check("RECOMPUTED", "Sec4", "ATLAS records not checked because of network errors", 4,
+          sum((r.get("failure_code") or "") == "E420_TRANSPORT_ERROR" for r in man), "e420 manifest rows")
+    check("RECOMPUTED", "Sec4", "ATLAS proteins in kept records (identity/coverage/AFDB rule)", 869,
+          len({a for r in man if r["inclusion_status"] == "included" for a in r["accessions"]}), "e420 manifest rows")
+    flow = {}
+    for tag, sub in (("original", "e422"), ("corrected", "e427")):
+        cks = [load(f"results/{sub}/batches/e422_batch0{b}_checkpoint.json") for b in (1, 2, 3, 4)]
+        rows = [r for ck in cks for r in ck["rows"]]
+        flow[tag] = (sum(ck["census_entries"] for ck in cks), sum(ck["entries_with_mappings"] for ck in cks),
+                     len({r["entry"] for r in rows}), len({(r["accession"], r["entry"]) for r in rows}))
+    src = "results/{e422,e427}/batches checkpoints"
+    check("RECOMPUTED", "Tab2", "census entries enumerated (original/corrected)", "409/409",
+          f"{flow['original'][0]}/{flow['corrected'][0]}", src)
+    check("RECOMPUTED", "Tab2", "entries with a SIFTS mapping (original/corrected)", "364/365",
+          f"{flow['original'][1]}/{flow['corrected'][1]}", src)
+    check("RECOMPUTED", "Tab2", "entries with a scored chain segment (original/corrected)", "218/220",
+          f"{flow['original'][2]}/{flow['corrected'][2]}", src)
+    check("RECOMPUTED", "Tab2", "accession-entry pairs, corrected", 275, flow["corrected"][3], src)
+    bt = load("label_crosscheck_biotite/full_ledger_out.json", AUD)
+    ok = [r for r in bt if r.get("study_status") == "ok"]
+    check("RE-READ", "Sec4", "scored chain segments made of one SIFTS segment", "495/495",
+          f"{sum(r.get('n_segments') == 1 for r in ok)}/{len(ok)}", "audits/label_crosscheck_biotite")
+    census = load("results/e427/e421_relabel/census_results.json")
+    accs = {e["accession"] for e in census.values() if e["status"] == "ok"}
+    cls = Counter(S["class"].get(a) for a in accs)
+    check("RECOMPUTED", "Sec6", "proteins without a close relative: 30-95% relative / none", "38/7",
+          f"{cls['SEQ30']}/{cls['NOVEL']}", "relabel census + V2/V2c replay")
+    old_labs = load("results/e421/labeled_residues_with_plddt.json")
+    new_labs = [x for e in census.values() if e["status"] == "ok" for x in e["labels"]]
+    ce = lambda labs: sum(fin(x.get("lddt")) and x["plddt"] >= 90 and x["lddt"] < 0.60 for x in labs)  # noqa: E731
+    check("RECOMPUTED", "Sec7.4", "confident errors (pLDDT>=90, lDDT<0.60) original -> corrected", "121 -> 90",
+          f"{ce(old_labs)} -> {ce(new_labs)}", "results/e421 + results/e427/e421_relabel")
+    v5 = get(load(f"{VER}/out/v5_templates.json"), "results", "template_class_counts_chain_level_NOT_PRESPECIFIED")
+    check("RE-READ", "Sec6", "same-protein templates confirmed by chain name", 44,
+          v5.get("SAME_ACC", MISSING) if isinstance(v5, dict) else MISSING, f"{VER}/out/v5_templates.json")
+    st_, body = Cache(f"{VER}/cache/v5/http").get("GET", "https://www.ebi.ac.uk/pdbe/api/mappings/uniprot/6swu")
+    m = json.loads(body).get("6swu", {}).get("UniProt", {}) if st_ == 200 else {}
+    chains = {a: sorted({x.get("chain_id") for x in v.get("mappings", [])}) for a, v in m.items()}
+    check("RECOMPUTED", "Sec6", "6SWU: accession and mapped chains", "Q5UE59: A,B,C,D,E,F",
+          "; ".join(f"{a}: {','.join(c)}" for a, c in sorted(chains.items())) or MISSING, "PDBe SIFTS cache")
+    old = load("results/e421/census_results.json")
+    o_ok = {e["accession"] for e in old.values() if e["status"] == "ok"}
+    check("RECOMPUTED", "Sec4", "post-2022 protein queried but not scored after correction", "Q2G0L4",
+          ",".join(sorted(o_ok - accs)) or MISSING, "results/e421 + results/e427/e421_relabel")
+
+
 def run_section(fn):
     print(f"\n# {fn.__doc__}")
     try:
@@ -1106,7 +1155,7 @@ def main():
         return 2
     needs = {trigger: "orig", homology: "orig", templates: "class", effect: "class", coverage: "orig",
              crosscheck: "orig"}
-    for fn in (atlas, ledgers, trigger, homology, templates, effect, post2022, coverage, crosscheck):
+    for fn in (atlas, ledgers, trigger, homology, templates, effect, post2022, coverage, crosscheck, rev6):
         if fn in needs and needs[fn] not in S:
             ERRORS.append(f"{fn.__name__}: not run (a prerequisite section failed)")
             print(f"\nERROR | {fn.__name__} not run: a prerequisite section failed")

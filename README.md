@@ -37,14 +37,14 @@ Internal analysis identifiers used throughout (paper, Appendix A):
 ```sh
 python3.12 -m venv .venv && . .venv/bin/activate
 pip install -r requirements.txt
-python -I code/paper_numbers.py      # 208 checks of the paper's numbers -> "208/208 checks OK" / "ALL CHECKS OK"
+python -I code/paper_numbers.py      # 220 checks of the paper's numbers -> "220/220 checks OK" / "ALL CHECKS OK"
 python -I code/reproduce_p5.py       # Table 3 from the ledgers -> "ALL MATCH" with the registered evaluator
 ```
 
 `paper_numbers.py` prints one line per check with its class, the value in
 the paper, the value obtained, and the source:
 
-- **RECOMPUTED (147)**: computed by the script itself from row- or
+- **RECOMPUTED (157)**: computed by the script itself from row- or
   request-level inputs in `data/derived/` — the census ledgers, the e420
   receipts (release dates against 2018-04-30 and the AFDB
   `modelCreatedDate`), the e421 census rows, the RCSB/UniProt caches (the V2/
@@ -53,7 +53,9 @@ the paper, the value obtained, and the source:
   means and bootstrap intervals (10,000 protein resamples, seed 0,
   percentile), the post-2022 AFDB model table (model types), and the
   chance identity of residue pairs under a register shift (corrected ledger
-  plus cached UniProt sequences). P5 means, MCSEs and thresholds are
+  plus cached UniProt sequences), the census flow from enumerated entries to
+  scored proteins (checkpoint counts), and the PDBe SIFTS chains of template
+  6SWU. P5 means, MCSEs and thresholds are
   recomputed with the script's own implementation of the registered
   protocol. Percentages use computed numerators.
 - **RECONCILED (43)**: a stored output compared with that recomputation at
@@ -65,30 +67,32 @@ the paper, the value obtained, and the source:
   independent label audit, the replay report, the excluded-residue counts,
   the e420 manifest), plus the canonical digests of the 8 ledger
   checkpoints.
-- **RE-READ (18)**: numbers that need raw third-party files not shipped
+- **RE-READ (20)**: numbers that need raw third-party files not shipped
   here (the 9qj6 SIFTS segment and the raw-file realignment for Figure 1,
   the V7 trigger counts, the 36-segment independent label audit, the
-  biotite cross-check and the 16 + 57 excluded residues in
-  `audits/label_crosscheck_biotite/`); each is also covered by a RECONCILED
+  biotite cross-check, its count of SIFTS segments per scored chain segment
+  and the 16 + 57 excluded residues in `audits/label_crosscheck_biotite/`,
+  and the V5 count of templates confirmed by chain name); each is also covered by a RECONCILED
   check where the shipped data allow one.
 
 Not checked by the script: design parameters stated as definitions (lDDT
 radius and thresholds, the 0.60/0.4/90/30-residue/10% cut-offs, 2.5 Å, the
 E-value, 200 splits and the 50/25/25 split, the SIFTS identity and coverage
-cut-offs 0.90/0.80 of the ATLAS step, the 10,000 bootstrap resamples), the 12
+cut-offs 0.90/0.80 of the ATLAS step, the 10,000 bootstrap resamples, the
+alignment scores +2/−1/−2), the post-2022 census's candidate count (33,517
+X-ray entries after 2022-06-02, RCSB search of 2026-09-05) and its
+5,000-atom size filter, both stated in `registrations/e421_registration.md`
+rather than in a data file, the 12
 planned batches, the ATLAS archive and check dates (2026-08-30, 2026-09-04),
 and the registration and amendment dates of the Appendix A timeline (9–10
 September), which are attested by the `.ots` proofs rather than by a data
-file. Also not checked: the four ATLAS records that could not be checked
-because of network errors (rows of
-`data/derived/results/e420/source_availability_manifest.json` with
-`failure_code` `E420_TRANSPORT_ERROR`). The paper's data statement describes
-the 208 checks by class (147 / 43 / 18).
+file. The paper's data statement describes
+the 220 checks by class (157 / 43 / 20).
 
 The script imports nothing from `code/experiments`, `code/verification` or
-`reproduce_p5.py`. It exits 0 only if all 208 checks ran and passed, 1 if a
+`reproduce_p5.py`. It exits 0 only if all 220 checks ran and passed, 1 if a
 check differs, and 2 if an input is missing, a section fails, or the number of
-checks is not 208. `reproduce_p5.py` is a standalone implementation of the
+checks is not 220. `reproduce_p5.py` is a standalone implementation of the
 registered P5 protocol (it imports nothing from `code/experiments/`). Before
 computing, it verifies each ledger checkpoint's stored canonical digest and
 its `MANIFEST.sha256` entry; it then requires the mean, MCSE and threshold to
@@ -227,7 +231,7 @@ script is kept byte-identical and does not test this;
 ### Verified for this release (2026-10-09)
 
 Offline (network namespace disabled), from a copy of the release tree:
-`paper_numbers.py` 208/208 (147 RECOMPUTED, 43 RECONCILED, 18 RE-READ);
+`paper_numbers.py` 208/208 (147 RECOMPUTED, 43 RECONCILED, 18 RE-READ) at revision 4; revision 6 added 12 checks (section `rev6()`: census flow, ATLAS network errors, sample composition, confident-error counts, template chain names, the post-2022 protein no longer scored), and 220/220 pass;
 `reproduce_p5.py` verifies the 8 checkpoint digests and manifest entries and
 matches the registered evaluator's mean, MCSE and threshold to 1e-12 on both
 ledgers. 23 injected faults (including a receipt release date moved across
@@ -289,6 +293,15 @@ reproduced the reviewer's cross-check output exactly (494 of 495 segments).
   its receipt but cannot be re-run from this release. These, the
   pre-repair e421 label ledger and internal audit write-ups are available on
   request.
+- **Not reproducible from this release**: the step that reduced the
+  post-2022 census's candidates (X-ray entries at 2.5 Å or better released
+  after 2022-06-02; 33,517 on 2026-09-05) to the 168 entries of
+  `data/derived/results/e421/qualifying_entries.json`. It included a filter on
+  entry size (fewer than 5,000 atoms; `registrations/e421_registration.md`),
+  and its code is not in this release; only the resulting list is. That census
+  also scored author chain A of each entry only (`CHAIN = "A"` in
+  `code/experiments/e427_e421_relabel.py`; `chain = "A"` in
+  `e421_census_fixed.py`).
 
 ## Provenance notes
 

@@ -140,6 +140,15 @@ No registered, frozen or historical file was edited.
   `code/reproduce_p5.py` and `audits/README.md` renumbered to the paper's
   tables and sections (homology Table 1, defect scope Table 2, coverage
   Table 3); no check logic changed, 208/208 still pass.
+- **Revision 6 (2026-10-09).** `paper/` replaced by the source's revision 6
+  (git `6c899fd9`), made after a two-round external referee review: methods
+  describe the corrected mapping as implemented, the post-2022 census's
+  chain-A scoring and unreleased selection step are stated, census flow rows
+  added to Table 2, coverage and exposure claims narrowed.
+  `code/paper_numbers.py`: new section `rev6()` with 12 checks for the numbers
+  this revision adds (220 checks: 157 recomputed, 43 reconciled, 20 re-read).
+  README: check counts, the unchecked-items list and a note on the
+  unreleased post-2022 selection step.
 
 ## Copied files
 
@@ -278,8 +287,8 @@ earlier stamped version was recovered.
 | `paper/figures/rev4/f1_mechanism.pdf` | `paper/arxiv/figures/rev4/f1_mechanism.pdf` | `c6d6d49a1d02e2a67198a25afe31c9e807ea5fff7b45937e4c110d44730ffbac` | identical | git `52345ba7` |
 | `paper/figures/rev4/f2_scope.pdf` | `paper/arxiv/figures/rev4/f2_scope.pdf` | `f12520c1a2a87cfcdddbf6375c8bbf61cca6648d26a688420592c5f80fef95a0` | identical | not tracked |
 | `paper/references.bib` | `paper/arxiv/references.bib` | `3cf2d521d1ddfa00b3258892bd0fc88220cf9ca9984332faac9db647dd3ee940` | identical | git `52345ba7` |
-| `paper/temporal_leakage.tex` | `paper/arxiv/temporal_leakage.tex` | `e7422cfa2f3ff11bb0e2bdddd0107dc4b2af03472f4c01ed19b62fcb17cab548` | identical | git `52345ba7` |
-| `paper/temporal_leakage_paper.pdf` | `paper/arxiv/temporal_leakage_paper.pdf` | `53a0639babb93293716f32f7627f8489a35ddb7ff23ceee72f910510625bf987` | identical (built with tectonic) | git `52345ba7` |
+| `paper/temporal_leakage.tex` | `paper/arxiv/temporal_leakage.tex` | `e2f86213677daf3b9b152962e88d299c28cb3c5e6f9968954dd34509a6b03c85` | identical | git `6c899fd9` |
+| `paper/temporal_leakage_paper.pdf` | `paper/arxiv/temporal_leakage_paper.pdf` | `efdd6b21cc796d88e8ba7a1768d93a34dece78720907c0927fe824593aaf8404` | identical (built with tectonic) | git `6c899fd9` |
 | `registrations/e420_registration.md` | `docs/e420_registration.md` | `ea6d8725e23f504607e75a869ae33c3e189bcd28f6533a2f739b388462789d99` | identical | = HEAD |
 | `registrations/e421_post_run_checkpoint.json` | `docs/e421_post_run_checkpoint.json` | `a0ebfa59719a19c0af32a6a40eb628435b37ec44f2809a31f99d7249243a13a1` | identical | = HEAD |
 | `registrations/e421_post_run_checkpoint.json.ots` | `docs/e421_post_run_checkpoint.json.ots` | `7fac3db8adaff048052281a4f938d3d483dd9210db5ddd96bb2a7d5cc1679764` | identical | = HEAD |
