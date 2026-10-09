@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper below."
+title: "Auditing AlphaFold Database Comparisons: Exposure Channels and a Residue-Numbering Error (code, registrations and derived data)"
+type: software
+authors:
+  - family-names: Jinjala
+    given-names: Dinesh
+    affiliation: Samma Labs
+    email: dinesh@sammalabs.io
+license: MIT
+date-released: 2026-10-09
+keywords:
+  - AlphaFold
+  - AlphaFold Database
+  - pLDDT
+  - data leakage
+  - residue numbering
+  - SIFTS
+  - conformal prediction
+  - preregistration
+preferred-citation:
+  type: article
+  title: "Auditing AlphaFold Database Comparisons: Exposure Channels and a Residue-Numbering Error"
+  authors:
+    - family-names: Jinjala
+      given-names: Dinesh
+      affiliation: Samma Labs
+      email: dinesh@sammalabs.io
+  year: 2026
+  # arXiv identifier to be added on submission, e.g.
+  # identifiers:
+  #   - type: other
+  #     value: "arXiv:XXXX.XXXXX"
+  notes: "arXiv preprint; identifier to be added."

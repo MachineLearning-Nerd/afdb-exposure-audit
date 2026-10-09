@@ -1,0 +1,154 @@
+{
+ "schema": "e427-e421-relabel-v1",
+ "registration": "docs/e427_registration.md section 4.5",
+ "corrected": {
+  "entries": 168,
+  "status_counts": {
+   "ok": 139,
+   "mapping_acc_absent": 16,
+   "insufficient_aligned": 5,
+   "sequence_identity_failed": 5,
+   "af_fetch_fail": 3
+  },
+  "ok_entries": 139,
+  "ok_accessions": 85,
+  "residue_rows": 37531,
+  "cells_rows": {
+   "A": 5047,
+   "U": 31765,
+   "OC": 354,
+   "O": 363,
+   "B": 2
+  },
+  "cells_unique": {
+   "A": 3504,
+   "U": 19347,
+   "OC": 289,
+   "O": 263,
+   "B": 2
+  },
+  "gradient": [
+   {
+    "bin": [
+     0,
+     50
+    ],
+    "n": 314,
+    "err_rate_lddt_lt_0.60": 0.7547770700636943
+   },
+   {
+    "bin": [
+     50,
+     70
+    ],
+    "n": 760,
+    "err_rate_lddt_lt_0.60": 0.2657894736842105
+   },
+   {
+    "bin": [
+     70,
+     80
+    ],
+    "n": 1200,
+    "err_rate_lddt_lt_0.60": 0.2
+   },
+   {
+    "bin": [
+     80,
+     90
+    ],
+    "n": 4225,
+    "err_rate_lddt_lt_0.60": 0.05136094674556213
+   },
+   {
+    "bin": [
+     90,
+     100.01
+    ],
+    "n": 31032,
+    "err_rate_lddt_lt_0.60": 0.002900232018561485
+   }
+  ],
+  "spearman_plddt_lddt": 0.6430108209634237,
+  "n_spearman": 37531
+ },
+ "original": {
+  "entries": 168,
+  "status_counts": {
+   "insufficient_aligned": 69,
+   "ok": 96,
+   "af_fetch_fail": 3
+  },
+  "ok_entries": 96,
+  "ok_accessions": 64,
+  "residue_rows": 24457,
+  "cells_rows": {
+   "A": 3411,
+   "U": 20646,
+   "OC": 176,
+   "O": 223,
+   "B": 1
+  },
+  "cells_unique": {
+   "A": 2525,
+   "U": 13843,
+   "OC": 171,
+   "O": 168,
+   "B": 1
+  },
+  "gradient": [
+   {
+    "bin": [
+     0,
+     50
+    ],
+    "n": 177,
+    "err_rate_lddt_lt_0.60": 0.5819209039548022
+   },
+   {
+    "bin": [
+     50,
+     70
+    ],
+    "n": 431,
+    "err_rate_lddt_lt_0.60": 0.24361948955916474
+   },
+   {
+    "bin": [
+     70,
+     80
+    ],
+    "n": 690,
+    "err_rate_lddt_lt_0.60": 0.20869565217391303
+   },
+   {
+    "bin": [
+     80,
+     90
+    ],
+    "n": 2381,
+    "err_rate_lddt_lt_0.60": 0.05795884082318354
+   },
+   {
+    "bin": [
+     90,
+     100.01
+    ],
+    "n": 20777,
+    "err_rate_lddt_lt_0.60": 0.005823747413004765
+   }
+  ],
+  "spearman_plddt_lddt": 0.6170601466142406,
+  "n_spearman": 24456
+ },
+ "status_transitions": {
+  "af_fetch_fail -> af_fetch_fail": 3,
+  "insufficient_aligned -> insufficient_aligned": 5,
+  "insufficient_aligned -> mapping_acc_absent": 16,
+  "insufficient_aligned -> ok": 45,
+  "insufficient_aligned -> sequence_identity_failed": 3,
+  "ok -> ok": 94,
+  "ok -> sequence_identity_failed": 2
+ },
+ "n_receipts": 469
+}

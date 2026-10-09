@@ -1,0 +1,62 @@
+{
+  "schema": "e422-anchor-receipt-gate-a-v1",
+  "e_number": "e422",
+  "gate": "d (OTS anchor of the gate-(a) frozen objects)",
+  "anchored_utc_date": "2026-09-09",
+  "anchored_by": "w1:pG under delegated authority (DECISIONS 2026-09-09T20:31+05:30)",
+  "tool": "opentimestamps 0.4.5 (repo .venv/bin/ots)",
+  "calendars": [
+    "alice.btc.calendar.opentimestamps.org",
+    "bob.btc.calendar.opentimestamps.org",
+    "btc.calendar.catallaxy.com",
+    "finney.calendar.eternitywall.com"
+  ],
+  "anchors": [
+    {
+      "object": "docs/e422_registration.md",
+      "role": "FROZEN gate-(a) registration text of record",
+      "file_sha256": "dc7a362773fbf3a03e759aa7d178125963a14d88d9bbd61b66389a04ba8d7b3b",
+      "git_blob": "6e1b9ce128ac3a1be4678463bdc777c25b50ca8d",
+      "freeze_commit": "9dd2380b8ea73e71494358393a4fb5bb4cbbaa07",
+      "ots_path": "docs/e422_registration.md.ots",
+      "ots_file_sha256_pre_upgrade": "587d2559ba3107e4144b92d0bba67b4ddca8bb9e5757d317c8d20c6b61f2fb44",
+      "calendars_verified": 4,
+      "status": "CONFIRMED",
+      "note": "ots verify: digest pending confirmation in Bitcoin blockchain at all four calendars; upgrade with 'ots upgrade' after block inclusion (e421 ce43caa2 pattern)",
+      "upgrade": {
+        "status": "CONFIRMED (timestamp complete)",
+        "confirmed_utc_date": "2026-09-10",
+        "bitcoin_block_height": 966254,
+        "bitcoin_block_merkle_root": "87e14f37a345bf072dfc63d574f65e295f67f838254bbb898f910195bea1bf0e",
+        "bitcoin_txid": "85d3598ad188d9b2910403514dfd8f34611e95b145bf7c7fffb38bc4d0f375e2",
+        "attestation": "BitcoinBlockHeaderAttestation(966254)",
+        "ots_file_sha256_upgraded": "35f0cdc61b3cbbbf2616a6c208308c9a36dd7dcf4bffcc4bfd39027aba017dbe",
+        "preimage_sha256_reverified": "dc7a362773fbf3a03e759aa7d178125963a14d88d9bbd61b66389a04ba8d7b3b"
+      }
+    },
+    {
+      "object": "docs/e422_freeze_gate_a_20260909.md",
+      "role": "gate-(a) freeze artifact (implementation-set enumeration)",
+      "file_sha256": "6220f7bc8f199b32ea1bb484693bacba5dc69824944cfec54c850f829e05b383",
+      "commit": "a17947ab7e0bf9e39317045ae2bfb4ad3699c286",
+      "ots_path": "docs/e422_freeze_gate_a_20260909.md.ots",
+      "ots_file_sha256_pre_upgrade": "8a289eb1546128bd70143ef6800f30ff025b2dd0de6140c2b727010815b1580e",
+      "calendars_verified": 4,
+      "status": "CONFIRMED",
+      "note": "same calendars; upgradeable after block inclusion",
+      "upgrade": {
+        "status": "CONFIRMED (timestamp complete)",
+        "confirmed_utc_date": "2026-09-10",
+        "bitcoin_block_height": 966254,
+        "bitcoin_block_merkle_root": "87e14f37a345bf072dfc63d574f65e295f67f838254bbb898f910195bea1bf0e",
+        "bitcoin_txid": "85d3598ad188d9b2910403514dfd8f34611e95b145bf7c7fffb38bc4d0f375e2",
+        "attestation": "BitcoinBlockHeaderAttestation(966254)",
+        "ots_file_sha256_upgraded": "388bc60fe41bcf814ed00e8df8bc4b1eb0e4822f9f7bc606e771f64a0314315a",
+        "preimage_sha256_reverified": "6220f7bc8f199b32ea1bb484693bacba5dc69824944cfec54c850f829e05b383"
+      }
+    }
+  ],
+  "t0_bound": "2026-09-11T00:00:00Z",
+  "note": "OT .ots bytes are digest-bound pre-upgrade receipts; when Bitcoin confirmation lands, 'ots upgrade' rewrites them and a dated DECISIONS amendment records the upgraded ots_file_sha256 (e421 pattern). STAMPED_PENDING is an intermediate anchor state, not the terminal one.",
+  "confirmation_note": "AMENDED 2026-09-10: both objects CONFIRMED — one shared Bitcoin transaction (85d3598a…) attested inside BitcoinBlockHeaderAttestation(966254); 'ots upgrade' reports 'Timestamp complete' for both; preimage sha256 re-verified against the frozen bytes at amendment time. Block-timestamp verification is possible against any Bitcoin node or explorer via the block height / merkle root above (no local node on this host; the receipt itself carries the attestation)."
+}

@@ -1,0 +1,104 @@
+{
+  "checkpoint_sha256": "4148256c40a0cc46254b4b799e93a23abe9ddbc64fbcf585658ef07a5b78071e",
+  "payload": {
+    "anchor": {
+      "lineage": "e420 verdict audit 5db05825 -> e421 authorised 984fed34 -> companions this commit",
+      "mechanism": "OpenTimestamps",
+      "no_human_account": true,
+      "state": "ANCHOR_PENDING"
+    },
+    "digest_rule": "checkpoint_sha256 = SHA256(UTF8(json.dumps(payload, sort_keys=True, separators=(',',':'))))",
+    "e_number": "e421",
+    "files": [
+      {
+        "bytes": 7713,
+        "path": "data/source_contracts/pdbe_entry_files_contract_capture_20260904.json",
+        "sha256": "ddfa3e2338b2b5ed096bc5568133b985a4bdc0ff978a0b820fcd310f7c8d4783"
+      },
+      {
+        "bytes": 1774,
+        "path": "docs/e421_analysis_plan.md",
+        "sha256": "bd3b76cb07f45a29eccfe56e8bf24413c403ac1949baceb86069cf359734ddd6"
+      },
+      {
+        "bytes": 263,
+        "path": "docs/e421_anchor_receipt.json",
+        "sha256": "e018ec40ea4e88fc0603ce428cbd093e1199ee0ff2db52560b79e406fada29b4"
+      },
+      {
+        "bytes": 144,
+        "path": "docs/e421_dependency_lock.txt",
+        "sha256": "4af9ef66317c0a856dec934d210863328966655214dbc35c5325acbf91f3d9dd"
+      },
+      {
+        "bytes": 816,
+        "path": "docs/e421_fold_rules.json",
+        "sha256": "a7f5f83f1275b397895cfc5403198774fa204374e3c0cd15b880b3274b0b09dd"
+      },
+      {
+        "bytes": 1587,
+        "path": "docs/e421_label_rules.json",
+        "sha256": "e614590e82b5414b8c2763b2031ca670c444598ec3b54117600984ad4485bebd"
+      },
+      {
+        "bytes": 493,
+        "path": "docs/e421_no_source_config.json",
+        "sha256": "3e5e4b01ca5bbf58d7a80ca997dc2c2c8d7472980301cf038df31a5f2e9a4f2d"
+      },
+      {
+        "bytes": 3695,
+        "path": "docs/e421_registration.md",
+        "sha256": "da0cd030f194f880e436c4ee9c3c47d8828d29679a636277d0fa358bddac718c"
+      },
+      {
+        "bytes": 1968,
+        "path": "docs/e421_source_allowlist.json",
+        "sha256": "c4aeccd6061aff021eb04b3b7615c18cbc410c0445ad5201319d727cc481005b"
+      },
+      {
+        "bytes": 1540,
+        "path": "docs/g1_successor_anchor_verification.json",
+        "sha256": "deb2251e3051c90a7b3e297edc9448bde5b4db51f9c14bbd021315167d33d9e9"
+      },
+      {
+        "bytes": 196017,
+        "path": "results/e420/four_cell_census.json",
+        "sha256": "c85a6eaa1908eb2cd23ec82d648fbcb27c9f7856a519f0b9e494b397245254bb"
+      },
+      {
+        "bytes": 1022,
+        "path": "results/e420/label_ledger.json",
+        "sha256": "3e15e3e2dcf655310df35210e0a8c13c3129a53713599c598fabadf40b978989"
+      },
+      {
+        "bytes": 35846319,
+        "path": "results/e420/pool_freeze.json",
+        "sha256": "7c06cb58e197922ea75ddb01ab29f530f2d58dd165079eb8ece819230266958d"
+      },
+      {
+        "bytes": 10906,
+        "path": "results/e420/probes_receipt_round5_20260904.json",
+        "sha256": "14ee6446149555e82d8ccb8ea41e5232b93ca1bb744ca4023de10415b4b57baa"
+      },
+      {
+        "bytes": 4660111,
+        "path": "results/e420/source_availability_manifest.json",
+        "sha256": "8de716b8bd587cab2e8e65416e7b45a94a39311c085b5da0259d97260fe2b144"
+      },
+      {
+        "bytes": 5100032,
+        "path": "results/e421/census_results.json",
+        "sha256": "df5a6833734c8173dfc6c5cc9c452ecfc107701acfde66a189714b7dfaa182f1"
+      }
+    ],
+    "repository_commit": "fb21798d5201c88e2a309131bd3ce2a23f497c97",
+    "schema": "e421-pre-source-checkpoint-v1",
+    "source_free_flags": {
+      "e412_started": false,
+      "embeddings_read": false,
+      "labels_written": false,
+      "models_run": 0
+    },
+    "source_opened": "NONE"
+  }
+}

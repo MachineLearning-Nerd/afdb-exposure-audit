@@ -1,0 +1,1749 @@
+{
+ "entries_checked": 288,
+ "fetch_failures": [],
+ "no_date": [],
+ "no_date_rows": 0,
+ "overflow_accessions": 269,
+ "requests": 288,
+ "schema": "e420-overflow-temporal-check-v1",
+ "temporal_fail": [
+  {
+   "accession": "P07378",
+   "entry": "16pk",
+   "model_created": "2025-08-01",
+   "release": "1998-11-25"
+  },
+  {
+   "accession": "P80302",
+   "entry": "1bx7",
+   "model_created": "2025-08-01",
+   "release": "1999-04-27"
+  },
+  {
+   "accession": "P0AA04",
+   "entry": "1cm3",
+   "model_created": "2025-08-01",
+   "release": "2000-05-17"
+  },
+  {
+   "accession": "P00147",
+   "entry": "1cpq",
+   "model_created": "2025-08-01",
+   "release": "1996-12-07"
+  },
+  {
+   "accession": "Q9S1A6",
+   "entry": "1d2t",
+   "model_created": "2022-06-01",
+   "release": "2000-12-06"
+  },
+  {
+   "accession": "Q57815",
+   "entry": "1d3y",
+   "model_created": "2025-08-01",
+   "release": "1999-11-05"
+  },
+  {
+   "accession": "P29367",
+   "entry": "1dvo",
+   "model_created": "2025-08-01",
+   "release": "2000-07-19"
+  },
+  {
+   "accession": "P32455",
+   "entry": "1f5n",
+   "model_created": "2025-08-01",
+   "release": "2000-09-27"
+  },
+  {
+   "accession": "P43185",
+   "entry": "1fm4",
+   "model_created": "2025-08-01",
+   "release": "2002-12-20"
+  },
+  {
+   "accession": "A0A0H2UNW2",
+   "entry": "1g2r",
+   "model_created": "2022-06-01",
+   "release": "2001-08-29"
+  },
+  {
+   "accession": "P14385",
+   "entry": "1g38",
+   "model_created": "2025-08-01",
+   "release": "2001-03-05"
+  },
+  {
+   "accession": "P37698",
+   "entry": "1g9g",
+   "model_created": "2025-08-01",
+   "release": "2003-06-24"
+  },
+  {
+   "accession": "P29422",
+   "entry": "1gwe",
+   "model_created": "2025-08-01",
+   "release": "2002-04-26"
+  },
+  {
+   "accession": "Q9ALU0",
+   "entry": "1h2e",
+   "model_created": "2022-06-01",
+   "release": "2002-08-12"
+  },
+  {
+   "accession": "P01092",
+   "entry": "1hoe",
+   "model_created": "2025-08-01",
+   "release": "1989-04-19"
+  },
+  {
+   "accession": "Q60176",
+   "entry": "1hye",
+   "model_created": "2025-08-01",
+   "release": "2001-04-18"
+  },
+  {
+   "accession": "P23827",
+   "entry": "1ifg",
+   "model_created": "2025-08-01",
+   "release": "2001-05-18"
+  },
+  {
+   "accession": "P27000",
+   "entry": "1j09",
+   "model_created": "2025-08-01",
+   "release": "2003-02-25"
+  },
+  {
+   "accession": "P00132",
+   "entry": "1j0p",
+   "model_created": "2025-08-01",
+   "release": "2003-11-19"
+  },
+  {
+   "accession": "Q9RGD9",
+   "entry": "1j77",
+   "model_created": "2022-06-01",
+   "release": "2001-05-30"
+  },
+  {
+   "accession": "P47123",
+   "entry": "1jhs",
+   "model_created": "2025-08-01",
+   "release": "2003-06-03"
+  },
+  {
+   "accession": "P01889",
+   "entry": "1k5n",
+   "model_created": "2025-08-01",
+   "release": "2002-10-30"
+  },
+  {
+   "accession": "P0AFR4",
+   "entry": "1k7j",
+   "model_created": "2025-08-01",
+   "release": "2002-08-14"
+  },
+  {
+   "accession": "P32179",
+   "entry": "1ka1",
+   "model_created": "2025-08-01",
+   "release": "2001-11-07"
+  },
+  {
+   "accession": "P56220",
+   "entry": "1kgq",
+   "model_created": "2025-08-01",
+   "release": "2002-04-03"
+  },
+  {
+   "accession": "Q50940",
+   "entry": "1kop",
+   "model_created": "2025-08-01",
+   "release": "1998-12-09"
+  },
+  {
+   "accession": "Q05603",
+   "entry": "1l5o",
+   "model_created": "2025-08-01",
+   "release": "2002-09-07"
+  },
+  {
+   "accession": "Q40772",
+   "entry": "1lln",
+   "model_created": "2025-08-01",
+   "release": "2003-06-17"
+  },
+  {
+   "accession": "P15570",
+   "entry": "1lri",
+   "model_created": "2025-08-01",
+   "release": "2002-05-29"
+  },
+  {
+   "accession": "P33198",
+   "entry": "1lwd",
+   "model_created": "2025-08-01",
+   "release": "2002-11-13"
+  },
+  {
+   "accession": "O34453",
+   "entry": "1m7v",
+   "model_created": "2025-08-01",
+   "release": "2002-10-30"
+  },
+  {
+   "accession": "Q9QYY1",
+   "entry": "1md6",
+   "model_created": "2025-08-01",
+   "release": "2003-09-30"
+  },
+  {
+   "accession": "Q8U4G1",
+   "entry": "1mjf",
+   "model_created": "2025-08-01",
+   "release": "2002-09-18"
+  },
+  {
+   "accession": "P11759",
+   "entry": "1mv8",
+   "model_created": "2025-08-01",
+   "release": "2003-05-06"
+  },
+  {
+   "accession": "Q57764",
+   "entry": "1n2m",
+   "model_created": "2025-08-01",
+   "release": "2003-03-25"
+  },
+  {
+   "accession": "P23827",
+   "entry": "1n8o",
+   "model_created": "2025-08-01",
+   "release": "2002-12-18"
+  },
+  {
+   "accession": "P0DPB9",
+   "entry": "1nf8",
+   "model_created": "2025-08-01",
+   "release": "2003-06-17"
+  },
+  {
+   "accession": "P24203",
+   "entry": "1nij",
+   "model_created": "2025-08-01",
+   "release": "2003-06-24"
+  },
+  {
+   "accession": "Q8TZN6",
+   "entry": "1nnh",
+   "model_created": "2022-06-01",
+   "release": "2004-02-03"
+  },
+  {
+   "accession": "P00805",
+   "entry": "1nns",
+   "model_created": "2025-08-01",
+   "release": "2003-03-11"
+  },
+  {
+   "accession": "Q9X519",
+   "entry": "1o98",
+   "model_created": "2025-08-01",
+   "release": "2003-05-01"
+  },
+  {
+   "accession": "P27988",
+   "entry": "1oao",
+   "model_created": "2025-08-01",
+   "release": "2003-04-11"
+  },
+  {
+   "accession": "P01092",
+   "entry": "1ok0",
+   "model_created": "2025-08-01",
+   "release": "2004-01-15"
+  },
+  {
+   "accession": "Q8VUS8",
+   "entry": "1pby",
+   "model_created": "2025-08-01",
+   "release": "2003-09-02"
+  },
+  {
+   "accession": "P96719",
+   "entry": "1pv5",
+   "model_created": "2025-08-01",
+   "release": "2004-01-20"
+  },
+  {
+   "accession": "Q27679",
+   "entry": "1qb7",
+   "model_created": "2022-06-01",
+   "release": "1999-07-21"
+  },
+  {
+   "accession": "P05451",
+   "entry": "1qdd",
+   "model_created": "2025-08-01",
+   "release": "1999-05-28"
+  },
+  {
+   "accession": "P13717",
+   "entry": "1ql0",
+   "model_created": "2025-08-01",
+   "release": "2000-05-07"
+  },
+  {
+   "accession": "Q9HIX0",
+   "entry": "1qw2",
+   "model_created": "2022-06-01",
+   "release": "2004-03-09"
+  },
+  {
+   "accession": "P0A2Y6",
+   "entry": "1qxo",
+   "model_created": "2025-08-01",
+   "release": "2003-12-23"
+  },
+  {
+   "accession": "Q9X5F2",
+   "entry": "1r0k",
+   "model_created": "2025-08-01",
+   "release": "2004-07-13"
+  },
+  {
+   "accession": "P29208",
+   "entry": "1r6w",
+   "model_created": "2025-08-01",
+   "release": "2003-11-25"
+  },
+  {
+   "accession": "Q9HLW6",
+   "entry": "1rlk",
+   "model_created": "2025-08-01",
+   "release": "2003-12-30"
+  },
+  {
+   "accession": "P0A9S1",
+   "entry": "1rrm",
+   "model_created": "2025-08-01",
+   "release": "2004-08-17"
+  },
+  {
+   "accession": "P74325",
+   "entry": "1s2o",
+   "model_created": "2022-06-01",
+   "release": "2005-02-22"
+  },
+  {
+   "accession": "P43886",
+   "entry": "1ssq",
+   "model_created": "2025-08-01",
+   "release": "2004-06-01"
+  },
+  {
+   "accession": "P04695",
+   "entry": "1tag",
+   "model_created": "2025-08-01",
+   "release": "1995-02-07"
+  },
+  {
+   "accession": "P42371",
+   "entry": "1tdz",
+   "model_created": "2025-08-01",
+   "release": "2004-09-07"
+  },
+  {
+   "accession": "P05327",
+   "entry": "1tez",
+   "model_created": "2025-08-01",
+   "release": "2004-12-14"
+  },
+  {
+   "accession": "P04072",
+   "entry": "1thm",
+   "model_created": "2025-08-01",
+   "release": "1994-01-31"
+  },
+  {
+   "accession": "O75368",
+   "entry": "1u6t",
+   "model_created": "2025-08-01",
+   "release": "2005-08-09"
+  },
+  {
+   "accession": "Q5KVS1",
+   "entry": "1u84",
+   "model_created": "2022-06-01",
+   "release": "2004-10-05"
+  },
+  {
+   "accession": "P55792",
+   "entry": "1u8v",
+   "model_created": "2025-08-01",
+   "release": "2004-12-21"
+  },
+  {
+   "accession": "O58558",
+   "entry": "1v30",
+   "model_created": "2025-08-01",
+   "release": "2004-11-09"
+  },
+  {
+   "accession": "Q868M7",
+   "entry": "1vcl",
+   "model_created": "2025-08-01",
+   "release": "2004-09-07"
+  },
+  {
+   "accession": "P84127",
+   "entry": "1vdk",
+   "model_created": "2022-06-01",
+   "release": "2004-04-13"
+  },
+  {
+   "accession": "Q96YV5",
+   "entry": "1ve0",
+   "model_created": "2022-06-01",
+   "release": "2005-03-22"
+  },
+  {
+   "accession": "P37565",
+   "entry": "1vzy",
+   "model_created": "2025-08-01",
+   "release": "2004-10-06"
+  },
+  {
+   "accession": "P68265",
+   "entry": "1wbe",
+   "model_created": "2025-08-01",
+   "release": "2005-11-30"
+  },
+  {
+   "accession": "Q5SH17",
+   "entry": "1whz",
+   "model_created": "2022-06-01",
+   "release": "2004-11-28"
+  },
+  {
+   "accession": "P67863",
+   "entry": "1wq8",
+   "model_created": "2025-08-01",
+   "release": "2004-12-07"
+  },
+  {
+   "accession": "P21852",
+   "entry": "1wui",
+   "model_created": "2025-08-01",
+   "release": "2005-12-07"
+  },
+  {
+   "accession": "P64559",
+   "entry": "1x6i",
+   "model_created": "2025-08-01",
+   "release": "2005-02-08"
+  },
+  {
+   "accession": "P64559",
+   "entry": "1x6j",
+   "model_created": "2025-08-01",
+   "release": "2005-02-08"
+  },
+  {
+   "accession": "Q8RT31",
+   "entry": "1xsz",
+   "model_created": "2022-06-01",
+   "release": "2004-11-02"
+  },
+  {
+   "accession": "Q9I2R0",
+   "entry": "1yoc",
+   "model_created": "2025-08-01",
+   "release": "2005-03-08"
+  },
+  {
+   "accession": "P41409",
+   "entry": "1yoe",
+   "model_created": "2025-08-01",
+   "release": "2006-01-17"
+  },
+  {
+   "accession": "A0A0H3LKE5",
+   "entry": "1zn6",
+   "model_created": "2022-06-01",
+   "release": "2005-05-17"
+  },
+  {
+   "accession": "P07824",
+   "entry": "1zpe",
+   "model_created": "2025-08-01",
+   "release": "2005-12-06"
+  },
+  {
+   "accession": "Q81H03",
+   "entry": "1zsw",
+   "model_created": "2022-06-01",
+   "release": "2005-06-07"
+  },
+  {
+   "accession": "P69348",
+   "entry": "2a6s",
+   "model_created": "2025-08-01",
+   "release": "2005-08-23"
+  },
+  {
+   "accession": "P38539",
+   "entry": "2ad6",
+   "model_created": "2025-08-01",
+   "release": "2006-07-25"
+  },
+  {
+   "accession": "P38540",
+   "entry": "2ad6",
+   "model_created": "2025-08-01",
+   "release": "2006-07-25"
+  },
+  {
+   "accession": "P50694",
+   "entry": "2ahn",
+   "model_created": "2025-08-01",
+   "release": "2006-10-10"
+  },
+  {
+   "accession": "Q9HW16",
+   "entry": "2arz",
+   "model_created": "2025-08-01",
+   "release": "2005-10-04"
+  },
+  {
+   "accession": "P50216",
+   "entry": "2b0t",
+   "model_created": "2025-08-01",
+   "release": "2006-01-31"
+  },
+  {
+   "accession": "A9CIG4",
+   "entry": "2b1y",
+   "model_created": "2022-06-01",
+   "release": "2005-11-01"
+  },
+  {
+   "accession": "P21399",
+   "entry": "2b3y",
+   "model_created": "2025-08-01",
+   "release": "2006-01-10"
+  },
+  {
+   "accession": "P54965",
+   "entry": "2bjf",
+   "model_created": "2025-08-01",
+   "release": "2005-03-03"
+  },
+  {
+   "accession": "Q9VF15",
+   "entry": "2bk9",
+   "model_created": "2025-08-01",
+   "release": "2005-05-20"
+  },
+  {
+   "accession": "Q8RTL3",
+   "entry": "2bmo",
+   "model_created": "2022-06-01",
+   "release": "2005-05-04"
+  },
+  {
+   "accession": "A1JK11",
+   "entry": "2bti",
+   "model_created": "2025-08-01",
+   "release": "2006-01-04"
+  },
+  {
+   "accession": "Q9GPI6",
+   "entry": "2c9i",
+   "model_created": "2022-06-01",
+   "release": "2007-01-16"
+  },
+  {
+   "accession": "Q13867",
+   "entry": "2cb5",
+   "model_created": "2025-08-01",
+   "release": "2000-03-06"
+  },
+  {
+   "accession": "B0R5M0",
+   "entry": "2cc6",
+   "model_created": "2025-08-01",
+   "release": "2006-02-15"
+  },
+  {
+   "accession": "P56709",
+   "entry": "2cfm",
+   "model_created": "2025-08-01",
+   "release": "2006-07-12"
+  },
+  {
+   "accession": "Q5SM75",
+   "entry": "2cwy",
+   "model_created": "2022-06-01",
+   "release": "2005-12-27"
+  },
+  {
+   "accession": "Q9P4V2",
+   "entry": "2dka",
+   "model_created": "2025-08-01",
+   "release": "2006-05-16"
+  },
+  {
+   "accession": "O58532",
+   "entry": "2dt4",
+   "model_created": "2022-06-01",
+   "release": "2007-05-22"
+  },
+  {
+   "accession": "P0DJL7",
+   "entry": "2dtr",
+   "model_created": "2025-08-01",
+   "release": "1997-08-20"
+  },
+  {
+   "accession": "P07678",
+   "entry": "2e5y",
+   "model_created": "2025-08-01",
+   "release": "2007-07-10"
+  },
+  {
+   "accession": "Q5SIT3",
+   "entry": "2e6x",
+   "model_created": "2022-06-01",
+   "release": "2007-12-18"
+  },
+  {
+   "accession": "O67503",
+   "entry": "2e8e",
+   "model_created": "2022-06-01",
+   "release": "2008-01-22"
+  },
+  {
+   "accession": "Q812L9",
+   "entry": "2fb5",
+   "model_created": "2022-06-01",
+   "release": "2006-01-24"
+  },
+  {
+   "accession": "Q8RIU4",
+   "entry": "2fi9",
+   "model_created": "2022-06-01",
+   "release": "2006-02-14"
+  },
+  {
+   "accession": "P12940",
+   "entry": "2fj8",
+   "model_created": "2025-08-01",
+   "release": "2006-01-17"
+  },
+  {
+   "accession": "P22619",
+   "entry": "2gc4",
+   "model_created": "2025-08-01",
+   "release": "2006-11-28"
+  },
+  {
+   "accession": "P44859",
+   "entry": "2gke",
+   "model_created": "2025-08-01",
+   "release": "2006-05-16"
+  },
+  {
+   "accession": "B8FYU2",
+   "entry": "2glz",
+   "model_created": "2022-06-01",
+   "release": "2006-04-18"
+  },
+  {
+   "accession": "Q7MVW1",
+   "entry": "2gwn",
+   "model_created": "2022-06-01",
+   "release": "2006-06-06"
+  },
+  {
+   "accession": "P32989",
+   "entry": "2h7g",
+   "model_created": "2025-07-03",
+   "release": "2006-08-15"
+  },
+  {
+   "accession": "O59278",
+   "entry": "2hq4",
+   "model_created": "2022-06-01",
+   "release": "2006-09-19"
+  },
+  {
+   "accession": "Q8II73",
+   "entry": "2i7c",
+   "model_created": "2025-08-01",
+   "release": "2006-09-12"
+  },
+  {
+   "accession": "P14668",
+   "entry": "2ie6",
+   "model_created": "2025-08-01",
+   "release": "2007-02-06"
+  },
+  {
+   "accession": "Q9KGN3",
+   "entry": "2ii1",
+   "model_created": "2022-06-01",
+   "release": "2006-12-05"
+  },
+  {
+   "accession": "Q51948",
+   "entry": "2imf",
+   "model_created": "2025-08-01",
+   "release": "2007-06-12"
+  },
+  {
+   "accession": "O87798",
+   "entry": "2inc",
+   "model_created": "2022-06-01",
+   "release": "2006-11-28"
+  },
+  {
+   "accession": "Q9RS86",
+   "entry": "2jh3",
+   "model_created": "2022-06-01",
+   "release": "2007-06-19"
+  },
+  {
+   "accession": "O28417",
+   "entry": "2oeb",
+   "model_created": "2025-08-01",
+   "release": "2007-01-30"
+  },
+  {
+   "accession": "Q87LT3",
+   "entry": "2oez",
+   "model_created": "2025-08-01",
+   "release": "2007-01-30"
+  },
+  {
+   "accession": "Q0S4E1",
+   "entry": "2ov9",
+   "model_created": "2022-06-01",
+   "release": "2007-03-13"
+  },
+  {
+   "accession": "Q9YBS9",
+   "entry": "2p6h",
+   "model_created": "2022-06-01",
+   "release": "2007-09-18"
+  },
+  {
+   "accession": "Q60173",
+   "entry": "2pa6",
+   "model_created": "2025-08-01",
+   "release": "2007-10-02"
+  },
+  {
+   "accession": "O28028",
+   "entry": "2phn",
+   "model_created": "2025-08-01",
+   "release": "2007-05-15"
+  },
+  {
+   "accession": "O34596",
+   "entry": "2prv",
+   "model_created": "2025-08-01",
+   "release": "2007-05-22"
+  },
+  {
+   "accession": "Q9I169",
+   "entry": "2pst",
+   "model_created": "2025-08-01",
+   "release": "2007-05-22"
+  },
+  {
+   "accession": "A1S8W8",
+   "entry": "2pv4",
+   "model_created": "2022-06-01",
+   "release": "2007-05-22"
+  },
+  {
+   "accession": "Q87IM6",
+   "entry": "2qhq",
+   "model_created": "2022-06-01",
+   "release": "2007-07-17"
+  },
+  {
+   "accession": "Q5SHJ4",
+   "entry": "2qq4",
+   "model_created": "2022-06-01",
+   "release": "2008-07-29"
+  },
+  {
+   "accession": "Q9VS97",
+   "entry": "2rkq",
+   "model_created": "2025-08-01",
+   "release": "2008-03-25"
+  },
+  {
+   "accession": "P66881",
+   "entry": "2v4n",
+   "model_created": "2025-08-01",
+   "release": "2008-12-09"
+  },
+  {
+   "accession": "P42530",
+   "entry": "2vmc",
+   "model_created": "2025-08-01",
+   "release": "2008-07-01"
+  },
+  {
+   "accession": "Q9TZ51",
+   "entry": "2w9y",
+   "model_created": "2025-08-01",
+   "release": "2009-10-20"
+  },
+  {
+   "accession": "Q5WWY0",
+   "entry": "2wzg",
+   "model_created": "2022-06-01",
+   "release": "2009-12-08"
+  },
+  {
+   "accession": "D9N167",
+   "entry": "2xf2",
+   "model_created": "2022-06-01",
+   "release": "2010-06-16"
+  },
+  {
+   "accession": "Q8GHB2",
+   "entry": "2xm5",
+   "model_created": "2025-08-01",
+   "release": "2010-10-27"
+  },
+  {
+   "accession": "P05820",
+   "entry": "2xmx",
+   "model_created": "2025-08-01",
+   "release": "2010-12-29"
+  },
+  {
+   "accession": "Q9I380",
+   "entry": "2xu8",
+   "model_created": "2025-08-01",
+   "release": "2010-12-29"
+  },
+  {
+   "accession": "D9TQ02",
+   "entry": "2yjg",
+   "model_created": "2025-08-01",
+   "release": "2012-05-30"
+  },
+  {
+   "accession": "Q5SHN1",
+   "entry": "2z0x",
+   "model_created": "2022-06-01",
+   "release": "2007-11-13"
+  },
+  {
+   "accession": "O58456",
+   "entry": "2z6r",
+   "model_created": "2025-08-01",
+   "release": "2007-08-28"
+  },
+  {
+   "accession": "P80176",
+   "entry": "3a39",
+   "model_created": "2025-08-01",
+   "release": "2009-10-27"
+  },
+  {
+   "accession": "O60844",
+   "entry": "3apa",
+   "model_created": "2025-08-01",
+   "release": "2010-12-08"
+  },
+  {
+   "accession": "O80842",
+   "entry": "3b9q",
+   "model_created": "2025-08-01",
+   "release": "2007-12-25"
+  },
+  {
+   "accession": "Q9HY91",
+   "entry": "3bjd",
+   "model_created": "2025-08-01",
+   "release": "2007-12-11"
+  },
+  {
+   "accession": "Q87Q63",
+   "entry": "3bk5",
+   "model_created": "2022-06-01",
+   "release": "2008-02-05"
+  },
+  {
+   "accession": "O66523",
+   "entry": "3bn0",
+   "model_created": "2025-08-01",
+   "release": "2008-05-27"
+  },
+  {
+   "accession": "A0ABF7PHA1",
+   "entry": "3bq9",
+   "model_created": "2025-08-01",
+   "release": "2008-01-01"
+  },
+  {
+   "accession": "O28758",
+   "entry": "3c0f",
+   "model_created": "2025-08-01",
+   "release": "2008-02-05"
+  },
+  {
+   "accession": "Q4JC68",
+   "entry": "3crv",
+   "model_created": "2025-08-01",
+   "release": "2008-06-10"
+  },
+  {
+   "accession": "Q82ZB5",
+   "entry": "3d3y",
+   "model_created": "2022-06-01",
+   "release": "2008-07-15"
+  },
+  {
+   "accession": "A9CI98",
+   "entry": "3dnh",
+   "model_created": "2022-06-01",
+   "release": "2008-09-02"
+  },
+  {
+   "accession": "A5W4F0",
+   "entry": "3dqy",
+   "model_created": "2025-08-01",
+   "release": "2009-03-10"
+  },
+  {
+   "accession": "Q93P54",
+   "entry": "3e2d",
+   "model_created": "2022-06-01",
+   "release": "2009-06-16"
+  },
+  {
+   "accession": "Q73WB6",
+   "entry": "3e4w",
+   "model_created": "2025-08-01",
+   "release": "2009-08-18"
+  },
+  {
+   "accession": "Q2YAE2",
+   "entry": "3enu",
+   "model_created": "2022-06-01",
+   "release": "2009-03-31"
+  },
+  {
+   "accession": "Q8E9K5",
+   "entry": "3eqx",
+   "model_created": "2025-08-01",
+   "release": "2008-10-14"
+  },
+  {
+   "accession": "Q9X0H0",
+   "entry": "3f43",
+   "model_created": "2025-08-01",
+   "release": "2008-11-25"
+  },
+  {
+   "accession": "Q6P589",
+   "entry": "3f4m",
+   "model_created": "2025-08-01",
+   "release": "2009-03-17"
+  },
+  {
+   "accession": "A1TZ69",
+   "entry": "3f7c",
+   "model_created": "2022-06-01",
+   "release": "2008-11-25"
+  },
+  {
+   "accession": "Q8A8Z5",
+   "entry": "3g6i",
+   "model_created": "2022-06-01",
+   "release": "2009-02-17"
+  },
+  {
+   "accession": "P0DJL7",
+   "entry": "3glx",
+   "model_created": "2025-08-01",
+   "release": "2009-06-09"
+  },
+  {
+   "accession": "Q8EAI7",
+   "entry": "3h2d",
+   "model_created": "2022-06-01",
+   "release": "2009-04-28"
+  },
+  {
+   "accession": "Q5HE64",
+   "entry": "3h5q",
+   "model_created": "2025-08-01",
+   "release": "2009-05-26"
+  },
+  {
+   "accession": "A2I2W2",
+   "entry": "3h8t",
+   "model_created": "2022-06-01",
+   "release": "2009-05-12"
+  },
+  {
+   "accession": "Q46QL5",
+   "entry": "3hwu",
+   "model_created": "2022-06-01",
+   "release": "2009-06-30"
+  },
+  {
+   "accession": "Q5WWY0",
+   "entry": "3jsz",
+   "model_created": "2022-06-01",
+   "release": "2010-02-02"
+  },
+  {
+   "accession": "Q584R4",
+   "entry": "3jv1",
+   "model_created": "2021-11-03",
+   "release": "2010-04-14"
+  },
+  {
+   "accession": "P21189",
+   "entry": "3k59",
+   "model_created": "2025-08-01",
+   "release": "2010-02-09"
+  },
+  {
+   "accession": "F9UPE7",
+   "entry": "3kwr",
+   "model_created": "2022-06-01",
+   "release": "2009-12-22"
+  },
+  {
+   "accession": "Q186Y7",
+   "entry": "3ldu",
+   "model_created": "2022-06-01",
+   "release": "2010-01-26"
+  },
+  {
+   "accession": "Q8E186",
+   "entry": "3lk7",
+   "model_created": "2025-08-01",
+   "release": "2010-02-09"
+  },
+  {
+   "accession": "P00437",
+   "entry": "3lkt",
+   "model_created": "2025-08-01",
+   "release": "2011-02-23"
+  },
+  {
+   "accession": "A0A0H3K0Y5",
+   "entry": "3lur",
+   "model_created": "2022-06-01",
+   "release": "2010-03-09"
+  },
+  {
+   "accession": "P35150",
+   "entry": "3mfd",
+   "model_created": "2025-08-01",
+   "release": "2010-05-19"
+  },
+  {
+   "accession": "Q6WNK7",
+   "entry": "3mhs",
+   "model_created": "2025-08-01",
+   "release": "2010-04-21"
+  },
+  {
+   "accession": "O04350",
+   "entry": "3mxz",
+   "model_created": "2025-08-01",
+   "release": "2010-09-01"
+  },
+  {
+   "accession": "P83952",
+   "entry": "3ngg",
+   "model_created": "2025-08-01",
+   "release": "2010-09-08"
+  },
+  {
+   "accession": "Q941M3",
+   "entry": "3ni2",
+   "model_created": "2022-06-01",
+   "release": "2010-09-08"
+  },
+  {
+   "accession": "A7B4J8",
+   "entry": "3nyy",
+   "model_created": "2022-06-01",
+   "release": "2010-09-15"
+  },
+  {
+   "accession": "C0STD7",
+   "entry": "3obl",
+   "model_created": "2022-06-01",
+   "release": "2010-10-20"
+  },
+  {
+   "accession": "Q87K18",
+   "entry": "3ono",
+   "model_created": "2022-06-01",
+   "release": "2010-09-08"
+  },
+  {
+   "accession": "Q70KH6",
+   "entry": "3p3o",
+   "model_created": "2025-08-01",
+   "release": "2011-02-16"
+  },
+  {
+   "accession": "Q04371",
+   "entry": "3pt1",
+   "model_created": "2025-08-01",
+   "release": "2010-12-15"
+  },
+  {
+   "accession": "C7MVX3",
+   "entry": "3rmq",
+   "model_created": "2022-06-01",
+   "release": "2011-05-11"
+  },
+  {
+   "accession": "D1C210",
+   "entry": "3rxy",
+   "model_created": "2022-06-01",
+   "release": "2011-06-22"
+  },
+  {
+   "accession": "E6Z0R4",
+   "entry": "3shg",
+   "model_created": "2025-08-01",
+   "release": "2012-01-25"
+  },
+  {
+   "accession": "P56220",
+   "entry": "3tdt",
+   "model_created": "2025-08-01",
+   "release": "1998-10-14"
+  },
+  {
+   "accession": "B6YTZ3",
+   "entry": "3ueb",
+   "model_created": "2022-06-01",
+   "release": "2012-10-10"
+  },
+  {
+   "accession": "Q9K0P4",
+   "entry": "3vjz",
+   "model_created": "2025-08-01",
+   "release": "2012-03-14"
+  },
+  {
+   "accession": "P18568",
+   "entry": "3wa1",
+   "model_created": "2025-08-01",
+   "release": "2014-07-02"
+  },
+  {
+   "accession": "E8MGH8",
+   "entry": "3wkx",
+   "model_created": "2025-08-01",
+   "release": "2014-04-30"
+  },
+  {
+   "accession": "Q9K0P4",
+   "entry": "3wur",
+   "model_created": "2025-08-01",
+   "release": "2014-10-15"
+  },
+  {
+   "accession": "Q53FT3",
+   "entry": "3wvz",
+   "model_created": "2025-08-01",
+   "release": "2015-03-25"
+  },
+  {
+   "accession": "E6Z0R4",
+   "entry": "3zcb",
+   "model_created": "2025-08-01",
+   "release": "2013-06-19"
+  },
+  {
+   "accession": "B0R748",
+   "entry": "4af1",
+   "model_created": "2025-08-01",
+   "release": "2013-03-20"
+  },
+  {
+   "accession": "A0A0H2UKY3",
+   "entry": "4d71",
+   "model_created": "2022-06-01",
+   "release": "2015-01-21"
+  },
+  {
+   "accession": "Q8VZW3",
+   "entry": "4dok",
+   "model_created": "2025-08-01",
+   "release": "2012-05-09"
+  },
+  {
+   "accession": "O85353",
+   "entry": "4ea9",
+   "model_created": "2022-06-01",
+   "release": "2012-04-04"
+  },
+  {
+   "accession": "A0A0H3JX79",
+   "entry": "4ebg",
+   "model_created": "2022-06-01",
+   "release": "2012-05-23"
+  },
+  {
+   "accession": "O67572",
+   "entry": "4ehx",
+   "model_created": "2025-08-01",
+   "release": "2012-08-29"
+  },
+  {
+   "accession": "Q9HZ11",
+   "entry": "4f98",
+   "model_created": "2025-08-01",
+   "release": "2012-07-18"
+  },
+  {
+   "accession": "Q9BUL8",
+   "entry": "4geh",
+   "model_created": "2025-08-01",
+   "release": "2013-04-17"
+  },
+  {
+   "accession": "Q9A9C4",
+   "entry": "4goq",
+   "model_created": "2022-06-01",
+   "release": "2012-09-19"
+  },
+  {
+   "accession": "A0A380YTY6",
+   "entry": "4k05",
+   "model_created": "2022-06-01",
+   "release": "2013-04-17"
+  },
+  {
+   "accession": "P30615",
+   "entry": "4kct",
+   "model_created": "2025-08-01",
+   "release": "2014-01-08"
+  },
+  {
+   "accession": "P10363",
+   "entry": "4lim",
+   "model_created": "2025-08-01",
+   "release": "2013-12-18"
+  },
+  {
+   "accession": "P54050",
+   "entry": "4lq4",
+   "model_created": "2025-08-01",
+   "release": "2014-07-02"
+  },
+  {
+   "accession": "A0A0H3K9Y6",
+   "entry": "4mp8",
+   "model_created": "2022-06-01",
+   "release": "2014-03-05"
+  },
+  {
+   "accession": "P16422",
+   "entry": "4mzv",
+   "model_created": "2025-08-01",
+   "release": "2014-08-27"
+  },
+  {
+   "accession": "O05443",
+   "entry": "4o6g",
+   "model_created": "2025-08-01",
+   "release": "2014-03-05"
+  },
+  {
+   "accession": "O69756",
+   "entry": "4o6q",
+   "model_created": "2022-06-01",
+   "release": "2014-03-26"
+  },
+  {
+   "accession": "A0A2I5TIL4",
+   "entry": "4o7j",
+   "model_created": "2022-06-01",
+   "release": "2014-03-12"
+  },
+  {
+   "accession": "G2EA45",
+   "entry": "4oa3",
+   "model_created": "2022-06-01",
+   "release": "2014-08-20"
+  },
+  {
+   "accession": "A4IK89",
+   "entry": "4ok9",
+   "model_created": "2025-08-01",
+   "release": "2014-03-19"
+  },
+  {
+   "accession": "D9PYF6",
+   "entry": "4omf",
+   "model_created": "2022-06-01",
+   "release": "2014-06-11"
+  },
+  {
+   "accession": "Q9X1X7",
+   "entry": "4p3x",
+   "model_created": "2025-08-01",
+   "release": "2014-04-02"
+  },
+  {
+   "accession": "C1IC19",
+   "entry": "4p5a",
+   "model_created": "2022-06-01",
+   "release": "2015-12-09"
+  },
+  {
+   "accession": "Q989T9",
+   "entry": "4p7x",
+   "model_created": "2025-08-01",
+   "release": "2014-09-17"
+  },
+  {
+   "accession": "A0A6B5A496",
+   "entry": "4q0y",
+   "model_created": "2022-06-01",
+   "release": "2014-06-18"
+  },
+  {
+   "accession": "O05443",
+   "entry": "4qlp",
+   "model_created": "2025-08-01",
+   "release": "2015-07-22"
+  },
+  {
+   "accession": "A0A2U2H2V6",
+   "entry": "4rgi",
+   "model_created": "2022-06-01",
+   "release": "2014-12-31"
+  },
+  {
+   "accession": "P0CB20",
+   "entry": "4u5h",
+   "model_created": "2025-08-01",
+   "release": "2014-08-13"
+  },
+  {
+   "accession": "P74102",
+   "entry": "4xb5",
+   "model_created": "2025-08-01",
+   "release": "2015-07-15"
+  },
+  {
+   "accession": "P16688",
+   "entry": "4xb6",
+   "model_created": "2025-08-01",
+   "release": "2015-08-19"
+  },
+  {
+   "accession": "Q9X1R4",
+   "entry": "4ys0",
+   "model_created": "2025-08-01",
+   "release": "2015-06-03"
+  },
+  {
+   "accession": "Q6TKR9",
+   "entry": "4z8q",
+   "model_created": "2022-06-01",
+   "release": "2015-09-23"
+  },
+  {
+   "accession": "Q6TKR9",
+   "entry": "4z8t",
+   "model_created": "2022-06-01",
+   "release": "2015-09-23"
+  },
+  {
+   "accession": "Q03034",
+   "entry": "4zac",
+   "model_created": "2025-08-01",
+   "release": "2015-06-17"
+  },
+  {
+   "accession": "A0A0T9M5V0",
+   "entry": "4zqv",
+   "model_created": "2022-06-01",
+   "release": "2015-10-28"
+  },
+  {
+   "accession": "Q1R1X2",
+   "entry": "5cof",
+   "model_created": "2022-06-01",
+   "release": "2016-02-03"
+  },
+  {
+   "accession": "A1L1Q4",
+   "entry": "5fub",
+   "model_created": "2022-06-01",
+   "release": "2016-11-09"
+  },
+  {
+   "accession": "O34453",
+   "entry": "5g68",
+   "model_created": "2025-08-01",
+   "release": "2016-09-21"
+  },
+  {
+   "accession": "A0A2I4HXH5",
+   "entry": "5h7w",
+   "model_created": "2025-08-01",
+   "release": "2017-11-22"
+  },
+  {
+   "accession": "Q5JHM2",
+   "entry": "5hee",
+   "model_created": "2022-06-01",
+   "release": "2016-06-29"
+  },
+  {
+   "accession": "Q8NS29",
+   "entry": "5hub",
+   "model_created": "2022-06-01",
+   "release": "2017-08-02"
+  },
+  {
+   "accession": "P0AEX9",
+   "entry": "5hz7",
+   "model_created": "2025-08-01",
+   "release": "2016-05-18"
+  },
+  {
+   "accession": "Q8U194",
+   "entry": "5jca",
+   "model_created": "2025-08-01",
+   "release": "2017-04-12"
+  },
+  {
+   "accession": "Q8U194",
+   "entry": "5jfc",
+   "model_created": "2025-08-01",
+   "release": "2017-04-12"
+  },
+  {
+   "accession": "A2IAD2",
+   "entry": "5k6d",
+   "model_created": "2025-08-01",
+   "release": "2016-11-23"
+  },
+  {
+   "accession": "Q8ZPX9",
+   "entry": "5lpa",
+   "model_created": "2025-08-01",
+   "release": "2018-01-17"
+  },
+  {
+   "accession": "Q8RM04",
+   "entry": "5m45",
+   "model_created": "2025-08-01",
+   "release": "2017-08-09"
+  },
+  {
+   "accession": "P16857",
+   "entry": "5n6y",
+   "model_created": "2025-08-01",
+   "release": "2017-07-26"
+  },
+  {
+   "accession": "P0AFK0",
+   "entry": "5njb",
+   "model_created": "2025-08-01",
+   "release": "2017-10-04"
+  },
+  {
+   "accession": "P0AFK0",
+   "entry": "5njc",
+   "model_created": "2025-08-01",
+   "release": "2017-10-04"
+  },
+  {
+   "accession": "A0R5T1",
+   "entry": "5op0",
+   "model_created": "2022-06-01",
+   "release": "2017-11-15"
+  },
+  {
+   "accession": "B3VHM9",
+   "entry": "5ori",
+   "model_created": "2022-06-01",
+   "release": "2017-11-08"
+  },
+  {
+   "accession": "B3VHM9",
+   "entry": "5osw",
+   "model_created": "2022-06-01",
+   "release": "2017-11-08"
+  },
+  {
+   "accession": "O24770",
+   "entry": "5ul3",
+   "model_created": "2025-08-01",
+   "release": "2017-04-19"
+  },
+  {
+   "accession": "O24770",
+   "entry": "5ul4",
+   "model_created": "2025-08-01",
+   "release": "2017-04-19"
+  },
+  {
+   "accession": "P15873",
+   "entry": "5v7m",
+   "model_created": "2025-08-01",
+   "release": "2018-03-14"
+  },
+  {
+   "accession": "P80176",
+   "entry": "5wqq",
+   "model_created": "2025-08-01",
+   "release": "2017-06-07"
+  },
+  {
+   "accession": "Q9LSX0",
+   "entry": "5wx9",
+   "model_created": "2025-08-01",
+   "release": "2017-11-22"
+  },
+  {
+   "accession": "Q5ZS31",
+   "entry": "5x1e",
+   "model_created": "2025-08-01",
+   "release": "2017-06-14"
+  },
+  {
+   "accession": "Q9NWV4",
+   "entry": "5zlq",
+   "model_created": "2025-08-01",
+   "release": "2018-10-10"
+  },
+  {
+   "accession": "A0A0D6IF67",
+   "entry": "6a02",
+   "model_created": "2022-06-01",
+   "release": "2019-02-06"
+  },
+  {
+   "accession": "B4RL22",
+   "entry": "6ao8",
+   "model_created": "2025-08-01",
+   "release": "2017-08-30"
+  },
+  {
+   "accession": "A0A077E909",
+   "entry": "6b1z",
+   "model_created": "2022-06-01",
+   "release": "2017-10-04"
+  },
+  {
+   "accession": "P59768",
+   "entry": "6crk",
+   "model_created": "2025-08-01",
+   "release": "2018-10-24"
+  },
+  {
+   "accession": "Q9KL64",
+   "entry": "6dfp",
+   "model_created": "2022-06-01",
+   "release": "2018-05-23"
+  },
+  {
+   "accession": "C4B8C2",
+   "entry": "6fub",
+   "model_created": "2022-06-01",
+   "release": "2018-06-13"
+  },
+  {
+   "accession": "S5ZIQ9",
+   "entry": "6gus",
+   "model_created": "2022-06-01",
+   "release": "2019-05-29"
+  },
+  {
+   "accession": "B5KM66",
+   "entry": "6h86",
+   "model_created": "2025-08-01",
+   "release": "2019-05-08"
+  },
+  {
+   "accession": "P07206",
+   "entry": "6j33",
+   "model_created": "2025-08-01",
+   "release": "2019-09-18"
+  },
+  {
+   "accession": "D0EM60",
+   "entry": "6lrd",
+   "model_created": "2022-06-01",
+   "release": "2020-08-26"
+  },
+  {
+   "accession": "A0A6I8WFP8",
+   "entry": "6ne6",
+   "model_created": "2022-06-01",
+   "release": "2019-12-18"
+  },
+  {
+   "accession": "B6YWC3",
+   "entry": "6o6y",
+   "model_created": "2022-06-01",
+   "release": "2019-07-31"
+  },
+  {
+   "accession": "Q9HD34",
+   "entry": "6odd",
+   "model_created": "2025-08-01",
+   "release": "2019-11-27"
+  },
+  {
+   "accession": "P04918",
+   "entry": "6pxz",
+   "model_created": "2025-08-01",
+   "release": "2019-08-28"
+  },
+  {
+   "accession": "O66841",
+   "entry": "6q9c",
+   "model_created": "2025-08-01",
+   "release": "2019-06-26"
+  },
+  {
+   "accession": "Q2YNC2",
+   "entry": "6rwt",
+   "model_created": "2022-06-01",
+   "release": "2019-09-18"
+  },
+  {
+   "accession": "Q9HD34",
+   "entry": "6uxe",
+   "model_created": "2025-08-01",
+   "release": "2019-11-20"
+  },
+  {
+   "accession": "O28415",
+   "entry": "6vjg",
+   "model_created": "2025-08-01",
+   "release": "2020-09-02"
+  },
+  {
+   "accession": "E3GZ29",
+   "entry": "6vr8",
+   "model_created": "2022-06-01",
+   "release": "2021-08-11"
+  },
+  {
+   "accession": "O28415",
+   "entry": "6yud",
+   "model_created": "2025-08-01",
+   "release": "2020-08-19"
+  },
+  {
+   "accession": "A0A915Q983",
+   "entry": "7a66",
+   "model_created": "2025-03-31",
+   "release": "2022-03-23"
+  },
+  {
+   "accession": "P16857",
+   "entry": "7adr",
+   "model_created": "2025-08-01",
+   "release": "2020-09-30"
+  },
+  {
+   "accession": "P69506",
+   "entry": "7bhc",
+   "model_created": "2025-08-01",
+   "release": "2021-04-21"
+  },
+  {
+   "accession": "E8MGH8",
+   "entry": "7dif",
+   "model_created": "2025-08-01",
+   "release": "2021-01-27"
+  },
+  {
+   "accession": "A0A0E4AYE7",
+   "entry": "7dmn",
+   "model_created": "2025-08-01",
+   "release": "2021-10-06"
+  },
+  {
+   "accession": "Q01515",
+   "entry": "7lao",
+   "model_created": "2025-08-01",
+   "release": "2021-01-20"
+  },
+  {
+   "accession": "F0UVX7",
+   "entry": "7r79",
+   "model_created": "2022-06-01",
+   "release": "2022-04-13"
+  },
+  {
+   "accession": "A0A023FDY8",
+   "entry": "7s58",
+   "model_created": "2025-08-01",
+   "release": "2022-03-16"
+  },
+  {
+   "accession": "F9USS9",
+   "entry": "8ezh",
+   "model_created": "2025-08-01",
+   "release": "2023-01-25"
+  }
+ ],
+ "temporal_fail_accessions": 264,
+ "temporal_pass": [
+  {
+   "accession": "P26332",
+   "entry": "7aqx",
+   "model_created": "2021-09-14",
+   "release": "2021-11-03"
+  },
+  {
+   "accession": "C0JF81",
+   "entry": "7nru",
+   "model_created": "2022-06-01",
+   "release": "2022-06-08"
+  },
+  {
+   "accession": "Q3ACS4",
+   "entry": "7zkk",
+   "model_created": "2022-06-01",
+   "release": "2022-11-02"
+  },
+  {
+   "accession": "A0A219T3Y8",
+   "entry": "8b2r",
+   "model_created": "2022-06-01",
+   "release": "2022-10-19"
+  },
+  {
+   "accession": "A7KH32",
+   "entry": "8cxl",
+   "model_created": "2022-06-01",
+   "release": "2022-08-31"
+  }
+ ],
+ "temporal_pass_accessions": 5
+}

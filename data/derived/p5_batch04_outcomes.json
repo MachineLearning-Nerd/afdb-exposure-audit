@@ -1,0 +1,72 @@
+{
+ "corrected_e427": {
+  "batch_index": 4,
+  "evaluated_utc": "2026-10-08T07:07:27.554843+00:00",
+  "file_sha256": "a003c5c3efda7acbbc110211bd148412b2a0324242e4a7e0390c93ba201e0448",
+  "n_rows_cumulative": 123454,
+  "p5_90": {
+   "bound_at_batch": 4,
+   "outcome": {
+    "mcse": 0.0028808894716835266,
+    "mean_cov": 0.894492567684754,
+    "nominal": 0.9,
+    "outcome": "HOLD",
+    "prediction": "P5-90",
+    "r_eff": 200,
+    "threshold": 0.8913573315849495
+   }
+  },
+  "p5_95": {
+   "bound_at_batch": 4,
+   "outcome": {
+    "mcse": 0.0017004775487096876,
+    "mean_cov": 0.9455777057113146,
+    "nominal": 0.95,
+    "outcome": "HOLD",
+    "prediction": "P5-95",
+    "r_eff": 200,
+    "threshold": 0.9448985673538709
+   }
+  },
+  "recomputed_canonical_sha256_matches": true,
+  "run": "corrected labels (results/e427/evals/e422_batch04_evaluation.json)",
+  "schema": "e422-evaldriver-v1",
+  "stored_canonical_sha256": "f579c541b4c34d85d9639baa66ce816c500b3e08799f9e9d4320d340cefd2c0c"
+ },
+ "note": "Key-selected extract of the registered P5 outcome blocks only. The full batch-4 evaluation artifacts contain sections bound to predictions P6/P7, which stay blind until the batch-8 evaluation; they will be released after the census closes.",
+ "original_e422": {
+  "batch_index": 4,
+  "evaluated_utc": "2026-10-04T04:45:06.344139+00:00",
+  "file_sha256": "b3df60bb07b8106d0fce00185d31cf15ba850bd6790e4c7b72362164e82ef9ce",
+  "n_rows_cumulative": 117905,
+  "p5_90": {
+   "bound_at_batch": 4,
+   "outcome": {
+    "mcse": 0.008006620040853207,
+    "mean_cov": 0.8579652901901389,
+    "nominal": 0.9,
+    "outcome": "FAIL",
+    "prediction": "P5-90",
+    "r_eff": 200,
+    "threshold": 0.8759801398774404
+   }
+  },
+  "p5_95": {
+   "bound_at_batch": 4,
+   "outcome": {
+    "mcse": 0.005718436143400944,
+    "mean_cov": 0.9151961367793325,
+    "nominal": 0.95,
+    "outcome": "FAIL",
+    "prediction": "P5-95",
+    "r_eff": 200,
+    "threshold": 0.9328446915697971
+   }
+  },
+  "recomputed_canonical_sha256_matches": true,
+  "run": "original labels (results/e422/evals/e422_batch04_evaluation.json)",
+  "schema": "e422-evaldriver-v1",
+  "stored_canonical_sha256": "23abe6ea31d342ac7e8e4ce489b6fbac2a56884537197edf61b97554f073430d"
+ },
+ "schema": "p5-batch04-outcomes-extract-v1"
+}

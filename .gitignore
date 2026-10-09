@@ -1,0 +1,27 @@
+# scratch work roots and outputs
+_work/
+work/
+rerun/
+# raw third-party data (never committed; re-fetch with data/fetch/fetch_raw.py)
+results/e422/raw/
+data/e420/
+data/e427/
+**/_changed/
+*.cif
+*.cif.gz
+*.bcif
+# python / tooling caches
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+# OpenTimestamps upgrade backups
+*.ots.bak
+# LaTeX build products
+*.aux
+*.log
+*.bbl
+*.blg
+*.out

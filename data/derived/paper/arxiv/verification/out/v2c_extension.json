@@ -1,0 +1,2673 @@
+{
+ "deviations": [],
+ "inputs_sha256": {
+  "paper/arxiv/verification/out/v2_prior_exposure.json": "19fcabc7a36bc73f02fa5be0f963e53cc84cdc702c80285c7ad7fe88878ce720",
+  "results/e421/qualifying_entries.json": "96f5a4ea2e735551c59f64e105c5d3154ad20ae424d264838e0db7ebe952cb6d",
+  "results/e422/manifest_checkpoint.json": "1513e43ce3f2178da8da72650b92f178390ff10b64f9b518e92c0b8487cff3e9",
+  "results/e427/batches/e422_batch01_checkpoint.json": "526fd4c54603ae128a2b6313a09c10c7a18e5f5699af3a3d7fc46bfb81c5d029",
+  "results/e427/batches/e422_batch02_checkpoint.json": "98b5ccb8af4e7899f665d703d1f55f75cda3d2387391a92199e9817881548935",
+  "results/e427/batches/e422_batch03_checkpoint.json": "7153a7f69b7cbd3d4c894b9a9638ef3e28d9c7dea3979960fc0b4bd189f8c8d3",
+  "results/e427/batches/e422_batch04_checkpoint.json": "2a2810a02d9b5a14ac70bebe5a92462353da81b229b875971ff68ec7720330d8",
+  "results/e427/e421_relabel/census_results.json": "7cec7709b0fd97d44193835e72ae6abe4d36a6886dd9bf0d619889c21c1d47db"
+ },
+ "notes": [
+  "V2 functions imported unchanged (sha256 of v2_prior_exposure.py recorded). Requests issued sequentially instead of V2's 3 worker threads (politeness only; queries/classes unchanged).",
+  "Batch rows of results/e427/batches are read for the `accession` field only.",
+  "RCSB is queried on the run date; entries released after V2's run (2026-10-07) cannot affect <= cutoff counts except via retroactive metadata changes."
+ ],
+ "receipts": [
+  {
+   "cached": false,
+   "sha256": "cd9cac417bbd22722f1096ff1edc5d4e292a014838672d5f8270cbee8b0ded57",
+   "status": 200,
+   "url": "https://rest.uniprot.org/uniprotkb/A0A1D5PRR9.fasta",
+   "utc": "2026-10-08T01:26:09.158401+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status": 204,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:26:10.263645+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status": 204,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:26:12.796327+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "edc3a1f41def52e58e14807b6724698cf2c99252cefcc254a0b5046d8090ebd7",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:26:14.287790+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "9855f48f873cadc737cd05399f0d18bad0768c5bb6ba938be2533318ed5f5d44",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:26:15.400839+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "58a4fe555946abf03081ec5728871a33895001000b578e784df6203ab68b55fe",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:26:17.338227+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "5d713c1adeecd3bee5414ea264554aa529fdacf7a4d2227494f13f53974bb1e0",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:26:19.046985+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "0782d1b8939529e9f2f65fc8cdf63b630d778fd757a86e40e97d7c145a28d5d6",
+   "status": 200,
+   "url": "https://rest.uniprot.org/uniprotkb/Q13485.fasta",
+   "utc": "2026-10-08T01:26:19.983184+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "1595c2b23f778a4d020d207711596e14e3bb2a7f83a2d896437fae9bc22a8c52",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:26:21.119399+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "16e34b85caaabe16dc419828d45ba7debe4d56fcd3b425a323ca24d2d02822a0",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:26:22.844889+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "a35594edfaf6a965f8b40c3651a4361be61cfe19adf06f131dd78c2484a17bb5",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:26:24.480994+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "c7caa7b20643663f402a6d6ccae7cf1d7342113a71eecc3851c44e6f54a0548e",
+   "status": 200,
+   "url": "https://rest.uniprot.org/uniprotkb/Q9Z2X8.fasta",
+   "utc": "2026-10-08T01:26:25.363365+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "11e263cd89a2af3a098571b4ccabc3c26aed49517e7937815771be46e9ba1471",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:26:26.470904+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "52792b142d63723e0b299f16fddab57dd281abc1413ec95d76c1b81586079a8b",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:26:28.977166+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "68e4286e92b32d196f5d012af52d0e729d446617bacf34af59709b919d1a4977",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:26:30.457879+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "7c73a28a1af60ab2662aea1cbb0100489908e591f39a348c44c058b903a7d37e",
+   "status": 200,
+   "url": "https://rest.uniprot.org/uniprotkb/A0A0J9XUF2.fasta",
+   "utc": "2026-10-08T01:26:31.452037+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "522672c7f7f97bea89665826f76626c25b8ab17b50c5f274aa6824645235944d",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:26:32.554573+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "6aaa1ee610f18c45da2f6e8488d28de7d33b9a54ef2ff345c78e944abb664fbe",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:26:34.306353+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "bebb0e7cb2df88c97898eb322988ba841465ab4f07468cdef36506fae71bc0b1",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:26:35.915396+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "bffc2131e586b802d96e8261e1ccf656b1704d3d199869df642ab0c57f98a732",
+   "status": 200,
+   "url": "https://rest.uniprot.org/uniprotkb/A0A1M6VF95.fasta",
+   "utc": "2026-10-08T01:26:37.059147+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status": 204,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:26:38.155209+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status": 204,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:26:39.881228+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "638d4281e14244efb870f249e3089131233da21e3d42fc633aefa07bcf607b8a",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:26:41.431942+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status": 204,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:26:42.550824+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status": 204,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:26:44.135398+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "c8f184b0248ef70662b4053e3d04a260eeaf5bcbe735807372308d130ecade9f",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:26:45.767529+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "2f5f19c6f3b2eda235d7ad94e657f114f718832989d7fb33aca58bad4bd211f8",
+   "status": 200,
+   "url": "https://rest.uniprot.org/uniprotkb/A0A2M9HC27.fasta",
+   "utc": "2026-10-08T01:26:46.660635+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status": 204,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:26:47.775676+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status": 204,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:26:49.479240+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "ba77b3346e3fdd0cc20bb90b6d0f0a9a49b4f991e10a5697d185f50f70e3ae1a",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:26:51.013101+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status": 204,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:26:52.156777+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status": 204,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:26:53.960548+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e5407ca315943dc34e4d29d5ec5fd00c8ac56b6b0eff31f2a29a76ac3017c87c",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:26:55.555388+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "83e32f671655172cd6f6db5643b04c53e428818dfcf25fc0812fe1efe6477cdc",
+   "status": 200,
+   "url": "https://rest.uniprot.org/uniprotkb/A0A3S5Y0T1.fasta",
+   "utc": "2026-10-08T01:26:56.407659+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status": 204,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:26:57.503237+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status": 204,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:26:59.266487+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "c195839bf0aa3733f471cfc3966a91fe81b87bd9b5c45f3fed2ba33829d29af2",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:27:00.866890+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status": 204,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:27:01.986015+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status": 204,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:27:03.769906+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "d41f6005ffc9478a66652eeb9ba638ae37e657db0dea2131575c40b89038d37f",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:27:05.405621+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "2c87afc2e0586696c6d1dbdc8ac85447e6882593d7df074c3f0d3c2a8de30711",
+   "status": 200,
+   "url": "https://rest.uniprot.org/uniprotkb/A7YT55.fasta",
+   "utc": "2026-10-08T01:27:06.320486+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status": 204,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:27:07.435163+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "5cd43387feb481df2facd5d55195766e78a8a02901ddf1031a334a7d1c0c9d14",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:27:10.170499+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "38fb8482c7e6bcc885fdeee30f599e83c220a536107714a43a4b966cdfa01bd2",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:27:12.150839+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "821c812b89c6b11abf37b88406042cd303b0bdcc51296a80a35cccb7f2aa8d6a",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:27:13.238431+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "4b564027a14c55f41ae8230f0e2ad5fe001456838196c80be36db670ee54a20b",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:27:14.843204+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "db812e52f332506b6269c3e496d0fbd8104c747a697632070444192b1629db60",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:27:16.429911+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "c50dce583d5187d68555e4cfe96f0d2fd3799629b5fba428164b3c67c3ce6582",
+   "status": 200,
+   "url": "https://rest.uniprot.org/uniprotkb/B1YD41.fasta",
+   "utc": "2026-10-08T01:27:18.345789+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status": 204,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:27:19.456808+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status": 204,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:27:21.210539+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status": 204,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:27:25.918314+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status": 204,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:27:26.997531+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status": 204,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:27:28.702284+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status": 204,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:27:30.571693+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "50a00eed172969e2ba8ac9aee6e005f471668009274d07d355ba3bb067a2abbc",
+   "status": 200,
+   "url": "https://rest.uniprot.org/uniprotkb/O60502.fasta",
+   "utc": "2026-10-08T01:27:31.466223+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "322c113787eecaca69f89749fb2a3271887c656f806ae8a4c4c9c3a4ec553f60",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:27:32.571568+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "f99511f270c747b635e62aafb13aea684200e16764144e16bc5f1c4b0f81af00",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:27:35.096357+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "74f96dd4b132a90b5f7e7d40ad7d6ae9699b6406daa81195fa2d4c370da062c2",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:27:37.048788+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "b5afe08ef1fb13a53eb1efd3455d7497d682c4dd092a8792fdc39328321e045a",
+   "status": 200,
+   "url": "https://rest.uniprot.org/uniprotkb/P03952.fasta",
+   "utc": "2026-10-08T01:27:37.930558+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "b770bb7b6b775bcd8be2b7465f31a410ff4eb35c84e5e9e3bbfa8652efa3af35",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:27:39.034922+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "9699357acaa7c2a8986c9a0dc1eb79da178afc7462682cd6827e59e17f4d05d8",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:27:41.538496+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "291e373b9fc9609b79c15da40c994c4d1866646039908b48048054cc51b9fcdb",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:27:43.237644+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "203e5b6ef2adfb32b1a14cbe9da1522ab48765b61802b2a149c5638e55196cfa",
+   "status": 200,
+   "url": "https://rest.uniprot.org/uniprotkb/P09242.fasta",
+   "utc": "2026-10-08T01:27:44.161448+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status": 204,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:27:45.256881+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status": 204,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:27:47.006669+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "d60f38891a1cbe4965442966a9ece62ecd8b8402e8d04a1b0f17f32d986e96f6",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:27:48.436647+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status": 204,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:27:49.534583+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status": 204,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:27:51.325835+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "bda179e7f13e835f708aa7f179629f25de6c7d2a2ab0c91707ee12c6da9b00a1",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:27:53.240065+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "bae46335bc7c09b86a4c8ec946dce043aeebdbf4c4453df01e58e93688794889",
+   "status": 200,
+   "url": "https://rest.uniprot.org/uniprotkb/P09619.fasta",
+   "utc": "2026-10-08T01:27:54.149193+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "791c49d68d81a3275b4079224542411c45f0e1d4b6e5f69d8c0aed86fd21fea9",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:27:55.236651+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "73cca2220dfddabcc70b01b599847c5ad9510d89ca3272d6f6dd41b0a1230e4e",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:27:59.406376+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "90e8f38e47305479438730e3e6f589e0a5168204856f5a7465a2daa9cca3501c",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:28:01.080522+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "1a3a2642886e6b84bf6e8b840fccd5f68650b7139ef63de4fdf8b95d64f4bd65",
+   "status": 200,
+   "url": "https://rest.uniprot.org/uniprotkb/P15559.fasta",
+   "utc": "2026-10-08T01:28:01.971834+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "7a5d9e17d0d48083a9d82f45d7b867028d4ee2063df02b054c9967f7f6156c90",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:28:03.062562+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "9acbbd6aabadb7d4e46e3af6f878225943a5d576eb5275bbfd1191f303dd1514",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:28:04.798351+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "044a9a6c138e20a02a1479c4b0360e0a587671ca07bfe175bdf7ff63c8439681",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:28:06.378645+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "4f4fec55c8c4a20f1322fa8b17b0ec517ffa31946b9e0a0b7252794da82fdd7d",
+   "status": 200,
+   "url": "https://rest.uniprot.org/uniprotkb/P21802.fasta",
+   "utc": "2026-10-08T01:28:07.293885+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "c9b12cd38337ddbf0e538cbf7d9690d2c35cd699b4c5a9becec00622ee4209ed",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:28:08.384739+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "c90040edb7ee298f023bb20397e18e5026095a8a14198f90ffecb68bfa89eca5",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:28:10.929627+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "8fe211bcb5a8c2db2e991b1fda9e962a9bf07c062a1615340a2f35eb8e2c4f3d",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:28:12.846892+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "5c6982f22d6af560599f023d7e1a17bd6b7e864bb7ea4ee9844b94f7992cd587",
+   "status": 200,
+   "url": "https://rest.uniprot.org/uniprotkb/P22259.fasta",
+   "utc": "2026-10-08T01:28:13.710515+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "3ed8d5f162c8dd8c4ddd3dc7a1454bff7ca624d36ed11de807a82aefe04df7d1",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:28:14.843939+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "5105c41afe14830d12f94bbcc257226ee255bcfef734de21f37a95e663d6a5ad",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:28:17.431986+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "9517e46bc9ebe30284a0f0ab92a4948b791dde40ad21a2d065587a70eb1d83e7",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:28:18.946052+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "d7bba8231461a1c25d20f56cae51918662b76fd2de85cab24a5ae7601d322d57",
+   "status": 200,
+   "url": "https://rest.uniprot.org/uniprotkb/Q13191.fasta",
+   "utc": "2026-10-08T01:28:19.838015+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "05e773adfc38b692917cfea74bdb4f7fb7552e7469cb2935d687957b9a72970b",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:28:20.925717+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "d3faf94cba923b303240e4e3b01d449f963e989a374a68c317eb3e0b5acc031c",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:28:23.456291+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e7d6620bbed1a95d8563e6bd5a7dd2ff820d5b726757d630b92fca619bf9303b",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:28:24.957744+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "9f17fb31500d82688b7b1fe800f1f075e779885d08b694bb061fd6d2a6602455",
+   "status": 200,
+   "url": "https://rest.uniprot.org/uniprotkb/Q14191.fasta",
+   "utc": "2026-10-08T01:28:25.937085+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "d0c3aa11cb670c8b303f4590ae9ef8acefc2619dc216108e9a7c18a5f18e13d0",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:28:27.036520+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "ed92803ee62e86679426dcd390d6d2a5e26c631f31e11caf29904d450d42474d",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:28:29.535628+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "b547f226e19e6ebf43e1a4510132e6d1e7ec027e7ed928a6b5d1632f435df2f6",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:28:31.034491+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "650f335d81e5ff4d1ec1f7193bb496abf526dc530828435335a1a6c530a8b3e6",
+   "status": 200,
+   "url": "https://rest.uniprot.org/uniprotkb/Q382U0.fasta",
+   "utc": "2026-10-08T01:28:33.229904+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status": 204,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:28:34.361746+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status": 204,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:28:36.901463+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "c0bd4a45eac22412a39edc30d9769514a33ec85977eff0176ea52e19443ce029",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:28:38.678837+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "8b503db8a80b3190c2c1c32b8ef2ac7d2ea6ce9c53a527047d3e005e31a471f5",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:28:39.757946+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "edd3692361b4a1306ef061cbba90ad5a3508293e1899d007184f1b9ebb9b8b7a",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:28:41.985940+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "feb6842dbd3f66abe5c581d5cfcd671a3b4475c6f306814fa4a9b882979f5b45",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:28:44.008771+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "2cebf168a27f9e024c4e974a68af95bc1845f72122ea5f76afe4713419105418",
+   "status": 200,
+   "url": "https://rest.uniprot.org/uniprotkb/Q6SZW1.fasta",
+   "utc": "2026-10-08T01:28:44.933939+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status": 204,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:28:46.077946+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status": 204,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:28:48.614787+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status": 204,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:28:50.508004+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "d724daa9915193b0be355429c231ff4e166d0031a98c2e132a66157b9e64be9d",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:28:51.634384+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "9c242a025474f2ee9a251375597b65a3120ee196eb6c434b32866d8bf53a8151",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:28:53.723894+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "63a29cf5854bc0925bf786657aa04c94927c5cb20383f475590215a929b206cc",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:28:55.432660+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "c74a40f364450934c5b6236024a1d2873cbaa8f801641cdb77152e513e0338ae",
+   "status": 200,
+   "url": "https://rest.uniprot.org/uniprotkb/Q72IH2.fasta",
+   "utc": "2026-10-08T01:28:56.299070+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status": 204,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:28:57.440055+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "70a8f1d9d57066db6ece3d0204d1e7be89c2a7ecf0bd8e7021f6fc759d35daa8",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:28:59.194437+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "3479ebc0d7db73f5db56ec1a66d18404c565a55650177a6cf275a44c00200fb5",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:29:00.742397+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status": 204,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:29:01.833376+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "fcd2ca95ef318f68ea6d1400b085576f42de2e33e86a468834d250d75653d33b",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:29:04.286847+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "bbc94e9e4c353f70650a22aa9831e2284fc3e9b6abce7221cd887f77026f86f2",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:29:06.863496+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "d93b7aa8b00351101144d444f1a8b07b24af4f26e162211ed50393abcb4af62a",
+   "status": 200,
+   "url": "https://rest.uniprot.org/uniprotkb/Q73QH2.fasta",
+   "utc": "2026-10-08T01:29:07.737368+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status": 204,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:29:08.836705+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status": 204,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:29:16.789576+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "a673fe0781e8e2845aae9281b37e3a58f76988339396132e59100d910d341c3a",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:29:18.249779+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status": 204,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:29:19.368346+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status": 204,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:29:21.083266+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "be163a01e6804522abe22d02e357545f168afa224d1df968b5c6bce9e01c1e99",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:29:22.923839+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "344dea55bfac6fa248b8ca34753f0428b71c2e8814f3770317f5940122058e70",
+   "status": 200,
+   "url": "https://rest.uniprot.org/uniprotkb/Q8NBP7.fasta",
+   "utc": "2026-10-08T01:29:23.832057+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "72a63a8c6fd5cdef3e8a01c17e6a1efff222b9a60badf2c648cbd591fdd56c45",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:29:24.942036+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "c6519531bbcac2eda82397099ec504766109917a0f289cfe0121d69e43aa4516",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:29:27.468145+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "4151d01596932bfbb99274a28be6acfcf1af5ff93796dc15262c20c67ef72003",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:29:28.943620+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "8eb357b1cf251bf6bb46dfcaaf15f6ac966d1a653a31543125d28f899275b426",
+   "status": 200,
+   "url": "https://rest.uniprot.org/uniprotkb/Q9C0K0.fasta",
+   "utc": "2026-10-08T01:29:30.274262+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status": 204,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:29:31.375567+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status": 204,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:29:33.892472+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "6d1b202774c3f82ad784f34d93147ecf6f94ee1850fc6598cf4c53e51526780b",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:29:35.390749+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status": 204,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:29:36.964325+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "d6ac5e943b685d7ba55437a70b6220f8de6c4d032d126efce226f530b95da12a",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:29:38.722558+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "652ac941810a2e9c556395a01fe43a579919c8c3a304f231e0a52be1cc1e3ba7",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:29:40.585358+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "4f05a25294c9c09f2191f48554795582016ddad9e6e6f11d805f1e713a7a00d7",
+   "status": 200,
+   "url": "https://rest.uniprot.org/uniprotkb/Q9I640.fasta",
+   "utc": "2026-10-08T01:29:41.533168+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "6e588db22bf516ba5b7ad20b8b8ef5b7f8437b5bce62cc7ca8580ac7c8a36137",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:29:42.668220+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "294eb83eccdfe490be041dad9d365380a4ce90f0fb68598d9a9d06b17f78b12c",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:29:44.471924+00:00"
+  },
+  {
+   "cached": false,
+   "sha256": "f5ff60b72e74e80d9531b41fa0343d57c4eff9846eb8ce0d143d8242de0a1f0e",
+   "status": 200,
+   "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+   "utc": "2026-10-08T01:29:47.229095+00:00"
+  }
+ ],
+ "receipts_summary": {
+  "n": 136,
+  "n_cached": 0,
+  "status_counts": {
+   "200": 97,
+   "204": 39
+  }
+ },
+ "registration": "REGISTRATION.md Addendum A3",
+ "results": {
+  "a_e427_e422_ledger_new": {
+   "accessions": {
+    "A0A1D5PRR9": {
+     "in_e427_e421_relabel_ok": false,
+     "in_e427_e422_ledger": true,
+     "model_created_date": "2025-08-01",
+     "seq_len": 2041,
+     "template_bound": {
+      "class": "SAME_ACCESSION",
+      "date": "2025-08-01",
+      "same_accession": 1,
+      "same_accession_ids": [
+       "7DA2"
+      ],
+      "seq30": 55,
+      "seq30_ids": [
+       "1J22",
+       "1J23",
+       "1J24",
+       "1J25",
+       "1WP9",
+       "2HXY",
+       "2HYI",
+       "2J0Q",
+       "2J0S",
+       "2J0U",
+       "2XB2",
+       "2Z0M",
+       "3EAQ",
+       "3EAR",
+       "3EAS",
+       "3EX7",
+       "3I32",
+       "4BXO",
+       "4C9B",
+       "4D25"
+      ],
+      "seq95": 1,
+      "seq95_ids": [
+       "7DA2"
+      ]
+     },
+     "training": {
+      "class": "SEQ30",
+      "date": "2018-04-30",
+      "same_accession": 0,
+      "same_accession_ids": [],
+      "seq30": 30,
+      "seq30_ids": [
+       "1J22",
+       "1J23",
+       "1J24",
+       "1J25",
+       "1WP9",
+       "2HXY",
+       "2HYI",
+       "2J0Q",
+       "2J0S",
+       "2J0U",
+       "2XB2",
+       "2Z0M",
+       "3EAQ",
+       "3EAR",
+       "3EAS",
+       "3EX7",
+       "3I32",
+       "4BXO",
+       "4C9B",
+       "4D25"
+      ],
+      "seq95": 0,
+      "seq95_ids": []
+     }
+    },
+    "Q13485": {
+     "in_e427_e421_relabel_ok": false,
+     "in_e427_e422_ledger": true,
+     "model_created_date": "2025-08-01",
+     "seq_len": 552,
+     "template_bound": {
+      "class": "SAME_ACCESSION",
+      "date": "2025-08-01",
+      "implied_by_training": true
+     },
+     "training": {
+      "class": "SAME_ACCESSION",
+      "date": "2018-04-30",
+      "same_accession": 11,
+      "same_accession_ids": [
+       "1DD1",
+       "1G88",
+       "1MR1",
+       "1U7F",
+       "1U7V",
+       "1YGS",
+       "5C4V",
+       "5MEY",
+       "5MEZ",
+       "5MF0",
+       "5UWU"
+      ],
+      "seq30": 29,
+      "seq30_ids": [
+       "1DD1",
+       "1DEV",
+       "1G88",
+       "1KHU",
+       "1KHX",
+       "1MHD",
+       "1MJS",
+       "1MK2",
+       "1MR1",
+       "1OZJ",
+       "1U7F",
+       "1U7V",
+       "1YGS",
+       "3DIT",
+       "3GMJ",
+       "3KMP",
+       "3QSV",
+       "5C4V",
+       "5MEY",
+       "5MEZ"
+      ],
+      "seq95": 11,
+      "seq95_ids": [
+       "1DD1",
+       "1G88",
+       "1MR1",
+       "1U7F",
+       "1U7V",
+       "1YGS",
+       "3QSV",
+       "5C4V",
+       "5MEY",
+       "5MEZ",
+       "5MF0"
+      ]
+     }
+    },
+    "Q9Z2X8": {
+     "in_e427_e421_relabel_ok": false,
+     "in_e427_e422_ledger": true,
+     "model_created_date": "2025-08-01",
+     "seq_len": 624,
+     "template_bound": {
+      "class": "SAME_ACCESSION",
+      "date": "2025-08-01",
+      "implied_by_training": true
+     },
+     "training": {
+      "class": "SAME_ACCESSION",
+      "date": "2018-04-30",
+      "same_accession": 16,
+      "same_accession_ids": [
+       "1X2J",
+       "1X2R",
+       "2DYH",
+       "2Z32",
+       "3ADE",
+       "3WDZ",
+       "3WN7",
+       "4ZY3",
+       "5CGJ",
+       "5FNQ",
+       "5FNR",
+       "5FNS",
+       "5FNT",
+       "5FNU",
+       "5FZJ",
+       "5FZN"
+      ],
+      "seq30": 54,
+      "seq30_ids": [
+       "1U6D",
+       "1X2J",
+       "1X2R",
+       "1ZGK",
+       "2DYH",
+       "2FLU",
+       "2IF5",
+       "2NN2",
+       "2VKP",
+       "2VPJ",
+       "2XN4",
+       "2Z32",
+       "3ADE",
+       "3GA1",
+       "3II7",
+       "3VNG",
+       "3VNH",
+       "3WDZ",
+       "3WN7",
+       "3ZGC"
+      ],
+      "seq95": 35,
+      "seq95_ids": [
+       "1X2J",
+       "1X2R",
+       "2DYH",
+       "2Z32",
+       "3ADE",
+       "3VNG",
+       "3VNH",
+       "3WDZ",
+       "3WN7",
+       "3ZGC",
+       "3ZGD",
+       "4IFJ",
+       "4IFL",
+       "4IFN",
+       "4IN4",
+       "4IQK",
+       "4L7B",
+       "4L7C",
+       "4L7D",
+       "4N1B"
+      ]
+     }
+    }
+   },
+   "n": 3,
+   "query_failed": [],
+   "template_bound_class_counts": {
+    "SAME_ACCESSION": 3
+   },
+   "training_class_counts": {
+    "SAME_ACCESSION": 2,
+    "SEQ30": 1
+   }
+  },
+  "b_e427_e421_relabel_new": {
+   "accessions": {
+    "A0A0J9XUF2": {
+     "in_e427_e421_relabel_ok": true,
+     "in_e427_e422_ledger": false,
+     "model_created_date": "2025-08-01",
+     "seq_len": 171,
+     "template_bound": {
+      "class": "SAME_ACCESSION",
+      "date": "2025-08-01",
+      "implied_by_training": true
+     },
+     "training": {
+      "class": "SAME_ACCESSION",
+      "date": "2018-04-30",
+      "same_accession": 1,
+      "same_accession_ids": [
+       "4JCP"
+      ],
+      "seq30": 260,
+      "seq30_ids": [
+       "1A33",
+       "1A58",
+       "1AK4",
+       "1AWQ",
+       "1AWR",
+       "1AWS",
+       "1AWT",
+       "1AWU",
+       "1AWV",
+       "1BCK",
+       "1C5F",
+       "1CLH",
+       "1CWA",
+       "1CWB",
+       "1CWC",
+       "1CWF",
+       "1CWH",
+       "1CWI",
+       "1CWJ",
+       "1CWK"
+      ],
+      "seq95": 1,
+      "seq95_ids": [
+       "4JCP"
+      ]
+     }
+    },
+    "A0A1M6VF95": {
+     "in_e427_e421_relabel_ok": true,
+     "in_e427_e422_ledger": false,
+     "model_created_date": "2022-06-01",
+     "seq_len": 531,
+     "template_bound": {
+      "class": "SEQ30",
+      "date": "2022-06-01",
+      "same_accession": 0,
+      "same_accession_ids": [],
+      "seq30": 9,
+      "seq30_ids": [
+       "1J1V",
+       "1L8Q",
+       "2HCB",
+       "2KJQ",
+       "2Z4R",
+       "2Z4S",
+       "3PVP",
+       "3PVV",
+       "3R8F"
+      ],
+      "seq95": 0,
+      "seq95_ids": []
+     },
+     "training": {
+      "class": "SEQ30",
+      "date": "2018-04-30",
+      "same_accession": 0,
+      "same_accession_ids": [],
+      "seq30": 9,
+      "seq30_ids": [
+       "1J1V",
+       "1L8Q",
+       "2HCB",
+       "2KJQ",
+       "2Z4R",
+       "2Z4S",
+       "3PVP",
+       "3PVV",
+       "3R8F"
+      ],
+      "seq95": 0,
+      "seq95_ids": []
+     }
+    },
+    "A0A2M9HC27": {
+     "in_e427_e421_relabel_ok": true,
+     "in_e427_e422_ledger": false,
+     "model_created_date": "2022-06-01",
+     "seq_len": 567,
+     "template_bound": {
+      "class": "SEQ30",
+      "date": "2022-06-01",
+      "same_accession": 0,
+      "same_accession_ids": [],
+      "seq30": 8,
+      "seq30_ids": [
+       "1J1V",
+       "1L8Q",
+       "2HCB",
+       "2Z4R",
+       "2Z4S",
+       "3PVP",
+       "3PVV",
+       "3R8F"
+      ],
+      "seq95": 0,
+      "seq95_ids": []
+     },
+     "training": {
+      "class": "SEQ30",
+      "date": "2018-04-30",
+      "same_accession": 0,
+      "same_accession_ids": [],
+      "seq30": 8,
+      "seq30_ids": [
+       "1J1V",
+       "1L8Q",
+       "2HCB",
+       "2Z4R",
+       "2Z4S",
+       "3PVP",
+       "3PVV",
+       "3R8F"
+      ],
+      "seq95": 0,
+      "seq95_ids": []
+     }
+    },
+    "A0A3S5Y0T1": {
+     "in_e427_e421_relabel_ok": true,
+     "in_e427_e422_ledger": false,
+     "model_created_date": "2022-06-01",
+     "seq_len": 524,
+     "template_bound": {
+      "class": "SEQ30",
+      "date": "2022-06-01",
+      "same_accession": 0,
+      "same_accession_ids": [],
+      "seq30": 9,
+      "seq30_ids": [
+       "1J1V",
+       "1L8Q",
+       "2HCB",
+       "2KJQ",
+       "2Z4R",
+       "2Z4S",
+       "3PVP",
+       "3PVV",
+       "3R8F"
+      ],
+      "seq95": 0,
+      "seq95_ids": []
+     },
+     "training": {
+      "class": "SEQ30",
+      "date": "2018-04-30",
+      "same_accession": 0,
+      "same_accession_ids": [],
+      "seq30": 9,
+      "seq30_ids": [
+       "1J1V",
+       "1L8Q",
+       "2HCB",
+       "2KJQ",
+       "2Z4R",
+       "2Z4S",
+       "3PVP",
+       "3PVV",
+       "3R8F"
+      ],
+      "seq95": 0,
+      "seq95_ids": []
+     }
+    },
+    "A7YT55": {
+     "in_e427_e421_relabel_ok": true,
+     "in_e427_e422_ledger": false,
+     "model_created_date": "2022-06-01",
+     "seq_len": 929,
+     "template_bound": {
+      "class": "SAME_ACCESSION",
+      "date": "2022-06-01",
+      "same_accession": 1,
+      "same_accession_ids": [
+       "6CGP"
+      ],
+      "seq30": 247,
+      "seq30_ids": [
+       "1T64",
+       "1T67",
+       "1T69",
+       "1VKG",
+       "1W22",
+       "1ZZ0",
+       "1ZZ1",
+       "1ZZ3",
+       "2GH6",
+       "2UZG",
+       "2V5W",
+       "2V5X",
+       "2VCG",
+       "2VQJ",
+       "2VQM",
+       "2VQO",
+       "2VQQ",
+       "2VQV",
+       "2VQW",
+       "3C0Y"
+      ],
+      "seq95": 62,
+      "seq95_ids": [
+       "5EEF",
+       "5EEI",
+       "5EEK",
+       "5EEM",
+       "5EEN",
+       "5EF7",
+       "5EF8",
+       "5EFB",
+       "5EFG",
+       "5EFH",
+       "5EFJ",
+       "5EFK",
+       "5EFN",
+       "5G0F",
+       "5G0G",
+       "5G0H",
+       "5G0I",
+       "5G0J",
+       "5W5K",
+       "5WGI"
+      ]
+     },
+     "training": {
+      "class": "SEQ95",
+      "date": "2018-04-30",
+      "same_accession": 0,
+      "same_accession_ids": [],
+      "seq30": 135,
+      "seq30_ids": [
+       "1T64",
+       "1T67",
+       "1T69",
+       "1VKG",
+       "1W22",
+       "1ZZ0",
+       "1ZZ1",
+       "1ZZ3",
+       "2GH6",
+       "2UZG",
+       "2V5W",
+       "2V5X",
+       "2VCG",
+       "2VQJ",
+       "2VQM",
+       "2VQO",
+       "2VQQ",
+       "2VQV",
+       "2VQW",
+       "3C0Y"
+      ],
+      "seq95": 22,
+      "seq95_ids": [
+       "5EEF",
+       "5EEI",
+       "5EEK",
+       "5EEM",
+       "5EEN",
+       "5EF7",
+       "5EF8",
+       "5EFB",
+       "5EFG",
+       "5EFH",
+       "5EFJ",
+       "5EFK",
+       "5EFN",
+       "5G0F",
+       "5G0G",
+       "5G0H",
+       "5G0I",
+       "5G0J",
+       "5WGI",
+       "5WGK"
+      ]
+     }
+    },
+    "B1YD41": {
+     "in_e427_e421_relabel_ok": true,
+     "in_e427_e422_ledger": false,
+     "model_created_date": "2022-06-01",
+     "seq_len": 176,
+     "template_bound": {
+      "class": "NOVEL",
+      "date": "2022-06-01",
+      "same_accession": 0,
+      "same_accession_ids": [],
+      "seq30": 0,
+      "seq30_ids": [],
+      "seq95": 0,
+      "seq95_ids": []
+     },
+     "training": {
+      "class": "NOVEL",
+      "date": "2018-04-30",
+      "same_accession": 0,
+      "same_accession_ids": [],
+      "seq30": 0,
+      "seq30_ids": [],
+      "seq95": 0,
+      "seq95_ids": []
+     }
+    },
+    "O60502": {
+     "in_e427_e421_relabel_ok": true,
+     "in_e427_e422_ledger": false,
+     "model_created_date": "2025-08-01",
+     "seq_len": 916,
+     "template_bound": {
+      "class": "SAME_ACCESSION",
+      "date": "2025-08-01",
+      "implied_by_training": true
+     },
+     "training": {
+      "class": "SAME_ACCESSION",
+      "date": "2018-04-30",
+      "same_accession": 17,
+      "same_accession_ids": [
+       "2YDQ",
+       "5M7R",
+       "5M7S",
+       "5M7T",
+       "5M7U",
+       "5TKE",
+       "5UHK",
+       "5UHL",
+       "5UHO",
+       "5UHP",
+       "5UN8",
+       "5UN9",
+       "5VVO",
+       "5VVT",
+       "5VVU",
+       "5VVV",
+       "5VVX"
+      ],
+      "seq30": 64,
+      "seq30_ids": [
+       "2CBI",
+       "2CBJ",
+       "2CHN",
+       "2CHO",
+       "2J47",
+       "2J4G",
+       "2J62",
+       "2JIW",
+       "2V5C",
+       "2V5D",
+       "2VUR",
+       "2VVN",
+       "2VVS",
+       "2W4X",
+       "2W66",
+       "2W67",
+       "2WB5",
+       "2WCA",
+       "2WZH",
+       "2WZI"
+      ],
+      "seq95": 8,
+      "seq95_ids": [
+       "5M7R",
+       "5M7S",
+       "5M7T",
+       "5M7U",
+       "5UHK",
+       "5UHL",
+       "5UHO",
+       "5UHP"
+      ]
+     }
+    },
+    "P03952": {
+     "in_e427_e421_relabel_ok": true,
+     "in_e427_e422_ledger": false,
+     "model_created_date": "2025-08-01",
+     "seq_len": 638,
+     "template_bound": {
+      "class": "SAME_ACCESSION",
+      "date": "2025-08-01",
+      "implied_by_training": true
+     },
+     "training": {
+      "class": "SAME_ACCESSION",
+      "date": "2018-04-30",
+      "same_accession": 8,
+      "same_accession_ids": [
+       "2ANW",
+       "2ANY",
+       "4OGX",
+       "4OGY",
+       "5F8T",
+       "5F8X",
+       "5F8Z",
+       "5TJX"
+      ],
+      "seq30": 1432,
+      "seq30_ids": [
+       "1A0J",
+       "1A0L",
+       "1A5H",
+       "1A5I",
+       "1AB9",
+       "1ACB",
+       "1AFQ",
+       "1AKS",
+       "1AMH",
+       "1AN1",
+       "1ANB",
+       "1ANC",
+       "1AND",
+       "1ANE",
+       "1AO5",
+       "1AQ7",
+       "1AUJ",
+       "1AUT",
+       "1AVW",
+       "1AVX"
+      ],
+      "seq95": 8,
+      "seq95_ids": [
+       "2ANW",
+       "2ANY",
+       "4OGX",
+       "4OGY",
+       "5F8T",
+       "5F8X",
+       "5F8Z",
+       "5TJX"
+      ]
+     }
+    },
+    "P09242": {
+     "in_e427_e421_relabel_ok": true,
+     "in_e427_e422_ledger": false,
+     "model_created_date": "2025-08-01",
+     "seq_len": 524,
+     "template_bound": {
+      "class": "SEQ30",
+      "date": "2025-08-01",
+      "same_accession": 0,
+      "same_accession_ids": [],
+      "seq30": 28,
+      "seq30_ids": [
+       "1ALI",
+       "1ALJ",
+       "1EW2",
+       "1HQA",
+       "1K7H",
+       "1SHN",
+       "1SHQ",
+       "1ZEB",
+       "1ZED",
+       "1ZEF",
+       "2GLQ",
+       "2MLY",
+       "3E2D",
+       "3MK0",
+       "3MK1",
+       "3MK2",
+       "3WBH",
+       "4KJD",
+       "4KJG",
+       "6QSQ"
+      ],
+      "seq95": 0,
+      "seq95_ids": []
+     },
+     "training": {
+      "class": "SEQ30",
+      "date": "2018-04-30",
+      "same_accession": 0,
+      "same_accession_ids": [],
+      "seq30": 19,
+      "seq30_ids": [
+       "1ALI",
+       "1ALJ",
+       "1EW2",
+       "1HQA",
+       "1K7H",
+       "1SHN",
+       "1SHQ",
+       "1ZEB",
+       "1ZED",
+       "1ZEF",
+       "2GLQ",
+       "2MLY",
+       "3E2D",
+       "3MK0",
+       "3MK1",
+       "3MK2",
+       "3WBH",
+       "4KJD",
+       "4KJG"
+      ],
+      "seq95": 0,
+      "seq95_ids": []
+     }
+    },
+    "P09619": {
+     "in_e427_e421_relabel_ok": true,
+     "in_e427_e422_ledger": false,
+     "model_created_date": "2025-08-01",
+     "seq_len": 1106,
+     "template_bound": {
+      "class": "SAME_ACCESSION",
+      "date": "2025-08-01",
+      "implied_by_training": true
+     },
+     "training": {
+      "class": "SAME_ACCESSION",
+      "date": "2018-04-30",
+      "same_accession": 7,
+      "same_accession_ids": [
+       "1H9O",
+       "1SHA",
+       "2IUI",
+       "2L6W",
+       "2PLD",
+       "2PLE",
+       "3MJG"
+      ],
+      "seq30": 702,
+      "seq30_ids": [
+       "1AGW",
+       "1BYG",
+       "1FGI",
+       "1FGK",
+       "1FVR",
+       "1GJO",
+       "1K9A",
+       "1LUF",
+       "1M14",
+       "1M17",
+       "1OEC",
+       "1PKG",
+       "1QCF",
+       "1QPC",
+       "1QPD",
+       "1QPE",
+       "1QPJ",
+       "1R0P",
+       "1R1W",
+       "1RJB"
+      ],
+      "seq95": 1,
+      "seq95_ids": [
+       "3MJG"
+      ]
+     }
+    },
+    "P15559": {
+     "in_e427_e421_relabel_ok": true,
+     "in_e427_e422_ledger": false,
+     "model_created_date": "2025-08-01",
+     "seq_len": 274,
+     "template_bound": {
+      "class": "SAME_ACCESSION",
+      "date": "2025-08-01",
+      "implied_by_training": true
+     },
+     "training": {
+      "class": "SAME_ACCESSION",
+      "date": "2018-04-30",
+      "same_accession": 16,
+      "same_accession_ids": [
+       "1D4A",
+       "1DXO",
+       "1GG5",
+       "1H66",
+       "1H69",
+       "1KBO",
+       "1KBQ",
+       "1QBG",
+       "2F1O",
+       "3JSX",
+       "4CET",
+       "4CF6",
+       "5A4K",
+       "5EA2",
+       "5EAI",
+       "5FUQ"
+      ],
+      "seq30": 93,
+      "seq30_ids": [
+       "1D4A",
+       "1DXO",
+       "1DXQ",
+       "1GG5",
+       "1H66",
+       "1H69",
+       "1KBO",
+       "1KBQ",
+       "1QBG",
+       "1QR2",
+       "1QRD",
+       "1SG0",
+       "1XI2",
+       "1ZX1",
+       "2BZS",
+       "2F1O",
+       "2QMY",
+       "2QMZ",
+       "2QR2",
+       "2QWX"
+      ],
+      "seq95": 16,
+      "seq95_ids": [
+       "1D4A",
+       "1DXO",
+       "1GG5",
+       "1H66",
+       "1H69",
+       "1KBO",
+       "1KBQ",
+       "1QBG",
+       "2F1O",
+       "3JSX",
+       "4CET",
+       "4CF6",
+       "5A4K",
+       "5EA2",
+       "5EAI",
+       "5FUQ"
+      ]
+     }
+    },
+    "P21802": {
+     "in_e427_e421_relabel_ok": true,
+     "in_e427_e422_ledger": false,
+     "model_created_date": "2025-08-01",
+     "seq_len": 821,
+     "template_bound": {
+      "class": "SAME_ACCESSION",
+      "date": "2025-08-01",
+      "implied_by_training": true
+     },
+     "training": {
+      "class": "SAME_ACCESSION",
+      "date": "2018-04-30",
+      "same_accession": 40,
+      "same_accession_ids": [
+       "1DJS",
+       "1E0O",
+       "1EV2",
+       "1GJO",
+       "1II4",
+       "1IIL",
+       "1NUN",
+       "1OEC",
+       "1WVZ",
+       "2FDB",
+       "2PSQ",
+       "2PVF",
+       "2PVY",
+       "2PWL",
+       "2PY3",
+       "2PZ5",
+       "2PZP",
+       "2PZR",
+       "2Q0B",
+       "3B2T"
+      ],
+      "seq30": 1084,
+      "seq30_ids": [
+       "1AD5",
+       "1AGW",
+       "1BYG",
+       "1CVS",
+       "1DJS",
+       "1E0O",
+       "1EV2",
+       "1EVT",
+       "1FGI",
+       "1FGK",
+       "1FMK",
+       "1FPU",
+       "1FQ9",
+       "1FVR",
+       "1GAG",
+       "1GJO",
+       "1I44",
+       "1IEP",
+       "1II4",
+       "1IIL"
+      ],
+      "seq95": 37,
+      "seq95_ids": [
+       "1DJS",
+       "1E0O",
+       "1EV2",
+       "1GJO",
+       "1II4",
+       "1IIL",
+       "1OEC",
+       "1WVZ",
+       "2FDB",
+       "2PSQ",
+       "2PVF",
+       "2PVY",
+       "2PWL",
+       "2PY3",
+       "2PZ5",
+       "2PZP",
+       "2PZR",
+       "2Q0B",
+       "3B2T",
+       "3CAF"
+      ]
+     }
+    },
+    "P22259": {
+     "in_e427_e421_relabel_ok": true,
+     "in_e427_e422_ledger": false,
+     "model_created_date": "2025-08-01",
+     "seq_len": 540,
+     "template_bound": {
+      "class": "SAME_ACCESSION",
+      "date": "2025-08-01",
+      "implied_by_training": true
+     },
+     "training": {
+      "class": "SAME_ACCESSION",
+      "date": "2018-04-30",
+      "same_accession": 12,
+      "same_accession_ids": [
+       "1AQ2",
+       "1AYL",
+       "1K3C",
+       "1K3D",
+       "1OEN",
+       "1OS1",
+       "2OLQ",
+       "2OLR",
+       "2PXZ",
+       "2PY7",
+       "6COM",
+       "6CRT"
+      ],
+      "seq30": 20,
+      "seq30_ids": [
+       "1AQ2",
+       "1AYL",
+       "1II2",
+       "1J3B",
+       "1K3C",
+       "1K3D",
+       "1OEN",
+       "1OS1",
+       "1XKV",
+       "1YGG",
+       "1YLH",
+       "1YTM",
+       "1YVY",
+       "2OLQ",
+       "2OLR",
+       "2PC9",
+       "2PXZ",
+       "2PY7",
+       "6COM",
+       "6CRT"
+      ],
+      "seq95": 12,
+      "seq95_ids": [
+       "1AQ2",
+       "1AYL",
+       "1K3C",
+       "1K3D",
+       "1OEN",
+       "1OS1",
+       "2OLQ",
+       "2OLR",
+       "2PXZ",
+       "2PY7",
+       "6COM",
+       "6CRT"
+      ]
+     }
+    },
+    "Q13191": {
+     "in_e427_e421_relabel_ok": true,
+     "in_e427_e422_ledger": false,
+     "model_created_date": "2025-08-01",
+     "seq_len": 982,
+     "template_bound": {
+      "class": "SAME_ACCESSION",
+      "date": "2025-08-01",
+      "implied_by_training": true
+     },
+     "training": {
+      "class": "SAME_ACCESSION",
+      "date": "2018-04-30",
+      "same_accession": 11,
+      "same_accession_ids": [
+       "2AK5",
+       "2BZ8",
+       "2DO6",
+       "2J6F",
+       "2JNH",
+       "2LDR",
+       "2OOA",
+       "2OOB",
+       "3PFV",
+       "3VGO",
+       "3ZNI"
+      ],
+      "seq30": 45,
+      "seq30_ids": [
+       "1B47",
+       "1FBV",
+       "1YVH",
+       "2CBL",
+       "2D9S",
+       "2DO6",
+       "2JNH",
+       "2JUJ",
+       "2K4D",
+       "2LDR",
+       "2OO9",
+       "2OOA",
+       "2OOB",
+       "2Y1M",
+       "2Y1N",
+       "3BUM",
+       "3BUN",
+       "3BUO",
+       "3BUW",
+       "3BUX"
+      ],
+      "seq95": 9,
+      "seq95_ids": [
+       "2JNH",
+       "2K4D",
+       "2LDR",
+       "2OOA",
+       "2OOB",
+       "3PFV",
+       "3VGO",
+       "3ZNI",
+       "5AXI"
+      ]
+     }
+    },
+    "Q14191": {
+     "in_e427_e421_relabel_ok": true,
+     "in_e427_e422_ledger": false,
+     "model_created_date": "2025-08-01",
+     "seq_len": 1432,
+     "template_bound": {
+      "class": "SAME_ACCESSION",
+      "date": "2025-08-01",
+      "implied_by_training": true
+     },
+     "training": {
+      "class": "SAME_ACCESSION",
+      "date": "2018-04-30",
+      "same_accession": 10,
+      "same_accession_ids": [
+       "2AXL",
+       "2DGZ",
+       "2E1E",
+       "2E1F",
+       "2FBT",
+       "2FBV",
+       "2FBX",
+       "2FBY",
+       "2FC0",
+       "3AAF"
+      ],
+      "seq30": 35,
+      "seq30_ids": [
+       "1OYW",
+       "1OYY",
+       "2AXL",
+       "2DGZ",
+       "2E1E",
+       "2E1F",
+       "2E6L",
+       "2E6M",
+       "2FBT",
+       "2FBV",
+       "2FBX",
+       "2FBY",
+       "2FC0",
+       "2V1X",
+       "2WAX",
+       "2WAY",
+       "2WWY",
+       "3AAF",
+       "4CDG",
+       "4CGZ"
+      ],
+      "seq95": 10,
+      "seq95_ids": [
+       "2AXL",
+       "2DGZ",
+       "2E1E",
+       "2E1F",
+       "2FBT",
+       "2FBV",
+       "2FBX",
+       "2FBY",
+       "2FC0",
+       "3AAF"
+      ]
+     }
+    },
+    "Q382U0": {
+     "in_e427_e421_relabel_ok": true,
+     "in_e427_e422_ledger": false,
+     "model_created_date": "2025-08-01",
+     "seq_len": 465,
+     "template_bound": {
+      "class": "SAME_ACCESSION",
+      "date": "2025-08-01",
+      "same_accession": 1,
+      "same_accession_ids": [
+       "6Q2A"
+      ],
+      "seq30": 147,
+      "seq30_ids": [
+       "1H1W",
+       "1HOW",
+       "1OKY",
+       "1OKZ",
+       "1Q8Y",
+       "1Q8Z",
+       "1Q97",
+       "1Q99",
+       "1UU3",
+       "1UU7",
+       "1UU8",
+       "1UU9",
+       "1UVR",
+       "1Z57",
+       "1Z5M",
+       "2BIY",
+       "2EU9",
+       "2EXE",
+       "2JD5",
+       "2PE0"
+      ],
+      "seq95": 1,
+      "seq95_ids": [
+       "6Q2A"
+      ]
+     },
+     "training": {
+      "class": "SEQ30",
+      "date": "2018-04-30",
+      "same_accession": 0,
+      "same_accession_ids": [],
+      "seq30": 82,
+      "seq30_ids": [
+       "1H1W",
+       "1HOW",
+       "1OKY",
+       "1OKZ",
+       "1Q8Y",
+       "1Q8Z",
+       "1Q97",
+       "1Q99",
+       "1UU3",
+       "1UU7",
+       "1UU8",
+       "1UU9",
+       "1UVR",
+       "1Z57",
+       "1Z5M",
+       "2BIY",
+       "2EU9",
+       "2EXE",
+       "2JD5",
+       "2PE0"
+      ],
+      "seq95": 0,
+      "seq95_ids": []
+     }
+    },
+    "Q6SZW1": {
+     "in_e427_e421_relabel_ok": true,
+     "in_e427_e422_ledger": false,
+     "model_created_date": "2025-08-01",
+     "seq_len": 724,
+     "template_bound": {
+      "class": "SAME_ACCESSION",
+      "date": "2025-08-01",
+      "same_accession": 42,
+      "same_accession_ids": [
+       "6O0Q",
+       "6O0R",
+       "6O0S",
+       "6O0T",
+       "6O0U",
+       "6O0V",
+       "6O1B",
+       "6QWV",
+       "6WPK",
+       "6ZFX",
+       "6ZG0",
+       "6ZG1",
+       "7ANW",
+       "7CM5",
+       "7CM6",
+       "7CM7",
+       "7DJT",
+       "7KNQ",
+       "7LD0",
+       "7NAG"
+      ],
+      "seq30": 47,
+      "seq30_ids": [
+       "6O0Q",
+       "6O0R",
+       "6O0S",
+       "6O0T",
+       "6O0U",
+       "6O0V",
+       "6O1B",
+       "6QWV",
+       "6WPK",
+       "6ZFX",
+       "6ZG0",
+       "6ZG1",
+       "7ANW",
+       "7CM5",
+       "7CM6",
+       "7CM7",
+       "7DJT",
+       "7KNQ",
+       "7LCY",
+       "7LCZ"
+      ],
+      "seq95": 41,
+      "seq95_ids": [
+       "6O0Q",
+       "6O0R",
+       "6O0S",
+       "6O0T",
+       "6O0U",
+       "6O0V",
+       "6O1B",
+       "6QWV",
+       "6WPK",
+       "6ZFX",
+       "6ZG0",
+       "6ZG1",
+       "7ANW",
+       "7CM5",
+       "7CM6",
+       "7CM7",
+       "7DJT",
+       "7KNQ",
+       "7LD0",
+       "7NAG"
+      ]
+     },
+     "training": {
+      "class": "NOVEL",
+      "date": "2018-04-30",
+      "same_accession": 0,
+      "same_accession_ids": [],
+      "seq30": 0,
+      "seq30_ids": [],
+      "seq95": 0,
+      "seq95_ids": []
+     }
+    },
+    "Q72IH2": {
+     "in_e427_e421_relabel_ok": true,
+     "in_e427_e422_ledger": false,
+     "model_created_date": "2025-08-01",
+     "seq_len": 407,
+     "template_bound": {
+      "class": "SEQ95",
+      "date": "2025-08-01",
+      "same_accession": 0,
+      "same_accession_ids": [],
+      "seq30": 174,
+      "seq30_ids": [
+       "1BJ4",
+       "1CJ0",
+       "1DFO",
+       "1EJI",
+       "1EQB",
+       "1KKJ",
+       "1KKP",
+       "1KL1",
+       "1KL2",
+       "1LS3",
+       "1RV3",
+       "1RV4",
+       "1RVU",
+       "1RVY",
+       "1YJS",
+       "1YJY",
+       "1YJZ",
+       "2CB1",
+       "2DKJ",
+       "2VGS"
+      ],
+      "seq95": 7,
+      "seq95_ids": [
+       "2DKJ",
+       "8SSY",
+       "8SUI",
+       "8SUJ",
+       "9BOH",
+       "9BOW",
+       "9BPE"
+      ]
+     },
+     "training": {
+      "class": "SEQ95",
+      "date": "2018-04-30",
+      "same_accession": 0,
+      "same_accession_ids": [],
+      "seq30": 92,
+      "seq30_ids": [
+       "1BJ4",
+       "1CJ0",
+       "1DFO",
+       "1EJI",
+       "1EQB",
+       "1KKJ",
+       "1KKP",
+       "1KL1",
+       "1KL2",
+       "1LS3",
+       "1RV3",
+       "1RV4",
+       "1RVU",
+       "1RVY",
+       "1YJS",
+       "1YJY",
+       "1YJZ",
+       "2CB1",
+       "2DKJ",
+       "2VGS"
+      ],
+      "seq95": 1,
+      "seq95_ids": [
+       "2DKJ"
+      ]
+     }
+    },
+    "Q73QH2": {
+     "in_e427_e421_relabel_ok": true,
+     "in_e427_e422_ledger": false,
+     "model_created_date": "2022-06-01",
+     "seq_len": 543,
+     "template_bound": {
+      "class": "SEQ30",
+      "date": "2022-06-01",
+      "same_accession": 0,
+      "same_accession_ids": [],
+      "seq30": 4,
+      "seq30_ids": [
+       "4Q6K",
+       "6MRV",
+       "6MRX",
+       "6MYV"
+      ],
+      "seq95": 0,
+      "seq95_ids": []
+     },
+     "training": {
+      "class": "SEQ30",
+      "date": "2018-04-30",
+      "same_accession": 0,
+      "same_accession_ids": [],
+      "seq30": 1,
+      "seq30_ids": [
+       "4Q6K"
+      ],
+      "seq95": 0,
+      "seq95_ids": []
+     }
+    },
+    "Q8NBP7": {
+     "in_e427_e421_relabel_ok": true,
+     "in_e427_e422_ledger": false,
+     "model_created_date": "2025-08-01",
+     "seq_len": 692,
+     "template_bound": {
+      "class": "SAME_ACCESSION",
+      "date": "2025-08-01",
+      "implied_by_training": true
+     },
+     "training": {
+      "class": "SAME_ACCESSION",
+      "date": "2018-04-30",
+      "same_accession": 28,
+      "same_accession_ids": [
+       "2P4E",
+       "2PMW",
+       "2QTW",
+       "2W2M",
+       "2W2N",
+       "2W2O",
+       "2W2P",
+       "2W2Q",
+       "2XTJ",
+       "3BPS",
+       "3GCW",
+       "3GCX",
+       "3H42",
+       "3M0C",
+       "3P5B",
+       "3P5C",
+       "3SQO",
+       "4K8R",
+       "4NE9",
+       "4NMX"
+      ],
+      "seq30": 183,
+      "seq30_ids": [
+       "1A2Q",
+       "1AK9",
+       "1AQN",
+       "1AU9",
+       "1BJR",
+       "1CNM",
+       "1DUI",
+       "1EGQ",
+       "1GNS",
+       "1GNV",
+       "1HT3",
+       "1IC6",
+       "1LW6",
+       "1MEE",
+       "1OYO",
+       "1P7V",
+       "1P7W",
+       "1PEK",
+       "1PFG",
+       "1PJ8"
+      ],
+      "seq95": 28,
+      "seq95_ids": [
+       "2P4E",
+       "2PMW",
+       "2QTW",
+       "2W2M",
+       "2W2N",
+       "2W2O",
+       "2W2P",
+       "2W2Q",
+       "2XTJ",
+       "3BPS",
+       "3GCW",
+       "3GCX",
+       "3H42",
+       "3M0C",
+       "3P5B",
+       "3P5C",
+       "3SQO",
+       "4K8R",
+       "4NE9",
+       "4NMX"
+      ]
+     }
+    },
+    "Q9C0K0": {
+     "in_e427_e421_relabel_ok": true,
+     "in_e427_e422_ledger": false,
+     "model_created_date": "2025-08-01",
+     "seq_len": 894,
+     "template_bound": {
+      "class": "SEQ95",
+      "date": "2025-08-01",
+      "same_accession": 0,
+      "same_accession_ids": [],
+      "seq30": 161,
+      "seq30_ids": [
+       "1A1F",
+       "1A1G",
+       "1A1H",
+       "1A1I",
+       "1A1J",
+       "1A1K",
+       "1A1L",
+       "1AAY",
+       "1BBO",
+       "1F2I",
+       "1G2D",
+       "1G2F",
+       "1JK1",
+       "1JK2",
+       "1LLM",
+       "1MEY",
+       "1P47",
+       "1TF3",
+       "1TF6",
+       "1UBD"
+      ],
+      "seq95": 2,
+      "seq95_ids": [
+       "9B4P",
+       "9BV0"
+      ]
+     },
+     "training": {
+      "class": "SEQ30",
+      "date": "2018-04-30",
+      "same_accession": 0,
+      "same_accession_ids": [],
+      "seq30": 105,
+      "seq30_ids": [
+       "1A1F",
+       "1A1G",
+       "1A1H",
+       "1A1I",
+       "1A1J",
+       "1A1K",
+       "1A1L",
+       "1AAY",
+       "1BBO",
+       "1F2I",
+       "1G2D",
+       "1G2F",
+       "1JK1",
+       "1JK2",
+       "1LLM",
+       "1MEY",
+       "1P47",
+       "1TF3",
+       "1TF6",
+       "1UBD"
+      ],
+      "seq95": 0,
+      "seq95_ids": []
+     }
+    },
+    "Q9I640": {
+     "in_e427_e421_relabel_ok": true,
+     "in_e427_e422_ledger": false,
+     "model_created_date": "2025-08-01",
+     "seq_len": 158,
+     "template_bound": {
+      "class": "SAME_ACCESSION",
+      "date": "2025-08-01",
+      "implied_by_training": true
+     },
+     "training": {
+      "class": "SAME_ACCESSION",
+      "date": "2018-04-30",
+      "same_accession": 1,
+      "same_accession_ids": [
+       "2FE7"
+      ],
+      "seq30": 18,
+      "seq30_ids": [
+       "2B3U",
+       "2B3V",
+       "2B4B",
+       "2B4D",
+       "2B58",
+       "2B5G",
+       "2BEI",
+       "2F5I",
+       "2FE7",
+       "2FXF",
+       "2G3T",
+       "2JEV",
+       "2Q4V",
+       "3BJ7",
+       "3BJ8",
+       "4UBR",
+       "5C82",
+       "5IB0"
+      ],
+      "seq95": 1,
+      "seq95_ids": [
+       "2FE7"
+      ]
+     }
+    }
+   },
+   "n": 22,
+   "query_failed": [],
+   "template_bound_class_counts": {
+    "NOVEL": 1,
+    "SAME_ACCESSION": 14,
+    "SEQ30": 5,
+    "SEQ95": 2
+   },
+   "training_class_counts": {
+    "NOVEL": 2,
+    "SAME_ACCESSION": 11,
+    "SEQ30": 7,
+    "SEQ95": 2
+   }
+  }
+ },
+ "schema": "paper-verification-v2c",
+ "training_cutoff": "2018-04-30",
+ "universe_checks": {
+  "counts_match": true,
+  "e427_e421_relabel_ok": 85,
+  "e427_e422_ledger": 141,
+  "expected_counts": {
+   "a": 3,
+   "b": 22
+  },
+  "new_a": [
+   "A0A1D5PRR9",
+   "Q13485",
+   "Q9Z2X8"
+  ],
+  "new_b": [
+   "A0A0J9XUF2",
+   "A0A1M6VF95",
+   "A0A2M9HC27",
+   "A0A3S5Y0T1",
+   "A7YT55",
+   "B1YD41",
+   "O60502",
+   "P03952",
+   "P09242",
+   "P09619",
+   "P15559",
+   "P21802",
+   "P22259",
+   "Q13191",
+   "Q14191",
+   "Q382U0",
+   "Q6SZW1",
+   "Q72IH2",
+   "Q73QH2",
+   "Q8NBP7",
+   "Q9C0K0",
+   "Q9I640"
+  ],
+  "v2_covered": 199,
+  "v2_e421_accessions_not_in_relabel_ok": [
+   "Q2G0L4"
+  ]
+ },
+ "utc": "2026-10-08T01:29:47.229410+00:00",
+ "v2_code_sha256": "4c8359e422a4be33e4051c452784b39ec603fd775e886929afe2477cfc25d33f"
+}

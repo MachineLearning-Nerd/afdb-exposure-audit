@@ -1,0 +1,102 @@
+{
+ "admitted_pool": {
+  "accessions": 599,
+  "accessions_all_refs_pre_model_date": 599,
+  "accessions_all_refs_pre_training_cutoff": 553,
+  "accessions_both": 553,
+  "accessions_with_post_cutoff_ref": 46,
+  "entries": 646,
+  "entries_template_channel": 646,
+  "entries_training_channel": 595,
+  "model_created_dates": {
+   "2022-06-01": 225,
+   "2025-03-31": 3,
+   "2025-07-03": 3,
+   "2025-08-01": 415
+  }
+ },
+ "admitted_undated_typed_failures": [
+  {
+   "accession": "Q582G4",
+   "code": "afdb_child_model_cif_header_invalid"
+  }
+ ],
+ "inputs": {
+  "results/e420/label_run_receipt.json": "b2c36992ec965b77a0d040e44c25fcebbd1ff1fea03a7e3e9a1747d6f593a452",
+  "results/e420/overflow_temporal_check.json": "6c8cf0a26757a252d44c500ca1619812d1c6349a0bf1b24313ad685bf06f95d7"
+ },
+ "overflow": {
+  "accessions": 269,
+  "accessions_all_refs_pre_model_date": 264,
+  "accessions_all_refs_pre_training_cutoff": 238,
+  "accessions_both": 238,
+  "accessions_with_post_cutoff_ref": 31,
+  "entries": 289,
+  "entries_template_channel": 284,
+  "entries_training_channel": 256,
+  "model_created_dates": {
+   "2021-09-14": 1,
+   "2021-11-03": 1,
+   "2022-06-01": 97,
+   "2025-03-31": 1,
+   "2025-07-03": 1,
+   "2025-08-01": 188
+  }
+ },
+ "release_year_histogram": {
+  "1988": 2,
+  "1989": 2,
+  "1990": 1,
+  "1993": 1,
+  "1994": 1,
+  "1995": 4,
+  "1996": 5,
+  "1997": 6,
+  "1998": 11,
+  "1999": 16,
+  "2000": 21,
+  "2001": 21,
+  "2002": 35,
+  "2003": 39,
+  "2004": 64,
+  "2005": 55,
+  "2006": 67,
+  "2007": 87,
+  "2008": 60,
+  "2009": 63,
+  "2010": 69,
+  "2011": 29,
+  "2012": 32,
+  "2013": 20,
+  "2014": 33,
+  "2015": 36,
+  "2016": 24,
+  "2017": 36,
+  "2018": 22,
+  "2019": 23,
+  "2020": 12,
+  "2021": 17,
+  "2022": 17,
+  "2023": 4
+ },
+ "schema": "paper-verification-v1",
+ "training_cutoff": "2018-04-30",
+ "union": {
+  "accessions": 868,
+  "accessions_all_refs_pre_model_date": 863,
+  "accessions_all_refs_pre_training_cutoff": 791,
+  "accessions_both": 791,
+  "accessions_with_post_cutoff_ref": 77,
+  "entries": 935,
+  "entries_template_channel": 930,
+  "entries_training_channel": 851,
+  "model_created_dates": {
+   "2021-09-14": 1,
+   "2021-11-03": 1,
+   "2022-06-01": 322,
+   "2025-03-31": 4,
+   "2025-07-03": 4,
+   "2025-08-01": 603
+  }
+ }
+}

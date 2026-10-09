@@ -1,0 +1,358 @@
+{
+ "e421": {
+  "all": {
+   "accessions": 64,
+   "bins": [
+    {
+     "bin": [
+      0,
+      50
+     ],
+     "err_rate_lddt_lt_0.60": 0.5819209039548022,
+     "n": 177
+    },
+    {
+     "bin": [
+      50,
+      70
+     ],
+     "err_rate_lddt_lt_0.60": 0.24361948955916474,
+     "n": 431
+    },
+    {
+     "bin": [
+      70,
+      80
+     ],
+     "err_rate_lddt_lt_0.60": 0.20869565217391303,
+     "n": 690
+    },
+    {
+     "bin": [
+      80,
+      90
+     ],
+     "err_rate_lddt_lt_0.60": 0.05795884082318354,
+     "n": 2381
+    },
+    {
+     "bin": [
+      90,
+      100.01
+     ],
+     "err_rate_lddt_lt_0.60": 0.005823747413004765,
+     "n": 20777
+    }
+   ],
+   "n": 24456,
+   "spearman_plddt_lddt": 0.6170601466142406
+  },
+  "no_close_relative": {
+   "accessions": 37,
+   "bins": [
+    {
+     "bin": [
+      0,
+      50
+     ],
+     "err_rate_lddt_lt_0.60": 0.5,
+     "n": 142
+    },
+    {
+     "bin": [
+      50,
+      70
+     ],
+     "err_rate_lddt_lt_0.60": 0.1864406779661017,
+     "n": 295
+    },
+    {
+     "bin": [
+      70,
+      80
+     ],
+     "err_rate_lddt_lt_0.60": 0.09577464788732394,
+     "n": 355
+    },
+    {
+     "bin": [
+      80,
+      90
+     ],
+     "err_rate_lddt_lt_0.60": 0.026570048309178744,
+     "n": 1242
+    },
+    {
+     "bin": [
+      90,
+      100.01
+     ],
+     "err_rate_lddt_lt_0.60": 0.005784526391901663,
+     "n": 8298
+    }
+   ],
+   "n": 10332,
+   "spearman_plddt_lddt": 0.6472840332772068
+  },
+  "prior_relative": {
+   "accessions": 27,
+   "bins": [
+    {
+     "bin": [
+      0,
+      50
+     ],
+     "err_rate_lddt_lt_0.60": 0.9142857142857143,
+     "n": 35
+    },
+    {
+     "bin": [
+      50,
+      70
+     ],
+     "err_rate_lddt_lt_0.60": 0.36764705882352944,
+     "n": 136
+    },
+    {
+     "bin": [
+      70,
+      80
+     ],
+     "err_rate_lddt_lt_0.60": 0.3283582089552239,
+     "n": 335
+    },
+    {
+     "bin": [
+      80,
+      90
+     ],
+     "err_rate_lddt_lt_0.60": 0.09218612818261633,
+     "n": 1139
+    },
+    {
+     "bin": [
+      90,
+      100.01
+     ],
+     "err_rate_lddt_lt_0.60": 0.005849827710553731,
+     "n": 12479
+    }
+   ],
+   "n": 14124,
+   "spearman_plddt_lddt": 0.5912349561778443
+  },
+  "unresolved": {
+   "n": 0
+  }
+ },
+ "e422_pooled": {
+  "accessions_by_stratum": {
+   "no_close_relative": 51,
+   "prior_relative": 87
+  },
+  "frac_lddt_lt_0.60_by_stratum": {
+   "no_close_relative": 0.38615251856990573,
+   "prior_relative": 0.2507822597102238
+  },
+  "levels": {
+   "0.9": {
+    "by_stratum_protein_averaged_NOT_PRESPECIFIED": {
+     "no_close_relative": {
+      "R": 200,
+      "mcse": 0.005927655031427632,
+      "mean": 0.9017969217314612
+     },
+     "prior_relative": {
+      "R": 200,
+      "mcse": 0.005458050770611465,
+      "mean": 0.9028650868525895
+     }
+    },
+    "by_stratum_residue_weighted": {
+     "no_close_relative": {
+      "R": 200,
+      "mcse": 0.010509538674748494,
+      "mean": 0.8296491874528807
+     },
+     "prior_relative": {
+      "R": 200,
+      "mcse": 0.005711813239892797,
+      "mean": 0.9049548637014883
+     }
+    },
+    "protein_averaged": {
+     "R": 200,
+     "mcse": 0.005066952027086311,
+     "mean": 0.9030778504518053
+    },
+    "residue_weighted": {
+     "R": 200,
+     "mcse": 0.008005419959574041,
+     "mean": 0.8580359689396587
+    }
+   },
+   "0.95": {
+    "by_stratum_protein_averaged_NOT_PRESPECIFIED": {
+     "no_close_relative": {
+      "R": 200,
+      "mcse": 0.003809572085846806,
+      "mean": 0.9441207716863118
+     },
+     "prior_relative": {
+      "R": 200,
+      "mcse": 0.003573235108462521,
+      "mean": 0.9488577757917217
+     }
+    },
+    "by_stratum_residue_weighted": {
+     "no_close_relative": {
+      "R": 200,
+      "mcse": 0.007517825532706102,
+      "mean": 0.8937138704225904
+     },
+     "prior_relative": {
+      "R": 200,
+      "mcse": 0.00374030006991692,
+      "mean": 0.9505538993288418
+     }
+    },
+    "protein_averaged": {
+     "R": 200,
+     "mcse": 0.0033135481514864544,
+     "mean": 0.9475263960590351
+    },
+    "residue_weighted": {
+     "R": 200,
+     "mcse": 0.005714810731495711,
+     "mean": 0.9152764843176768
+    }
+   }
+  },
+  "median_lddt_by_stratum": {
+   "no_close_relative": 0.9313,
+   "prior_relative": 0.9861
+  },
+  "n_accessions": 138,
+  "n_rows": 117905,
+  "rows_by_stratum": {
+   "no_close_relative": 59101,
+   "prior_relative": 58804
+  },
+  "rows_per_protein_by_stratum": {
+   "no_close_relative": {
+    "mean": 1158.8431372549019,
+    "median": 768.0
+   },
+   "prior_relative": {
+    "mean": 675.9080459770115,
+    "median": 351.0
+   }
+  }
+ },
+ "exposure_channel": "training (<= 2018-04-30)",
+ "schema": "paper-verification-v3",
+ "sensitivity_excluding_K7PQ54": {
+  "accessions_by_stratum": {
+   "no_close_relative": 50,
+   "prior_relative": 87
+  },
+  "frac_lddt_lt_0.60_by_stratum": {
+   "no_close_relative": 0.24064145751292879,
+   "prior_relative": 0.2507822597102238
+  },
+  "levels": {
+   "0.9": {
+    "by_stratum_protein_averaged_NOT_PRESPECIFIED": {
+     "no_close_relative": {
+      "R": 200,
+      "mcse": 0.005414489020619471,
+      "mean": 0.894334712947157
+     },
+     "prior_relative": {
+      "R": 200,
+      "mcse": 0.00559896393386254,
+      "mean": 0.8793231017814168
+     }
+    },
+    "by_stratum_residue_weighted": {
+     "no_close_relative": {
+      "R": 200,
+      "mcse": 0.007071610334206594,
+      "mean": 0.8729215858871804
+     },
+     "prior_relative": {
+      "R": 200,
+      "mcse": 0.0064926635748017705,
+      "mean": 0.8822011622469104
+     }
+    },
+    "protein_averaged": {
+     "R": 200,
+     "mcse": 0.004909853828358097,
+     "mean": 0.8850122915484576
+    },
+    "residue_weighted": {
+     "R": 200,
+     "mcse": 0.005815574215348277,
+     "mean": 0.8792035673971079
+    }
+   },
+   "0.95": {
+    "by_stratum_protein_averaged_NOT_PRESPECIFIED": {
+     "no_close_relative": {
+      "R": 200,
+      "mcse": 0.0034368520850275247,
+      "mean": 0.9410965083243862
+     },
+     "prior_relative": {
+      "R": 200,
+      "mcse": 0.003522148699727249,
+      "mean": 0.9363903891488573
+     }
+    },
+    "by_stratum_residue_weighted": {
+     "no_close_relative": {
+      "R": 200,
+      "mcse": 0.0046910684443743035,
+      "mean": 0.9254283068513675
+     },
+     "prior_relative": {
+      "R": 200,
+      "mcse": 0.00391463927994615,
+      "mean": 0.9392400107171235
+     }
+    },
+    "protein_averaged": {
+     "R": 200,
+     "mcse": 0.003090194231539342,
+     "mean": 0.9381983931808568
+    },
+    "residue_weighted": {
+     "R": 200,
+     "mcse": 0.0036299623544182574,
+     "mean": 0.9342073666287075
+    }
+   }
+  },
+  "median_lddt_by_stratum": {
+   "no_close_relative": 0.9623,
+   "prior_relative": 0.9861
+  },
+  "n_accessions": 137,
+  "n_rows": 100958,
+  "rows_by_stratum": {
+   "no_close_relative": 42154,
+   "prior_relative": 58804
+  },
+  "rows_per_protein_by_stratum": {
+   "no_close_relative": {
+    "mean": 843.08,
+    "median": 741.5
+   },
+   "prior_relative": {
+    "mean": 675.9080459770115,
+    "median": 351.0
+   }
+  }
+ }
+}

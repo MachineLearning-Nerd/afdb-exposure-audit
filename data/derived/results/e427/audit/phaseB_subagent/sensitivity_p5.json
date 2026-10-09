@@ -1,0 +1,34 @@
+{
+ "original_ledger_closed": {
+  "n_rows": 117905,
+  "n_accessions": 138,
+  "0.9": {
+   "mean": 0.8579652901901389,
+   "mcse": 0.008006620040853207,
+   "threshold": 0.8759801398774404,
+   "outcome": "FAIL"
+  },
+  "0.95": {
+   "mean": 0.9151961367793325,
+   "mcse": 0.005718436143400944,
+   "threshold": 0.9328446915697971,
+   "outcome": "FAIL"
+  }
+ },
+ "corrected_ledger_open_interval": {
+  "n_rows": 123454,
+  "n_accessions": 141,
+  "0.9": {
+   "mean": 0.8938745546878024,
+   "mcse": 0.00289518997798519,
+   "threshold": 0.8913144300660445,
+   "outcome": "HOLD"
+  },
+  "0.95": {
+   "mean": 0.9453396313734075,
+   "mcse": 0.0017094707358776366,
+   "threshold": 0.944871587792367,
+   "outcome": "HOLD"
+  }
+ }
+}

@@ -1,0 +1,9 @@
+# Python 3.12 (the analyses were run with CPython 3.12.13).
+# Versions below are the ones the released results were produced and checked with.
+numpy==1.26.4          # all analyses
+scipy==1.17.1          # Spearman correlation (V3, e421/e427 relabel)
+scikit-learn==1.9.0    # registered evaluator e422_protocol (CQR / isotonic methods)
+matplotlib==3.11.0     # make_figures_rev3.py (figures use Liberation Sans if installed, else DejaVu Sans)
+requests==2.34.2       # network pipelines (e420/e421/e422-e427 fetch lanes)
+pytest==9.1.1          # code/tests
+opentimestamps-client==0.7.2   # `ots verify` / `ots info` for the .ots proofs

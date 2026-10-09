@@ -1,0 +1,54 @@
+{
+ "schema": "figures-rev3-numbers-v1",
+ "note": "Every number annotated on the rev3 figures. pLDDT is dropped on load from e422/e427 ledgers and never used (registered blinding of P6/P7).",
+ "f1_mechanism_9qj6": {
+  "entry": "9qj6",
+  "chain": "A",
+  "accession": "K7PQ54",
+  "sifts_start_label_seq_id": 1,
+  "sifts_start_author_residue_number": null,
+  "sifts_unp_start": 35,
+  "sifts_unp_end": 507,
+  "sifts_end_label_seq_id": 473,
+  "sifts_end_author_residue_number": 507,
+  "first_observed_label_seq_id": 2,
+  "first_observed_auth_seq_id": 36,
+  "first_observed_correct_uniprot": 36,
+  "ledger_first_uniprot_original": 70,
+  "author_offset": 34,
+  "faulty_uniprot_for_first_atom": 70,
+  "register_shift": 34
+ },
+ "f2_scope": {
+  "segment_key": "(entry, chain, accession); median residue lDDT per key; batch 1-4 cumulative ledgers",
+  "segments_in_both": 488,
+  "segments_original_only": 0,
+  "segments_corrected_only": 7,
+  "segments_changed_any": 188,
+  "segments_abs_delta_gt_0.2": 151,
+  "accessions_abs_delta_gt_0.2": 40,
+  "accessions_in_both": 138,
+  "residues_original_finite_lddt": 117905,
+  "residues_corrected_finite_lddt": 123454,
+  "rows_original_total": 117905,
+  "rows_corrected_total": 123454,
+  "share_lddt_lt_0.60_original": 0.3186378864339935,
+  "share_lddt_lt_0.60_corrected": 0.011064850065611483
+ },
+ "f3_exposure": {
+  "n_proteins": 138,
+  "training_class_counts": {
+   "SAME_ACCESSION": 78,
+   "SEQ95": 9,
+   "SEQ30": 41,
+   "NOVEL": 10
+  },
+  "training_unresolved": 0,
+  "template_class_counts": {
+   "OTHER": 88,
+   "SAME_ACC": 45,
+   "UNRESOLVED": 5
+  },
+  "template_panel": "drawn from out/v5_templates.json"
+ }
+}

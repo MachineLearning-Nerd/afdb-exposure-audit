@@ -1,0 +1,197 @@
+{
+  "checkpoint_sha256": "802a32ebf4133c8e9e39519964f3540d6af6c94c3de603dd620af5e5720cbc08",
+  "payload": {
+    "schema": "e421-post-run-checkpoint-v3",
+    "e_number": "e421",
+    "repository_commit": "e98a8036350aec92b6195c54209e6f51d58a57d7",
+    "digest_rule": "checkpoint_sha256 = SHA256(UTF8(json.dumps(payload, sort_keys=True, separators=(',',':')))) over this payload without checkpoint_sha256",
+    "status": "EXPLORATORY_EXECUTED_UNDERPOWERED",
+    "verdict": "E421_UNDERPOWERED_POOL",
+    "cells": {
+      "A": 3411,
+      "B": 1,
+      "OC": 176,
+      "O": 223
+    },
+    "exploratory_note": "Labels are EXPLORATORY \u2014 provenance envelopes (v27) incomplete. Underpowered negative feasibility finding. Not admissible for the AD-CP claim.",
+    "commit_reproducibility": "Every file in payload.files is tree-present at repository_commit with bytes identical to these recorded digests \u2014 a verifier can reproduce all 29 rows via git show e98a8036:<path> alone (no working-disk trust needed). This closes the codex-main iteration-2 finding: v2 named repository_commit=d4cec516, where the manifest's results/e421/receipts.json row was not yet tree-present (added e98a8036), so v2 was current-byte consistent but not a clean commit-reproducible freeze of the manifest's 11-row set.",
+    "supersedes": {
+      "checkpoint_sha256": "f8ff5ee9d8f436dd01bf19ebc025170cbad8c78b733c5fa05cf9c037e0165af0",
+      "v2_schema": "e421-post-run-checkpoint-v2",
+      "v2_repository_commit": "d4cec516cf3026c1177b6b28682394116a27c320",
+      "reason": "v2 PRESERVED untouched (historical, like v1): byte-consistent at HEAD but repository_commit d4cec516 predates receipts.json tracking (e98a8036). Chain: v3 (this, repository_commit e98a8036) -> v2 (f8ff5ee9..., d4cec516) -> v1 (c103eb06..., 658042db). v1 drift record carried in v2.supersedes; v1 payload wrong-prefix verdict corrected of record in v2.corrections_vs_v1_payload."
+    },
+    "corrections_vs_v1_payload": {
+      "v1_verdict_was": "E420_UNDERPOWERED_POOL",
+      "v1_temporal_cause_was": "AFDB_TEMPORAL",
+      "v1_outcome_equivalent_was": "E420_INFEASIBLE_CURRENT_POOL",
+      "correction": "Wrong run's prefix (audit R-2b/P-2). e421 records cap_bound=false (168 < 600), so the cap-shortage verdict class is mechanically inapplicable; the census verdict is E421_UNDERPOWERED_POOL with B-cell scarcity as the binding cause. The v1 payload bytes are digest-bound and NOT mutated; this block is the correction of record alongside the registration Amendment 2026-09-08 and docs/audit_e421_final_audit_20260908.md."
+    },
+    "predecessor": {
+      "e420_temporal_failures": 692,
+      "e420_verdict": "E420_INFEASIBLE_CURRENT_POOL",
+      "reason_for_e421": "B-factor F-channel removes ATLAS dependency"
+    },
+    "source_free_flags": {
+      "e412_started": false,
+      "embeddings_read": false,
+      "labels_written": true,
+      "models_run": 0
+    },
+    "source_opened": "IDENTITY_AND_GRAMMAR_BYTES_ONLY",
+    "anchor": {
+      "mechanism": "OpenTimestamps",
+      "state": "ANCHOR_PENDING",
+      "note": "anchoring is main-owned; requires authorization"
+    },
+    "created_utc_date": "2026-09-09",
+    "created_by": "e421 execution session w1:pG (claude-g1); iteration 2 of the codex-main review loop",
+    "files": [
+      {
+        "path": "docs/e421_registration.md",
+        "bytes": 4930,
+        "sha256": "c298bef55fe21c4d73bce93266de1166540f5c77e0788fe5fc9cfb7111a1cd7c"
+      },
+      {
+        "path": "docs/e421_analysis_plan.md",
+        "bytes": 1774,
+        "sha256": "bd3b76cb07f45a29eccfe56e8bf24413c403ac1949baceb86069cf359734ddd6"
+      },
+      {
+        "path": "docs/e421_label_rules.json",
+        "bytes": 1587,
+        "sha256": "e614590e82b5414b8c2763b2031ca670c444598ec3b54117600984ad4485bebd"
+      },
+      {
+        "path": "docs/e421_fold_rules.json",
+        "bytes": 816,
+        "sha256": "a7f5f83f1275b397895cfc5403198774fa204374e3c0cd15b880b3274b0b09dd"
+      },
+      {
+        "path": "docs/e421_source_allowlist.json",
+        "bytes": 1968,
+        "sha256": "c4aeccd6061aff021eb04b3b7615c18cbc410c0445ad5201319d727cc481005b"
+      },
+      {
+        "path": "docs/e421_no_source_config.json",
+        "bytes": 493,
+        "sha256": "3e5e4b01ca5bbf58d7a80ca997dc2c2c8d7472980301cf038df31a5f2e9a4f2d"
+      },
+      {
+        "path": "docs/e421_dependency_lock.txt",
+        "bytes": 144,
+        "sha256": "4af9ef66317c0a856dec934d210863328966655214dbc35c5325acbf91f3d9dd"
+      },
+      {
+        "path": "docs/e421_anchor_receipt.json",
+        "bytes": 881,
+        "sha256": "a0c320ba58d6e7b937cb31815742d29a4a37d7e28e0fed2bf150a9d7dd23f265"
+      },
+      {
+        "path": "results/e421/census_results.json",
+        "bytes": 5100032,
+        "sha256": "df5a6833734c8173dfc6c5cc9c452ecfc107701acfde66a189714b7dfaa182f1"
+      },
+      {
+        "path": "results/e421/label_ledger.json",
+        "bytes": 7277689,
+        "sha256": "0ddfa6af0bf33bd29212a8a4753bab1ecbb4f64ff33905689180ee47bf893bb4"
+      },
+      {
+        "path": "results/e421/qualifying_entries.json",
+        "bytes": 30441,
+        "sha256": "96f5a4ea2e735551c59f64e105c5d3154ad20ae424d264838e0db7ebe952cb6d"
+      },
+      {
+        "path": "results/e421/census_failures.json",
+        "bytes": 1698,
+        "sha256": "d9b912d9fdfe3142286751e4a1434c7e23ddde4b43e78259fd044dc5a15a7933"
+      },
+      {
+        "path": "results/e420/source_availability_manifest.json",
+        "bytes": 4660111,
+        "sha256": "8de716b8bd587cab2e8e65416e7b45a94a39311c085b5da0259d97260fe2b144"
+      },
+      {
+        "path": "results/e420/pool_freeze.json",
+        "bytes": 35846319,
+        "sha256": "7c06cb58e197922ea75ddb01ab29f530f2d58dd165079eb8ece819230266958d"
+      },
+      {
+        "path": "results/e420/four_cell_census.json",
+        "bytes": 196017,
+        "sha256": "c85a6eaa1908eb2cd23ec82d648fbcb27c9f7856a519f0b9e494b397245254bb"
+      },
+      {
+        "path": "results/e420/label_ledger.json",
+        "bytes": 866,
+        "sha256": "f33f3b2a6ed369b2cf1ae9fed1c577ea1cc5128da441609706b63084a881d6b0"
+      },
+      {
+        "path": "results/e420/label_run_receipt.json",
+        "bytes": 1651774,
+        "sha256": "b2c36992ec965b77a0d040e44c25fcebbd1ff1fea03a7e3e9a1747d6f593a452"
+      },
+      {
+        "path": "results/e420/probes_receipt_round5_20260904.json",
+        "bytes": 10906,
+        "sha256": "14ee6446149555e82d8ccb8ea41e5232b93ca1bb744ca4023de10415b4b57baa"
+      },
+      {
+        "path": "results/e420/probes_receipt.json",
+        "bytes": 10906,
+        "sha256": "14ee6446149555e82d8ccb8ea41e5232b93ca1bb744ca4023de10415b4b57baa"
+      },
+      {
+        "path": "results/e420/overflow_temporal_check.json",
+        "bytes": 33895,
+        "sha256": "6c8cf0a26757a252d44c500ca1619812d1c6349a0bf1b24313ad685bf06f95d7"
+      },
+      {
+        "path": "docs/e420_registration.md",
+        "bytes": 66826,
+        "sha256": "ea6d8725e23f504607e75a869ae33c3e189bcd28f6533a2f739b388462789d99"
+      },
+      {
+        "path": "docs/human_gateC_authorization_20260904.md",
+        "bytes": 6989,
+        "sha256": "64bdaa4c6496db31c43840374841f4decd8fe1aba28abbaa4c0aa2bcf7ae96fa"
+      },
+      {
+        "path": "docs/human_gateC_authorization_20260904.md.ots",
+        "bytes": 2842,
+        "sha256": "c020e2e3e917d2b43c6342908f0fe7088fc40fd554dc8d589e9f53755144661f"
+      },
+      {
+        "path": "docs/human_gateC_authorization_20260904_addendum_o2.md",
+        "bytes": 1464,
+        "sha256": "169032e8b35f7f1fcb0c63b50c08d5bead074931afae65e53a9d78607cfebcf0"
+      },
+      {
+        "path": "data/source_contracts/pdbe_entry_files_contract_capture_20260904.json",
+        "bytes": 7713,
+        "sha256": "ddfa3e2338b2b5ed096bc5568133b985a4bdc0ff978a0b820fcd310f7c8d4783"
+      },
+      {
+        "path": "data/e418_retained_provenance_schema_20260830.json",
+        "bytes": 24213,
+        "sha256": "a223f271162fa921cffc23d4b040a603403b76df288cbf439021984df6b14efe"
+      },
+      {
+        "path": "data/source_contracts/capture_receipt_20260830.json",
+        "bytes": 69564,
+        "sha256": "bfcca135256038265450cb8c045d1959b8abc29b349bafea0316fcdb501475f3"
+      },
+      {
+        "path": "data/source_contracts/afdb_optional_types_generated_20260830.json",
+        "bytes": 18440,
+        "sha256": "060de272d3a0de2d0d9346f67cb03efab49f00db15363e90f26811a791176eb3"
+      },
+      {
+        "path": "results/e421/e421_result_digest_manifest.json",
+        "bytes": 4440,
+        "sha256": "31f0f88a236fd96449bd0ae73275fee9c3f19fe429786cbeccc886d9dc7ed1a4"
+      }
+    ]
+  }
+}
