@@ -1,0 +1,112 @@
+{
+ "observed_sifts_mapped_ca_residues": 123703,
+ "excluded_modified_residues": 57,
+ "modified_by_component": {
+  "MLY": 30,
+  "FME": 12,
+  "TPO": 6,
+  "LLP": 3,
+  "TH5": 2,
+  "A1E7L": 1,
+  "A1FDA": 1,
+  "CME": 1,
+  "CSD": 1
+ },
+ "entries_with_modified": 14,
+ "excluded_altloc_not_A_residues": 16,
+ "entries_with_altloc_not_A": 10,
+ "per_entry": {
+  "13ch": {
+   "modified": 4,
+   "altloc_not_A": 1
+  },
+  "21xg": {
+   "modified": 2,
+   "altloc_not_A": 0
+  },
+  "28rb": {
+   "modified": 1,
+   "altloc_not_A": 0
+  },
+  "29ln": {
+   "modified": 0,
+   "altloc_not_A": 1
+  },
+  "29lp": {
+   "modified": 0,
+   "altloc_not_A": 1
+  },
+  "29lr": {
+   "modified": 0,
+   "altloc_not_A": 1
+  },
+  "29lt": {
+   "modified": 0,
+   "altloc_not_A": 2
+  },
+  "29lu": {
+   "modified": 0,
+   "altloc_not_A": 2
+  },
+  "29lv": {
+   "modified": 0,
+   "altloc_not_A": 1
+  },
+  "36cv": {
+   "modified": 6,
+   "altloc_not_A": 0
+  },
+  "36ez": {
+   "modified": 6,
+   "altloc_not_A": 0
+  },
+  "45pc": {
+   "modified": 1,
+   "altloc_not_A": 0
+  },
+  "9snz": {
+   "modified": 0,
+   "altloc_not_A": 5
+  },
+  "9so0": {
+   "modified": 0,
+   "altloc_not_A": 1
+  },
+  "9so8": {
+   "modified": 0,
+   "altloc_not_A": 1
+  },
+  "9t6a": {
+   "modified": 1,
+   "altloc_not_A": 0
+  },
+  "9tbo": {
+   "modified": 2,
+   "altloc_not_A": 0
+  },
+  "9wp4": {
+   "modified": 8,
+   "altloc_not_A": 0
+  },
+  "9wp7": {
+   "modified": 14,
+   "altloc_not_A": 0
+  },
+  "9wro": {
+   "modified": 2,
+   "altloc_not_A": 0
+  },
+  "9ws2": {
+   "modified": 1,
+   "altloc_not_A": 0
+  },
+  "9ws3": {
+   "modified": 1,
+   "altloc_not_A": 0
+  },
+  "9wv8": {
+   "modified": 8,
+   "altloc_not_A": 0
+  }
+ }
+}

@@ -2,8 +2,18 @@
 
 Recomputes pooled, marginal residue-level split-conformal coverage over the
 cumulative batch 1-4 ledger, following the registered protocol
-(registrations/e422_registration.md, section 3 / 3A.1), and writes nothing
-but a small JSON summary. It imports no code from code/experiments.
+(registrations/e422_registration.md, section 3 / 3A.1). It imports no code
+from code/experiments and writes nothing; it prints a JSON summary and a
+comparison with the registered evaluator's stored outcomes.
+
+Input integrity, checked before any computation (any failure -> exit 2):
+  * every ledger checkpoint's stored canonical digest (`sha256` field) equals
+    SHA-256 of the checkpoint minus that field, serialised as
+    json.dumps(sort_keys=True, separators=(',', ':'), ensure_ascii=True) and
+    UTF-8 encoded (the rule documented with the e422 runner; re-implemented
+    here), and its `n_rows` equals the number of rows;
+  * every ledger checkpoint's file SHA-256 equals its entry in the release's
+    MANIFEST.sha256 (pass --no-manifest to skip, e.g. on a modified copy).
 
 Protocol (as registered):
   * a row is eligible iff lddt, plddt, d_kabsch and b_factor_z are present
@@ -17,15 +27,24 @@ Protocol (as registered):
     smallest calibration score |y - centre|; a test residue is covered iff
     lo <= y <= hi with lo = centre - q, hi = centre + q (computed in this
     floating-point form, exactly as the registered evaluator does; testing
-    |y - centre| <= q instead changes a few boundary residues);
+    |y - centre| <= q instead changes a few boundary residues of the
+    original ledger and none of the corrected one);
   * mean = average coverage over the 200 splits; MCSE = sd(ddof=1)/sqrt(200);
     the prediction HOLDs iff mean >= nominal - 3 * MCSE.
 
-Usage: python -I code/reproduce_p5.py [<derived_root>] [--open-interval]
+Comparison: mean, MCSE and threshold must equal the registered evaluator's
+stored values (data/derived/p5_batch04_outcomes.json) to 1e-12 and the
+outcome must be identical; otherwise the exit status is 1.
+
+Usage: python -I code/reproduce_p5.py [<derived_root>] [--open-interval] [--manifest PATH | --no-manifest]
   <derived_root> defaults to data/derived (the directory containing results/).
   --open-interval counts residues on the interval boundary as uncovered
-  (the boundary sensitivity reported in Section 7.5).
+  (the boundary sensitivity reported in Section 7.5); no comparison is made.
+Exit status: 0 all inputs verified and all values match; 1 a recomputed
+value differs from the registered evaluator; 2 an input is missing or fails
+its digest check.
 """
+import hashlib
 import json
 import math
 import sys
@@ -36,16 +55,59 @@ import numpy as np
 SEEDS = range(200)
 LEVELS = (0.90, 0.95)
 K_MCSE = 3.0
+TOL = 1e-12
+LEDGERS = (("original_e422", "results/e422/batches"), ("corrected_e427", "results/e427/batches"))
+REPO = Path(__file__).resolve().parents[1]
+
+
+class InputError(Exception):
+    pass
 
 
 def finite(v):
-    return v is not None and isinstance(v, (int, float)) and math.isfinite(v)
+    return isinstance(v, (int, float)) and not isinstance(v, bool) and math.isfinite(v)
 
 
-def load_ledger(batch_dir):
+def canonical_sha256(obj):
+    return hashlib.sha256(json.dumps(obj, sort_keys=True, separators=(",", ":"),
+                                     ensure_ascii=True).encode("utf-8")).hexdigest()
+
+
+def read_manifest(path):
+    if not path.is_file():
+        raise InputError(f"manifest not found: {path} (use --manifest PATH or --no-manifest)")
+    out = {}
+    for line in path.read_text().splitlines():
+        if line.strip():
+            digest, name = line.split(None, 1)
+            out[name.strip().lstrip("*")] = digest
+    return out
+
+
+def load_ledger(root, sub, manifest=None):
+    """Rows of batches 1-4 after verifying each checkpoint; returns (n_rows, accessions, lddt array)."""
     rows = []
     for b in (1, 2, 3, 4):
-        rows += json.loads((batch_dir / f"e422_batch0{b}_checkpoint.json").read_text())["rows"]
+        p = root / sub / f"e422_batch0{b}_checkpoint.json"
+        if not p.is_file():
+            raise InputError(f"missing ledger checkpoint: {p}")
+        raw = p.read_bytes()
+        ck = json.loads(raw.decode("utf-8"))
+        stored = ck.get("sha256")
+        calc = canonical_sha256({k: v for k, v in ck.items() if k != "sha256"})
+        if stored != calc:
+            raise InputError(f"{p}: stored canonical digest {stored} != recomputed {calc}")
+        if ck.get("n_rows") != len(ck.get("rows", [])):
+            raise InputError(f"{p}: n_rows {ck.get('n_rows')} != {len(ck.get('rows', []))} rows")
+        if manifest is not None:
+            key = f"data/derived/{sub}/e422_batch0{b}_checkpoint.json"
+            want = manifest.get(key)
+            got = hashlib.sha256(raw).hexdigest()
+            if want is None:
+                raise InputError(f"{key} has no MANIFEST.sha256 entry")
+            if want != got:
+                raise InputError(f"{p}: file SHA-256 {got} != MANIFEST.sha256 {want}")
+        rows += ck["rows"]
     acc, y = [], []
     for r in rows:
         vals = [r.get(k) for k in ("lddt", "plddt", "d_kabsch", "b_factor_z")]
@@ -73,7 +135,8 @@ def p5(acc, y, open_interval=False):
         yt = y[r == 2]
         for lv in LEVELS:
             k = math.ceil((scores.size + 1) * (1.0 - (1.0 - lv)))  # registered float form, alpha_c = 1 - level
-            assert k <= scores.size
+            if k > scores.size:
+                raise ValueError(f"seed {seed}: order statistic {k} exceeds {scores.size} calibration scores")
             q = float(scores[k - 1])
             lo, hi = centre - q, centre + q  # registered form: lo <= y <= hi (float order matters)
             covered = ((lo < yt) & (yt < hi)) if open_interval else ((lo <= yt) & (yt <= hi))
@@ -92,32 +155,53 @@ def p5(acc, y, open_interval=False):
 
 def main(argv):
     open_interval = "--open-interval" in argv
-    args = [x for x in argv if not x.startswith("--")]
+    manifest_path = REPO / "MANIFEST.sha256"
+    use_manifest = "--no-manifest" not in argv
+    args = []
+    it = iter(argv)
+    for x in it:
+        if x == "--manifest":
+            manifest_path = Path(next(it, ""))
+        elif not x.startswith("--"):
+            args.append(x)
     root = Path(args[0]) if args else Path("data/derived")
-    res = {"open_interval": open_interval}
-    for label, sub in (("original_e422", "results/e422/batches"), ("corrected_e427", "results/e427/batches")):
-        n_rows, acc, y = load_ledger(root / sub)
-        n_acc, out = p5(acc, y, open_interval)
-        res[label] = {"ledger_rows": n_rows, "eligible_rows": int(y.size), "accessions": n_acc, **out}
-    print(json.dumps(res, indent=1))
-    # Compare with the registered evaluator's stored outcomes when available.
-    ref = root / "p5_batch04_outcomes.json"
-    if ref.exists() and not open_interval:
+    try:
+        manifest = read_manifest(manifest_path) if use_manifest else None
+        res = {"open_interval": open_interval}
+        for label, sub in LEDGERS:
+            n_rows, acc, y = load_ledger(root, sub, manifest)
+            n_acc, out = p5(acc, y, open_interval)
+            res[label] = {"ledger_rows": n_rows, "eligible_rows": int(y.size), "accessions": n_acc, **out}
+        print("inputs verified: 8 checkpoint canonical digests"
+              + (f" and MANIFEST.sha256 entries ({manifest_path})" if manifest is not None else
+                 " (MANIFEST.sha256 check skipped)"))
+        print(json.dumps(res, indent=1))
+        if open_interval:
+            return 0
+        ref = root / "p5_batch04_outcomes.json"
+        if not ref.is_file():
+            raise InputError(f"registered outcomes not found: {ref}")
         stored = json.loads(ref.read_text())
-        ok = True
-        for label in ("original_e422", "corrected_e427"):
-            for key, pred in (("p5_90", "P5-90"), ("p5_95", "P5-95")):
-                s = stored[label][key]["outcome"]
-                m = res[label][pred]
-                same = (abs(s["mean_cov"] - m["mean_cov"]) < 1e-12 and abs(s["threshold"] - m["threshold"]) < 1e-12
-                        and s["outcome"] == m["outcome"])
-                ok &= same
-                print(f"{label:15s} {pred}: recomputed mean {m['mean_cov']:.15f} thr {m['threshold']:.6f} "
-                      f"{m['outcome']} | registered evaluator {s['mean_cov']:.15f} {s['outcome']} -> "
-                      f"{'MATCH' if same else 'DIFFERS'}")
-        print("ALL MATCH" if ok else "MISMATCH")
-        return 0 if ok else 1
-    return 0
+    except (InputError, OSError, ValueError, KeyError) as e:
+        print(f"INPUT ERROR: {type(e).__name__}: {e}")
+        return 2
+    ok = True
+    for label, _ in LEDGERS:
+        for key, pred in (("p5_90", "P5-90"), ("p5_95", "P5-95")):
+            s = stored.get(label, {}).get(key, {}).get("outcome", {})
+            m = res[label][pred]
+            diffs = []
+            for f in ("mean_cov", "mcse", "threshold"):
+                if not finite(s.get(f)) or abs(s[f] - m[f]) > TOL:
+                    diffs.append(f"{f} {s.get(f)} vs {m[f]!r}")
+            for f in ("outcome", "r_eff"):
+                if s.get(f) != m[f]:
+                    diffs.append(f"{f} {s.get(f)} vs {m[f]}")
+            ok &= not diffs
+            print(f"{label:15s} {pred}: mean {m['mean_cov']:.15f} MCSE {m['mcse']:.15f} thr {m['threshold']:.15f} "
+                  f"{m['outcome']} | registered evaluator -> {'MATCH' if not diffs else 'DIFFERS: ' + '; '.join(diffs)}")
+    print("ALL MATCH" if ok else "MISMATCH")
+    return 0 if ok else 1
 
 
 if __name__ == "__main__":

@@ -1,0 +1,279 @@
+{
+ "binding_state": {
+  "batch_index": 4,
+  "binding": {
+   "p5_90": {
+    "bound_at_batch": 4,
+    "outcome": {
+     "mcse": 0.0028808894716835266,
+     "mean_cov": 0.894492567684754,
+     "nominal": 0.9,
+     "outcome": "HOLD",
+     "prediction": "P5-90",
+     "r_eff": 200,
+     "threshold": 0.8913573315849495
+    }
+   },
+   "p5_95": {
+    "bound_at_batch": 4,
+    "outcome": {
+     "mcse": 0.0017004775487096876,
+     "mean_cov": 0.9455777057113146,
+     "nominal": 0.95,
+     "outcome": "HOLD",
+     "prediction": "P5-95",
+     "r_eff": 200,
+     "threshold": 0.9448985673538709
+    }
+   }
+  },
+  "binding_keys": [
+   "p5_90",
+   "p5_95"
+  ],
+  "file_sha256": "f023cdbd2c5cf351cdde05f9e9e690a9115b0806f362338d209e34db99189c6f",
+  "match": true,
+  "non_p5_keys_present": [],
+  "recomputed": "c3ee0f6daaa3d4e52185c120872706984b151b634476a36556b239c7c50bc41f",
+  "recorded": "c3ee0f6daaa3d4e52185c120872706984b151b634476a36556b239c7c50bc41f",
+  "schema": "e422-binding-state-v1"
+ },
+ "checkpoint_rows_total": 123454,
+ "checkpoints": {
+  "1": {
+   "e427_relabel_present": false,
+   "file_sha256": "526fd4c54603ae128a2b6313a09c10c7a18e5f5699af3a3d7fc46bfb81c5d029",
+   "manifest_checkpoint_sha256": "6508e0b241ba424ee10df4e99a98390f83f5b671be24061a2db89adbb6c31629",
+   "match": true,
+   "n_rows": 0,
+   "recomputed": "4f54057dcd39ac2494590bfdecd1dc73ca210652bbe3b21e15c14a98bf7c40ad",
+   "recorded": "4f54057dcd39ac2494590bfdecd1dc73ca210652bbe3b21e15c14a98bf7c40ad"
+  },
+  "2": {
+   "e427_relabel_present": true,
+   "file_sha256": "98b5ccb8af4e7899f665d703d1f55f75cda3d2387391a92199e9817881548935",
+   "manifest_checkpoint_sha256": "5134c1740c414301c57c18f2d2235ff0280732e9abaef0a6638cf50977305a2f",
+   "match": true,
+   "n_rows": 31868,
+   "recomputed": "a18a2274685cfa34e42b57f4e577658e1b503b924846c7d8583e861e7df4dc7a",
+   "recorded": "a18a2274685cfa34e42b57f4e577658e1b503b924846c7d8583e861e7df4dc7a"
+  },
+  "3": {
+   "e427_relabel_present": true,
+   "file_sha256": "7153a7f69b7cbd3d4c894b9a9638ef3e28d9c7dea3979960fc0b4bd189f8c8d3",
+   "manifest_checkpoint_sha256": "29bcd9c57e59a566d86d75441ef2e0822f7d39fbf5e20ff87c5d880d2ad38ae4",
+   "match": true,
+   "n_rows": 45903,
+   "recomputed": "d0677b476ae8e11deaf1aeea39d7917215e3aaf0de354e36e9f076eb41a1ac03",
+   "recorded": "d0677b476ae8e11deaf1aeea39d7917215e3aaf0de354e36e9f076eb41a1ac03"
+  },
+  "4": {
+   "e427_relabel_present": true,
+   "file_sha256": "2a2810a02d9b5a14ac70bebe5a92462353da81b229b875971ff68ec7720330d8",
+   "manifest_checkpoint_sha256": "58716e76b75a86c1b8f451e7f726b531a296dc49978ca1a66bb38921d36d3022",
+   "match": true,
+   "n_rows": 45683,
+   "recomputed": "ad6166b5e38de66d6fa28e5b8a7f82dfec707c10640791f99c3ff52d05e60f17",
+   "recorded": "ad6166b5e38de66d6fa28e5b8a7f82dfec707c10640791f99c3ff52d05e60f17"
+  }
+ },
+ "evaluation": {
+  "aggregate_keys_per_level": {
+   "0.9": [
+    "alpha_c",
+    "fit_failures",
+    "level",
+    "marginal",
+    "mondrian_deferred_bins_tally",
+    "n_repeats_requested",
+    "r_bin",
+    "r_eff"
+   ],
+   "0.95": [
+    "alpha_c",
+    "fit_failures",
+    "level",
+    "marginal",
+    "mondrian_deferred_bins_tally",
+    "n_repeats_requested",
+    "r_bin",
+    "r_eff"
+   ]
+  },
+  "batch_index": 4,
+  "binding_view_status_strings": {
+   "p5_90": {
+    "bound_at_batch": 4,
+    "outcome": {
+     "mcse": 0.0028808894716835266,
+     "mean_cov": 0.894492567684754,
+     "nominal": 0.9,
+     "outcome": "HOLD",
+     "prediction": "P5-90",
+     "r_eff": 200,
+     "threshold": 0.8913573315849495
+    }
+   },
+   "p5_95": {
+    "bound_at_batch": 4,
+    "outcome": {
+     "mcse": 0.0017004775487096876,
+     "mean_cov": 0.9455777057113146,
+     "nominal": 0.95,
+     "outcome": "HOLD",
+     "prediction": "P5-95",
+     "r_eff": 200,
+     "threshold": 0.9448985673538709
+    }
+   },
+   "p6": "DESCRIPTIVE_AT_BATCH4_FIRST_EVALUABLE_BATCH8",
+   "p7a": "DESCRIPTIVE_AT_BATCH4_FIRST_EVALUABLE_BATCH8",
+   "p7b": "DESCRIPTIVE_AT_BATCH4_FIRST_EVALUABLE_BATCH8"
+  },
+  "canonical_accessions_sha256": "7234a5026a6175ac7bbf46e27cbfb950450d81f77daeac2a910e63689fe8174e",
+  "evaluated_utc": "2026-10-08T07:07:27.554843+00:00",
+  "evaluation_on_decided_grid_is_null": true,
+  "file_sha256": "a003c5c3efda7acbbc110211bd148412b2a0324242e4a7e0390c93ba201e0448",
+  "floor_decision_is_null": true,
+  "inner_exclusions": {
+   "feature_out_of_grid": 0,
+   "nonfinite_feature": 0,
+   "nonfinite_label": 0,
+   "null_descriptive_channel": 0,
+   "null_feature": 0,
+   "null_label": 0
+  },
+  "inner_keys": [
+   "aggregates",
+   "canonical_accessions",
+   "exclusions",
+   "grid",
+   "levels",
+   "n_accessions",
+   "n_rows_input",
+   "predictions",
+   "registration",
+   "schema",
+   "scope",
+   "seeds",
+   "status"
+  ],
+  "inner_levels": [
+   0.9,
+   0.95
+  ],
+  "inner_n_accessions": 141,
+  "inner_n_rows_input": 123454,
+  "inner_prediction_keys": [
+   "p5"
+  ],
+  "inner_registration": "docs/e422_registration.md (git-blob 6e1b9ce128ac3a1be4678463bdc777c25b50ca8d, content-sha256 dc7a362773fbf3a03e759aa7d178125963a14d88d9bbd61b66389a04ba8d7b3b, commit 9dd2380b; FROZEN gate-(a) object of record, T0=2026-09-11T00:00:00Z)",
+  "inner_scope": "BATCH4_P5_ONLY_REGISTERED_SUPPRESSION",
+  "inner_seeds": [
+   0,
+   199
+  ],
+  "inner_status": "EVALUATED",
+  "ledger": [
+   {
+    "batch_index": 1,
+    "manifest_checkpoint_sha256": "6508e0b241ba424ee10df4e99a98390f83f5b671be24061a2db89adbb6c31629",
+    "n_rows": 0,
+    "sha256": "4f54057dcd39ac2494590bfdecd1dc73ca210652bbe3b21e15c14a98bf7c40ad"
+   },
+   {
+    "batch_index": 2,
+    "manifest_checkpoint_sha256": "5134c1740c414301c57c18f2d2235ff0280732e9abaef0a6638cf50977305a2f",
+    "n_rows": 31868,
+    "sha256": "a18a2274685cfa34e42b57f4e577658e1b503b924846c7d8583e861e7df4dc7a"
+   },
+   {
+    "batch_index": 3,
+    "manifest_checkpoint_sha256": "29bcd9c57e59a566d86d75441ef2e0822f7d39fbf5e20ff87c5d880d2ad38ae4",
+    "n_rows": 45903,
+    "sha256": "d0677b476ae8e11deaf1aeea39d7917215e3aaf0de354e36e9f076eb41a1ac03"
+   },
+   {
+    "batch_index": 4,
+    "manifest_checkpoint_sha256": "58716e76b75a86c1b8f451e7f726b531a296dc49978ca1a66bb38921d36d3022",
+    "n_rows": 45683,
+    "sha256": "ad6166b5e38de66d6fa28e5b8a7f82dfec707c10640791f99c3ff52d05e60f17"
+   }
+  ],
+  "marginal_pooled": {
+   "0.9": {
+    "mcse": 0.0028808894716835266,
+    "mean": 0.894492567684754,
+    "r_eff": 200
+   },
+   "0.95": {
+    "mcse": 0.0017004775487096876,
+    "mean": 0.9455777057113146,
+    "r_eff": 200
+   }
+  },
+  "match": true,
+  "n_rows_cumulative": 123454,
+  "p5": {
+   "0.9": {
+    "mcse": 0.0028808894716835266,
+    "mean_cov": 0.894492567684754,
+    "nominal": 0.9,
+    "outcome": "HOLD",
+    "prediction": "P5-90",
+    "r_eff": 200,
+    "threshold": 0.8913573315849495
+   },
+   "0.95": {
+    "mcse": 0.0017004775487096876,
+    "mean_cov": 0.9455777057113146,
+    "nominal": 0.95,
+    "outcome": "HOLD",
+    "prediction": "P5-95",
+    "r_eff": 200,
+    "threshold": 0.9448985673538709
+   }
+  },
+  "prior_binding_path": "results/e427/batches/e422_binding_state.json",
+  "recomputed": "f579c541b4c34d85d9639baa66ce816c500b3e08799f9e9d4320d340cefd2c0c",
+  "recorded": "f579c541b4c34d85d9639baa66ce816c500b3e08799f9e9d4320d340cefd2c0c",
+  "role": "batch4_day28",
+  "schema": "e422-evaldriver-v1",
+  "t0_utc": "2026-09-11T00:00:00Z",
+  "top_keys": [
+   "batch_index",
+   "binding",
+   "e_number",
+   "eligibility_exclusions",
+   "evaluated_utc",
+   "evaluation_on_decided_grid",
+   "evaluation_six_bin",
+   "floor_decision",
+   "ledger",
+   "n_rows_cumulative",
+   "prior_binding_path",
+   "role",
+   "schema",
+   "sha256",
+   "six_bin_floor_table",
+   "t0_utc"
+  ]
+ },
+ "receipt": {
+  "batch_index": 4,
+  "completed_utc": "2026-10-09T03:33:17.841357+00:00",
+  "deviation_note": null,
+  "evaluated_utc": "2026-10-08T07:07:27.554843+00:00",
+  "file_sha256": "766f4c1f8a72ed2e89d275aea17ef22e49ec4419e3c137c3db4bb1e54587d198",
+  "match": true,
+  "recomputed": "1cf9a3e1b2915e5a7cdf35afdc34b268bd35f3921e6b6292c8a4b05e5af3a6fd",
+  "recorded": "1cf9a3e1b2915e5a7cdf35afdc34b268bd35f3921e6b6292c8a4b05e5af3a6fd",
+  "registered_budget_hours": 24.0,
+  "role": "batch4_day28",
+  "schema": "e422-execution-receipt-v1",
+  "started_utc": "2026-10-08T07:07:27.554752+00:00",
+  "t0_utc": "2026-09-11T00:00:00Z",
+  "wall_seconds": 73550.286605,
+  "within_budget": true
+ }
+}

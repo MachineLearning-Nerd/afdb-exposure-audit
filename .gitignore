@@ -22,6 +22,7 @@ venv/
 # LaTeX build products
 *.aux
 *.log
+!audits/label_crosscheck_biotite/full_ledger_out.log
 *.bbl
 *.blg
 *.out

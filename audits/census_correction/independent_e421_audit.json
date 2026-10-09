@@ -1,0 +1,374 @@
+{
+  "method": "independent parser and recomputation; no e427 or moluq imports",
+  "receipt_checks": {
+    "n_receipts": 469,
+    "status_counts": {
+      "200": 466,
+      "404": 3
+    },
+    "http_200": 466,
+    "verified_success_bodies": 466,
+    "missing_success_bodies": [],
+    "bad_hash_or_length": [],
+    "raw_file_count": 410,
+    "unreceipted_raw_files": [],
+    "bad_raw_filename_hashes": [],
+    "url_with_multiple_success_hashes": {}
+  },
+  "recomputed_corrected_summary": {
+    "entries": 168,
+    "status_counts": {
+      "ok": 139,
+      "mapping_acc_absent": 16,
+      "insufficient_aligned": 5,
+      "sequence_identity_failed": 5,
+      "af_fetch_fail": 3
+    },
+    "ok_entries": 139,
+    "ok_accessions": 85,
+    "residue_rows": 37531,
+    "cells_rows": {
+      "A": 5047,
+      "U": 31765,
+      "OC": 354,
+      "O": 363,
+      "B": 2
+    },
+    "cells_unique": {
+      "A": 3504,
+      "U": 19347,
+      "OC": 289,
+      "O": 263,
+      "B": 2
+    },
+    "gradient": [
+      {
+        "bin": [
+          0,
+          50
+        ],
+        "n": 314,
+        "err_rate_lddt_lt_0.60": 0.7547770700636943
+      },
+      {
+        "bin": [
+          50,
+          70
+        ],
+        "n": 760,
+        "err_rate_lddt_lt_0.60": 0.2657894736842105
+      },
+      {
+        "bin": [
+          70,
+          80
+        ],
+        "n": 1200,
+        "err_rate_lddt_lt_0.60": 0.2
+      },
+      {
+        "bin": [
+          80,
+          90
+        ],
+        "n": 4225,
+        "err_rate_lddt_lt_0.60": 0.05136094674556213
+      },
+      {
+        "bin": [
+          90,
+          100.01
+        ],
+        "n": 31032,
+        "err_rate_lddt_lt_0.60": 0.002900232018561485
+      }
+    ],
+    "spearman_plddt_lddt": 0.6430108209634237,
+    "n_spearman": 37531
+  },
+  "declared_corrected_summary_match": {
+    "entries": true,
+    "status_counts": true,
+    "ok_entries": true,
+    "ok_accessions": true,
+    "residue_rows": true,
+    "cells_rows": true,
+    "cells_unique": true,
+    "gradient": true,
+    "spearman_plddt_lddt": true,
+    "n_spearman": true
+  },
+  "recomputed_original_summary": {
+    "entries": 168,
+    "status_counts": {
+      "insufficient_aligned": 69,
+      "ok": 96,
+      "af_fetch_fail": 3
+    },
+    "ok_entries": 96,
+    "ok_accessions": 64,
+    "residue_rows": 24457,
+    "cells_rows": {
+      "A": 3411,
+      "U": 20646,
+      "OC": 176,
+      "O": 223,
+      "B": 1
+    },
+    "cells_unique": {
+      "A": 2525,
+      "U": 13843,
+      "OC": 171,
+      "O": 168,
+      "B": 1
+    },
+    "gradient": [
+      {
+        "bin": [
+          0,
+          50
+        ],
+        "n": 177,
+        "err_rate_lddt_lt_0.60": 0.5819209039548022
+      },
+      {
+        "bin": [
+          50,
+          70
+        ],
+        "n": 431,
+        "err_rate_lddt_lt_0.60": 0.24361948955916474
+      },
+      {
+        "bin": [
+          70,
+          80
+        ],
+        "n": 690,
+        "err_rate_lddt_lt_0.60": 0.20869565217391303
+      },
+      {
+        "bin": [
+          80,
+          90
+        ],
+        "n": 2381,
+        "err_rate_lddt_lt_0.60": 0.05795884082318354
+      },
+      {
+        "bin": [
+          90,
+          100.01
+        ],
+        "n": 20777,
+        "err_rate_lddt_lt_0.60": 0.005823747413004765
+      }
+    ],
+    "spearman_plddt_lddt": 0.6170601466142407,
+    "n_spearman": 24456
+  },
+  "declared_original_summary_match": {
+    "entries": true,
+    "status_counts": true,
+    "ok_entries": true,
+    "ok_accessions": true,
+    "residue_rows": true,
+    "cells_rows": true,
+    "cells_unique": true,
+    "gradient": true,
+    "spearman_plddt_lddt": true,
+    "n_spearman": true
+  },
+  "recomputed_status_transitions": {
+    "af_fetch_fail -> af_fetch_fail": 3,
+    "insufficient_aligned -> insufficient_aligned": 5,
+    "insufficient_aligned -> mapping_acc_absent": 16,
+    "insufficient_aligned -> ok": 45,
+    "insufficient_aligned -> sequence_identity_failed": 3,
+    "ok -> ok": 94,
+    "ok -> sequence_identity_failed": 2
+  },
+  "declared_status_transitions_match": true,
+  "spot_checks": {
+    "10af": {
+      "status": "ok",
+      "n_aligned": 168,
+      "n_pairs": 170,
+      "n_identity_mismatch": 2,
+      "segments": [
+        {
+          "asym": "A",
+          "entity": "1",
+          "map_method": "offset",
+          "n_pairs": 170,
+          "n_mismatch": 2,
+          "duplicate_label_seq_groups": 0
+        }
+      ],
+      "duplicate_label_seq_groups": 0,
+      "matches_status": true,
+      "row_count": 168,
+      "label_mismatch_count": 0,
+      "first_label_mismatches": [],
+      "matches_labels": true
+    },
+    "10ah": {
+      "status": "ok",
+      "n_aligned": 355,
+      "n_pairs": 356,
+      "n_identity_mismatch": 1,
+      "segments": [
+        {
+          "asym": "A",
+          "entity": "1",
+          "map_method": "offset",
+          "n_pairs": 356,
+          "n_mismatch": 1,
+          "duplicate_label_seq_groups": 0
+        }
+      ],
+      "duplicate_label_seq_groups": 0,
+      "matches_status": true,
+      "row_count": 355,
+      "label_mismatch_count": 0,
+      "first_label_mismatches": [],
+      "matches_labels": true
+    },
+    "10qf": {
+      "status": "ok",
+      "n_aligned": 500,
+      "n_pairs": 500,
+      "n_identity_mismatch": 0,
+      "segments": [
+        {
+          "asym": "A",
+          "entity": "1",
+          "map_method": "alignment",
+          "n_pairs": 500,
+          "n_mismatch": 0,
+          "duplicate_label_seq_groups": 0
+        }
+      ],
+      "duplicate_label_seq_groups": 0,
+      "matches_status": true,
+      "row_count": 500,
+      "label_mismatch_count": 0,
+      "first_label_mismatches": [],
+      "matches_labels": true
+    },
+    "10cy": {
+      "status": "mapping_acc_absent",
+      "n_segments": 0,
+      "matches_status": true
+    },
+    "10dv": {
+      "status": "insufficient_aligned",
+      "n_aligned": 0,
+      "n_pairs": 0,
+      "n_identity_mismatch": 0,
+      "segments": [
+        {
+          "asym": "A",
+          "entity": "1",
+          "map_method": "offset",
+          "n_pairs": 0,
+          "n_mismatch": 0,
+          "duplicate_label_seq_groups": 0
+        }
+      ],
+      "duplicate_label_seq_groups": 0,
+      "matches_status": true
+    },
+    "11ns": {
+      "status": "sequence_identity_failed",
+      "n_pairs": 158,
+      "n_identity_mismatch": 151,
+      "segments": [
+        {
+          "asym": "A",
+          "entity": "1",
+          "map_method": "offset",
+          "n_pairs": 158,
+          "n_mismatch": 151,
+          "duplicate_label_seq_groups": 0
+        }
+      ],
+      "duplicate_label_seq_groups": 0,
+      "matches_status": true
+    },
+    "11ny": {
+      "status": "sequence_identity_failed",
+      "n_pairs": 156,
+      "n_identity_mismatch": 148,
+      "segments": [
+        {
+          "asym": "A",
+          "entity": "1",
+          "map_method": "offset",
+          "n_pairs": 156,
+          "n_mismatch": 148,
+          "duplicate_label_seq_groups": 0
+        }
+      ],
+      "duplicate_label_seq_groups": 0,
+      "matches_status": true
+    },
+    "11pu": {
+      "status": "sequence_identity_failed",
+      "n_pairs": 170,
+      "n_identity_mismatch": 154,
+      "segments": [
+        {
+          "asym": "A",
+          "entity": "1",
+          "map_method": "offset",
+          "n_pairs": 170,
+          "n_mismatch": 154,
+          "duplicate_label_seq_groups": 0
+        }
+      ],
+      "duplicate_label_seq_groups": 0,
+      "matches_status": true
+    },
+    "10pa": {
+      "status": "sequence_identity_failed",
+      "n_pairs": 316,
+      "n_identity_mismatch": 58,
+      "segments": [
+        {
+          "asym": "A",
+          "entity": "1",
+          "map_method": "offset",
+          "n_pairs": 316,
+          "n_mismatch": 58,
+          "duplicate_label_seq_groups": 0
+        }
+      ],
+      "duplicate_label_seq_groups": 0,
+      "matches_status": true
+    },
+    "10ps": {
+      "status": "sequence_identity_failed",
+      "n_pairs": 555,
+      "n_identity_mismatch": 58,
+      "segments": [
+        {
+          "asym": "A",
+          "entity": "1",
+          "map_method": "offset",
+          "n_pairs": 555,
+          "n_mismatch": 58,
+          "duplicate_label_seq_groups": 0
+        }
+      ],
+      "duplicate_label_seq_groups": 0,
+      "matches_status": true
+    }
+  },
+  "accepted_altloc_duplicate_scan": {
+    "entries_scanned": 149,
+    "selected_asym_segment_count": 155,
+    "entries_with_duplicate_label_seq_ca": [],
+    "duplicate_group_count": 0
+  }
+}

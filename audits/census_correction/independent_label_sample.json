@@ -1,0 +1,2130 @@
+{
+  "checkpoint_integrity": {
+    "1": {
+      "batch": 1,
+      "batch1_byte_identical": true,
+      "canonical_digest_valid": true,
+      "corrected_rows": 0,
+      "corrected_sha256": "4f54057dcd39ac2494590bfdecd1dc73ca210652bbe3b21e15c14a98bf7c40ad",
+      "manifest_sha_equal_original": true,
+      "original_rows": 0,
+      "original_sha_record_matches": true,
+      "provenance_present": true,
+      "receipts_equal_original": true,
+      "rerun_byte_identical": true,
+      "rerun_equal_after_normalizing_replay_time_and_digest": true,
+      "rerun_present": true,
+      "rerun_sha256": "4f54057dcd39ac2494590bfdecd1dc73ca210652bbe3b21e15c14a98bf7c40ad"
+    },
+    "2": {
+      "batch": 2,
+      "batch1_byte_identical": null,
+      "canonical_digest_valid": true,
+      "corrected_rows": 31868,
+      "corrected_sha256": "a18a2274685cfa34e42b57f4e577658e1b503b924846c7d8583e861e7df4dc7a",
+      "manifest_sha_equal_original": true,
+      "original_rows": 29054,
+      "original_sha_record_matches": true,
+      "provenance_present": true,
+      "receipts_equal_original": true,
+      "rerun_byte_identical": false,
+      "rerun_equal_after_normalizing_replay_time_and_digest": true,
+      "rerun_present": true,
+      "rerun_sha256": "dfd3629e1cd43254a7a7e6eeb4d4bdc59c10cda1cf93587bc2d829ea3919d614"
+    },
+    "3": {
+      "batch": 3,
+      "batch1_byte_identical": null,
+      "canonical_digest_valid": true,
+      "corrected_rows": 45903,
+      "corrected_sha256": "d0677b476ae8e11deaf1aeea39d7917215e3aaf0de354e36e9f076eb41a1ac03",
+      "manifest_sha_equal_original": true,
+      "original_rows": 45405,
+      "original_sha_record_matches": true,
+      "provenance_present": true,
+      "receipts_equal_original": true,
+      "rerun_byte_identical": false,
+      "rerun_equal_after_normalizing_replay_time_and_digest": true,
+      "rerun_present": true,
+      "rerun_sha256": "bc2589d3daff392c5d6829ec6524cc8a04b3d17167c4040bb52f382ba622dc12"
+    },
+    "4": {
+      "batch": 4,
+      "batch1_byte_identical": null,
+      "canonical_digest_valid": true,
+      "corrected_rows": 45683,
+      "corrected_sha256": "ad6166b5e38de66d6fa28e5b8a7f82dfec707c10640791f99c3ff52d05e60f17",
+      "manifest_sha_equal_original": true,
+      "original_rows": 43446,
+      "original_sha_record_matches": true,
+      "provenance_present": true,
+      "receipts_equal_original": true,
+      "rerun_byte_identical": false,
+      "rerun_equal_after_normalizing_replay_time_and_digest": true,
+      "rerun_present": true,
+      "rerun_sha256": "cfeff7e87284699e83cd4a33b5fc619a173ffc4283012b9b2c5f06bed613d5dd"
+    },
+    "replay_report": {
+      "all_self_checks_true": true,
+      "batches": {
+        "2": {
+          "corrected_manifest_sha_equal": true,
+          "corrected_mapping_failures": 10,
+          "corrected_n_rows": 31868,
+          "corrected_sha256": "a18a2274685cfa34e42b57f4e577658e1b503b924846c7d8583e861e7df4dc7a",
+          "corrected_triple_failures": {
+            "E422_ABSENT_FROM_SNAPSHOT": 163,
+            "E422_INSUFFICIENT_ALIGNED": 4,
+            "E422_REF_INSUFFICIENT_CA": 1
+          },
+          "original_mapping_failures": 10,
+          "original_n_rows": 29054,
+          "original_sha256": "312d9ab0412ce9c141b1de28d405a77bf6e29fd7a2cbbac950425e46c996c303",
+          "original_triple_failures": {
+            "E422_ABSENT_FROM_SNAPSHOT": 158,
+            "E422_INSUFFICIENT_ALIGNED": 5,
+            "E422_REF_INSUFFICIENT_CA": 1
+          },
+          "receipts_unconsumed_corrected": 0,
+          "self_check": {
+            "all_receipts_consumed": true,
+            "census_entries_equal": true,
+            "entries_with_mappings_equal": true,
+            "exclusions_equal": true,
+            "manifest_admitted_new_equal": true,
+            "manifest_checkpoint_sha256_equal": true,
+            "rows_equal": true,
+            "verified_accessions_equal": true
+          }
+        },
+        "3": {
+          "corrected_manifest_sha_equal": true,
+          "corrected_mapping_failures": 18,
+          "corrected_n_rows": 45903,
+          "corrected_sha256": "d0677b476ae8e11deaf1aeea39d7917215e3aaf0de354e36e9f076eb41a1ac03",
+          "corrected_triple_failures": {
+            "E422_ABSENT_FROM_SNAPSHOT": 83,
+            "E422_INSUFFICIENT_ALIGNED": 1,
+            "E422_REF_CIF_FETCH_FAILED": 8,
+            "E422_REF_INSUFFICIENT_CA": 11
+          },
+          "original_mapping_failures": 19,
+          "original_n_rows": 45405,
+          "original_sha256": "c356084fee3ef300e08aeee2f355d4ecaf905f2b7358b647a9001bae7a5238f1",
+          "original_triple_failures": {
+            "E422_ABSENT_FROM_SNAPSHOT": 83,
+            "E422_INSUFFICIENT_ALIGNED": 2,
+            "E422_REF_INSUFFICIENT_CA": 11
+          },
+          "receipts_unconsumed_corrected": 0,
+          "self_check": {
+            "all_receipts_consumed": true,
+            "census_entries_equal": true,
+            "entries_with_mappings_equal": true,
+            "exclusions_equal": true,
+            "manifest_admitted_new_equal": true,
+            "manifest_checkpoint_sha256_equal": true,
+            "rows_equal": true,
+            "verified_accessions_equal": true
+          }
+        },
+        "4": {
+          "corrected_manifest_sha_equal": true,
+          "corrected_mapping_failures": 16,
+          "corrected_n_rows": 45683,
+          "corrected_sha256": "ad6166b5e38de66d6fa28e5b8a7f82dfec707c10640791f99c3ff52d05e60f17",
+          "corrected_triple_failures": {
+            "E422_ABSENT_FROM_SNAPSHOT": 66,
+            "E422_REF_INSUFFICIENT_CA": 5
+          },
+          "original_mapping_failures": 16,
+          "original_n_rows": 43446,
+          "original_sha256": "d860ab55305f249f0124be7e562ccbea72650df24709834ec098c4d668354b5b",
+          "original_triple_failures": {
+            "E422_ABSENT_FROM_SNAPSHOT": 64,
+            "E422_INSUFFICIENT_ALIGNED": 2,
+            "E422_REF_INSUFFICIENT_CA": 5
+          },
+          "receipts_unconsumed_corrected": 0,
+          "self_check": {
+            "all_receipts_consumed": true,
+            "census_entries_equal": true,
+            "entries_with_mappings_equal": true,
+            "exclusions_equal": true,
+            "manifest_admitted_new_equal": true,
+            "manifest_checkpoint_sha256_equal": true,
+            "rows_equal": true,
+            "verified_accessions_equal": true
+          }
+        }
+      },
+      "verdict": "OK"
+    }
+  },
+  "checkpoint_integrity_pass": true,
+  "independent_segment_sample": {
+    "all_rows_match": true,
+    "n_segments": 36,
+    "random_unchanged_segments": 10,
+    "segments": [
+      {
+        "accepted_altloc_counts": {
+          ".": 449,
+          "A": 23
+        },
+        "accession": "K7PQ54",
+        "auth_asym_ids": [
+          "A"
+        ],
+        "batch": 4,
+        "chain": "A",
+        "corrected_checkpoint_rows": 472,
+        "duplicate_label_seq_positions": 0,
+        "entity_id": 1,
+        "entity_poly_seq_duplicate_positions": 0,
+        "entity_poly_seq_variant_positions": 0,
+        "entry": "9qj6",
+        "independent_rows": 472,
+        "label_span": [
+          1,
+          473
+        ],
+        "mapping_method": "sifts_offset",
+        "max_abs_numeric_difference": 0.0,
+        "mismatches_first_10": [],
+        "mse_ca_count": 0,
+        "n_identity_mismatch": 0,
+        "n_identity_pairs": 472,
+        "nontrivial_insertion_code_ca_count": 0,
+        "raw_hashes": {
+          "af": "07406b15c127dc43b5c5febdd5e6766637ec15ed1e3a7cf3f6e43edf7fa546c9",
+          "mapping": "f242c6c1d15b1dbd87ad2245ccacb7714be409cbf2882187490d867ab0d94a8f",
+          "reference": "9e85341cb02c98cbfea6f22fba664e335247899dfbd3100f5df358090f5f639e"
+        },
+        "reason": "required accession / diagnostic target",
+        "ref_atom_sites": 472,
+        "row_values_match": true,
+        "segment_index": 0,
+        "status": "ok",
+        "struct_asym_id": "A",
+        "uniprot_span": [
+          35,
+          507
+        ]
+      },
+      {
+        "accepted_altloc_counts": {
+          ".": 450,
+          "A": 21
+        },
+        "accession": "K7PQ54",
+        "auth_asym_ids": [
+          "B"
+        ],
+        "batch": 4,
+        "chain": "B",
+        "corrected_checkpoint_rows": 471,
+        "duplicate_label_seq_positions": 0,
+        "entity_id": 1,
+        "entity_poly_seq_duplicate_positions": 0,
+        "entity_poly_seq_variant_positions": 0,
+        "entry": "9qj6",
+        "independent_rows": 471,
+        "label_span": [
+          1,
+          473
+        ],
+        "mapping_method": "sifts_offset",
+        "max_abs_numeric_difference": 0.0,
+        "mismatches_first_10": [],
+        "mse_ca_count": 0,
+        "n_identity_mismatch": 0,
+        "n_identity_pairs": 471,
+        "nontrivial_insertion_code_ca_count": 0,
+        "raw_hashes": {
+          "af": "07406b15c127dc43b5c5febdd5e6766637ec15ed1e3a7cf3f6e43edf7fa546c9",
+          "mapping": "f242c6c1d15b1dbd87ad2245ccacb7714be409cbf2882187490d867ab0d94a8f",
+          "reference": "9e85341cb02c98cbfea6f22fba664e335247899dfbd3100f5df358090f5f639e"
+        },
+        "reason": "required accession / diagnostic target",
+        "ref_atom_sites": 471,
+        "row_values_match": true,
+        "segment_index": 0,
+        "status": "ok",
+        "struct_asym_id": "B",
+        "uniprot_span": [
+          35,
+          507
+        ]
+      },
+      {
+        "accepted_altloc_counts": {
+          ".": 404,
+          "A": 1
+        },
+        "accession": "Q5JF22",
+        "auth_asym_ids": [
+          "A"
+        ],
+        "batch": 4,
+        "chain": "A",
+        "corrected_checkpoint_rows": 405,
+        "duplicate_label_seq_positions": 0,
+        "entity_id": 1,
+        "entity_poly_seq_duplicate_positions": 0,
+        "entity_poly_seq_variant_positions": 0,
+        "entry": "9sq1",
+        "independent_rows": 405,
+        "label_span": [
+          21,
+          425
+        ],
+        "mapping_method": "sifts_offset",
+        "max_abs_numeric_difference": 0.0,
+        "mismatches_first_10": [],
+        "mse_ca_count": 0,
+        "n_identity_mismatch": 0,
+        "n_identity_pairs": 405,
+        "nontrivial_insertion_code_ca_count": 0,
+        "raw_hashes": {
+          "af": "7e896c80a6bac848e4a6cdf7fb396faecb70d6316e3840be2d87d8806baf459c",
+          "mapping": "667b0c5974b6649809e502115899969dfad32c86b4be412a26f7529a4aa4cb03",
+          "reference": "92a19cf1c5545176c317a01472a9c30bdb46bcb80c5b5d50f7f408c89a5dceb3"
+        },
+        "reason": "required accession / diagnostic target",
+        "ref_atom_sites": 405,
+        "row_values_match": true,
+        "segment_index": 0,
+        "status": "ok",
+        "struct_asym_id": "A",
+        "uniprot_span": [
+          1,
+          405
+        ]
+      },
+      {
+        "accepted_altloc_counts": {
+          ".": 402
+        },
+        "accession": "Q5JF22",
+        "auth_asym_ids": [
+          "B"
+        ],
+        "batch": 4,
+        "chain": "B",
+        "corrected_checkpoint_rows": 402,
+        "duplicate_label_seq_positions": 0,
+        "entity_id": 1,
+        "entity_poly_seq_duplicate_positions": 0,
+        "entity_poly_seq_variant_positions": 0,
+        "entry": "9sq1",
+        "independent_rows": 402,
+        "label_span": [
+          21,
+          425
+        ],
+        "mapping_method": "sifts_offset",
+        "max_abs_numeric_difference": 0.0,
+        "mismatches_first_10": [],
+        "mse_ca_count": 0,
+        "n_identity_mismatch": 0,
+        "n_identity_pairs": 402,
+        "nontrivial_insertion_code_ca_count": 0,
+        "raw_hashes": {
+          "af": "7e896c80a6bac848e4a6cdf7fb396faecb70d6316e3840be2d87d8806baf459c",
+          "mapping": "667b0c5974b6649809e502115899969dfad32c86b4be412a26f7529a4aa4cb03",
+          "reference": "92a19cf1c5545176c317a01472a9c30bdb46bcb80c5b5d50f7f408c89a5dceb3"
+        },
+        "reason": "required accession / diagnostic target",
+        "ref_atom_sites": 402,
+        "row_values_match": true,
+        "segment_index": 0,
+        "status": "ok",
+        "struct_asym_id": "B",
+        "uniprot_span": [
+          1,
+          405
+        ]
+      },
+      {
+        "accepted_altloc_counts": {
+          ".": 403
+        },
+        "accession": "Q5JF22",
+        "auth_asym_ids": [
+          "C"
+        ],
+        "batch": 4,
+        "chain": "C",
+        "corrected_checkpoint_rows": 403,
+        "duplicate_label_seq_positions": 0,
+        "entity_id": 1,
+        "entity_poly_seq_duplicate_positions": 0,
+        "entity_poly_seq_variant_positions": 0,
+        "entry": "9sq1",
+        "independent_rows": 403,
+        "label_span": [
+          21,
+          425
+        ],
+        "mapping_method": "sifts_offset",
+        "max_abs_numeric_difference": 0.0,
+        "mismatches_first_10": [],
+        "mse_ca_count": 0,
+        "n_identity_mismatch": 0,
+        "n_identity_pairs": 403,
+        "nontrivial_insertion_code_ca_count": 0,
+        "raw_hashes": {
+          "af": "7e896c80a6bac848e4a6cdf7fb396faecb70d6316e3840be2d87d8806baf459c",
+          "mapping": "667b0c5974b6649809e502115899969dfad32c86b4be412a26f7529a4aa4cb03",
+          "reference": "92a19cf1c5545176c317a01472a9c30bdb46bcb80c5b5d50f7f408c89a5dceb3"
+        },
+        "reason": "required accession / diagnostic target",
+        "ref_atom_sites": 403,
+        "row_values_match": true,
+        "segment_index": 0,
+        "status": "ok",
+        "struct_asym_id": "C",
+        "uniprot_span": [
+          1,
+          405
+        ]
+      },
+      {
+        "accepted_altloc_counts": {
+          ".": 403
+        },
+        "accession": "Q5JF22",
+        "auth_asym_ids": [
+          "D"
+        ],
+        "batch": 4,
+        "chain": "D",
+        "corrected_checkpoint_rows": 403,
+        "duplicate_label_seq_positions": 0,
+        "entity_id": 1,
+        "entity_poly_seq_duplicate_positions": 0,
+        "entity_poly_seq_variant_positions": 0,
+        "entry": "9sq1",
+        "independent_rows": 403,
+        "label_span": [
+          21,
+          425
+        ],
+        "mapping_method": "sifts_offset",
+        "max_abs_numeric_difference": 0.0,
+        "mismatches_first_10": [],
+        "mse_ca_count": 0,
+        "n_identity_mismatch": 0,
+        "n_identity_pairs": 403,
+        "nontrivial_insertion_code_ca_count": 0,
+        "raw_hashes": {
+          "af": "7e896c80a6bac848e4a6cdf7fb396faecb70d6316e3840be2d87d8806baf459c",
+          "mapping": "667b0c5974b6649809e502115899969dfad32c86b4be412a26f7529a4aa4cb03",
+          "reference": "92a19cf1c5545176c317a01472a9c30bdb46bcb80c5b5d50f7f408c89a5dceb3"
+        },
+        "reason": "required accession / diagnostic target",
+        "ref_atom_sites": 403,
+        "row_values_match": true,
+        "segment_index": 0,
+        "status": "ok",
+        "struct_asym_id": "D",
+        "uniprot_span": [
+          1,
+          405
+        ]
+      },
+      {
+        "accepted_altloc_counts": {
+          ".": 547,
+          "A": 1
+        },
+        "accession": "P07342",
+        "auth_asym_ids": [
+          "A"
+        ],
+        "batch": 2,
+        "chain": "A",
+        "corrected_checkpoint_rows": 548,
+        "duplicate_label_seq_positions": 0,
+        "entity_id": 1,
+        "entity_poly_seq_duplicate_positions": 0,
+        "entity_poly_seq_variant_positions": 0,
+        "entry": "9y8y",
+        "independent_rows": 548,
+        "label_span": [
+          48,
+          677
+        ],
+        "mapping_method": "sifts_offset",
+        "max_abs_numeric_difference": 0.0,
+        "mismatches_first_10": [],
+        "mse_ca_count": 0,
+        "n_identity_mismatch": 0,
+        "n_identity_pairs": 548,
+        "nontrivial_insertion_code_ca_count": 0,
+        "raw_hashes": {
+          "af": "8eb24da989ae4168c98368dcc1eb1d406fc1b271ed1132912babdff5525bf802",
+          "mapping": "99b9f089ae5f3158c36a70ef508ba1da20ccbda6e8f27b9e9f71eb654b491d40",
+          "reference": "93e7aef044042abde65d8bd1cde775ac9cb969ae5283da139094049be60d68f7"
+        },
+        "reason": "required accession / diagnostic target",
+        "ref_atom_sites": 548,
+        "row_values_match": true,
+        "segment_index": 0,
+        "status": "ok",
+        "struct_asym_id": "A",
+        "uniprot_span": [
+          58,
+          687
+        ]
+      },
+      {
+        "accepted_altloc_counts": {
+          ".": 551
+        },
+        "accession": "P07342",
+        "auth_asym_ids": [
+          "B"
+        ],
+        "batch": 2,
+        "chain": "B",
+        "corrected_checkpoint_rows": 551,
+        "duplicate_label_seq_positions": 0,
+        "entity_id": 1,
+        "entity_poly_seq_duplicate_positions": 0,
+        "entity_poly_seq_variant_positions": 0,
+        "entry": "9y8y",
+        "independent_rows": 551,
+        "label_span": [
+          48,
+          677
+        ],
+        "mapping_method": "sifts_offset",
+        "max_abs_numeric_difference": 0.0,
+        "mismatches_first_10": [],
+        "mse_ca_count": 0,
+        "n_identity_mismatch": 0,
+        "n_identity_pairs": 551,
+        "nontrivial_insertion_code_ca_count": 0,
+        "raw_hashes": {
+          "af": "8eb24da989ae4168c98368dcc1eb1d406fc1b271ed1132912babdff5525bf802",
+          "mapping": "99b9f089ae5f3158c36a70ef508ba1da20ccbda6e8f27b9e9f71eb654b491d40",
+          "reference": "93e7aef044042abde65d8bd1cde775ac9cb969ae5283da139094049be60d68f7"
+        },
+        "reason": "required accession / diagnostic target",
+        "ref_atom_sites": 551,
+        "row_values_match": true,
+        "segment_index": 0,
+        "status": "ok",
+        "struct_asym_id": "B",
+        "uniprot_span": [
+          58,
+          687
+        ]
+      },
+      {
+        "accepted_altloc_counts": {
+          ".": 452
+        },
+        "accession": "A0A4Q0WMG2",
+        "auth_asym_ids": [
+          "A"
+        ],
+        "batch": 2,
+        "chain": "A",
+        "corrected_checkpoint_rows": 452,
+        "duplicate_label_seq_positions": 0,
+        "entity_id": 1,
+        "entity_poly_seq_duplicate_positions": 0,
+        "entity_poly_seq_variant_positions": 0,
+        "entry": "9wvj",
+        "independent_rows": 452,
+        "label_span": [
+          15,
+          471
+        ],
+        "mapping_method": "sifts_offset",
+        "max_abs_numeric_difference": 0.0,
+        "mismatches_first_10": [],
+        "mse_ca_count": 0,
+        "n_identity_mismatch": 0,
+        "n_identity_pairs": 452,
+        "nontrivial_insertion_code_ca_count": 0,
+        "raw_hashes": {
+          "af": "8b3f94e0404e730e8e1fa88899e85747d4a18f7c02980883288bf8f55056daf6",
+          "mapping": "a76b25c3ed8ced0142fff1297158d4ea0d228bacbcf4a57dfe34bcb0c9eca8bc",
+          "reference": "7677145e54747ae7002abd8ac6b6ace0c163f95cfa30e1be3cd7d5ee3ba58b53"
+        },
+        "reason": "required accession / diagnostic target",
+        "ref_atom_sites": 452,
+        "row_values_match": true,
+        "segment_index": 0,
+        "status": "ok",
+        "struct_asym_id": "C",
+        "uniprot_span": [
+          1,
+          457
+        ]
+      },
+      {
+        "accepted_altloc_counts": {
+          ".": 454
+        },
+        "accession": "A0A4Q0WMG2",
+        "auth_asym_ids": [
+          "B"
+        ],
+        "batch": 2,
+        "chain": "B",
+        "corrected_checkpoint_rows": 454,
+        "duplicate_label_seq_positions": 0,
+        "entity_id": 1,
+        "entity_poly_seq_duplicate_positions": 0,
+        "entity_poly_seq_variant_positions": 0,
+        "entry": "9wvj",
+        "independent_rows": 454,
+        "label_span": [
+          15,
+          471
+        ],
+        "mapping_method": "sifts_offset",
+        "max_abs_numeric_difference": 0.0,
+        "mismatches_first_10": [],
+        "mse_ca_count": 0,
+        "n_identity_mismatch": 0,
+        "n_identity_pairs": 454,
+        "nontrivial_insertion_code_ca_count": 0,
+        "raw_hashes": {
+          "af": "8b3f94e0404e730e8e1fa88899e85747d4a18f7c02980883288bf8f55056daf6",
+          "mapping": "a76b25c3ed8ced0142fff1297158d4ea0d228bacbcf4a57dfe34bcb0c9eca8bc",
+          "reference": "7677145e54747ae7002abd8ac6b6ace0c163f95cfa30e1be3cd7d5ee3ba58b53"
+        },
+        "reason": "required accession / diagnostic target",
+        "ref_atom_sites": 454,
+        "row_values_match": true,
+        "segment_index": 0,
+        "status": "ok",
+        "struct_asym_id": "A",
+        "uniprot_span": [
+          1,
+          457
+        ]
+      },
+      {
+        "accepted_altloc_counts": {
+          ".": 422,
+          "A": 1
+        },
+        "accession": "Q9HWK6",
+        "auth_asym_ids": [
+          "A"
+        ],
+        "batch": 2,
+        "chain": "A",
+        "corrected_checkpoint_rows": 422,
+        "duplicate_label_seq_positions": 0,
+        "entity_id": 1,
+        "entity_poly_seq_duplicate_positions": 0,
+        "entity_poly_seq_variant_positions": 0,
+        "entry": "31rm",
+        "independent_rows": 422,
+        "label_span": [
+          2,
+          439
+        ],
+        "mapping_method": "sifts_offset",
+        "max_abs_numeric_difference": 0.0,
+        "mismatches_first_10": [],
+        "mse_ca_count": 0,
+        "n_identity_mismatch": 1,
+        "n_identity_pairs": 423,
+        "nontrivial_insertion_code_ca_count": 0,
+        "raw_hashes": {
+          "af": "3d9175c6aa4572cdeca2976594ca4fa3dc57162c285acf166b72f556900cebd9",
+          "mapping": "ea64be8cbf2bcb2dc50775253831250afe28f92310835ea8114f2b86fca7416f",
+          "reference": "b77bc17ab2f8cb174d2ac07b21fa6dfb2856c9611b2cda2bdd2eaebf4b24c18d"
+        },
+        "reason": "required accession / diagnostic target",
+        "ref_atom_sites": 423,
+        "row_values_match": true,
+        "segment_index": 0,
+        "status": "ok",
+        "struct_asym_id": "A",
+        "uniprot_span": [
+          25,
+          462
+        ]
+      },
+      {
+        "accepted_altloc_counts": {
+          ".": 423,
+          "A": 1
+        },
+        "accession": "Q9HWK6",
+        "auth_asym_ids": [
+          "B"
+        ],
+        "batch": 2,
+        "chain": "B",
+        "corrected_checkpoint_rows": 423,
+        "duplicate_label_seq_positions": 0,
+        "entity_id": 1,
+        "entity_poly_seq_duplicate_positions": 0,
+        "entity_poly_seq_variant_positions": 0,
+        "entry": "31rm",
+        "independent_rows": 423,
+        "label_span": [
+          2,
+          439
+        ],
+        "mapping_method": "sifts_offset",
+        "max_abs_numeric_difference": 0.0,
+        "mismatches_first_10": [],
+        "mse_ca_count": 0,
+        "n_identity_mismatch": 1,
+        "n_identity_pairs": 424,
+        "nontrivial_insertion_code_ca_count": 0,
+        "raw_hashes": {
+          "af": "3d9175c6aa4572cdeca2976594ca4fa3dc57162c285acf166b72f556900cebd9",
+          "mapping": "ea64be8cbf2bcb2dc50775253831250afe28f92310835ea8114f2b86fca7416f",
+          "reference": "b77bc17ab2f8cb174d2ac07b21fa6dfb2856c9611b2cda2bdd2eaebf4b24c18d"
+        },
+        "reason": "required accession / diagnostic target",
+        "ref_atom_sites": 424,
+        "row_values_match": true,
+        "segment_index": 0,
+        "status": "ok",
+        "struct_asym_id": "B",
+        "uniprot_span": [
+          25,
+          462
+        ]
+      },
+      {
+        "accepted_altloc_counts": {
+          ".": 421,
+          "A": 1
+        },
+        "accession": "Q9HWK6",
+        "auth_asym_ids": [
+          "C"
+        ],
+        "batch": 2,
+        "chain": "C",
+        "corrected_checkpoint_rows": 421,
+        "duplicate_label_seq_positions": 0,
+        "entity_id": 1,
+        "entity_poly_seq_duplicate_positions": 0,
+        "entity_poly_seq_variant_positions": 0,
+        "entry": "31rm",
+        "independent_rows": 421,
+        "label_span": [
+          2,
+          439
+        ],
+        "mapping_method": "sifts_offset",
+        "max_abs_numeric_difference": 0.0,
+        "mismatches_first_10": [],
+        "mse_ca_count": 0,
+        "n_identity_mismatch": 1,
+        "n_identity_pairs": 422,
+        "nontrivial_insertion_code_ca_count": 0,
+        "raw_hashes": {
+          "af": "3d9175c6aa4572cdeca2976594ca4fa3dc57162c285acf166b72f556900cebd9",
+          "mapping": "ea64be8cbf2bcb2dc50775253831250afe28f92310835ea8114f2b86fca7416f",
+          "reference": "b77bc17ab2f8cb174d2ac07b21fa6dfb2856c9611b2cda2bdd2eaebf4b24c18d"
+        },
+        "reason": "required accession / diagnostic target",
+        "ref_atom_sites": 422,
+        "row_values_match": true,
+        "segment_index": 0,
+        "status": "ok",
+        "struct_asym_id": "C",
+        "uniprot_span": [
+          25,
+          462
+        ]
+      },
+      {
+        "accepted_altloc_counts": {
+          ".": 423,
+          "A": 1
+        },
+        "accession": "Q9HWK6",
+        "auth_asym_ids": [
+          "D"
+        ],
+        "batch": 2,
+        "chain": "D",
+        "corrected_checkpoint_rows": 423,
+        "duplicate_label_seq_positions": 0,
+        "entity_id": 1,
+        "entity_poly_seq_duplicate_positions": 0,
+        "entity_poly_seq_variant_positions": 0,
+        "entry": "31rm",
+        "independent_rows": 423,
+        "label_span": [
+          2,
+          439
+        ],
+        "mapping_method": "sifts_offset",
+        "max_abs_numeric_difference": 0.0,
+        "mismatches_first_10": [],
+        "mse_ca_count": 0,
+        "n_identity_mismatch": 1,
+        "n_identity_pairs": 424,
+        "nontrivial_insertion_code_ca_count": 0,
+        "raw_hashes": {
+          "af": "3d9175c6aa4572cdeca2976594ca4fa3dc57162c285acf166b72f556900cebd9",
+          "mapping": "ea64be8cbf2bcb2dc50775253831250afe28f92310835ea8114f2b86fca7416f",
+          "reference": "b77bc17ab2f8cb174d2ac07b21fa6dfb2856c9611b2cda2bdd2eaebf4b24c18d"
+        },
+        "reason": "required accession / diagnostic target",
+        "ref_atom_sites": 424,
+        "row_values_match": true,
+        "segment_index": 0,
+        "status": "ok",
+        "struct_asym_id": "D",
+        "uniprot_span": [
+          25,
+          462
+        ]
+      },
+      {
+        "accepted_altloc_counts": {
+          ".": 193,
+          "A": 22
+        },
+        "accession": "D1MPT3",
+        "auth_asym_ids": [
+          "A"
+        ],
+        "batch": 3,
+        "chain": "A",
+        "corrected_checkpoint_rows": 215,
+        "duplicate_label_seq_positions": 0,
+        "entity_id": 1,
+        "entity_poly_seq_duplicate_positions": 0,
+        "entity_poly_seq_variant_positions": 0,
+        "entry": "31al",
+        "independent_rows": 215,
+        "label_span": [
+          1,
+          234
+        ],
+        "mapping_method": "sequence_alignment",
+        "max_abs_numeric_difference": 0.0,
+        "mismatches_first_10": [],
+        "mse_ca_count": 0,
+        "n_identity_mismatch": 0,
+        "n_identity_pairs": 215,
+        "nontrivial_insertion_code_ca_count": 0,
+        "raw_hashes": {
+          "af": "d29f5d109a8d74c9030c6e189960a3199c41f3b21d81b2dac7a1e7aad8783b8a",
+          "mapping": "819e97a8c681b9af2b8e56da1434d07a50ff452fe7b3ce1884daf79ba7f40eec",
+          "reference": "e716e83a00bfea59cd1c39823afe609720e26afd3d60e29a4c67fac4cf859822"
+        },
+        "reason": "required accession / diagnostic target",
+        "ref_atom_sites": 215,
+        "row_values_match": true,
+        "segment_index": 0,
+        "status": "ok",
+        "struct_asym_id": "A",
+        "uniprot_span": [
+          1,
+          236
+        ]
+      },
+      {
+        "accepted_altloc_counts": {
+          ".": 214,
+          "A": 18
+        },
+        "accession": "D1MPT3",
+        "auth_asym_ids": [
+          "B"
+        ],
+        "batch": 3,
+        "chain": "B",
+        "corrected_checkpoint_rows": 224,
+        "duplicate_label_seq_positions": 0,
+        "entity_id": 1,
+        "entity_poly_seq_duplicate_positions": 0,
+        "entity_poly_seq_variant_positions": 0,
+        "entry": "31al",
+        "independent_rows": 224,
+        "label_span": [
+          1,
+          234
+        ],
+        "mapping_method": "sequence_alignment",
+        "max_abs_numeric_difference": 0.0,
+        "mismatches_first_10": [],
+        "mse_ca_count": 0,
+        "n_identity_mismatch": 0,
+        "n_identity_pairs": 224,
+        "nontrivial_insertion_code_ca_count": 0,
+        "raw_hashes": {
+          "af": "d29f5d109a8d74c9030c6e189960a3199c41f3b21d81b2dac7a1e7aad8783b8a",
+          "mapping": "819e97a8c681b9af2b8e56da1434d07a50ff452fe7b3ce1884daf79ba7f40eec",
+          "reference": "e716e83a00bfea59cd1c39823afe609720e26afd3d60e29a4c67fac4cf859822"
+        },
+        "reason": "required accession / diagnostic target",
+        "ref_atom_sites": 232,
+        "row_values_match": true,
+        "segment_index": 0,
+        "status": "ok",
+        "struct_asym_id": "B",
+        "uniprot_span": [
+          1,
+          236
+        ]
+      },
+      {
+        "accepted_altloc_counts": {
+          ".": 189,
+          "A": 26
+        },
+        "accession": "D1MPT3",
+        "auth_asym_ids": [
+          "A"
+        ],
+        "batch": 3,
+        "chain": "A",
+        "corrected_checkpoint_rows": 215,
+        "duplicate_label_seq_positions": 0,
+        "entity_id": 1,
+        "entity_poly_seq_duplicate_positions": 1,
+        "entity_poly_seq_variant_positions": 0,
+        "entry": "31jt",
+        "independent_rows": 215,
+        "label_span": [
+          1,
+          234
+        ],
+        "mapping_method": "sequence_alignment",
+        "max_abs_numeric_difference": 0.0,
+        "mismatches_first_10": [],
+        "mse_ca_count": 0,
+        "n_identity_mismatch": 0,
+        "n_identity_pairs": 215,
+        "nontrivial_insertion_code_ca_count": 0,
+        "raw_hashes": {
+          "af": "d29f5d109a8d74c9030c6e189960a3199c41f3b21d81b2dac7a1e7aad8783b8a",
+          "mapping": "74a75e1b4a8802a2ac48cab63c90944dc669b6feae7d8b3bd39fd010e3a68a63",
+          "reference": "261bc3059dabdaf76a9f536e6819d7226a6c2dd80af015173772fa506c21a53b"
+        },
+        "reason": "required accession / diagnostic target",
+        "ref_atom_sites": 215,
+        "row_values_match": true,
+        "segment_index": 0,
+        "status": "ok",
+        "struct_asym_id": "A",
+        "uniprot_span": [
+          1,
+          236
+        ]
+      },
+      {
+        "accepted_altloc_counts": {
+          ".": 209,
+          "A": 24
+        },
+        "accession": "D1MPT3",
+        "auth_asym_ids": [
+          "B"
+        ],
+        "batch": 3,
+        "chain": "B",
+        "corrected_checkpoint_rows": 225,
+        "duplicate_label_seq_positions": 0,
+        "entity_id": 1,
+        "entity_poly_seq_duplicate_positions": 1,
+        "entity_poly_seq_variant_positions": 0,
+        "entry": "31jt",
+        "independent_rows": 225,
+        "label_span": [
+          1,
+          234
+        ],
+        "mapping_method": "sequence_alignment",
+        "max_abs_numeric_difference": 0.0,
+        "mismatches_first_10": [],
+        "mse_ca_count": 0,
+        "n_identity_mismatch": 0,
+        "n_identity_pairs": 225,
+        "nontrivial_insertion_code_ca_count": 0,
+        "raw_hashes": {
+          "af": "d29f5d109a8d74c9030c6e189960a3199c41f3b21d81b2dac7a1e7aad8783b8a",
+          "mapping": "74a75e1b4a8802a2ac48cab63c90944dc669b6feae7d8b3bd39fd010e3a68a63",
+          "reference": "261bc3059dabdaf76a9f536e6819d7226a6c2dd80af015173772fa506c21a53b"
+        },
+        "reason": "required accession / diagnostic target",
+        "ref_atom_sites": 233,
+        "row_values_match": true,
+        "segment_index": 0,
+        "status": "ok",
+        "struct_asym_id": "B",
+        "uniprot_span": [
+          1,
+          236
+        ]
+      },
+      {
+        "accepted_altloc_counts": {
+          ".": 444,
+          "A": 23
+        },
+        "accession": "K7PQ54",
+        "auth_asym_ids": [
+          "A"
+        ],
+        "batch": 4,
+        "chain": "A",
+        "corrected_checkpoint_rows": 466,
+        "duplicate_label_seq_positions": 0,
+        "entity_id": 1,
+        "entity_poly_seq_duplicate_positions": 0,
+        "entity_poly_seq_variant_positions": 0,
+        "entry": "9qj7",
+        "independent_rows": 466,
+        "label_span": [
+          1,
+          473
+        ],
+        "mapping_method": "sifts_offset",
+        "max_abs_numeric_difference": 0.0,
+        "mismatches_first_10": [],
+        "mse_ca_count": 0,
+        "n_identity_mismatch": 1,
+        "n_identity_pairs": 467,
+        "nontrivial_insertion_code_ca_count": 0,
+        "raw_hashes": {
+          "af": "07406b15c127dc43b5c5febdd5e6766637ec15ed1e3a7cf3f6e43edf7fa546c9",
+          "mapping": "dc553b9f3124d1019982d1ac7cc4f62ef27e9fbeeae1fb7996f71ed04b459899",
+          "reference": "28820f1d04aede77b9f8729e1de264b90a0452f9a294f237a81a07a87983ad8e"
+        },
+        "reason": "required accession / diagnostic target",
+        "ref_atom_sites": 467,
+        "row_values_match": true,
+        "segment_index": 0,
+        "status": "ok",
+        "struct_asym_id": "A",
+        "uniprot_span": [
+          35,
+          507
+        ]
+      },
+      {
+        "accepted_altloc_counts": {
+          ".": 446,
+          "A": 25
+        },
+        "accession": "K7PQ54",
+        "auth_asym_ids": [
+          "B"
+        ],
+        "batch": 4,
+        "chain": "B",
+        "corrected_checkpoint_rows": 470,
+        "duplicate_label_seq_positions": 0,
+        "entity_id": 1,
+        "entity_poly_seq_duplicate_positions": 0,
+        "entity_poly_seq_variant_positions": 0,
+        "entry": "9qj7",
+        "independent_rows": 470,
+        "label_span": [
+          1,
+          473
+        ],
+        "mapping_method": "sifts_offset",
+        "max_abs_numeric_difference": 0.0,
+        "mismatches_first_10": [],
+        "mse_ca_count": 0,
+        "n_identity_mismatch": 1,
+        "n_identity_pairs": 471,
+        "nontrivial_insertion_code_ca_count": 0,
+        "raw_hashes": {
+          "af": "07406b15c127dc43b5c5febdd5e6766637ec15ed1e3a7cf3f6e43edf7fa546c9",
+          "mapping": "dc553b9f3124d1019982d1ac7cc4f62ef27e9fbeeae1fb7996f71ed04b459899",
+          "reference": "28820f1d04aede77b9f8729e1de264b90a0452f9a294f237a81a07a87983ad8e"
+        },
+        "reason": "required accession / diagnostic target",
+        "ref_atom_sites": 471,
+        "row_values_match": true,
+        "segment_index": 0,
+        "status": "ok",
+        "struct_asym_id": "B",
+        "uniprot_span": [
+          35,
+          507
+        ]
+      },
+      {
+        "accepted_altloc_counts": {
+          ".": 467,
+          "A": 6
+        },
+        "accession": "K7PQ54",
+        "auth_asym_ids": [
+          "A"
+        ],
+        "batch": 4,
+        "chain": "A",
+        "corrected_checkpoint_rows": 472,
+        "duplicate_label_seq_positions": 0,
+        "entity_id": 1,
+        "entity_poly_seq_duplicate_positions": 0,
+        "entity_poly_seq_variant_positions": 0,
+        "entry": "9qj8",
+        "independent_rows": 472,
+        "label_span": [
+          1,
+          473
+        ],
+        "mapping_method": "sifts_offset",
+        "max_abs_numeric_difference": 0.0,
+        "mismatches_first_10": [],
+        "mse_ca_count": 0,
+        "n_identity_mismatch": 1,
+        "n_identity_pairs": 473,
+        "nontrivial_insertion_code_ca_count": 0,
+        "raw_hashes": {
+          "af": "07406b15c127dc43b5c5febdd5e6766637ec15ed1e3a7cf3f6e43edf7fa546c9",
+          "mapping": "728496409c0d20e50ceb87a28ee43ba8e0845a1842eede6de64e3f5bc1cff322",
+          "reference": "a6a9a1f9b0c20c9e9dc6f7c3a2dec9d264caf58593c8d3da3b7f132c8d873a10"
+        },
+        "reason": "required accession / diagnostic target",
+        "ref_atom_sites": 473,
+        "row_values_match": true,
+        "segment_index": 0,
+        "status": "ok",
+        "struct_asym_id": "A",
+        "uniprot_span": [
+          35,
+          507
+        ]
+      },
+      {
+        "accepted_altloc_counts": {
+          ".": 464,
+          "A": 7
+        },
+        "accession": "K7PQ54",
+        "auth_asym_ids": [
+          "B"
+        ],
+        "batch": 4,
+        "chain": "B",
+        "corrected_checkpoint_rows": 470,
+        "duplicate_label_seq_positions": 0,
+        "entity_id": 1,
+        "entity_poly_seq_duplicate_positions": 0,
+        "entity_poly_seq_variant_positions": 0,
+        "entry": "9qj8",
+        "independent_rows": 470,
+        "label_span": [
+          1,
+          473
+        ],
+        "mapping_method": "sifts_offset",
+        "max_abs_numeric_difference": 0.0,
+        "mismatches_first_10": [],
+        "mse_ca_count": 0,
+        "n_identity_mismatch": 1,
+        "n_identity_pairs": 471,
+        "nontrivial_insertion_code_ca_count": 0,
+        "raw_hashes": {
+          "af": "07406b15c127dc43b5c5febdd5e6766637ec15ed1e3a7cf3f6e43edf7fa546c9",
+          "mapping": "728496409c0d20e50ceb87a28ee43ba8e0845a1842eede6de64e3f5bc1cff322",
+          "reference": "a6a9a1f9b0c20c9e9dc6f7c3a2dec9d264caf58593c8d3da3b7f132c8d873a10"
+        },
+        "reason": "required accession / diagnostic target",
+        "ref_atom_sites": 471,
+        "row_values_match": true,
+        "segment_index": 0,
+        "status": "ok",
+        "struct_asym_id": "B",
+        "uniprot_span": [
+          35,
+          507
+        ]
+      },
+      {
+        "accepted_altloc_counts": {
+          ".": 433,
+          "A": 40
+        },
+        "accession": "K7PQ54",
+        "auth_asym_ids": [
+          "A"
+        ],
+        "batch": 4,
+        "chain": "A",
+        "corrected_checkpoint_rows": 472,
+        "duplicate_label_seq_positions": 0,
+        "entity_id": 1,
+        "entity_poly_seq_duplicate_positions": 0,
+        "entity_poly_seq_variant_positions": 0,
+        "entry": "9qjd",
+        "independent_rows": 472,
+        "label_span": [
+          1,
+          473
+        ],
+        "mapping_method": "sifts_offset",
+        "max_abs_numeric_difference": 0.0,
+        "mismatches_first_10": [],
+        "mse_ca_count": 0,
+        "n_identity_mismatch": 1,
+        "n_identity_pairs": 473,
+        "nontrivial_insertion_code_ca_count": 0,
+        "raw_hashes": {
+          "af": "07406b15c127dc43b5c5febdd5e6766637ec15ed1e3a7cf3f6e43edf7fa546c9",
+          "mapping": "c2d24ce8cf13e82125a24e94bad8bcbd987703cee8a61b8100d1a3fddafae71d",
+          "reference": "b3561372b017aa7b139aca187dd55f8c262c186ba2970ee9970b4cce5ac44527"
+        },
+        "reason": "required accession / diagnostic target",
+        "ref_atom_sites": 473,
+        "row_values_match": true,
+        "segment_index": 0,
+        "status": "ok",
+        "struct_asym_id": "A",
+        "uniprot_span": [
+          35,
+          507
+        ]
+      },
+      {
+        "accepted_altloc_counts": {
+          ".": 440,
+          "A": 32
+        },
+        "accession": "K7PQ54",
+        "auth_asym_ids": [
+          "B"
+        ],
+        "batch": 4,
+        "chain": "B",
+        "corrected_checkpoint_rows": 471,
+        "duplicate_label_seq_positions": 0,
+        "entity_id": 1,
+        "entity_poly_seq_duplicate_positions": 0,
+        "entity_poly_seq_variant_positions": 0,
+        "entry": "9qjd",
+        "independent_rows": 471,
+        "label_span": [
+          1,
+          473
+        ],
+        "mapping_method": "sifts_offset",
+        "max_abs_numeric_difference": 0.0,
+        "mismatches_first_10": [],
+        "mse_ca_count": 0,
+        "n_identity_mismatch": 1,
+        "n_identity_pairs": 472,
+        "nontrivial_insertion_code_ca_count": 0,
+        "raw_hashes": {
+          "af": "07406b15c127dc43b5c5febdd5e6766637ec15ed1e3a7cf3f6e43edf7fa546c9",
+          "mapping": "c2d24ce8cf13e82125a24e94bad8bcbd987703cee8a61b8100d1a3fddafae71d",
+          "reference": "b3561372b017aa7b139aca187dd55f8c262c186ba2970ee9970b4cce5ac44527"
+        },
+        "reason": "required accession / diagnostic target",
+        "ref_atom_sites": 472,
+        "row_values_match": true,
+        "segment_index": 0,
+        "status": "ok",
+        "struct_asym_id": "B",
+        "uniprot_span": [
+          35,
+          507
+        ]
+      },
+      {
+        "accepted_altloc_counts": {
+          ".": 437,
+          "A": 35
+        },
+        "accession": "K7PQ54",
+        "auth_asym_ids": [
+          "A"
+        ],
+        "batch": 4,
+        "chain": "A",
+        "corrected_checkpoint_rows": 471,
+        "duplicate_label_seq_positions": 0,
+        "entity_id": 1,
+        "entity_poly_seq_duplicate_positions": 0,
+        "entity_poly_seq_variant_positions": 0,
+        "entry": "9qjf",
+        "independent_rows": 471,
+        "label_span": [
+          1,
+          473
+        ],
+        "mapping_method": "sifts_offset",
+        "max_abs_numeric_difference": 0.0,
+        "mismatches_first_10": [],
+        "mse_ca_count": 0,
+        "n_identity_mismatch": 1,
+        "n_identity_pairs": 472,
+        "nontrivial_insertion_code_ca_count": 0,
+        "raw_hashes": {
+          "af": "07406b15c127dc43b5c5febdd5e6766637ec15ed1e3a7cf3f6e43edf7fa546c9",
+          "mapping": "9c0afb78d011780a2cec58620169edd4f154762488d936ded89ee7bee32a4d89",
+          "reference": "4366e5249f0304a52022b4ef075485edebdb55e7ac1ebc2d2966b4833bc7a886"
+        },
+        "reason": "required accession / diagnostic target",
+        "ref_atom_sites": 472,
+        "row_values_match": true,
+        "segment_index": 0,
+        "status": "ok",
+        "struct_asym_id": "A",
+        "uniprot_span": [
+          35,
+          507
+        ]
+      },
+      {
+        "accepted_altloc_counts": {
+          ".": 435,
+          "A": 37
+        },
+        "accession": "K7PQ54",
+        "auth_asym_ids": [
+          "B"
+        ],
+        "batch": 4,
+        "chain": "B",
+        "corrected_checkpoint_rows": 471,
+        "duplicate_label_seq_positions": 0,
+        "entity_id": 1,
+        "entity_poly_seq_duplicate_positions": 0,
+        "entity_poly_seq_variant_positions": 0,
+        "entry": "9qjf",
+        "independent_rows": 471,
+        "label_span": [
+          1,
+          473
+        ],
+        "mapping_method": "sifts_offset",
+        "max_abs_numeric_difference": 0.0,
+        "mismatches_first_10": [],
+        "mse_ca_count": 0,
+        "n_identity_mismatch": 1,
+        "n_identity_pairs": 472,
+        "nontrivial_insertion_code_ca_count": 0,
+        "raw_hashes": {
+          "af": "07406b15c127dc43b5c5febdd5e6766637ec15ed1e3a7cf3f6e43edf7fa546c9",
+          "mapping": "9c0afb78d011780a2cec58620169edd4f154762488d936ded89ee7bee32a4d89",
+          "reference": "4366e5249f0304a52022b4ef075485edebdb55e7ac1ebc2d2966b4833bc7a886"
+        },
+        "reason": "required accession / diagnostic target",
+        "ref_atom_sites": 472,
+        "row_values_match": true,
+        "segment_index": 0,
+        "status": "ok",
+        "struct_asym_id": "B",
+        "uniprot_span": [
+          35,
+          507
+        ]
+      },
+      {
+        "accepted_altloc_counts": {
+          ".": 105
+        },
+        "accession": "P00426",
+        "auth_asym_ids": [
+          "E"
+        ],
+        "batch": 3,
+        "chain": "E",
+        "corrected_checkpoint_rows": 105,
+        "duplicate_label_seq_positions": 0,
+        "entity_id": 5,
+        "entity_poly_seq_duplicate_positions": 0,
+        "entity_poly_seq_variant_positions": 0,
+        "entry": "36cv",
+        "independent_rows": 105,
+        "label_span": [
+          1,
+          109
+        ],
+        "mapping_method": "sifts_offset",
+        "max_abs_numeric_difference": 0.0,
+        "mismatches_first_10": [],
+        "mse_ca_count": 0,
+        "n_identity_mismatch": 0,
+        "n_identity_pairs": 105,
+        "nontrivial_insertion_code_ca_count": 0,
+        "raw_hashes": {
+          "af": "67e6ca6859ee270e8d77107be18466006331c113c5409db41c066cb767e19426",
+          "mapping": "7a0147d0e4075f50d31ed3ee3462ac40590c9392feac6a33d5d608a77d396482",
+          "reference": "7d1bcd04b0c4535fa241d79d558108ddc5009bba563b871119260c14fabcc876"
+        },
+        "reason": "seed-427 sample from unchanged groups",
+        "ref_atom_sites": 105,
+        "row_values_match": true,
+        "segment_index": 0,
+        "status": "ok",
+        "struct_asym_id": "E",
+        "uniprot_span": [
+          44,
+          152
+        ]
+      },
+      {
+        "accepted_altloc_counts": {
+          ".": 65,
+          "A": 3
+        },
+        "accession": "P10145",
+        "auth_asym_ids": [
+          "A"
+        ],
+        "batch": 4,
+        "chain": "A",
+        "corrected_checkpoint_rows": 68,
+        "duplicate_label_seq_positions": 0,
+        "entity_id": 1,
+        "entity_poly_seq_duplicate_positions": 0,
+        "entity_poly_seq_variant_positions": 0,
+        "entry": "9yip",
+        "independent_rows": 68,
+        "label_span": [
+          1,
+          72
+        ],
+        "mapping_method": "sifts_offset",
+        "max_abs_numeric_difference": 0.0,
+        "mismatches_first_10": [],
+        "mse_ca_count": 0,
+        "n_identity_mismatch": 0,
+        "n_identity_pairs": 68,
+        "nontrivial_insertion_code_ca_count": 0,
+        "raw_hashes": {
+          "af": "a262517d14a32b65e2e8d5ae77ccca4ca76f69bc000b1f3bef4aaf409e9f49e1",
+          "mapping": "29058af6794d8c27040c8f8cc76c3b7a285af58fa95a9ecdc515bb584bb2429b",
+          "reference": "ecc35a41f9633015642d511adb0fa203231f773e1742dae875e12b4c23cd1997"
+        },
+        "reason": "seed-427 sample from unchanged groups",
+        "ref_atom_sites": 68,
+        "row_values_match": true,
+        "segment_index": 0,
+        "status": "ok",
+        "struct_asym_id": "A",
+        "uniprot_span": [
+          28,
+          99
+        ]
+      },
+      {
+        "accepted_altloc_counts": {
+          ".": 261,
+          "A": 4
+        },
+        "accession": "P71451",
+        "auth_asym_ids": [
+          "A"
+        ],
+        "batch": 4,
+        "chain": "A",
+        "corrected_checkpoint_rows": 263,
+        "duplicate_label_seq_positions": 0,
+        "entity_id": 1,
+        "entity_poly_seq_duplicate_positions": 0,
+        "entity_poly_seq_variant_positions": 0,
+        "entry": "9tmk",
+        "independent_rows": 263,
+        "label_span": [
+          3,
+          265
+        ],
+        "mapping_method": "sifts_offset",
+        "max_abs_numeric_difference": 0.0,
+        "mismatches_first_10": [],
+        "mse_ca_count": 0,
+        "n_identity_mismatch": 0,
+        "n_identity_pairs": 263,
+        "nontrivial_insertion_code_ca_count": 0,
+        "raw_hashes": {
+          "af": "e7a401fa06d4fe96bb1e3721a124ce47ece7ff490cf4322af03de5889ec354c1",
+          "mapping": "f0576eb4807cf7c8b06d0258922ba4dd4289d0731941f75c467dac4f8a377881",
+          "reference": "d5ba0817253d8704b1c47f80e3282f894e31547d8182a61647f03fb6b89fdb3f"
+        },
+        "reason": "seed-427 sample from unchanged groups",
+        "ref_atom_sites": 265,
+        "row_values_match": true,
+        "segment_index": 0,
+        "status": "ok",
+        "struct_asym_id": "A",
+        "uniprot_span": [
+          35,
+          297
+        ]
+      },
+      {
+        "accepted_altloc_counts": {
+          ".": 34
+        },
+        "accession": "Q8DIN9",
+        "auth_asym_ids": [
+          "f"
+        ],
+        "batch": 3,
+        "chain": "f",
+        "corrected_checkpoint_rows": 34,
+        "duplicate_label_seq_positions": 0,
+        "entity_id": 6,
+        "entity_poly_seq_duplicate_positions": 0,
+        "entity_poly_seq_variant_positions": 0,
+        "entry": "13ch",
+        "independent_rows": 34,
+        "label_span": [
+          1,
+          45
+        ],
+        "mapping_method": "sifts_offset",
+        "max_abs_numeric_difference": 0.0,
+        "mismatches_first_10": [],
+        "mse_ca_count": 0,
+        "n_identity_mismatch": 0,
+        "n_identity_pairs": 34,
+        "nontrivial_insertion_code_ca_count": 0,
+        "raw_hashes": {
+          "af": "a580108e3570da96d8b93b82b2ab1a6ed4b07f09d4c174e54fc1dc5b9707e42f",
+          "mapping": "ae645dc65c790b34e91b8ecd24bd008b48dfa0000f19797151b1699df3d1e88d",
+          "reference": "a1fe21bc0e547c2c93784a99949e09ebf0423e526011a382f2cec86af8ba7540"
+        },
+        "reason": "seed-427 sample from unchanged groups",
+        "ref_atom_sites": 34,
+        "row_values_match": true,
+        "segment_index": 0,
+        "status": "ok",
+        "struct_asym_id": "Z",
+        "uniprot_span": [
+          1,
+          45
+        ]
+      },
+      {
+        "accepted_altloc_counts": {
+          ".": 83
+        },
+        "accession": "P07471",
+        "auth_asym_ids": [
+          "G"
+        ],
+        "batch": 3,
+        "chain": "G",
+        "corrected_checkpoint_rows": 83,
+        "duplicate_label_seq_positions": 0,
+        "entity_id": 7,
+        "entity_poly_seq_duplicate_positions": 0,
+        "entity_poly_seq_variant_positions": 0,
+        "entry": "36cv",
+        "independent_rows": 83,
+        "label_span": [
+          1,
+          85
+        ],
+        "mapping_method": "sifts_offset",
+        "max_abs_numeric_difference": 0.0,
+        "mismatches_first_10": [],
+        "mse_ca_count": 0,
+        "n_identity_mismatch": 0,
+        "n_identity_pairs": 83,
+        "nontrivial_insertion_code_ca_count": 0,
+        "raw_hashes": {
+          "af": "990b8d261da3e09c17b24520475417a833d26dae82cb601a68f06445922401a0",
+          "mapping": "7a0147d0e4075f50d31ed3ee3462ac40590c9392feac6a33d5d608a77d396482",
+          "reference": "7d1bcd04b0c4535fa241d79d558108ddc5009bba563b871119260c14fabcc876"
+        },
+        "reason": "seed-427 sample from unchanged groups",
+        "ref_atom_sites": 83,
+        "row_values_match": true,
+        "segment_index": 0,
+        "status": "ok",
+        "struct_asym_id": "G",
+        "uniprot_span": [
+          13,
+          97
+        ]
+      },
+      {
+        "accepted_altloc_counts": {
+          "A": 158
+        },
+        "accession": "P0ABQ4",
+        "auth_asym_ids": [
+          "A"
+        ],
+        "batch": 4,
+        "chain": "A",
+        "corrected_checkpoint_rows": 158,
+        "duplicate_label_seq_positions": 0,
+        "entity_id": 1,
+        "entity_poly_seq_duplicate_positions": 0,
+        "entity_poly_seq_variant_positions": 0,
+        "entry": "45pc",
+        "independent_rows": 158,
+        "label_span": [
+          1,
+          159
+        ],
+        "mapping_method": "sifts_offset",
+        "max_abs_numeric_difference": 0.0,
+        "mismatches_first_10": [],
+        "mse_ca_count": 0,
+        "n_identity_mismatch": 0,
+        "n_identity_pairs": 158,
+        "nontrivial_insertion_code_ca_count": 0,
+        "raw_hashes": {
+          "af": "16da98f29a99cd19572a85db7a46f466c4a483669398e4790f4959002e83d873",
+          "mapping": "a317bd9febd76cc26394c9676de148d793750095e00392e60883d7e7d60764c1",
+          "reference": "25759f08162184377a2b7fbe53da63d16251152b989dc053e9826f77e14227a7"
+        },
+        "reason": "seed-427 sample from unchanged groups",
+        "ref_atom_sites": 158,
+        "row_values_match": true,
+        "segment_index": 0,
+        "status": "ok",
+        "struct_asym_id": "A",
+        "uniprot_span": [
+          1,
+          159
+        ]
+      },
+      {
+        "accepted_altloc_counts": {
+          ".": 158,
+          "A": 11
+        },
+        "accession": "P01111",
+        "auth_asym_ids": [
+          "A"
+        ],
+        "batch": 2,
+        "chain": "A",
+        "corrected_checkpoint_rows": 168,
+        "duplicate_label_seq_positions": 0,
+        "entity_id": 1,
+        "entity_poly_seq_duplicate_positions": 0,
+        "entity_poly_seq_variant_positions": 0,
+        "entry": "24sr",
+        "independent_rows": 168,
+        "label_span": [
+          7,
+          177
+        ],
+        "mapping_method": "sifts_offset",
+        "max_abs_numeric_difference": 0.0,
+        "mismatches_first_10": [],
+        "mse_ca_count": 0,
+        "n_identity_mismatch": 0,
+        "n_identity_pairs": 168,
+        "nontrivial_insertion_code_ca_count": 0,
+        "raw_hashes": {
+          "af": "6cf8947afbca7720fb29b0f36fbf1148356839a692d890c701ab30907337bea2",
+          "mapping": "a528e94e3ea5bf546dc168df70bd47a1f391223db66b8340d5c5a474fdb14839",
+          "reference": "584c9fd7f10ad25b7bb1a5adad58237ad8e16970e552648f0a09961515167ec7"
+        },
+        "reason": "seed-427 sample from unchanged groups",
+        "ref_atom_sites": 169,
+        "row_values_match": true,
+        "segment_index": 0,
+        "status": "ok",
+        "struct_asym_id": "A",
+        "uniprot_span": [
+          2,
+          172
+        ]
+      },
+      {
+        "accepted_altloc_counts": {
+          ".": 194,
+          "A": 47
+        },
+        "accession": "Q45NF4",
+        "auth_asym_ids": [
+          "A"
+        ],
+        "batch": 3,
+        "chain": "A",
+        "corrected_checkpoint_rows": 241,
+        "duplicate_label_seq_positions": 0,
+        "entity_id": 1,
+        "entity_poly_seq_duplicate_positions": 0,
+        "entity_poly_seq_variant_positions": 0,
+        "entry": "10zi",
+        "independent_rows": 241,
+        "label_span": [
+          1,
+          241
+        ],
+        "mapping_method": "sifts_offset",
+        "max_abs_numeric_difference": 0.0,
+        "mismatches_first_10": [],
+        "mse_ca_count": 0,
+        "n_identity_mismatch": 0,
+        "n_identity_pairs": 241,
+        "nontrivial_insertion_code_ca_count": 0,
+        "raw_hashes": {
+          "af": "b47bfad4e0392123f109c235e276459f04315410419cd52cfe7942457e794b52",
+          "mapping": "213b58a977dc485013d4ec63ea6f43abb76ed2dbf78c366ba77a49fc1319f45f",
+          "reference": "02aab155e5827c2e477b6a2ee654abb7c613e4b54446173e00286bbf46cd7c27"
+        },
+        "reason": "seed-427 sample from unchanged groups",
+        "ref_atom_sites": 241,
+        "row_values_match": true,
+        "segment_index": 0,
+        "status": "ok",
+        "struct_asym_id": "A",
+        "uniprot_span": [
+          32,
+          272
+        ]
+      },
+      {
+        "accepted_altloc_counts": {
+          ".": 397
+        },
+        "accession": "A7VSG1",
+        "auth_asym_ids": [
+          "B"
+        ],
+        "batch": 4,
+        "chain": "B",
+        "corrected_checkpoint_rows": 397,
+        "duplicate_label_seq_positions": 0,
+        "entity_id": 1,
+        "entity_poly_seq_duplicate_positions": 0,
+        "entity_poly_seq_variant_positions": 0,
+        "entry": "9yq9",
+        "independent_rows": 397,
+        "label_span": [
+          19,
+          417
+        ],
+        "mapping_method": "sifts_offset",
+        "max_abs_numeric_difference": 0.0,
+        "mismatches_first_10": [],
+        "mse_ca_count": 0,
+        "n_identity_mismatch": 0,
+        "n_identity_pairs": 397,
+        "nontrivial_insertion_code_ca_count": 0,
+        "raw_hashes": {
+          "af": "a4e24c76e25fc2648f52c80298161b42b365befa6c5cc7f41a277b9efdb7f3ab",
+          "mapping": "d311510196c3eea0f6ff8a3c2bef643518f7a6c17af7f23a7815df45fbb51595",
+          "reference": "3ed720819989d677eb0fcf90dd099a3b8082fff45004b134e0a9475f44c02bdd"
+        },
+        "reason": "seed-427 sample from unchanged groups",
+        "ref_atom_sites": 397,
+        "row_values_match": true,
+        "segment_index": 0,
+        "status": "ok",
+        "struct_asym_id": "B",
+        "uniprot_span": [
+          1,
+          399
+        ]
+      },
+      {
+        "accepted_altloc_counts": {
+          ".": 217,
+          "A": 6
+        },
+        "accession": "P00760",
+        "auth_asym_ids": [
+          "A"
+        ],
+        "batch": 3,
+        "chain": "A",
+        "corrected_checkpoint_rows": 223,
+        "duplicate_label_seq_positions": 0,
+        "entity_id": 1,
+        "entity_poly_seq_duplicate_positions": 0,
+        "entity_poly_seq_variant_positions": 0,
+        "entry": "9ybb",
+        "independent_rows": 223,
+        "label_span": [
+          1,
+          246
+        ],
+        "mapping_method": "sifts_offset",
+        "max_abs_numeric_difference": 0.0,
+        "mismatches_first_10": [],
+        "mse_ca_count": 0,
+        "n_identity_mismatch": 0,
+        "n_identity_pairs": 223,
+        "nontrivial_insertion_code_ca_count": 0,
+        "raw_hashes": {
+          "af": "a0554e245d18e268eaebf8f5aa651cdd6e3c088b0b480ab757a21337d8e76298",
+          "mapping": "5a70d26312624d23ae851fd3a6fb6b478221b69d01aace7105c420bbe6f767d1",
+          "reference": "70b32632752656356a4fc06621502e76947c80df586e0f47201596426635561c"
+        },
+        "reason": "seed-427 sample from unchanged groups",
+        "ref_atom_sites": 223,
+        "row_values_match": true,
+        "segment_index": 0,
+        "status": "ok",
+        "struct_asym_id": "A",
+        "uniprot_span": [
+          1,
+          246
+        ]
+      }
+    ],
+    "targeted_segments": 26
+  },
+  "mapping_structure_summary": {
+    "groups_with_multiple_segments": 8,
+    "groups_with_multiple_struct_asym_ids": 0,
+    "multi_asym_examples_first_20": [],
+    "multi_segment_examples_first_20": [
+      {
+        "accession": "P10721",
+        "chain": "A",
+        "entry": "35ua",
+        "n_segments": 2,
+        "segments": [
+          {
+            "label": [
+              6,
+              156
+            ],
+            "struct_asym_id": "A",
+            "uniprot": [
+              544,
+              752
+            ]
+          },
+          {
+            "label": [
+              158,
+              339
+            ],
+            "struct_asym_id": "A",
+            "uniprot": [
+              754,
+              935
+            ]
+          }
+        ],
+        "struct_asym_ids": [
+          "A"
+        ]
+      },
+      {
+        "accession": "P10721",
+        "chain": "B",
+        "entry": "35ua",
+        "n_segments": 2,
+        "segments": [
+          {
+            "label": [
+              6,
+              156
+            ],
+            "struct_asym_id": "B",
+            "uniprot": [
+              544,
+              752
+            ]
+          },
+          {
+            "label": [
+              158,
+              339
+            ],
+            "struct_asym_id": "B",
+            "uniprot": [
+              754,
+              935
+            ]
+          }
+        ],
+        "struct_asym_ids": [
+          "B"
+        ]
+      },
+      {
+        "accession": "P10721",
+        "chain": "C",
+        "entry": "35ua",
+        "n_segments": 2,
+        "segments": [
+          {
+            "label": [
+              6,
+              156
+            ],
+            "struct_asym_id": "C",
+            "uniprot": [
+              544,
+              752
+            ]
+          },
+          {
+            "label": [
+              158,
+              339
+            ],
+            "struct_asym_id": "C",
+            "uniprot": [
+              754,
+              935
+            ]
+          }
+        ],
+        "struct_asym_ids": [
+          "C"
+        ]
+      },
+      {
+        "accession": "P10721",
+        "chain": "AAA",
+        "entry": "35uc",
+        "n_segments": 2,
+        "segments": [
+          {
+            "label": [
+              6,
+              156
+            ],
+            "struct_asym_id": "A",
+            "uniprot": [
+              544,
+              752
+            ]
+          },
+          {
+            "label": [
+              158,
+              339
+            ],
+            "struct_asym_id": "A",
+            "uniprot": [
+              754,
+              935
+            ]
+          }
+        ],
+        "struct_asym_ids": [
+          "A"
+        ]
+      },
+      {
+        "accession": "P00533",
+        "chain": "A",
+        "entry": "9wr8",
+        "n_segments": 2,
+        "segments": [
+          {
+            "label": [
+              1,
+              77
+            ],
+            "struct_asym_id": "A",
+            "uniprot": [
+              696,
+              772
+            ]
+          },
+          {
+            "label": [
+              81,
+              330
+            ],
+            "struct_asym_id": "A",
+            "uniprot": [
+              773,
+              1022
+            ]
+          }
+        ],
+        "struct_asym_ids": [
+          "A"
+        ]
+      },
+      {
+        "accession": "P00533",
+        "chain": "B",
+        "entry": "9wr8",
+        "n_segments": 2,
+        "segments": [
+          {
+            "label": [
+              1,
+              77
+            ],
+            "struct_asym_id": "B",
+            "uniprot": [
+              696,
+              772
+            ]
+          },
+          {
+            "label": [
+              81,
+              330
+            ],
+            "struct_asym_id": "B",
+            "uniprot": [
+              773,
+              1022
+            ]
+          }
+        ],
+        "struct_asym_ids": [
+          "B"
+        ]
+      },
+      {
+        "accession": "P00533",
+        "chain": "C",
+        "entry": "9wr8",
+        "n_segments": 2,
+        "segments": [
+          {
+            "label": [
+              1,
+              77
+            ],
+            "struct_asym_id": "C",
+            "uniprot": [
+              696,
+              772
+            ]
+          },
+          {
+            "label": [
+              81,
+              330
+            ],
+            "struct_asym_id": "C",
+            "uniprot": [
+              773,
+              1022
+            ]
+          }
+        ],
+        "struct_asym_ids": [
+          "C"
+        ]
+      },
+      {
+        "accession": "P00533",
+        "chain": "D",
+        "entry": "9wr8",
+        "n_segments": 2,
+        "segments": [
+          {
+            "label": [
+              1,
+              77
+            ],
+            "struct_asym_id": "D",
+            "uniprot": [
+              696,
+              772
+            ]
+          },
+          {
+            "label": [
+              81,
+              330
+            ],
+            "struct_asym_id": "D",
+            "uniprot": [
+              773,
+              1022
+            ]
+          }
+        ],
+        "struct_asym_ids": [
+          "D"
+        ]
+      }
+    ],
+    "overlap_examples_first_20": [],
+    "overlapping_segment_pairs": 0,
+    "unique_accession_entry_chain_groups": 829,
+    "verified_mapping_response_hashes": 366
+  },
+  "method": "Independent standard-library mmCIF/SIFTS parser plus NumPy Kabsch/lDDT; no moluq/e427 module imports",
+  "nine_zxa": {
+    "batch": 3,
+    "mapping_receipt_status": 200,
+    "mapping_response_has_entry": true,
+    "q92802_failure_codes": [
+      [
+        "E422_REF_CIF_FETCH_FAILED",
+        8
+      ]
+    ],
+    "q92802_failure_records": [
+      {
+        "accession": "Q92802",
+        "chain": "A",
+        "code": "E422_REF_CIF_FETCH_FAILED",
+        "detail": "status=None",
+        "entry": "9zxa"
+      },
+      {
+        "accession": "Q92802",
+        "chain": "B",
+        "code": "E422_REF_CIF_FETCH_FAILED",
+        "detail": "status=None",
+        "entry": "9zxa"
+      },
+      {
+        "accession": "Q92802",
+        "chain": "C",
+        "code": "E422_REF_CIF_FETCH_FAILED",
+        "detail": "status=None",
+        "entry": "9zxa"
+      },
+      {
+        "accession": "Q92802",
+        "chain": "D",
+        "code": "E422_REF_CIF_FETCH_FAILED",
+        "detail": "status=None",
+        "entry": "9zxa"
+      },
+      {
+        "accession": "Q92802",
+        "chain": "E",
+        "code": "E422_REF_CIF_FETCH_FAILED",
+        "detail": "status=None",
+        "entry": "9zxa"
+      },
+      {
+        "accession": "Q92802",
+        "chain": "F",
+        "code": "E422_REF_CIF_FETCH_FAILED",
+        "detail": "status=None",
+        "entry": "9zxa"
+      },
+      {
+        "accession": "Q92802",
+        "chain": "G",
+        "code": "E422_REF_CIF_FETCH_FAILED",
+        "detail": "status=None",
+        "entry": "9zxa"
+      },
+      {
+        "accession": "Q92802",
+        "chain": "H",
+        "code": "E422_REF_CIF_FETCH_FAILED",
+        "detail": "status=None",
+        "entry": "9zxa"
+      }
+    ],
+    "q92802_mapping_count": 8,
+    "reference_cif_successful_receipt_count": 0
+  },
+  "verdict": "PASS"
+}

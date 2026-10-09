@@ -1,8 +1,9 @@
 # Re-fetching the raw inputs
 
 Raw third-party files are not redistributed here: PDB/PDBe mmCIF files, PDBe
-SIFTS mapping responses, AFDB model files and metadata, UniProt sequences and
-the ATLAS archives. Every request the pipelines made was receipted with its
+SIFTS mapping responses, AFDB model files and metadata and the ATLAS archives
+(the UniProt sequences and the PDBe/RCSB lookups used by V2, V2c and V5 are
+shipped as request-keyed caches; see below). Every request the pipelines made was receipted with its
 URL, method, HTTP status, UTC time and the SHA-256 of the response body. Those
 receipts are part of the derived data, so the exact bytes used can be
 identified and, where the source still serves them, re-fetched and checked.
@@ -54,14 +55,21 @@ Not covered by the script:
   responses used for Table 2 are included verbatim (RCSB data are CC0) in
   `data/derived/data/paper_verification/http/` and
   `data/derived/paper/arxiv/verification/cache/v2c/http/`, keyed by
-  SHA-256(method, URL, body), so V2/V2c replay them without network; only the
-  UniProt sequences are fetched live.
-- **UniProt FASTA** (`https://rest.uniprot.org/uniprotkb/<acc>.fasta`): fetched
-  by `v2_prior_exposure.py`; receipts with SHA-256 are in
+  SHA-256(method, URL, body), so V2/V2c replay them without network.
+- **UniProt FASTA** (`https://rest.uniprot.org/uniprotkb/<acc>.fasta`, 224
+  responses; UniProt data, CC BY 4.0): included in the same two caches, so
+  V2/V2c run fully offline; receipts with SHA-256 are also in
   `out/v2_prior_exposure.json` and `out/v2c_extension.json`.
-- **V5 template lookups** (PDBe SIFTS `api/mappings/uniprot/<pdb>` and RCSB
-  `rest/v1/core/entry/<pdb>`): re-fetched by `v5_templates.py`; receipts in
-  `out/v5_templates.json`.
+- **V5 template lookups** (PDBe SIFTS `api/mappings/uniprot/<pdb>`, 403
+  responses, CC BY 4.0; RCSB `rest/v1/core/entry/<pdb>`, 412 responses, CC0):
+  included in `data/derived/paper/arxiv/verification/cache/v5/http/`. Only
+  HTTP 200 responses were cached by the original run; the 11 lookups that
+  returned HTTP 404 (10 SIFTS, 1 RCSB) are re-requested on a rerun and are
+  recorded as failed lookups either way. V5 itself also needs the 138 AFDB
+  model files of the census roster (38.6 MB, `--set e422`); without them,
+  `code/paper_numbers.py` recomputes the template classes from
+  `data/derived/paper/arxiv/verification/v5_afdb_template_table.json`
+  (written by `code/tools/extract_v5_template_table.py`) and this cache.
 - **ATLAS census universe**: the ATLAS parsable archive
   (`https://www.dsimb.inserm.fr/ATLAS/api/parsable`, retained snapshot
   `atlas_parsable_full_20260830.zip`, Last-Modified 2024-11-10,

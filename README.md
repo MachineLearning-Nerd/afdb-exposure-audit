@@ -1,9 +1,10 @@
-# Auditing AlphaFold Database Comparisons — code, registrations and derived data
+# Exposure and Residue Correspondence — code, registrations and derived data
 
 This repository accompanies the paper
 
-> Dinesh Jinjala. *Auditing AlphaFold Database Comparisons: Exposure Channels
-> and a Residue-Numbering Error.* arXiv preprint, 2026 (identifier to be added).
+> Dinesh Jinjala. *Exposure and Residue Correspondence: Two Silent Failure
+> Modes When Comparing AlphaFold Database Models with Experimental
+> Structures.* arXiv preprint, 2026 (identifier to be added).
 
 The paper measures two hidden failure modes of comparisons between AlphaFold
 Database (AFDB) models and experimental structures: (i) exposure of the
@@ -19,8 +20,10 @@ Everything needed to trace each number in the paper is here: the analysis
 code (byte-identical to the registered versions), the registrations with
 their OpenTimestamps proofs, the derived tables, and the request receipts
 whose SHA-256 digests identify the exact third-party bytes used. Raw
-third-party files are not redistributed; `data/fetch/` re-fetches them and
-checks the digests.
+third-party structure files are not redistributed; `data/fetch/` re-fetches
+them and checks the digests. The small API responses behind the exposure
+tables (RCSB searches, UniProt sequences, PDBe/RCSB template lookups) are
+shipped as request-keyed caches, so those analyses run offline.
 
 Internal analysis identifiers used throughout (paper, Appendix A):
 **e420** ATLAS exposure; **e421** exploratory post-2022 census;
@@ -34,50 +37,117 @@ Internal analysis identifiers used throughout (paper, Appendix A):
 ```sh
 python3.12 -m venv .venv && . .venv/bin/activate
 pip install -r requirements.txt
-python -I code/paper_numbers.py      # recomputes 127 numbers quoted in the paper -> "127/127 checks OK"
+python -I code/paper_numbers.py      # 208 checks of the paper's numbers -> "208/208 checks OK" / "ALL CHECKS OK"
 python -I code/reproduce_p5.py       # Table 4 from the ledgers -> "ALL MATCH" with the registered evaluator
 ```
 
-`paper_numbers.py` prints, for each number, the value in the paper, the value
-recomputed from `data/derived/`, and the source file. `reproduce_p5.py` is a
-standalone implementation of the registered P5 protocol (it imports nothing
-from `code/experiments/`) and reproduces the registered evaluator's means
-exactly: 0.894492567684754 / 0.945577705711315 on the corrected labels
-(thresholds 0.8914 / 0.9449, HOLD) and 0.857965290190139 / 0.915196136779333
-on the original labels (thresholds 0.8760 / 0.9328, FAIL).
+`paper_numbers.py` prints one line per check with its class, the value in
+the paper, the value obtained, and the source:
+
+- **RECOMPUTED (147)**: computed by the script itself from row- or
+  request-level inputs in `data/derived/` — the census ledgers, the e420
+  receipts (release dates against 2018-04-30 and the AFDB
+  `modelCreatedDate`), the e421 census rows, the RCSB/UniProt caches (the V2/
+  V2c homology classes are replayed query by query), the AFDB template table
+  plus the PDBe/RCSB template-lookup cache (V5 classes), and the V6 group
+  means and bootstrap intervals (10,000 protein resamples, seed 0,
+  percentile), the post-2022 AFDB model table (model types), and the
+  chance identity of residue pairs under a register shift (corrected ledger
+  plus cached UniProt sequences). P5 means, MCSEs and thresholds are
+  recomputed with the script's own implementation of the registered
+  protocol. Percentages use computed numerators.
+- **RECONCILED (43)**: a stored output compared with that recomputation at
+  1e-12 (for example the V1/V2/V5/V6 outputs, the post-2022 `summary.json`,
+  the registered evaluator's P5 mean, MCSE and threshold, the two P5
+  reimplementations cited in Section 7.5, the per-segment row counts and
+  medians of the biotite cross-check against the shipped ledger), or a
+  stored summary compared with its own per-record fields (V7, the
+  independent label audit, the replay report, the excluded-residue counts,
+  the e420 manifest), plus the canonical digests of the 8 ledger
+  checkpoints.
+- **RE-READ (18)**: numbers that need raw third-party files not shipped
+  here (the 9qj6 SIFTS segment and the raw-file realignment for Figure 1,
+  the V7 trigger counts, the 36-segment independent label audit, the
+  biotite cross-check and the 16 + 57 excluded residues in
+  `audits/label_crosscheck_biotite/`); each is also covered by a RECONCILED
+  check where the shipped data allow one.
+
+Not checked by the script: design parameters stated as definitions (lDDT
+radius and thresholds, the 0.60/0.4/90/30-residue/10% cut-offs, 2.5 Å, the
+E-value, 200 splits and the 50/25/25 split), the 12 planned batches, and the
+registration and amendment dates of the Appendix A timeline (9–10 September),
+which are attested by the `.ots` proofs rather than by a data file. The
+paper's data statement still says "127 numbers"; the script now has 208
+checks.
+
+The script imports nothing from `code/experiments`, `code/verification` or
+`reproduce_p5.py`. It exits 0 only if all 208 checks ran and passed, 1 if a
+check differs, and 2 if an input is missing, a section fails, or the number of
+checks is not 208. `reproduce_p5.py` is a standalone implementation of the
+registered P5 protocol (it imports nothing from `code/experiments/`). Before
+computing, it verifies each ledger checkpoint's stored canonical digest and
+its `MANIFEST.sha256` entry; it then requires the mean, MCSE and threshold to
+equal the registered evaluator's to 1e-12 and the outcome to be identical:
+0.894492567684754 / 0.945577705711315 on the corrected labels (thresholds
+0.8914 / 0.9449, HOLD) and 0.857965290190139 / 0.915196136779333 on the
+original labels (thresholds 0.8760 / 0.9328, FAIL). Exit status 1 on a
+mismatch, 2 on a missing or altered input.
+
+**Blinding scope.** The preregistered census (e422 and its corrected ledger)
+is blind for its pLDDT-conditional predictions until the batch-8
+evaluation. Nothing here computes pLDDT-binned or pLDDT-conditional
+coverage, Mondrian or CQR quantities for it. pLDDT is read from the census
+ledgers only as the registered P5 eligibility filter and, for the
+label-quality checks, as a per-chain median pLDDT (the Table 3 screen for
+high-confidence chains with median lDDT below 0.4, and the 9qj6 chain): a
+screening statistic, not a coverage quantity, and already reported in the
+paper. The exploratory post-2022 (e421) census is not blinded; its
+pLDDT-binned error rates are reported in the paper and recomputed here.
 
 ## Repository map
 
 ```
-paper/                       temporal_leakage.tex, references.bib, figures/rev3/*.pdf, rendered PDF   (0.4 MB)
+paper/                       temporal_leakage.tex (final), references.bib, rendered PDF,
+                             figures/rev4/*.pdf (final figures) and figures/rev3/*.pdf (earlier revision)   (0.5 MB)
 code/
   experiments/               registered pipeline code e420*, e421*, e422*–e427* (byte-identical;
                              e421_conformal.py is included only because the e422 freeze binds it
                              as the source of the registered pLDDT grid)
   tests/                     registered unit tests for e422–e427 (run in a work root, see below)
-  verification/              V1–V7 scripts and make_figures_rev3.py (byte-identical)
+  verification/              V1–V7 scripts, make_figures_rev3.py and make_figures_rev4.py (byte-identical)
   audit/                     independent-audit scripts whose outputs the paper cites
-  reproduce_p5.py            standalone P5 recomputation (new)
-  paper_numbers.py           recomputes every traceable paper number (new)
+  reproduce_p5.py            standalone P5 recomputation with input digest checks (new)
+  paper_numbers.py           checks every traceable paper number (new; RECOMPUTED/RECONCILED/RE-READ)
   tools/make_workroot.py     assembles the original directory layout in a scratch copy (new)
   tools/extract_p5_outcomes.py  how data/derived/p5_batch04_outcomes.json was produced (new)
+  tools/extract_v5_template_table.py  how the AFDB template table was produced (new)
+  tools/extract_e421_model_table.py   how the post-2022 AFDB model table was produced (new)
+audits/                      independent audit write-ups and scripts (historical, unchanged), and
+                             label_crosscheck_biotite/ (new: biotite cross-check of the corrected labels)
 registrations/               registrations, freeze/dispatch/binding/receipt records, correction
                              of record, runbook, verification registration, and .ots proofs   (0.4 MB)
   stamped_versions/          earlier exact versions of records whose OTS proof stamps that version
   verification/              V1–V7 registration (current text + the two stamped versions)
 data/
-  derived/                   derived tables, mirroring the original repository-relative paths (66 MB)
+  derived/                   derived tables, mirroring the original repository-relative paths (77 MB)
     results/e420/            ATLAS availability census, label-run receipt, overflow temporal check
     results/e421/            exploratory post-2022 census (original, pre-repair outputs)
     results/e422/            preregistered census: batch 1–4 checkpoints (original labels), freezes,
                              binding sidecar, manifest, execution receipt, .ots proofs
-    results/e427/            corrected batch 1–4 checkpoints, replay report, post-2022 relabel,
+    results/e427/            corrected batch 1–4 checkpoints, replay report, post-2022 relabel
+                             (with afdb_model_table.json: model type of its 93 AFDB files),
                              execution receipt, audit outputs, .ots proofs
     results/e427_repair/     preliminary (unregistered) repair rows behind the 0.898/0.947 diagnostic
     paper/arxiv/verification/out/    V1–V7 outputs and figure numbers
     paper/arxiv/verification/audit/  9qj6 / K7PQ54 mapping audit (Figure 1 input)
     data/paper_verification/http/ and paper/arxiv/verification/cache/v2c/http/
-                             RCSB Search/Data API responses used for homology exposure (CC0)
+                             RCSB Search/Data API responses (CC0) and UniProt FASTA responses
+                             (CC BY 4.0) used for homology exposure (V2, V2c)
+    paper/arxiv/verification/cache/v5/http/
+                             PDBe SIFTS mapping (CC BY 4.0) and RCSB entry (CC0) responses for
+                             the 413 AFDB template PDB IDs (V5)
+    paper/arxiv/verification/v5_afdb_template_table.json
+                             templates, software and target of the 138 AFDB model files (V5 input)
     p5_batch04_outcomes.json key-selected P5 outcome blocks of the two batch-4 evaluations
   fetch/                     fetch_raw.py + README: re-fetch raw inputs and verify SHA-256
 ```
@@ -112,21 +182,23 @@ W=$PWD                                           # several scripts need an absol
 |---|---|---|---|---|
 | Table 1; Sec. 5 (868, 791, 851, 77, 863, years 1988–2023, median 2008) | `python -I paper/arxiv/verification/v1_channel_recount.py $W rerun/v1.json` | `results/e420/label_run_receipt.json`, `overflow_temporal_check.json` | `out/v1_channel_recount.json` | offline |
 | Sec. 4 ATLAS counts (1,938 / 1,735 / 943 / 869) | `experiments/e420_census.py`, `e420_label_run.py`, `e420_overflow_check.py` | ATLAS archive, PDBe, AFDB | `results/e420/source_availability_manifest.json` (`summary`), `label_run_receipt.json`, `overflow_set.json` | network; see limits below |
-| Table 2 (homology), Sec. 6 (87/138, 128/138, P00698 730 …), App. B (224 accessions; 594 × 200, 408 × 204) | `python -I paper/arxiv/verification/v2_prior_exposure.py $W rerun/v2.json`, then `v2c_coverage_extension.py` | e421 census, e422 ledger + manifest, cached RCSB responses | `out/v2_prior_exposure.json`, `out/v2c_extension.json` | UniProt sequences fetched live (199 requests); all RCSB queries served from the shipped cache |
-| Table 2 (templates), Sec. 6 (45/88/5; 43 vs 35; Q9F0J8; template dates) | `python -I paper/arxiv/verification/v5_templates.py $W rerun/v5.json` | AFDB model files in `results/e422/raw` (re-fetch, set `e422`), PDBe SIFTS, RCSB | `out/v5_templates.json` | raw files + network |
-| Fig. 3 | `python -I paper/arxiv/verification/make_figures_rev3.py $W` | `out/v2…`, `out/v5…` | `paper/arxiv/figures/rev3/f3_exposure.pdf` | offline |
-| Sec. 6 exposure effect (40 vs 45 proteins; 0.016 [0.003, 0.032] …) | `python -I paper/arxiv/verification/v6_exposure_effect.py $W rerun/v6.json` | `results/e427/e421_relabel/census_results.json`, `out/v2`, `out/v2c` | `out/v6_exposure_effect.json` | offline |
-| Sec. 7.1, Fig. 1 (9qj6: shift 34; 0.198/0.199 → 0.993/0.995; 472/471) | `python -I paper/arxiv/verification/audit/k7pq54_mapping_audit.py --pdb … --sifts … --af … --checkpoints results/e422/batches/e422_batch04_checkpoint.json --output rerun/k7.json`; figure via `make_figures_rev3.py` | 3 raw files (`fetch_raw.py --set 9qj6`) | `audit/k7pq54_9qj6_audit.json`; `f1_mechanism.pdf` | 3 files from network; figure offline |
-| Table 3, Fig. 2, Sec. 7.2 (488/495 segments, 188 changed, 151 > 0.2, 116 → 0 chains, 13 entries, +6,465/−916 residue positions) | `make_figures_rev3.py` (F2) and `code/paper_numbers.py` | `results/e422/batches`, `results/e427/batches` | `out/figures_rev3_numbers.json`, `f2_scope.pdf` | offline |
+| Table 2 (homology), Sec. 6 (87/138, 128/138, P00698 730 …), App. B (224 accessions; 594 × 200, 408 × 204) | `python -I paper/arxiv/verification/v2_prior_exposure.py $W rerun/v2.json`, then `python -I paper/arxiv/verification/v2c_coverage_extension.py $W rerun/v2c.json` | e421 census, e422 ledger + manifest, cached RCSB and UniProt responses | `out/v2_prior_exposure.json`, `out/v2c_extension.json` | offline (every request served from the shipped caches) |
+| Table 2 (templates), Sec. 6 (45/88/5; 43 vs 35; Q9F0J8; template dates) | `python -I paper/arxiv/verification/v5_templates.py $W rerun/v5.json` | the 138 AFDB model files in `results/e422/raw` (`fetch_raw.py --set e422`, 38.6 MB), cached PDBe SIFTS and RCSB responses | `out/v5_templates.json` | AFDB model files; lookups offline. Without the model files, `paper_numbers.py` recomputes the classes from `v5_afdb_template_table.json` and the same cache |
+| Fig. 3 of the earlier revision (not in the final paper; its numbers are in Table 2) | `python -I paper/arxiv/verification/make_figures_rev3.py $W` | `out/v2…`, `out/v5…` | `paper/arxiv/figures/rev3/f3_exposure.pdf` | offline |
+| Sec. 3 post-2022 model types (93 files: 6 ColabFold v1.5.2, 87 AlphaFold Monomer v2.0; no ColabFold model among the 85 proteins of the exposure comparison) | `python -I code/tools/extract_e421_model_table.py data/derived _work/data/e427/e421_raw data/derived/results/e427/e421_relabel/afdb_model_table.json` (from the repo root); counts: `code/paper_numbers.py` | the AFDB files of the post-2022 relabel (`fetch_raw.py --set e421relabel`) | `afdb_model_table.json` | AFDB files for the table; counts offline |
+| Sec. 6 exposure effect (40 vs 45 proteins; 0.016 [0.003, 0.032] …) | `python -I paper/arxiv/verification/v6_exposure_effect.py $W rerun/v6.json` | `results/e427/e421_relabel/census_results.json`, `out/v2`, `out/v2c` | `out/v6_exposure_effect.json` | offline. V6 reads `out/v2…` and `out/v2c…` from the `out/` directory next to the script, not from the root argument: run the work-root copy so that both point to the same tree |
+| Sec. 7.1, Fig. 1 (9qj6: shift 34; 0.198/0.199 → 0.993/0.995; 472/471) | `python -I paper/arxiv/verification/audit/k7pq54_mapping_audit.py --pdb … --sifts … --af … --checkpoints results/e422/batches/e422_batch04_checkpoint.json --output rerun/k7.json`; figure via `make_figures_rev4.py $W rerun/fig` | 3 raw files (`fetch_raw.py --set 9qj6`) | `audit/k7pq54_9qj6_audit.json`; `f1_mechanism.pdf` | 3 files from network; figure offline |
+| Table 3, Fig. 2, Sec. 7.2 (488/495 segments, 188 changed, 151 > 0.2, 116 → 0 chains, 13 entries, +6,465/−916 residue positions) | `python -I paper/arxiv/verification/make_figures_rev4.py $W rerun/fig` (F2) and `code/paper_numbers.py` | `results/e422/batches`, `results/e427/batches` | `out/figures_rev3_numbers.json`, `f2_scope.pdf` | offline |
 | The two ledgers themselves | original: `experiments/e423_dispatch.py` → `e423_runner.py` (batch 1: `e426_attested_empty.py`); replay + corrected: `experiments/e427_replay_relabel.py` (frozen labeller must reproduce every original checkpoint before the corrected one is written) | raw files (`--set e422`) | `results/e422/batches/*`, `results/e427/batches/*`, `results/e427/replay_report.json` | raw files; replay itself offline |
 | Sec. 7.2 (K7PQ54: 14% of rows, half of 0.90-level misses) | `python -I paper/arxiv/verification/v4_k7pq54_diagnostics.py $W rerun/v4.json` | original ledger | `out/v4_k7pq54.json` | offline |
-| Sec. 7.2 (independent audit, 36 segments) | `python -I results/e427/audit/independent_label_sample.py` | raw files + both ledgers | `results/e427/audit/independent_label_sample.json` | raw files |
+| Sec. 7.2 (independent audit, 36 segments) | `python -I results/e427/audit/independent_label_sample.py` (the release copy is `code/audit/independent_label_sample.py` = `audits/census_correction/independent_label_sample.py`; `make_workroot.py` places it here because it locates the root as `parents[2]` of its own path) | raw files + both ledgers | `results/e427/audit/independent_label_sample.json` (shipped: `data/derived/results/e427/audit/`) | raw files |
+| Sec. 7.2 (second label check: 494 of 495 segments; 21xg A; 16 altloc and 57 modified residues excluded) | `audits/label_crosscheck_biotite/*.py` (see its README) | raw files + PDBe updated mmCIF | `audits/label_crosscheck_biotite/*_out.json` | raw files, network, `biotite==1.7.1` |
 | Sec. 7.3 (492 segments, 304 triggered, 147 offset, −31…+201) | `python -I paper/arxiv/verification/v7_trigger_prevalence.py $W rerun/v7.json` | raw SIFTS + mmCIF (`--set e422`), both ledgers | `out/v7_trigger_prevalence.json` | raw files |
 | Sec. 7.4 post-2022 census (96 → 139 entries, 0.617 → 0.643, 0.58% → 0.29% …) | original: `experiments/e421_census_fixed.py` (**runs the whole census at import — never import it**); relabel: `experiments/e427_e421_relabel.py` | network (re-fetched 2026-10-07) | `results/e421/census_results.json`, `results/e427/e421_relabel/{census_results,summary,receipts}.json` | network |
 | Table 4, Sec. 7.5 (registered evaluator) | `experiments/e427_rerun_p5.py` → `e425_execreceipt.run_logged_evaluation` → `e424_evalgate` → `e422_evaldriver` / `e422_protocol` (about 20 h) | `results/e427/batches` | `results/e427/evals/*` (withheld, see below) | offline |
 | Table 4 (fast recomputation) | `python -I code/reproduce_p5.py` (from the repo root) | both ledgers | stdout | offline, seconds |
-| Sec. 7.5 boundary sensitivity (0.9453 vs 0.9449) | `python -I code/reproduce_p5.py --open-interval`; `results/e427/audit/phaseB_subagent/sensitivity_p5.py $W` | ledgers | `sensitivity_p5.json` | offline |
-| Sec. 7.5 independent reimplementation | `python -I results/e427/audit/phaseB_subagent/recompute_p5.py $W` | corrected ledger | `recompute_p5.json` | offline |
+| Sec. 7.5 boundary sensitivity (0.9453 vs 0.9449) | `python -I code/reproduce_p5.py --open-interval` (from the repo root); in `_work/`: `python -I results/e427/audit/phaseB_subagent/sensitivity_p5.py $W` (release copy: `code/audit/e427_phaseB/sensitivity_p5.py` = `audits/census_correction/phaseB_subagent/sensitivity_p5.py`) | ledgers | `results/e427/audit/phaseB_subagent/sensitivity_p5.json` | offline |
+| Sec. 7.5 independent reimplementation | in `_work/`: `python -I results/e427/audit/phaseB_subagent/recompute_p5.py $W` (release copy: `code/audit/e427_phaseB/recompute_p5.py`) | corrected ledger | `results/e427/audit/phaseB_subagent/recompute_p5.json` | offline; prints its values, does not compare them (see `audits/README.md`) |
 | Sec. 7.5 preliminary diagnostic (122,024 rows; 0.898 / 0.947) | rows: `experiments/e427_offline_relabel.py --out … --rows-out …`; statistic: `code/paper_numbers.py` | raw files | `results/e427_repair/repaired_rows_batches01-04.json.gz` | raw files for rows; statistic offline |
 | Appendix A timeline | registrations and their `.ots` proofs | — | — | Bitcoin node or block explorer |
 | Unit tests | `python -m pytest -q tests` | — | — | offline (`test_9qj6_real_bytes_repaired` needs `--set 9qj6`; deselect it otherwise) |
@@ -138,21 +210,53 @@ Outputs that record a run time (`utc`) differ only in that field.
 `code/verification/v3_stratified.py` (and `out/v3_stratified.json`) is the
 pre-correction exploratory V3 analysis; its e422 part was computed on the
 defective labels and is not used by the paper. It is kept for completeness.
+Unlike the other V scripts it takes three arguments:
+`python -I paper/arxiv/verification/v3_stratified.py $W paper/arxiv/verification/out/v2_prior_exposure.json rerun/v3.json`.
+
+`v1_channel_recount.py` enumerates the admitted ATLAS pool through the typed
+failures of the label-run receipt; that is complete only because no admitted
+row reached the label ledger (`summary.ledger_rows == 0`). The registered
+script is kept byte-identical and does not test this;
+`code/paper_numbers.py` does (check "receipt: ledger_rows == 0").
 
 ### Verified for this release (2026-10-09)
 
-Offline, from a fresh work root: `paper_numbers.py` 127/127; `reproduce_p5.py`
-matches the registered evaluator to all printed digits on both ledgers; V1, V3
+Offline (network namespace disabled), from a copy of the release tree:
+`paper_numbers.py` 208/208 (147 RECOMPUTED, 43 RECONCILED, 18 RE-READ);
+`reproduce_p5.py` verifies the 8 checkpoint digests and manifest entries and
+matches the registered evaluator's mean, MCSE and threshold to 1e-12 on both
+ledgers. 23 injected faults (including a receipt release date moved across
+2018-04-30, a deleted V6 field, a post-2022 entry status changed without
+updating `summary.json`, a per-protein V5 class or V7 offset changed without
+updating the summary counts, 791 → 790 in `out/v1`, P5 MCSE + 1e-10, a
+ledger value + 1e-4, a deleted or altered cache record), and 16 more on the
+checks added for the final paper (a ColabFold model relabelled or attributed
+to a labelled protein, a model-file digest, the excluded-residue total or one
+per-entry count, a biotite row count or deviation, the 21xg detail, a replay
+digest, the two P5 reimplementations and the open-interval output at
+1e-9/1e-10, a UniProt sequence behind the chance-identity figure, the 9zxa
+exclusions, a receipt date, one post-2022 confident error) each make
+`paper_numbers.py` exit non-zero. V2 and V2c rerun offline from the shipped
+caches and reproduce `out/v2_prior_exposure.json` and `out/v2c_extension.json`
+exactly apart from `utc`, receipt order and the receipts' `cached` flag. V5,
+given the 138 AFDB model files, reruns offline and reproduces
+`out/v5_templates.json` apart from the same fields and the status of the 11
+lookups that had returned HTTP 404 (not cached by design; offline they fail
+with status −1, giving the same classes). V1, V3
 and V4 outputs byte-identical; V6 identical except its `utc` field;
 `make_figures_rev3.py` reproduces `figures_rev3_numbers.json` byte-for-byte
-and figure rasters identical to `paper/figures/rev3/`; the phase-B
+and figure rasters identical to `paper/figures/rev3/`, and `make_figures_rev4.py`
+(final figures) reproduces the same JSON byte-for-byte and the two PDFs in
+`paper/figures/rev4/` pixel-identically (only `/CreationDate` differs); the
+paper PDF builds with tectonic without undefined references or overfull boxes; the phase-B
 `recompute_p5.py` reproduces all 400 per-split coverages and
 `sensitivity_p5.py` its JSON byte-for-byte; 238 of 239 tests pass offline, and
 the remaining one (`test_9qj6_real_bytes_repaired`) passes after
 `fetch_raw.py --set 9qj6`. With network: the three
-Figure 1 source files re-fetched with identical SHA-256, the 9qj6 mapping
-audit reproduced its per-chain results, and V2 reproduced its 199-accession
-table exactly with every RCSB query served from the shipped cache.
+Figure 1 source files re-fetched with identical SHA-256 and the 9qj6 mapping
+audit reproduced its per-chain results. With the census source bytes and the
+PDBe updated mmCIF files, the scripts in `audits/label_crosscheck_biotite/`
+reproduced the reviewer's cross-check output exactly (494 of 495 segments).
 
 ## What is withheld, and why
 
@@ -169,8 +273,10 @@ table exactly with every RCSB query served from the shipped cache.
   full artifacts will be released after the census closes (batch 12, late
   November 2026). The authors have not computed pLDDT-conditional coverage on
   the released ledgers.
-- **Raw third-party files** (about 405 MB of e422 source bytes, plus the e420
-  and e421 source bytes): re-fetch with `data/fetch/fetch_raw.py`.
+- **Raw third-party files** (about 405 MB of e422 source bytes, including the
+  38.6 MB of AFDB model files V5 reads, plus the e420 and e421 source bytes):
+  re-fetch with `data/fetch/fetch_raw.py`. The template information V5 takes
+  from the AFDB files is shipped as `v5_afdb_template_table.json`.
 - **Not part of this paper**: the ATLAS label-run pool freeze
   (`results/e420/pool_freeze.json`, 36 MB, OpenTimestamps-stamped) and the rule
   files `docs/g1_successor_*` that `e420_label_run.py` reads belong to a
@@ -190,8 +296,11 @@ table exactly with every RCSB query served from the shipped cache.
   exploratory e421 census had not been kept; it is exploratory and its
   receipts identify the October bytes.
 - **Registered code is unmodified.** All files under `code/experiments`,
-  `code/tests`, `code/verification` and `code/audit` are byte-identical to the
-  project repository (`CHANGES_FROM_ORIGINAL.md`). The six modules bound by
+  `code/tests`, `code/verification` and `code/audit`, and the historical
+  scripts under `audits/census_correction` and `audits/paper_verification`,
+  are byte-identical to the project repository (`CHANGES_FROM_ORIGINAL.md`);
+  improved checks live in new files (`code/paper_numbers.py`,
+  `code/reproduce_p5.py`, `audits/label_crosscheck_biotite/`). The six modules bound by
   the e422 gate-(a) freeze (`e422_protocol`, `e422_manifest`, `e422_status`,
   `e422_runner`, `e422_evaldriver`, `e421_conformal`) match the SHA-256
   digests recorded in `registrations/e422_freeze_gate_a_20260909.md`. Comments in some
@@ -232,11 +341,16 @@ can be dropped into <https://opentimestamps.org>. Proofs already anchored in
 Bitcoin at release: e422 registration and freeze (block 966254), e423 and e424
 records (966262, 966273), e425 record (966287), e421 post-run checkpoint
 (965898), e422 batch 1–4 checkpoints (967512, 967779, 968772, 969800), the
-original batch-4 evaluation, receipt and binding sidecar (969934). Proofs made
-on 7–9 October 2026 (e427 registration, correction of record, corrected
-ledgers and evaluation, relabel outputs, verification registration) were still
-pending calendar confirmation when this release was assembled; `ots upgrade`
-completes them.
+original batch-4 evaluation, receipt and binding sidecar (969934). The proofs
+made on 7–9 October 2026, and some older ones, were completed with
+`ots upgrade` on 2026-10-09; the upgraded proofs are shipped (their own
+SHA-256 changed, the stamped digests did not; see `CHANGES_FROM_ORIGINAL.md`):
+e427 registration, corrected batch 2–4 checkpoints and replay report (first
+attestation in block 970355), post-2022 relabel outputs (970359), verification
+registration A3/A4 and the 8 October addendum of the correction of record
+(970417), corrected batch-4 evaluation, receipt and binding sidecar, and the
+9 October addendum (970581), correction of record and `AUDIT_E427.md`
+(970582). Every shipped `.ots` now carries at least one Bitcoin attestation.
 
 Where a record was amended after it was stamped, the current text is shipped
 together with the exact stamped version in `registrations/stamped_versions/`
@@ -261,8 +375,10 @@ Archived 2026-10-08 (not redistributed; re-fetch and compare):
   `data/derived/`): CC BY 4.0 (`LICENSE-CC-BY-4.0`), except where third-party
   terms below apply.
 - **Third-party data keep their own terms.** PDB data (RCSB/wwPDB, including
-  the cached RCSB API responses): CC0 1.0. AlphaFold DB: CC BY 4.0.
-  PDBe/SIFTS and UniProt: CC BY 4.0. ATLAS: CC BY-NC 4.0 (as recorded in
+  the cached RCSB API responses): CC0 1.0. AlphaFold DB (including the
+  template table extracted from AFDB model files): CC BY 4.0. PDBe/SIFTS
+  (including the cached SIFTS mapping responses) and UniProt (including the
+  cached UniProt FASTA responses; The UniProt Consortium): CC BY 4.0. ATLAS: CC BY-NC 4.0 (as recorded in
   `registrations/e420_registration.md`; see the ATLAS website,
   https://www.dsimb.inserm.fr/ATLAS); `data/derived/results/e420/` lists ATLAS
   entries and chains and is therefore distributed under CC BY-NC 4.0 terms for

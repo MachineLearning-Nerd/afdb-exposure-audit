@@ -1,0 +1,459 @@
+{
+ "target": "21xg:A:Q4KH59",
+ "biotite_pairs": 64,
+ "biotite_identity_mismatches": 0,
+ "ledger_rows": 64,
+ "positions_only_in_ledger": {
+  "56": 0.6739
+ },
+ "positions_only_in_biotite": {
+  "55": 0.4891
+ },
+ "n_common_positions": 63,
+ "n_lddt_values_differing_gt_1e-4": 18,
+ "max_abs_lddt_difference": 0.0536,
+ "max_abs_lddt_difference_unrounded": 0.053557142857142914,
+ "median_lddt_ledger": 0.9404999999999999,
+ "median_lddt_biotite": 0.9375,
+ "median_difference": 0.0029999999999998916,
+ "n_below_0.60_ledger": 5,
+ "n_below_0.60_biotite": 5,
+ "crossing_0.60": {
+  "ledger_below_biotite_not": [
+   53
+  ],
+  "biotite_below_ledger_not": []
+ },
+ "differing_values": [
+  {
+   "uniprot_pos": 39,
+   "ledger": 0.9655,
+   "biotite": 0.9526,
+   "delta": -0.0129
+  },
+  {
+   "uniprot_pos": 44,
+   "ledger": 0.9219,
+   "biotite": 0.9062,
+   "delta": -0.0157
+  },
+  {
+   "uniprot_pos": 45,
+   "ledger": 0.875,
+   "biotite": 0.8571,
+   "delta": -0.0179
+  },
+  {
+   "uniprot_pos": 46,
+   "ledger": 0.9015,
+   "biotite": 0.8864,
+   "delta": -0.0151
+  },
+  {
+   "uniprot_pos": 47,
+   "ledger": 0.8636,
+   "biotite": 0.858,
+   "delta": -0.0056
+  },
+  {
+   "uniprot_pos": 50,
+   "ledger": 0.5197,
+   "biotite": 0.5263,
+   "delta": 0.0066
+  },
+  {
+   "uniprot_pos": 52,
+   "ledger": 0.5455,
+   "biotite": 0.5682,
+   "delta": 0.0227
+  },
+  {
+   "uniprot_pos": 53,
+   "ledger": 0.5789,
+   "biotite": 0.6184,
+   "delta": 0.0395
+  },
+  {
+   "uniprot_pos": 54,
+   "ledger": 0.4643,
+   "biotite": 0.5179,
+   "delta": 0.0536
+  },
+  {
+   "uniprot_pos": 59,
+   "ledger": 0.9355,
+   "biotite": 0.9194,
+   "delta": -0.0161
+  },
+  {
+   "uniprot_pos": 60,
+   "ledger": 0.8583,
+   "biotite": 0.8667,
+   "delta": 0.0084
+  },
+  {
+   "uniprot_pos": 66,
+   "ledger": 0.9314,
+   "biotite": 0.9265,
+   "delta": -0.0049
+  },
+  {
+   "uniprot_pos": 67,
+   "ledger": 0.9471,
+   "biotite": 0.9375,
+   "delta": -0.0096
+  },
+  {
+   "uniprot_pos": 68,
+   "ledger": 0.9167,
+   "biotite": 0.902,
+   "delta": -0.0147
+  },
+  {
+   "uniprot_pos": 69,
+   "ledger": 0.9216,
+   "biotite": 0.9069,
+   "delta": -0.0147
+  },
+  {
+   "uniprot_pos": 70,
+   "ledger": 0.9107,
+   "biotite": 0.9018,
+   "delta": -0.0089
+  },
+  {
+   "uniprot_pos": 71,
+   "ledger": 0.9009,
+   "biotite": 0.8915,
+   "delta": -0.0094
+  },
+  {
+   "uniprot_pos": 95,
+   "ledger": 0.9531,
+   "biotite": 0.9375,
+   "delta": -0.0156
+  }
+ ],
+ "alignment_label_seq_1_40": [
+  {
+   "label_seq_id": 1,
+   "entity_residue": "ALA",
+   "observed_reference_residue": null,
+   "sifts_uniprot_pos": null,
+   "afdb_residue_at_sifts_pos": null,
+   "in_corrected_ledger_at_sifts_pos": null
+  },
+  {
+   "label_seq_id": 2,
+   "entity_residue": "ASP",
+   "observed_reference_residue": "ASP",
+   "sifts_uniprot_pos": 33,
+   "afdb_residue_at_sifts_pos": "D",
+   "in_corrected_ledger_at_sifts_pos": true
+  },
+  {
+   "label_seq_id": 3,
+   "entity_residue": "ASP",
+   "observed_reference_residue": "ASP",
+   "sifts_uniprot_pos": 34,
+   "afdb_residue_at_sifts_pos": "D",
+   "in_corrected_ledger_at_sifts_pos": true
+  },
+  {
+   "label_seq_id": 4,
+   "entity_residue": "MET",
+   "observed_reference_residue": "MET",
+   "sifts_uniprot_pos": 35,
+   "afdb_residue_at_sifts_pos": "M",
+   "in_corrected_ledger_at_sifts_pos": true
+  },
+  {
+   "label_seq_id": 5,
+   "entity_residue": "GLU",
+   "observed_reference_residue": "GLU",
+   "sifts_uniprot_pos": 36,
+   "afdb_residue_at_sifts_pos": "E",
+   "in_corrected_ledger_at_sifts_pos": true
+  },
+  {
+   "label_seq_id": 6,
+   "entity_residue": "LYS",
+   "observed_reference_residue": "LYS",
+   "sifts_uniprot_pos": 37,
+   "afdb_residue_at_sifts_pos": "K",
+   "in_corrected_ledger_at_sifts_pos": true
+  },
+  {
+   "label_seq_id": 7,
+   "entity_residue": "CYS",
+   "observed_reference_residue": "CYS",
+   "sifts_uniprot_pos": 38,
+   "afdb_residue_at_sifts_pos": "C",
+   "in_corrected_ledger_at_sifts_pos": true
+  },
+  {
+   "label_seq_id": 8,
+   "entity_residue": "PHE",
+   "observed_reference_residue": "PHE",
+   "sifts_uniprot_pos": 39,
+   "afdb_residue_at_sifts_pos": "F",
+   "in_corrected_ledger_at_sifts_pos": true
+  },
+  {
+   "label_seq_id": 9,
+   "entity_residue": "GLY",
+   "observed_reference_residue": "GLY",
+   "sifts_uniprot_pos": 40,
+   "afdb_residue_at_sifts_pos": "G",
+   "in_corrected_ledger_at_sifts_pos": true
+  },
+  {
+   "label_seq_id": 10,
+   "entity_residue": "VAL",
+   "observed_reference_residue": "VAL",
+   "sifts_uniprot_pos": 41,
+   "afdb_residue_at_sifts_pos": "V",
+   "in_corrected_ledger_at_sifts_pos": true
+  },
+  {
+   "label_seq_id": 11,
+   "entity_residue": "ALA",
+   "observed_reference_residue": "ALA",
+   "sifts_uniprot_pos": 42,
+   "afdb_residue_at_sifts_pos": "A",
+   "in_corrected_ledger_at_sifts_pos": true
+  },
+  {
+   "label_seq_id": 12,
+   "entity_residue": "MET",
+   "observed_reference_residue": "MET",
+   "sifts_uniprot_pos": 43,
+   "afdb_residue_at_sifts_pos": "M",
+   "in_corrected_ledger_at_sifts_pos": true
+  },
+  {
+   "label_seq_id": 13,
+   "entity_residue": "LYS",
+   "observed_reference_residue": "LYS",
+   "sifts_uniprot_pos": 44,
+   "afdb_residue_at_sifts_pos": "K",
+   "in_corrected_ledger_at_sifts_pos": true
+  },
+  {
+   "label_seq_id": 14,
+   "entity_residue": "GLY",
+   "observed_reference_residue": "GLY",
+   "sifts_uniprot_pos": 45,
+   "afdb_residue_at_sifts_pos": "G",
+   "in_corrected_ledger_at_sifts_pos": true
+  },
+  {
+   "label_seq_id": 15,
+   "entity_residue": "LYS",
+   "observed_reference_residue": "LYS",
+   "sifts_uniprot_pos": 46,
+   "afdb_residue_at_sifts_pos": "K",
+   "in_corrected_ledger_at_sifts_pos": true
+  },
+  {
+   "label_seq_id": 16,
+   "entity_residue": "ASN",
+   "observed_reference_residue": "ASN",
+   "sifts_uniprot_pos": 47,
+   "afdb_residue_at_sifts_pos": "N",
+   "in_corrected_ledger_at_sifts_pos": true
+  },
+  {
+   "label_seq_id": 17,
+   "entity_residue": "A1E7L",
+   "observed_reference_residue": "A1E7L",
+   "sifts_uniprot_pos": 48,
+   "afdb_residue_at_sifts_pos": "D",
+   "in_corrected_ledger_at_sifts_pos": false
+  },
+  {
+   "label_seq_id": 18,
+   "entity_residue": "ALA",
+   "observed_reference_residue": "ALA",
+   "sifts_uniprot_pos": 50,
+   "afdb_residue_at_sifts_pos": "A",
+   "in_corrected_ledger_at_sifts_pos": true
+  },
+  {
+   "label_seq_id": 19,
+   "entity_residue": "ALA",
+   "observed_reference_residue": "ALA",
+   "sifts_uniprot_pos": 51,
+   "afdb_residue_at_sifts_pos": "A",
+   "in_corrected_ledger_at_sifts_pos": true
+  },
+  {
+   "label_seq_id": 20,
+   "entity_residue": "GLY",
+   "observed_reference_residue": "GLY",
+   "sifts_uniprot_pos": 52,
+   "afdb_residue_at_sifts_pos": "G",
+   "in_corrected_ledger_at_sifts_pos": true
+  },
+  {
+   "label_seq_id": 21,
+   "entity_residue": "ALA",
+   "observed_reference_residue": "ALA",
+   "sifts_uniprot_pos": 53,
+   "afdb_residue_at_sifts_pos": "A",
+   "in_corrected_ledger_at_sifts_pos": true
+  },
+  {
+   "label_seq_id": 22,
+   "entity_residue": "GLY",
+   "observed_reference_residue": "GLY",
+   "sifts_uniprot_pos": 54,
+   "afdb_residue_at_sifts_pos": "G",
+   "in_corrected_ledger_at_sifts_pos": true
+  },
+  {
+   "label_seq_id": 23,
+   "entity_residue": "THR",
+   "observed_reference_residue": "THR",
+   "sifts_uniprot_pos": 55,
+   "afdb_residue_at_sifts_pos": "T",
+   "in_corrected_ledger_at_sifts_pos": false
+  },
+  {
+   "label_seq_id": 24,
+   "entity_residue": "A1FDA",
+   "observed_reference_residue": "A1FDA",
+   "sifts_uniprot_pos": 56,
+   "afdb_residue_at_sifts_pos": "T",
+   "in_corrected_ledger_at_sifts_pos": true
+  },
+  {
+   "label_seq_id": 25,
+   "entity_residue": "ALA",
+   "observed_reference_residue": "ALA",
+   "sifts_uniprot_pos": 58,
+   "afdb_residue_at_sifts_pos": "A",
+   "in_corrected_ledger_at_sifts_pos": true
+  },
+  {
+   "label_seq_id": 26,
+   "entity_residue": "GLY",
+   "observed_reference_residue": "GLY",
+   "sifts_uniprot_pos": 59,
+   "afdb_residue_at_sifts_pos": "G",
+   "in_corrected_ledger_at_sifts_pos": true
+  },
+  {
+   "label_seq_id": 27,
+   "entity_residue": "THR",
+   "observed_reference_residue": "THR",
+   "sifts_uniprot_pos": 60,
+   "afdb_residue_at_sifts_pos": "T",
+   "in_corrected_ledger_at_sifts_pos": true
+  },
+  {
+   "label_seq_id": 28,
+   "entity_residue": "SER",
+   "observed_reference_residue": "SER",
+   "sifts_uniprot_pos": 61,
+   "afdb_residue_at_sifts_pos": "S",
+   "in_corrected_ledger_at_sifts_pos": true
+  },
+  {
+   "label_seq_id": 29,
+   "entity_residue": "LYS",
+   "observed_reference_residue": "LYS",
+   "sifts_uniprot_pos": 62,
+   "afdb_residue_at_sifts_pos": "K",
+   "in_corrected_ledger_at_sifts_pos": true
+  },
+  {
+   "label_seq_id": 30,
+   "entity_residue": "VAL",
+   "observed_reference_residue": "VAL",
+   "sifts_uniprot_pos": 63,
+   "afdb_residue_at_sifts_pos": "V",
+   "in_corrected_ledger_at_sifts_pos": true
+  },
+  {
+   "label_seq_id": 31,
+   "entity_residue": "ASN",
+   "observed_reference_residue": "ASN",
+   "sifts_uniprot_pos": 64,
+   "afdb_residue_at_sifts_pos": "N",
+   "in_corrected_ledger_at_sifts_pos": true
+  },
+  {
+   "label_seq_id": 32,
+   "entity_residue": "ASP",
+   "observed_reference_residue": "ASP",
+   "sifts_uniprot_pos": 65,
+   "afdb_residue_at_sifts_pos": "D",
+   "in_corrected_ledger_at_sifts_pos": true
+  },
+  {
+   "label_seq_id": 33,
+   "entity_residue": "GLN",
+   "observed_reference_residue": "GLN",
+   "sifts_uniprot_pos": 66,
+   "afdb_residue_at_sifts_pos": "Q",
+   "in_corrected_ledger_at_sifts_pos": true
+  },
+  {
+   "label_seq_id": 34,
+   "entity_residue": "ALA",
+   "observed_reference_residue": "ALA",
+   "sifts_uniprot_pos": 67,
+   "afdb_residue_at_sifts_pos": "A",
+   "in_corrected_ledger_at_sifts_pos": true
+  },
+  {
+   "label_seq_id": 35,
+   "entity_residue": "ASN",
+   "observed_reference_residue": "ASN",
+   "sifts_uniprot_pos": 68,
+   "afdb_residue_at_sifts_pos": "N",
+   "in_corrected_ledger_at_sifts_pos": true
+  },
+  {
+   "label_seq_id": 36,
+   "entity_residue": "ALA",
+   "observed_reference_residue": "ALA",
+   "sifts_uniprot_pos": 69,
+   "afdb_residue_at_sifts_pos": "A",
+   "in_corrected_ledger_at_sifts_pos": true
+  },
+  {
+   "label_seq_id": 37,
+   "entity_residue": "TRP",
+   "observed_reference_residue": "TRP",
+   "sifts_uniprot_pos": 70,
+   "afdb_residue_at_sifts_pos": "W",
+   "in_corrected_ledger_at_sifts_pos": true
+  },
+  {
+   "label_seq_id": 38,
+   "entity_residue": "LYS",
+   "observed_reference_residue": "LYS",
+   "sifts_uniprot_pos": 71,
+   "afdb_residue_at_sifts_pos": "K",
+   "in_corrected_ledger_at_sifts_pos": true
+  },
+  {
+   "label_seq_id": 39,
+   "entity_residue": "LEU",
+   "observed_reference_residue": "LEU",
+   "sifts_uniprot_pos": 72,
+   "afdb_residue_at_sifts_pos": "L",
+   "in_corrected_ledger_at_sifts_pos": true
+  },
+  {
+   "label_seq_id": 40,
+   "entity_residue": "VAL",
+   "observed_reference_residue": "VAL",
+   "sifts_uniprot_pos": 73,
+   "afdb_residue_at_sifts_pos": "V",
+   "in_corrected_ledger_at_sifts_pos": true
+  }
+ ]
+}

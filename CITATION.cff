@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this code or data, please cite the paper below."
-title: "Auditing AlphaFold Database Comparisons: Exposure Channels and a Residue-Numbering Error (code, registrations and derived data)"
+title: "Exposure and Residue Correspondence: Two Silent Failure Modes When Comparing AlphaFold Database Models with Experimental Structures (code, registrations and derived data)"
 type: software
 authors:
   - family-names: Jinjala
@@ -20,7 +20,7 @@ keywords:
   - preregistration
 preferred-citation:
   type: article
-  title: "Auditing AlphaFold Database Comparisons: Exposure Channels and a Residue-Numbering Error"
+  title: "Exposure and Residue Correspondence: Two Silent Failure Modes When Comparing AlphaFold Database Models with Experimental Structures"
   authors:
     - family-names: Jinjala
       given-names: Dinesh

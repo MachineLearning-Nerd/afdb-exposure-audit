@@ -1,0 +1,1875 @@
+{
+ "files": {
+  "https://alphafold.ebi.ac.uk/files/AF-0000000365780680-model_v1.cif": {
+   "accessions_in_census": [
+    "Q1PDC7"
+   ],
+   "model_group_name": [
+    "ColabFold Monomer v1.5.2 model"
+   ],
+   "sha256": "9facd4614ad24b6ae552c2880ac2906b9932ae6b79bb27619c5f69314de41deb",
+   "software": [
+    {
+     "name": "ColabFold",
+     "version": "v1.5.2"
+    },
+    {
+     "name": "dssp",
+     "version": "4.5.7"
+    }
+   ],
+   "target_db_accession": "Q1PDC7"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-0000000365807642-model_v1.cif": {
+   "accessions_in_census": [
+    "A0A0B5KXW6"
+   ],
+   "model_group_name": [
+    "ColabFold Monomer v1.5.2 model"
+   ],
+   "sha256": "c440689f764923d7d072a6f87b60708833e62398aa27d28af52acea635a39a73",
+   "software": [
+    {
+     "name": "ColabFold",
+     "version": "v1.5.2"
+    },
+    {
+     "name": "dssp",
+     "version": "4.5.7"
+    }
+   ],
+   "target_db_accession": "A0A0B5KXW6"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-0000000365820086-model_v1.cif": {
+   "accessions_in_census": [
+    "A0A2R2WU07"
+   ],
+   "model_group_name": [
+    "ColabFold Monomer v1.5.2 model"
+   ],
+   "sha256": "9197fea085eff66a1547a5304c3106a2a726018bbe3bf68ec7c15d8b62fb65ef",
+   "software": [
+    {
+     "name": "ColabFold",
+     "version": "v1.5.2"
+    },
+    {
+     "name": "dssp",
+     "version": "4.5.7"
+    }
+   ],
+   "target_db_accession": "A0A2R2WU07"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-0000000365840311-model_v1.cif": {
+   "accessions_in_census": [
+    "P0DTD1"
+   ],
+   "model_group_name": [
+    "ColabFold Monomer v1.5.2 model"
+   ],
+   "sha256": "ef7ea1fda70940b189865f23bb2916a08039e4691fbca789e5ac1a5773c0c3cf",
+   "software": [
+    {
+     "name": "ColabFold",
+     "version": "v1.5.2"
+    },
+    {
+     "name": "dssp",
+     "version": "4.5.7"
+    },
+    {
+     "name": "dssp",
+     "version": "4.5.7"
+    }
+   ],
+   "target_db_accession": "P0DTD1"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-0000000365840313-model_v1.cif": {
+   "accessions_in_census": [
+    "P0DTC1"
+   ],
+   "model_group_name": [
+    "ColabFold Monomer v1.5.2 model"
+   ],
+   "sha256": "faec3f91829027a2ea0e1adbec0dd9210d21db5148dd8c3712d041cfe1375ba8",
+   "software": [
+    {
+     "name": "ColabFold",
+     "version": "v1.5.2"
+    },
+    {
+     "name": "dssp",
+     "version": "4.5.7"
+    }
+   ],
+   "target_db_accession": "P0DTC1"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-0000000365842666-model_v1.cif": {
+   "accessions_in_census": [
+    "A0AAX2ZL03"
+   ],
+   "model_group_name": [
+    "ColabFold Monomer v1.5.2 model"
+   ],
+   "sha256": "19df5c03d7e06cf18005ef341ebad5e21e950b3c5db4d9e14e1becd632b3bdf8",
+   "software": [
+    {
+     "name": "ColabFold",
+     "version": "v1.5.2"
+    },
+    {
+     "name": "dssp",
+     "version": "4.5.7"
+    },
+    {
+     "name": "dssp",
+     "version": "4.5.7"
+    }
+   ],
+   "target_db_accession": "A0AAX2ZL03"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-A0A0J9XUF2-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "A0A0J9XUF2"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "1e0d71576652eb8ad9710a6befbb4775a4155cfb7fd296bef12d5c9310008cad",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "A0A0J9XUF2"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-A0A1M6VF95-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "A0A1M6VF95"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "407a4021c11354a911027d8ab7f86e1b0aebcc2d6514cf1f31db0649de6d8376",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "A0A1M6VF95"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-A0A1W6WLH5-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "A0A1W6WLH5"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "37363e2762f8ccb024eb8b0ce102dfbcc275fd70192c2284cebce34f55d2ecd3",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "A0A1W6WLH5"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-A0A2M9HC27-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "A0A2M9HC27"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "f01aa0d2a8035af3e8f69ae3509492e771a82075b937ca38088832b5322508f1",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "A0A2M9HC27"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-A0A3R8PF41-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "A0A3R8PF41"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "cb454329a56f1ee39125e2475fcbf93799ea4c85e90125a93d2bc75a049ed07d",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "A0A3R8PF41"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-A0A3S5Y0T1-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "A0A3S5Y0T1"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "ef3cfddeda2ed2fda85c0947f13ec979372d24f63880b148cdbba307f3c9c5c0",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "A0A3S5Y0T1"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-A0A7J6HG98-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "A0A7J6HG98"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "dc4db20a3ad35595f5f5a0da7913e20bdb883400cfd8ddb2893fe06aad03e12e",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "A0A7J6HG98"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-A0A7M7LSY6-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "A0A7M7LSY6"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "08ebd0e7ad5cee225ecf089c20e593b6c4134e0ab114de43443ab7631a08713e",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "A0A7M7LSY6"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-A0A7R7JK61-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "A0A7R7JK61"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "7bc8bfc74b34582660a3ec5e72b0197cc3db2a23c72f7714b7eacaea745a340a",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "A0A7R7JK61"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-A0PR67-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "A0PR67"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "8bf7e2ac22b262668417692a49a8af108ee40f29ef3073c9305422226ad72431",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "A0PR67"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-A1RS35-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "A1RS35"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "f1c70b2cce30494569eca4285f85c32ef86700f36413feb1e7b0f5d9d1a2c983",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "A1RS35"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-A3FQJ9-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "A3FQJ9"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "27043eab2d7b6ab6d08b022d4f2507d844850280ddc0b5647ac2ce49ffad2ef0",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "A3FQJ9"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-A3MTG6-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "A3MTG6"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "50ea9c20899ee035298293297530c272e00814a5051c6fd8a80492316440c359",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "A3MTG6"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-A6NK06-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "A6NK06"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "db96a95e210d931c63835717f034380e6ed663e7605dd14f4670df3d92d01251",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "A6NK06"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-A7YT55-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "A7YT55"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "809e1085d3f8768ad4ab32905dd18425ed3ef3e643c7eca1df0ba6503d60b30c",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "A7YT55"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-B1YD41-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "B1YD41"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "faaede5ba2b5b0013a3030728966510a4f73c9d6c850ba443466c4f099e54c00",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "B1YD41"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-B4RJW3-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "B4RJW3"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "e6bec6cd7813cd9d81dc3719a1cdde6529fdf61031f294f0f7a4e079fb91a534",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "B4RJW3"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-B7UZI4-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "B7UZI4"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "0d38dc29173ae33bfd30c89cfaf3541cd64351d61cd0a35977d1c9dc77f9d5e6",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "B7UZI4"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-F1N015-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "F1N015"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "a2a39cf34575eb00a3223b07828687a373704dc29c7ac0f83797c7a6d7cbdc6b",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "F1N015"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-F4H4S0-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "F4H4S0"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "c2cbb1d9da6630272c5a05824badf972606615f3a2c7cff6ca4b3d48d1891952",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "F4H4S0"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-G1N9H8-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "G1N9H8"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "2b7fccca928bdb4fd53fe016c209d709d5bddc840897482a91206660bc7bb82e",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "G1N9H8"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-G5EBD7-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "G5EBD7"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "15aed40d7d02cd3d167289ea8bad9f77121abfb931d8b9cdc29f25a453985323",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "G5EBD7"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-M2YR55-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "M2YR55"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "df8e60dc8be97365b24e9c1198b08068efcbe5112fb14bdbd2c70e41013d3547",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "M2YR55"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-O14757-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "O14757"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "048234e8b3b77ed6ea05240d493b4f1ec24671d8daa09d6d62e5c9f6dcbf9f33",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "O14757"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-O15527-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "O15527"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "82bf5b470614a87c05241cc9f78ecda80a912e62a518803b757286106e8794d1",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "O15527"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-O34453-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "O34453"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "ec3ab1272d6f2a54586bc635a3c657af3fd2367d1c7a706c24d95b2825203683",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "O34453"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-O51131-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "O51131"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "5a879bc68232b69098388b06120dbcb22b4a61ae0514d6a1ef75059d853fed2f",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "O51131"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-O60502-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "O60502"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "11eb29c4c1c6bae96c8c1dc36d4c641c66f1666fbca402d31cf634a6a4ed46b5",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "O60502"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-O60674-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "O60674"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "103faf811fc4acb8f482c5ddeedc75ce508656f395870255c3190e43c3ed1db2",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "O60674"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-O70348-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "O70348"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "bdc80a8a73a0be2f0e7928a08f0ea30081e20fe65dc174115189f3325f88543a",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "O70348"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-P01112-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "P01112"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "b5359c737fe031a18359d836f805f5d291cefbb57ee06590601945c33140103e",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P01112"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-P01116-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "P01116"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "d29432ea1f30b0480282631fe536b20a4be49dc2ee9269a6c80671c1ecc5b301",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P01116"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-P03952-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "P03952"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "d6f5c4bc9aaeea2b65b6bac4b4e9a369b1ba01dd7f07f22d35daad509285d583",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P03952"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-P04181-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "P04181"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "e97a0d0b582455a1de93e50ee2451e73af8bc8d650d8df98d4fc06de5fd6e3bc",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P04181"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-P06241-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "P06241"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "4de9d296c03ae969728613dc69c8731a5462ce16dfbf760e7e06e8a7935d854d",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P06241"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-P06493-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "P06493"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "99f455412e5310ae448b617ec88852a121d419685e0c6cb402951d579b503595",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P06493"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-P08515-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "P08515"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "72ec1dad03023562ce500f28fe882f018028c035b0d20d117d9303609186b8a6",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P08515"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-P09242-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "P09242"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "7ef92601f8c79d5ebedd10745b27ac6d45621639a1b087e0d3839e98637ab1a8",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P09242"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-P09564-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "P09564"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "ae9815266f9a66220f6874f88d854b9fc0679e3159b5906b4bdae6a58c87a77a",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P09564"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-P09619-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "P09619"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "6e1b27dd39e7d054b9625de54cdb83f6294e7bc875607250ec2667b3872bd0ad",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P09619"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-P09769-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "P09769"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "cb8bedd5c6343682854899366dac380ffb90ba75ee8890f1384a138653bce699",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P09769"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-P14294-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "P14294"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "69aed89398f436a15188432e5d9546bf756b363f04b693ef15224054569fe90a",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P14294"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-P15559-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "P15559"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "f0d242ddfb6ae1a74ad21b0ffb594a60d6689a90221b5e9f48b55991757eec72",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P15559"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-P18177-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "P18177"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "3c46e5dc9b5c2b186662dd40059d7db7235584e404bce56c60c6ae2a50b15f90",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P18177"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-P19909-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "P19909"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "dfafb53f395e7b6fc9cf96d600dee46592790a68057a885907787ce06f1a96c0",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P19909"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-P21802-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "P21802"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "aac8e34cddcff68a8137f1fe8bf1745c95fd4fc9a69f7da9d5ed4c52f7bc3d1e",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P21802"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-P22259-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "P22259"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "5bdcd8fd97bd2da928bd4d0be3727c04e473c9175b90f8d92b82a460b612015d",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P22259"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-P23458-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "P23458"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "7d93bd9305cc8a38d9bd2edc8b127d4e5c2f964b2143bc4de845980662b4680e",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P23458"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-P27902-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "P27902"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "456083ad83ddfb3c9bdaf721d10f732c6db8d252f065075a5d41d8ea4fd054e2",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P27902"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-P36222-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "P36222"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "cbebf23440a610f2ee729e8207da7a37aea4650b74934ac4d7b760e1fca051ce",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P36222"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-P45983-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "P45983"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "4365f4b8ffa854d3e35caa9a3287e581c7f70f077e99801212212a5ebf150ab6",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P45983"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-P50120-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "P50120"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "4047d6979e00e349f595887d4af93827feb5ef55077ddff83473e96a045ac4a1",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P50120"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-P61964-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "P61964"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "83164afd59e414cf5855eb525d82037e0c19211a2aec92580830cf275b284e72",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P61964"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-P68400-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "P68400"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "e988da6ebf46918529ea745f5d4fad4c73ac16b8dcf3049074ee49a0e67378b8",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P68400"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-Q13191-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "Q13191"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "3230c710d8c7ae5ff8192939806eb896406409bf07d283aac92799f4238a7964",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q13191"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-Q13UJ9-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "Q13UJ9"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "d2140244c51a114002c4d6aa5815d6363b877aaf06a090beb8379cfa5603cb47",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q13UJ9"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-Q14191-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "Q14191"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "ac08659b9ff5a819b83fe94f47fd66f09e93dad19dc8606c9ab1a72b03d71f86",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q14191"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-Q16539-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "Q16539"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "4f249304d078fdd6b046a0ab4c37d44fc29e6a25c8360dafd9a9b8f00b8d76cd",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q16539"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-Q2CEE3-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "Q2CEE3"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "209d12ff441be0982de306781b15796e513e1c680de179c0840a8b64e3866486",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q2CEE3"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-Q2G0L4-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "Q2G0L4"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "4db6ba4692a1d7ef86821a2bacef4e8d8d829bb0b8a64a9069c5c3e21113bd73",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q2G0L4"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-Q2YIQ6-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "Q2YIQ6"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "9730c56ded409d265e8d5a5270d23bde15537adf8cf8288b792e148d9abc9c69",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q2YIQ6"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-Q382U0-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "Q382U0"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "6d3322c0409e16260dd2816c4616cb5acc2002842fb61029bca494ba4c1423f4",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q382U0"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-Q3TBT3-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "Q3TBT3"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "bb4faf1788ecb730afd3e43a491d61b3cdac0f73a4f6f03475615f15ee5cde2d",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q3TBT3"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-Q49SB0-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "Q49SB0"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "52ebd423ece6e0a77b7563f453e94800d3caf62c17491d9453e980698a023975",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q49SB0"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-Q582V7-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "Q582V7"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "d3c24136d8700b1e2201a605bde81d5f7f5715238c7da1dc8a0286f1b217091f",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q582V7"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-Q5M4D0-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "Q5M4D0"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "8023697e2aed0e5135b16094c92a14d753ed38c4dc3bee6eb0176323a5309c69",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q5M4D0"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-Q6NKL7-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "Q6NKL7"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "b6a5eb257d5e775cdaeb52b721cb92e0063b6dda50815988ca74ae2a1e43ccbf",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q6NKL7"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-Q6SZW1-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "Q6SZW1"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "797cdd3e21c1d167d79272e0ccfcdc8f1900538bf4e410b6af05a062927ba27d",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q6SZW1"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-Q6UWY2-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "Q6UWY2"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "308803c969082695a53f533f3dd9c523964154eb5a664036878082f66246a52d",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q6UWY2"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-Q72IH2-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "Q72IH2"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "d3dd37bb9b0eb9e6450e5a1b53abdfd889c573e33d086dde05c2a8c8628efded",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q72IH2"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-Q73QH2-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "Q73QH2"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "06f76cc892ae55e796e0efd439e3092ca25492ee810d13ba9f8974b724e330be",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q73QH2"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-Q75WM3-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "Q75WM3"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "8254947fed70ca6246a589b212e0d2d165066474c936413312fb1279c0f05e62",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q75WM3"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-Q7TTK0-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "Q7TTK0"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "44669a0cec0538e08ede8c1c0e812e5dd293027b151ab10f2509b5b4073051ab",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q7TTK0"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-Q7VSZ2-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "Q7VSZ2"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "358446b5bebab0cae3701761b15446d04ad41b62538797bd303451ffda543333",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q7VSZ2"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-Q7VSZ6-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "Q7VSZ6"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "85797183df046fad5d70d1c0c532331088526ac80906a0a48323058414d641e8",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q7VSZ6"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-Q86UX7-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "Q86UX7"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "717499ecdd50bcfb8d071123b2a7b526d2974b9188a6ba6bf7772e800151b4d7",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q86UX7"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-Q8NBP7-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "Q8NBP7"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "d9ab366370cf4cbc480b997dcf1bad1efb260422ebd7c553b00d0d12fe82d8ef",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q8NBP7"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-Q8YDF2-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "Q8YDF2"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "1bf9e866428b6177ed4b4da128401ee1ec7ca1104c5f5bf13ce186352ba52660",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q8YDF2"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-Q8ZNC4-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "Q8ZNC4"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "1d0c18d61fd129d5444a72d843730423365796365a7ea9039410fb9fdbf75bbb",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q8ZNC4"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-Q8ZTA5-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "Q8ZTA5"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "9efa43eb0b4dbb6d5f9ec23af05cef60e070255cc320998ca50748fb249d04e8",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q8ZTA5"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-Q99973-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "Q99973"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "99b088b357a92b7b6a750675450110b07240d876e97b2b447affec630b24b9a5",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q99973"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-Q9C0K0-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "Q9C0K0"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "4629ad69f1b0f52ba1ff27721547763f2c4c98aba5dc310157593fe294f475df",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q9C0K0"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-Q9HJS7-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "Q9HJS7"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "96749dc79297d407e9150ed3e13bce5263269523e6b160df9f4ff7965607c90b",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q9HJS7"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-Q9I640-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "Q9I640"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "6f213c06db335657bc9f95ee10964467e3619cb47a915122962a7d9852035f86",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q9I640"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-Q9ZNI1-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "Q9ZNI1"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "dd9177edbfee49e003e19ec9716da19405e72a7741246fe9a89d13ea750b9397",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q9ZNI1"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-T1ZCC0-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "T1ZCC0"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "7d60b4a0a2085e7e477151c282f5935849d6179c7f817659b6cbddcae69deda2",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "T1ZCC0"
+  },
+  "https://alphafold.ebi.ac.uk/files/AF-U5EFM3-F1-model_v6.cif": {
+   "accessions_in_census": [
+    "U5EFM3"
+   ],
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "sha256": "50e59659df8308c39f86a5167f11c79c72052de3b9500720f0483d546c3a1ec7",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "U5EFM3"
+  }
+ },
+ "n_files": 93,
+ "schema": "e421-afdb-model-table-v1",
+ "source": "AFDB model files downloaded by the post-2022 census relabel (October 2026), selected via results/e427/e421_relabel/receipts.json; AlphaFold DB data, CC BY 4.0"
+}

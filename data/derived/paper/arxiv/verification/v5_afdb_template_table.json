@@ -1,0 +1,5803 @@
+{
+ "accessions": {
+  "A0A0D5YKI8": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "f895cd58d4ae6e7006b85dd3d059496db340dc1ba7c9ff07b1ba838ad1a493ae",
+   "sha256": "f895cd58d4ae6e7006b85dd3d059496db340dc1ba7c9ff07b1ba838ad1a493ae",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "A0A0D5YKI8",
+   "templates": [
+    {
+     "pdb_id": "2B4T",
+     "template_auth_asym_id": "O",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "2B4R",
+     "template_auth_asym_id": "O",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "2X5J",
+     "template_auth_asym_id": "R",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "2X5K",
+     "template_auth_asym_id": "Q",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-A0A0D5YKI8-F1-model_v6.cif"
+  },
+  "A0A0H2VHE3": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "622fe4dc5c159714e1310287af843f2b8a7e382b5608aaaa520c6b0456cf68a0",
+   "sha256": "622fe4dc5c159714e1310287af843f2b8a7e382b5608aaaa520c6b0456cf68a0",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "A0A0H2VHE3",
+   "templates": [
+    {
+     "pdb_id": "3FLE",
+     "template_auth_asym_id": "B",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "3LP5",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "3DS8",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "4ZI5",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-A0A0H2VHE3-F1-model_v6.cif"
+  },
+  "A0A1E5GR18": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "93fa149fd95d7fc9167e48b05448a9cd435f9bf158f7dbef15d407c9ebd3a06e",
+   "sha256": "93fa149fd95d7fc9167e48b05448a9cd435f9bf158f7dbef15d407c9ebd3a06e",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "A0A1E5GR18",
+   "templates": [
+    {
+     "pdb_id": "6ITW",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "3D5P",
+     "template_auth_asym_id": "B",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "2PRV",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "3FFV",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-A0A1E5GR18-F1-model_v6.cif"
+  },
+  "A0A1E5GRP7": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "66a7ba3323d9294f04a25b6189b898d6ceb6ce054c8dd76c8f4981c1687b0cff",
+   "sha256": "66a7ba3323d9294f04a25b6189b898d6ceb6ce054c8dd76c8f4981c1687b0cff",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "A0A1E5GRP7",
+   "templates": [
+    {
+     "pdb_id": "2M4H",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "2MXD",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "2M4G",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "6HIW",
+     "template_auth_asym_id": "CU",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-A0A1E5GRP7-F1-model_v6.cif"
+  },
+  "A0A1L5PRA6": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "0382f7cb3d249844e3cdd8adce74e74f6873a14f58fc45895cb0f30dacbc3dfd",
+   "sha256": "0382f7cb3d249844e3cdd8adce74e74f6873a14f58fc45895cb0f30dacbc3dfd",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "A0A1L5PRA6",
+   "templates": [
+    {
+     "pdb_id": "1CJX",
+     "template_auth_asym_id": "D",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "5EC3",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "3ISQ",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "2R5V",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-A0A1L5PRA6-F1-model_v6.cif"
+  },
+  "A0A1S8DDV9": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "9df6d60dead872438fe6ef36fd375658220ea842c9579ec4f2008c59ede5c94e",
+   "sha256": "9df6d60dead872438fe6ef36fd375658220ea842c9579ec4f2008c59ede5c94e",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "A0A1S8DDV9",
+   "templates": [
+    {
+     "pdb_id": "2FX5",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "6SCD",
+     "template_auth_asym_id": "B",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "5YFE",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "6EQE",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-A0A1S8DDV9-F1-model_v6.cif"
+  },
+  "A0A1W6WPG2": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "b0a10575197e8de024ad2c26fcf15f6361396f5a8c280b7c328176877ce08223",
+   "sha256": "b0a10575197e8de024ad2c26fcf15f6361396f5a8c280b7c328176877ce08223",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "A0A1W6WPG2",
+   "templates": [
+    {
+     "pdb_id": "4Y7P",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "1YQS",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "3O3V",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "1CEG",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-A0A1W6WPG2-F1-model_v6.cif"
+  },
+  "A0A1W6WWH9": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "f92a3e530bf22d26a11f101850699b4ee0f5e1f1a4d8bfd81ecba29a9d03160a",
+   "sha256": "f92a3e530bf22d26a11f101850699b4ee0f5e1f1a4d8bfd81ecba29a9d03160a",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "A0A1W6WWH9",
+   "templates": [
+    {
+     "pdb_id": "6ITW",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "3D5P",
+     "template_auth_asym_id": "B",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "2PRV",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "3FFV",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-A0A1W6WWH9-F1-model_v6.cif"
+  },
+  "A0A222WNN1": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "6260ad2021d360fad74e6beba8dc60745c008d498b91420fda7a78c91e74576f",
+   "sha256": "6260ad2021d360fad74e6beba8dc60745c008d498b91420fda7a78c91e74576f",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "A0A222WNN1",
+   "templates": [
+    {
+     "pdb_id": "3CTL",
+     "template_auth_asym_id": "F",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "3CT7",
+     "template_auth_asym_id": "C",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "2FLI",
+     "template_auth_asym_id": "J",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "2FLI",
+     "template_auth_asym_id": "C",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-A0A222WNN1-F1-model_v6.cif"
+  },
+  "A0A222WPL6": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "ae3f51fe671aae66d7c5e87e53355314f5691d8779b7d56f430df26b1e6b1675",
+   "sha256": "ae3f51fe671aae66d7c5e87e53355314f5691d8779b7d56f430df26b1e6b1675",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "A0A222WPL6",
+   "templates": [
+    {
+     "pdb_id": "1Z6R",
+     "template_auth_asym_id": "D",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "1Z05",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "5F7Q",
+     "template_auth_asym_id": "E",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "2QM1",
+     "template_auth_asym_id": "B",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-A0A222WPL6-F1-model_v6.cif"
+  },
+  "A0A222WRF0": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "f73458dad67627511bf071cc684e6955e0a0c77ae1df43e4cffa1b416e17d366",
+   "sha256": "f73458dad67627511bf071cc684e6955e0a0c77ae1df43e4cffa1b416e17d366",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "A0A222WRF0",
+   "templates": [
+    {
+     "pdb_id": "3HE8",
+     "template_auth_asym_id": "B",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "3HEE",
+     "template_auth_asym_id": "B",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "3PH4",
+     "template_auth_asym_id": "B",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "3PH3",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-A0A222WRF0-F1-model_v6.cif"
+  },
+  "A0A2R8VH81": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "67afe936f5f82acf67d44315872dff8b2c6f567bf0442c8241d25b8caf9b82a1",
+   "sha256": "67afe936f5f82acf67d44315872dff8b2c6f567bf0442c8241d25b8caf9b82a1",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "A0A2R8VH81",
+   "templates": [
+    {
+     "pdb_id": "5IZU",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "3L4F",
+     "template_auth_asym_id": "D",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "5OVV",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "7A9B",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-A0A2R8VH81-F1-model_v6.cif"
+  },
+  "A0A482P9Z9": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "745a340ef53a45bcdf15be26c8763f3b6ce3b81cce8e2933607e36e7a61ec394",
+   "sha256": "745a340ef53a45bcdf15be26c8763f3b6ce3b81cce8e2933607e36e7a61ec394",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "A0A482P9Z9",
+   "templates": [
+    {
+     "pdb_id": "2JBS",
+     "template_auth_asym_id": "D",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "2JBR",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "2OR0",
+     "template_auth_asym_id": "B",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "5LVW",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-A0A482P9Z9-F1-model_v6.cif"
+  },
+  "A0A4Q0WMG2": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "8b3f94e0404e730e8e1fa88899e85747d4a18f7c02980883288bf8f55056daf6",
+   "sha256": "8b3f94e0404e730e8e1fa88899e85747d4a18f7c02980883288bf8f55056daf6",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "A0A4Q0WMG2",
+   "templates": [
+    {
+     "pdb_id": "2PG3",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "3BL5",
+     "template_auth_asym_id": "F",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "3BL5",
+     "template_auth_asym_id": "C",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "5UDQ",
+     "template_auth_asym_id": "B",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-A0A4Q0WMG2-F1-model_v6.cif"
+  },
+  "A0A5B8RNS7": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "b8b9b9f9648c25e5a51731213ebcea3e34a4967759df5c5d94293fa571e76615",
+   "sha256": "b8b9b9f9648c25e5a51731213ebcea3e34a4967759df5c5d94293fa571e76615",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "A0A5B8RNS7",
+   "templates": [
+    {
+     "pdb_id": "6ENY",
+     "template_auth_asym_id": "F",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "1MHC",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "1K5N",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "4U1M",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-A0A5B8RNS7-F1-model_v6.cif"
+  },
+  "A0A6M1RLF6": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "3cb330a25b4b5645de63ae0849dbaad06d5ccef677803a7c6838e11331bf47b8",
+   "sha256": "3cb330a25b4b5645de63ae0849dbaad06d5ccef677803a7c6838e11331bf47b8",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "A0A6M1RLF6",
+   "templates": [
+    {
+     "pdb_id": "3E57",
+     "template_auth_asym_id": "B",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "5J3Y",
+     "template_auth_asym_id": "B",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "5J3T",
+     "template_auth_asym_id": "B",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "2I6K",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-A0A6M1RLF6-F1-model_v6.cif"
+  },
+  "A0A6N2XJ30": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "025d9899c1eecbc325784756f52f8b5e34a6c1fd5288a8e439de72b1e73c43a0",
+   "sha256": "025d9899c1eecbc325784756f52f8b5e34a6c1fd5288a8e439de72b1e73c43a0",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "A0A6N2XJ30",
+   "templates": [
+    {
+     "pdb_id": "4KYZ",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "2BID",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "1Y66",
+     "template_auth_asym_id": "C",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "2QUP",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-A0A6N2XJ30-F1-model_v6.cif"
+  },
+  "A0A841K7K4": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "93221b962b00456efc5ebedf95c07b2c7096eb7c639f75fab0b074801f32267f",
+   "sha256": "93221b962b00456efc5ebedf95c07b2c7096eb7c639f75fab0b074801f32267f",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "A0A841K7K4",
+   "templates": [
+    {
+     "pdb_id": "6DHV",
+     "template_auth_asym_id": "B",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "6DII",
+     "template_auth_asym_id": "L",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "3IP4",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "2G5I",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-A0A841K7K4-F1-model_v6.cif"
+  },
+  "A0A8B2VGS2": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "0dcc6472ebf87f70d284003b0661436ccaccc64df52e40e234b6ab97c1ab1524",
+   "sha256": "0dcc6472ebf87f70d284003b0661436ccaccc64df52e40e234b6ab97c1ab1524",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "A0A8B2VGS2",
+   "templates": [
+    {
+     "pdb_id": "2L22",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "2L9F",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "5Y08",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "6YJ4",
+     "template_auth_asym_id": "U",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-A0A8B2VGS2-F1-model_v6.cif"
+  },
+  "A0A8I0FTC2": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "16aeda2b46b1147f9839431724b9c05b2afca358571e0c0e6950cfbee1cdf9d1",
+   "sha256": "16aeda2b46b1147f9839431724b9c05b2afca358571e0c0e6950cfbee1cdf9d1",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "A0A8I0FTC2",
+   "templates": [
+    {
+     "pdb_id": "4CG1",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "5ZRQ",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "7CEH",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "5LUK",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-A0A8I0FTC2-F1-model_v6.cif"
+  },
+  "A5F6Z2": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "6a94b4c51fbd6d694d81eeaf638e59959e14cb35d60a98a9019af287dc09a344",
+   "sha256": "6a94b4c51fbd6d694d81eeaf638e59959e14cb35d60a98a9019af287dc09a344",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "A5F6Z2",
+   "templates": [
+    {
+     "pdb_id": "1H9T",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "1HW1",
+     "template_auth_asym_id": "B",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "6ZA7",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "6ZA0",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-A5F6Z2-F1-model_v6.cif"
+  },
+  "A5I8L1": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "9e73b8ff32deceaca961007ba80f29fa8ebd12a49fd022f88458108d542d1e1c",
+   "sha256": "9e73b8ff32deceaca961007ba80f29fa8ebd12a49fd022f88458108d542d1e1c",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "A5I8L1",
+   "templates": [
+    {
+     "pdb_id": "6ENY",
+     "template_auth_asym_id": "F",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "1MHC",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "1K5N",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "4U1M",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-A5I8L1-F1-model_v6.cif"
+  },
+  "A5U8S8": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "1163a8adeefa5dcbc072dc7d37fb4f55e5e46b367b2048ef5afe06fffe0aa09a",
+   "sha256": "1163a8adeefa5dcbc072dc7d37fb4f55e5e46b367b2048ef5afe06fffe0aa09a",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "A5U8S8",
+   "templates": [
+    {
+     "pdb_id": "2I76",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "2I76",
+     "template_auth_asym_id": "B",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "3D1L",
+     "template_auth_asym_id": "B",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "6AQJ",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-A5U8S8-F1-model_v6.cif"
+  },
+  "A7VSG1": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "a4e24c76e25fc2648f52c80298161b42b365befa6c5cc7f41a277b9efdb7f3ab",
+   "sha256": "a4e24c76e25fc2648f52c80298161b42b365befa6c5cc7f41a277b9efdb7f3ab",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "A7VSG1",
+   "templates": [
+    {
+     "pdb_id": "4RL6",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "4INA",
+     "template_auth_asym_id": "B",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "4RL6",
+     "template_auth_asym_id": "B",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "1E5Q",
+     "template_auth_asym_id": "C",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-A7VSG1-F1-model_v6.cif"
+  },
+  "B1MD73": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "d80b57e9be18fe041e439d41f436b6da1be072313bfc4f78961bba0faaedb6fb",
+   "sha256": "d80b57e9be18fe041e439d41f436b6da1be072313bfc4f78961bba0faaedb6fb",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "B1MD73",
+   "templates": [
+    {
+     "pdb_id": "4U89",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "4QJL",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "4QVH",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "4QVH",
+     "template_auth_asym_id": "B",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-B1MD73-F1-model_v6.cif"
+  },
+  "B7FJK3": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "187b30a6bb470ab50021691828c2b751bf6160516fabf20a4779d0a7b76cd573",
+   "sha256": "187b30a6bb470ab50021691828c2b751bf6160516fabf20a4779d0a7b76cd573",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "B7FJK3",
+   "templates": [
+    {
+     "pdb_id": "4DOI",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "5YX4",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "1EYQ",
+     "template_auth_asym_id": "B",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "1JEP",
+     "template_auth_asym_id": "B",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-B7FJK3-F1-model_v6.cif"
+  },
+  "B8GAY9": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "c646e247efbbd43524318840e04952eeee1b66d0fec3cedea6c552fb639c4b34",
+   "sha256": "c646e247efbbd43524318840e04952eeee1b66d0fec3cedea6c552fb639c4b34",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "B8GAY9",
+   "templates": [
+    {
+     "pdb_id": "6PH4",
+     "template_auth_asym_id": "B",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "6QRJ",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "4I5S",
+     "template_auth_asym_id": "B",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "4I5S",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-B8GAY9-F1-model_v6.cif"
+  },
+  "C0PF72": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "387a7263a9a26fdf81094b7ba22ce8ffa7f67e3e111a59fb19096673c66cda51",
+   "sha256": "387a7263a9a26fdf81094b7ba22ce8ffa7f67e3e111a59fb19096673c66cda51",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "C0PF72",
+   "templates": [
+    {
+     "pdb_id": "1VZ6",
+     "template_auth_asym_id": "B",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "1VZ8",
+     "template_auth_asym_id": "B",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "1VRA",
+     "template_auth_asym_id": "B",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "2YEP",
+     "template_auth_asym_id": "B",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-C0PF72-F1-model_v6.cif"
+  },
+  "C7M6Q9": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "c57976fd50584b31dead783dfa73d8d410d7a0aa5bc3b07738a65f2a6f9f2f68",
+   "sha256": "c57976fd50584b31dead783dfa73d8d410d7a0aa5bc3b07738a65f2a6f9f2f68",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "C7M6Q9",
+   "templates": [
+    {
+     "pdb_id": "3OF4",
+     "template_auth_asym_id": "C",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "1YKI",
+     "template_auth_asym_id": "B",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "6CZP",
+     "template_auth_asym_id": "E",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "6CZP",
+     "template_auth_asym_id": "F",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-C7M6Q9-F1-model_v6.cif"
+  },
+  "D1MPT3": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "d29f5d109a8d74c9030c6e189960a3199c41f3b21d81b2dac7a1e7aad8783b8a",
+   "sha256": "d29f5d109a8d74c9030c6e189960a3199c41f3b21d81b2dac7a1e7aad8783b8a",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "D1MPT3",
+   "templates": [
+    {
+     "pdb_id": "3NED",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "6FP7",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "6YLM",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "5LTP",
+     "template_auth_asym_id": "B",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-D1MPT3-F1-model_v6.cif"
+  },
+  "D6QY24": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "c5c07b4bd08833343be505a6fdedb8cd621e70540c0e64be1c2d60251ac5d0ae",
+   "sha256": "c5c07b4bd08833343be505a6fdedb8cd621e70540c0e64be1c2d60251ac5d0ae",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "D6QY24",
+   "templates": [
+    {
+     "pdb_id": "6PXX",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "5HAP",
+     "template_auth_asym_id": "B",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "6N1N",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "5ODZ",
+     "template_auth_asym_id": "D",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-D6QY24-F1-model_v6.cif"
+  },
+  "D7RIG0": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "a90d0916d91b444935d5540eb9a861b6ecd0241738ca0ed174579cec6d2db4d9",
+   "sha256": "a90d0916d91b444935d5540eb9a861b6ecd0241738ca0ed174579cec6d2db4d9",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "D7RIG0",
+   "templates": [
+    {
+     "pdb_id": "6FGB",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "2P24",
+     "template_auth_asym_id": "B",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "1LNU",
+     "template_auth_asym_id": "H",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "4P5M",
+     "template_auth_asym_id": "B",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-D7RIG0-F1-model_v6.cif"
+  },
+  "E1BSW7": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "0a3bd68d3fb085a8a8aac4f1fb14f56377ee5df467525932fe0d0281b6a00f13",
+   "sha256": "0a3bd68d3fb085a8a8aac4f1fb14f56377ee5df467525932fe0d0281b6a00f13",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "E1BSW7",
+   "templates": [
+    {
+     "pdb_id": "3VH5",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "4E44",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "4E44",
+     "template_auth_asym_id": "C",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "3B0B",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-E1BSW7-F1-model_v6.cif"
+  },
+  "E4QTC1": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "7dcae6cbf3aadfd97c5be90a2d035c87bfd3d6aeaa1f4e78514a84e520f9406a",
+   "sha256": "7dcae6cbf3aadfd97c5be90a2d035c87bfd3d6aeaa1f4e78514a84e520f9406a",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "E4QTC1",
+   "templates": [
+    {
+     "pdb_id": "3H8G",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "1GYT",
+     "template_auth_asym_id": "I",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "3KR4",
+     "template_auth_asym_id": "C",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "5CBM",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-E4QTC1-F1-model_v6.cif"
+  },
+  "F6BL85": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "0ed25f412b953aeb4d9c63008ef5e1506f3d50e8b2d0cad86955965c9dcad22c",
+   "sha256": "0ed25f412b953aeb4d9c63008ef5e1506f3d50e8b2d0cad86955965c9dcad22c",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "F6BL85",
+   "templates": [
+    {
+     "pdb_id": "5NPF",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "4RHH",
+     "template_auth_asym_id": "C",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "4C1O",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "1LF6",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-F6BL85-F1-model_v6.cif"
+  },
+  "F6IQ93": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "940b10ebe3ff2f6830d0680e6e0d7b268064778853fe0377728516ce90335272",
+   "sha256": "940b10ebe3ff2f6830d0680e6e0d7b268064778853fe0377728516ce90335272",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "F6IQ93",
+   "templates": [
+    {
+     "pdb_id": "6ENY",
+     "template_auth_asym_id": "F",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "1MHC",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "1K5N",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "4U1M",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-F6IQ93-F1-model_v6.cif"
+  },
+  "F8S6W0": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "8a590e9b9e73715ab7e6ca65dc01fe418ecae1a376b1ce06e9d4cbd9b99ad631",
+   "sha256": "8a590e9b9e73715ab7e6ca65dc01fe418ecae1a376b1ce06e9d4cbd9b99ad631",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "F8S6W0",
+   "templates": [
+    {
+     "pdb_id": "6M9R",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "6VZY",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "3BJD",
+     "template_auth_asym_id": "C",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "6M9S",
+     "template_auth_asym_id": "D",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-F8S6W0-F1-model_v6.cif"
+  },
+  "G0RYC4": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "ab935bdeb9682c0d1a759a870a754ebd9eac035e9e1c716a94ff86b512555c1f",
+   "sha256": "ab935bdeb9682c0d1a759a870a754ebd9eac035e9e1c716a94ff86b512555c1f",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "G0RYC4",
+   "templates": [
+    {
+     "pdb_id": "1ZC1",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "2YUJ",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "1WLF",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "1CZ5",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-G0RYC4-F1-model_v6.cif"
+  },
+  "I6TX79": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "57211423304894cefff2119d5315efc47499a1e3397ac8078f2a0ccd028efd5f",
+   "sha256": "57211423304894cefff2119d5315efc47499a1e3397ac8078f2a0ccd028efd5f",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "I6TX79",
+   "templates": [
+    {
+     "pdb_id": "4YSN",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "5KR6",
+     "template_auth_asym_id": "B",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "5WYA",
+     "template_auth_asym_id": "C",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "5KQW",
+     "template_auth_asym_id": "D",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-I6TX79-F1-model_v6.cif"
+  },
+  "K7PQ54": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "07406b15c127dc43b5c5febdd5e6766637ec15ed1e3a7cf3f6e43edf7fa546c9",
+   "sha256": "07406b15c127dc43b5c5febdd5e6766637ec15ed1e3a7cf3f6e43edf7fa546c9",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "K7PQ54",
+   "templates": [
+    {
+     "pdb_id": "6I4R",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "6UZI",
+     "template_auth_asym_id": "C",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "3LAD",
+     "template_auth_asym_id": "B",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "6UZI",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-K7PQ54-F1-model_v6.cif"
+  },
+  "O06249": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "726f94068066d6ee4e9cd85f09656f4fba3ded1fc2e7714b3f08d485c1b08267",
+   "sha256": "726f94068066d6ee4e9cd85f09656f4fba3ded1fc2e7714b3f08d485c1b08267",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "O06249",
+   "templates": [
+    {
+     "pdb_id": "3HBX",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "3FZ8",
+     "template_auth_asym_id": "E",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "5GP4",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "1XEY",
+     "template_auth_asym_id": "B",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-O06249-F1-model_v6.cif"
+  },
+  "O14641": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "2dad78fa59470ae47367e8cfe6652ce4e238348414910f126ec152b5c371d113",
+   "sha256": "2dad78fa59470ae47367e8cfe6652ce4e238348414910f126ec152b5c371d113",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "O14641",
+   "templates": [
+    {
+     "pdb_id": "1FSH",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "5SUY",
+     "template_auth_asym_id": "C",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "5SUZ",
+     "template_auth_asym_id": "B",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "3ML6",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-O14641-F1-model_v6.cif"
+  },
+  "P00396": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "096da144108f8ae81fbcd669529581b2f6b2d51c96b720f32ba2b7be6845e681",
+   "sha256": "096da144108f8ae81fbcd669529581b2f6b2d51c96b720f32ba2b7be6845e681",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P00396",
+   "templates": [
+    {
+     "pdb_id": "6HU9",
+     "template_auth_asym_id": "a",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "6T0B",
+     "template_auth_asym_id": "n",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "6KOC",
+     "template_auth_asym_id": "E",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "6KOB",
+     "template_auth_asym_id": "E",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P00396-F1-model_v6.cif"
+  },
+  "P00415": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "6b197788bb771cdf7937775066b5cffc3ec68031673795ba95776c99757faad1",
+   "sha256": "6b197788bb771cdf7937775066b5cffc3ec68031673795ba95776c99757faad1",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P00415",
+   "templates": [
+    {
+     "pdb_id": "6T15",
+     "template_auth_asym_id": "c",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "6T0B",
+     "template_auth_asym_id": "c",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "7JRP",
+     "template_auth_asym_id": "c",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "5WEH",
+     "template_auth_asym_id": "C",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P00415-F1-model_v6.cif"
+  },
+  "P00423": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "070028fe29aceac4fe5341034ae9a242f08e35a03f3850965bee1e06db9e791a",
+   "sha256": "070028fe29aceac4fe5341034ae9a242f08e35a03f3850965bee1e06db9e791a",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P00423",
+   "templates": [
+    {
+     "pdb_id": "5B1A",
+     "template_auth_asym_id": "D",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "5XTH",
+     "template_auth_asym_id": "0",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "6GIQ",
+     "template_auth_asym_id": "e",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "6T0B",
+     "template_auth_asym_id": "e",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P00423-F1-model_v6.cif"
+  },
+  "P00426": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "67e6ca6859ee270e8d77107be18466006331c113c5409db41c066cb767e19426",
+   "sha256": "67e6ca6859ee270e8d77107be18466006331c113c5409db41c066cb767e19426",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P00426",
+   "templates": [
+    {
+     "pdb_id": "6GIQ",
+     "template_auth_asym_id": "f",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "2YBB",
+     "template_auth_asym_id": "P",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "5B1A",
+     "template_auth_asym_id": "E",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "6T0B",
+     "template_auth_asym_id": "s",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P00426-F1-model_v6.cif"
+  },
+  "P00428": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "800c5f8b192e3c5b0e667342bcef17572f6abe33148ce8956684d3c795421039",
+   "sha256": "800c5f8b192e3c5b0e667342bcef17572f6abe33148ce8956684d3c795421039",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P00428",
+   "templates": [
+    {
+     "pdb_id": "2YBB",
+     "template_auth_asym_id": "Q",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "5B1A",
+     "template_auth_asym_id": "S",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "6T0B",
+     "template_auth_asym_id": "q",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "6GIQ",
+     "template_auth_asym_id": "d",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P00428-F1-model_v6.cif"
+  },
+  "P00429": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "8055d683be8dd403692b8d850328619d7b34e03c857bd6f14df79e2974ef59e6",
+   "sha256": "8055d683be8dd403692b8d850328619d7b34e03c857bd6f14df79e2974ef59e6",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P00429",
+   "templates": [
+    {
+     "pdb_id": "5Z62",
+     "template_auth_asym_id": "H",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "5J4Z",
+     "template_auth_asym_id": "BH",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "6T0B",
+     "template_auth_asym_id": "w",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "5XTH",
+     "template_auth_asym_id": "4",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P00429-F1-model_v6.cif"
+  },
+  "P00430": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "4273cd6b501aff79dd42e3e633199a970cf0dbf3bbed335f31c9f4d23c20ef26",
+   "sha256": "4273cd6b501aff79dd42e3e633199a970cf0dbf3bbed335f31c9f4d23c20ef26",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P00430",
+   "templates": [
+    {
+     "pdb_id": "6GIQ",
+     "template_auth_asym_id": "h",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "7JRO",
+     "template_auth_asym_id": "j",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "2YBB",
+     "template_auth_asym_id": "W",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "5B1A",
+     "template_auth_asym_id": "Y",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P00430-F1-model_v6.cif"
+  },
+  "P00698": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "09a298fac7b7ef96e9c1ea5690811e713021c2e3a89e239ae7218e4cc658a82c",
+   "sha256": "09a298fac7b7ef96e9c1ea5690811e713021c2e3a89e239ae7218e4cc658a82c",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P00698",
+   "templates": [
+    {
+     "pdb_id": "1BB7",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "1LMQ",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "4YF2",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "2MEH",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P00698-F1-model_v6.cif"
+  },
+  "P00760": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "a0554e245d18e268eaebf8f5aa651cdd6e3c088b0b480ab757a21337d8e76298",
+   "sha256": "a0554e245d18e268eaebf8f5aa651cdd6e3c088b0b480ab757a21337d8e76298",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P00760",
+   "templates": [
+    {
+     "pdb_id": "1OPH",
+     "template_auth_asym_id": "B",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "5MNH",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "1GVZ",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "4I8H",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P00760-F1-model_v6.cif"
+  },
+  "P00918": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "173c4f1fa81ffb1a288c881040217d1473ed2d08cd792671252ee116cac10c7d",
+   "sha256": "173c4f1fa81ffb1a288c881040217d1473ed2d08cd792671252ee116cac10c7d",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P00918",
+   "templates": [
+    {
+     "pdb_id": "3UYN",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "1FLJ",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "3UYQ",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "3ML5",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P00918-F1-model_v6.cif"
+  },
+  "P01111": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "6cf8947afbca7720fb29b0f36fbf1148356839a692d890c701ab30907337bea2",
+   "sha256": "6cf8947afbca7720fb29b0f36fbf1148356839a692d890c701ab30907337bea2",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P01111",
+   "templates": [
+    {
+     "pdb_id": "3OES",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "4M8N",
+     "template_auth_asym_id": "E",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "6JMG",
+     "template_auth_asym_id": "B",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "2KE5",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P01111-F1-model_v6.cif"
+  },
+  "P01887": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "f4bcb05ebf76d68b46c27a79ef633065349b310664c2be326761e3f4e1fd9eb2",
+   "sha256": "f4bcb05ebf76d68b46c27a79ef633065349b310664c2be326761e3f4e1fd9eb2",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P01887",
+   "templates": [
+    {
+     "pdb_id": "5M02",
+     "template_auth_asym_id": "B",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "2P24",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "4FQX",
+     "template_auth_asym_id": "D",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "2H26",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P01887-F1-model_v6.cif"
+  },
+  "P01899": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "0da0ea707c0d296e528737ef9b13a1e05d357c14d330524d404e9517f651b3d5",
+   "sha256": "0da0ea707c0d296e528737ef9b13a1e05d357c14d330524d404e9517f651b3d5",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P01899",
+   "templates": [
+    {
+     "pdb_id": "6ENY",
+     "template_auth_asym_id": "F",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "1MHC",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "1K5N",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "6V2O",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P01899-F1-model_v6.cif"
+  },
+  "P01903": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "1a132b09a2870700cd8acc4817af0e5807dddcd6d69ebea3f2dd1fcac1df4ad8",
+   "sha256": "1a132b09a2870700cd8acc4817af0e5807dddcd6d69ebea3f2dd1fcac1df4ad8",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P01903",
+   "templates": [
+    {
+     "pdb_id": "6CPL",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "2P24",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "4X5W",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "5NI9",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P01903-F1-model_v6.cif"
+  },
+  "P02753": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "45b7b7d6df4f9f2b7356d3e20eb62ebb6e5d8cb346ffea593cdad2bf71ccc018",
+   "sha256": "45b7b7d6df4f9f2b7356d3e20eb62ebb6e5d8cb346ffea593cdad2bf71ccc018",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P02753",
+   "templates": [
+    {
+     "pdb_id": "4PSQ",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "4O9S",
+     "template_auth_asym_id": "B",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "5NU2",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "1KT6",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P02753-F1-model_v6.cif"
+  },
+  "P04038": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "56fc1df4896a93efab8da9d00fd16d0604ad74bc8feced542e75ee6dd7f7a0dd",
+   "sha256": "56fc1df4896a93efab8da9d00fd16d0604ad74bc8feced542e75ee6dd7f7a0dd",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P04038",
+   "templates": [
+    {
+     "pdb_id": "6HU9",
+     "template_auth_asym_id": "u",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "6T0B",
+     "template_auth_asym_id": "i",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "7JRO",
+     "template_auth_asym_id": "h",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "2KNC",
+     "template_auth_asym_id": "B",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P04038-F1-model_v6.cif"
+  },
+  "P07277": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "db460f43afbc9a916f176ed06541dfe0f495ddd181cb1eba164616a9decdfdfd",
+   "sha256": "db460f43afbc9a916f176ed06541dfe0f495ddd181cb1eba164616a9decdfdfd",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P07277",
+   "templates": [
+    {
+     "pdb_id": "2R42",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "1KVK",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "2R3V",
+     "template_auth_asym_id": "C",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "3K17",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P07277-F1-model_v6.cif"
+  },
+  "P07342": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "8eb24da989ae4168c98368dcc1eb1d406fc1b271ed1132912babdff5525bf802",
+   "sha256": "8eb24da989ae4168c98368dcc1eb1d406fc1b271ed1132912babdff5525bf802",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P07342",
+   "templates": [
+    {
+     "pdb_id": "6U9D",
+     "template_auth_asym_id": "B",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "6DEQ",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "6DEN",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "6WO1",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P07342-F1-model_v6.cif"
+  },
+  "P07470": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "bb89b410c9a840f6b0c9bcd7d07c29784857c29b7089c5d1c6fdf9e1d6abf528",
+   "sha256": "bb89b410c9a840f6b0c9bcd7d07c29784857c29b7089c5d1c6fdf9e1d6abf528",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P07470",
+   "templates": [
+    {
+     "pdb_id": "5B1A",
+     "template_auth_asym_id": "J",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "5J7Y",
+     "template_auth_asym_id": "BJ",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "5Z62",
+     "template_auth_asym_id": "J",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "7JRP",
+     "template_auth_asym_id": "i",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P07470-F1-model_v6.cif"
+  },
+  "P07471": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "990b8d261da3e09c17b24520475417a833d26dae82cb601a68f06445922401a0",
+   "sha256": "990b8d261da3e09c17b24520475417a833d26dae82cb601a68f06445922401a0",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P07471",
+   "templates": [
+    {
+     "pdb_id": "5B1A",
+     "template_auth_asym_id": "G",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "2YBB",
+     "template_auth_asym_id": "R",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "6T15",
+     "template_auth_asym_id": "k",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "6T0B",
+     "template_auth_asym_id": "x",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P07471-F1-model_v6.cif"
+  },
+  "P08263": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "5b0a5f314ca0d18157112e53e7ec3a1a6677c0bebac145d5a56dc74d91d22e47",
+   "sha256": "5b0a5f314ca0d18157112e53e7ec3a1a6677c0bebac145d5a56dc74d91d22e47",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P08263",
+   "templates": [
+    {
+     "pdb_id": "1GSE",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "1B48",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "3IK7",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "3IK7",
+     "template_auth_asym_id": "D",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P08263-F1-model_v6.cif"
+  },
+  "P09382": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "edb0e4897037d2a2782de74ed89ec716afa8567823c1b91353a9edc23001f59a",
+   "sha256": "edb0e4897037d2a2782de74ed89ec716afa8567823c1b91353a9edc23001f59a",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P09382",
+   "templates": [
+    {
+     "pdb_id": "1SLC",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "1GAN",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "1IS3",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "1WLW",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P09382-F1-model_v6.cif"
+  },
+  "P0A386": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "37923cabeb2ae0f9b7e6a26b7a77705cf86ba0e97472d5392a372e00f2e40f29",
+   "sha256": "37923cabeb2ae0f9b7e6a26b7a77705cf86ba0e97472d5392a372e00f2e40f29",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P0A386",
+   "templates": [
+    {
+     "pdb_id": "5V2C",
+     "template_auth_asym_id": "V",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "4RVY",
+     "template_auth_asym_id": "V",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "1E29",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "1MZ4",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P0A386-F1-model_v6.cif"
+  },
+  "P0A431": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "7d261d5e2f9ab800e449edafdd5be08f7572ba9cafd512ba1d6fd6edfd5526d8",
+   "sha256": "7d261d5e2f9ab800e449edafdd5be08f7572ba9cafd512ba1d6fd6edfd5526d8",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P0A431",
+   "templates": [
+    {
+     "pdb_id": "4YUU",
+     "template_auth_asym_id": "o2",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "4YUU",
+     "template_auth_asym_id": "O2",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "5WS5",
+     "template_auth_asym_id": "o",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "5B66",
+     "template_auth_asym_id": "O",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P0A431-F1-model_v6.cif"
+  },
+  "P0A444": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "131cb3ca88003999a7cfba31686a0c73ac8f6503d1809cd923f2b48d422c6faa",
+   "sha256": "131cb3ca88003999a7cfba31686a0c73ac8f6503d1809cd923f2b48d422c6faa",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P0A444",
+   "templates": [
+    {
+     "pdb_id": "5B66",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "5V2C",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "6YP7",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "5B66",
+     "template_auth_asym_id": "D",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P0A444-F1-model_v6.cif"
+  },
+  "P0ABQ4": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "16da98f29a99cd19572a85db7a46f466c4a483669398e4790f4959002e83d873",
+   "sha256": "16da98f29a99cd19572a85db7a46f466c4a483669398e4790f4959002e83d873",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P0ABQ4",
+   "templates": [
+    {
+     "pdb_id": "4PSY",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "5E8Q",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "3IA4",
+     "template_auth_asym_id": "D",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "4ELH",
+     "template_auth_asym_id": "B",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P0ABQ4-F1-model_v6.cif"
+  },
+  "P0DJH7": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "d2b42de9a310b7e68e4e4a450218e0723e3ab224a598cc8330f3b53f38f81e17",
+   "sha256": "d2b42de9a310b7e68e4e4a450218e0723e3ab224a598cc8330f3b53f38f81e17",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P0DJH7",
+   "templates": [
+    {
+     "pdb_id": "4E44",
+     "template_auth_asym_id": "B",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "4E44",
+     "template_auth_asym_id": "D",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "4E45",
+     "template_auth_asym_id": "I",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "4NE1",
+     "template_auth_asym_id": "N",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P0DJH7-F1-model_v6.cif"
+  },
+  "P10145": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "a262517d14a32b65e2e8d5ae77ccca4ca76f69bc000b1f3bef4aaf409e9f49e1",
+   "sha256": "a262517d14a32b65e2e8d5ae77ccca4ca76f69bc000b1f3bef4aaf409e9f49e1",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P10145",
+   "templates": [
+    {
+     "pdb_id": "5D14",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "4XDX",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "5IZB",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "1ROD",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P10145-F1-model_v6.cif"
+  },
+  "P10175": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "a3a259f5f23b8e43d948a1f6f2cf23588e64cc37daddd10ff782db20e41eea52",
+   "sha256": "a3a259f5f23b8e43d948a1f6f2cf23588e64cc37daddd10ff782db20e41eea52",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P10175",
+   "templates": [
+    {
+     "pdb_id": "5B1A",
+     "template_auth_asym_id": "Z",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "5Z62",
+     "template_auth_asym_id": "M",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "5IY5",
+     "template_auth_asym_id": "Z",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "5F1B",
+     "template_auth_asym_id": "B",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P10175-F1-model_v6.cif"
+  },
+  "P13183": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "40db5b5c2a1186694edf4a29a6e9f479f7de746bdccca72382ad346123e3e853",
+   "sha256": "40db5b5c2a1186694edf4a29a6e9f479f7de746bdccca72382ad346123e3e853",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P13183",
+   "templates": [
+    {
+     "pdb_id": "2YBB",
+     "template_auth_asym_id": "V",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "5B1A",
+     "template_auth_asym_id": "K",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "5IY5",
+     "template_auth_asym_id": "X",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "6JUW",
+     "template_auth_asym_id": "X",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P13183-F1-model_v6.cif"
+  },
+  "P17931": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "11f974fb8e084aee0d53857bedc16ae0a1e92d262f4f840b30f8420740bf7cca",
+   "sha256": "11f974fb8e084aee0d53857bedc16ae0a1e92d262f4f840b30f8420740bf7cca",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P17931",
+   "templates": [
+    {
+     "pdb_id": "6FOF",
+     "template_auth_asym_id": "B",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "6FOF",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "4JCK",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "5NFB",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P17931-F1-model_v6.cif"
+  },
+  "P19567": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "bce198dd64a35d0a89cf9a494c2d99c0e44e98ae844d43c9eb47b6a1e72f9ccb",
+   "sha256": "bce198dd64a35d0a89cf9a494c2d99c0e44e98ae844d43c9eb47b6a1e72f9ccb",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P19567",
+   "templates": [
+    {
+     "pdb_id": "6IFP",
+     "template_auth_asym_id": "C",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "1PAZ",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "8PAZ",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "6AKN",
+     "template_auth_asym_id": "B",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P19567-F1-model_v6.cif"
+  },
+  "P24300": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "361d50a5a001eb48443c28b56d85b4f0c0c86d3d469e360f92968ee797c43c55",
+   "sha256": "361d50a5a001eb48443c28b56d85b4f0c0c86d3d469e360f92968ee797c43c55",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P24300",
+   "templates": [
+    {
+     "pdb_id": "6QRY",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "5XIN",
+     "template_auth_asym_id": "D",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "1BHW",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "1XIM",
+     "template_auth_asym_id": "D",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P24300-F1-model_v6.cif"
+  },
+  "P26572": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "3bbefc77180e98be40254cfaa93094a9343dae91920869bd0e61821ac26f235d",
+   "sha256": "3bbefc77180e98be40254cfaa93094a9343dae91920869bd0e61821ac26f235d",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P26572",
+   "templates": [
+    {
+     "pdb_id": "2AM3",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "1FO8",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "5GGI",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "5GGI",
+     "template_auth_asym_id": "B",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P26572-F1-model_v6.cif"
+  },
+  "P27695": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "1ba3731086258b4bdf06a8081ad48c8eb1dd0110499fb980579962bf7dee989e",
+   "sha256": "1ba3731086258b4bdf06a8081ad48c8eb1dd0110499fb980579962bf7dee989e",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P27695",
+   "templates": [
+    {
+     "pdb_id": "6BOR",
+     "template_auth_asym_id": "B",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "4QHE",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "6BOW",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "5WN4",
+     "template_auth_asym_id": "B",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P27695-F1-model_v6.cif"
+  },
+  "P30837": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "fbba7954499e3efbd3a6c06ec5a45b2d157c0e42ee6a19e04425b83cbab10a40",
+   "sha256": "fbba7954499e3efbd3a6c06ec5a45b2d157c0e42ee6a19e04425b83cbab10a40",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P30837",
+   "templates": [
+    {
+     "pdb_id": "7JWV",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "1CW3",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "6ALJ",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "4FR8",
+     "template_auth_asym_id": "B",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P30837-F1-model_v6.cif"
+  },
+  "P35222": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "4bc0ee1f4a61d13ff11868bd46f19e2f3e86ef6c6f82d0ff55c4b15cfea06c82",
+   "sha256": "4bc0ee1f4a61d13ff11868bd46f19e2f3e86ef6c6f82d0ff55c4b15cfea06c82",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P35222",
+   "templates": [
+    {
+     "pdb_id": "2Z6G",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "2Z6H",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "3IFQ",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "4EV8",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P35222-F1-model_v6.cif"
+  },
+  "P41222": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "ef43a917fa6ac920537bf06e035c0432c331548447f3b7fa8d178b8cfb2e8dc7",
+   "sha256": "ef43a917fa6ac920537bf06e035c0432c331548447f3b7fa8d178b8cfb2e8dc7",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P41222",
+   "templates": [
+    {
+     "pdb_id": "4ORY",
+     "template_auth_asym_id": "F",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "4ORS",
+     "template_auth_asym_id": "B",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "4ORX",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "3O22",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P41222-F1-model_v6.cif"
+  },
+  "P47929": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "936b9a1142e3ca7e931a67b115bd87eeea7ff64ff13f31e148320d5e364ca188",
+   "sha256": "936b9a1142e3ca7e931a67b115bd87eeea7ff64ff13f31e148320d5e364ca188",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P47929",
+   "templates": [
+    {
+     "pdb_id": "4XZP",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "2DYC",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "4WVV",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "5DUW",
+     "template_auth_asym_id": "B",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P47929-F1-model_v6.cif"
+  },
+  "P50120": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "4047d6979e00e349f595887d4af93827feb5ef55077ddff83473e96a045ac4a1",
+   "sha256": "4047d6979e00e349f595887d4af93827feb5ef55077ddff83473e96a045ac4a1",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P50120",
+   "templates": [
+    {
+     "pdb_id": "6E5W",
+     "template_auth_asym_id": "B",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "6L9O",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "4LKP",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "1GGL",
+     "template_auth_asym_id": "B",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P50120-F1-model_v6.cif"
+  },
+  "P59087": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "5c4b84c29d82ebd66a22aa0c5fc5c9636c7b98fee5e8c909ceb7f69b4ecb8add",
+   "sha256": "5c4b84c29d82ebd66a22aa0c5fc5c9636c7b98fee5e8c909ceb7f69b4ecb8add",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P59087",
+   "templates": [
+    {
+     "pdb_id": "5V2C",
+     "template_auth_asym_id": "j",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "5XNL",
+     "template_auth_asym_id": "J",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "3JCU",
+     "template_auth_asym_id": "j",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "6KAC",
+     "template_auth_asym_id": "j",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P59087-F1-model_v6.cif"
+  },
+  "P61769": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "e9cc02e9271d5c12504fc679af0faeab6c4bccd0e291694748c255f30a1e2b30",
+   "sha256": "e9cc02e9271d5c12504fc679af0faeab6c4bccd0e291694748c255f30a1e2b30",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P61769",
+   "templates": [
+    {
+     "pdb_id": "5M02",
+     "template_auth_asym_id": "B",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "2P24",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "5IUE",
+     "template_auth_asym_id": "J",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "5KNM",
+     "template_auth_asym_id": "B",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P61769-F1-model_v6.cif"
+  },
+  "P61964": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "83164afd59e414cf5855eb525d82037e0c19211a2aec92580830cf275b284e72",
+   "sha256": "83164afd59e414cf5855eb525d82037e0c19211a2aec92580830cf275b284e72",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P61964",
+   "templates": [
+    {
+     "pdb_id": "5M23",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "6U8B",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "5M25",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "6E1Z",
+     "template_auth_asym_id": "B",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P61964-F1-model_v6.cif"
+  },
+  "P61965": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "0f075911767c5ecef44d164a8889d8c1dc771f7a431a51469254089b0314cfab",
+   "sha256": "0f075911767c5ecef44d164a8889d8c1dc771f7a431a51469254089b0314cfab",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P61965",
+   "templates": [
+    {
+     "pdb_id": "5M23",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "6U8B",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "5M25",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "6E1Z",
+     "template_auth_asym_id": "B",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P61965-F1-model_v6.cif"
+  },
+  "P62942": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "b2406971fba40d83435841e5c241a42160c407adad067d8a565839385002ae1f",
+   "sha256": "b2406971fba40d83435841e5c241a42160c407adad067d8a565839385002ae1f",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P62942",
+   "templates": [
+    {
+     "pdb_id": "4LAY",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "5L1D",
+     "template_auth_asym_id": "D",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "4LAV",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "3O5D",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P62942-F1-model_v6.cif"
+  },
+  "P68530": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "473adcfb5cc17925ce138c2c17bb6f35eafd5891a3762e385b37e7a5701434f1",
+   "sha256": "473adcfb5cc17925ce138c2c17bb6f35eafd5891a3762e385b37e7a5701434f1",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P68530",
+   "templates": [
+    {
+     "pdb_id": "7JRO",
+     "template_auth_asym_id": "b",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "6HU9",
+     "template_auth_asym_id": "b",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "6T0B",
+     "template_auth_asym_id": "b",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "3EHB",
+     "template_auth_asym_id": "B",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P68530-F1-model_v6.cif"
+  },
+  "P69782": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "f1025cd7d811f5218b865422dea35db9b50fcabcfe40cc22c3d39b00fb4df3ef",
+   "sha256": "f1025cd7d811f5218b865422dea35db9b50fcabcfe40cc22c3d39b00fb4df3ef",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P69782",
+   "templates": [
+    {
+     "pdb_id": "6PCO",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "6PCO",
+     "template_auth_asym_id": "C",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "5AIP",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "5CYV",
+     "template_auth_asym_id": "B",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P69782-F1-model_v6.cif"
+  },
+  "P71451": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "e7a401fa06d4fe96bb1e3721a124ce47ece7ff490cf4322af03de5889ec354c1",
+   "sha256": "e7a401fa06d4fe96bb1e3721a124ce47ece7ff490cf4322af03de5889ec354c1",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P71451",
+   "templates": [
+    {
+     "pdb_id": "1XEU",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "4CIL",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "2OMZ",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "1H6T",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P71451-F1-model_v6.cif"
+  },
+  "P93836": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "4dcb184cd2b775709f775fc6526f2d0aedf9bbe7c5d8464b1058f58590b528db",
+   "sha256": "4dcb184cd2b775709f775fc6526f2d0aedf9bbe7c5d8464b1058f58590b528db",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P93836",
+   "templates": [
+    {
+     "pdb_id": "1SP8",
+     "template_auth_asym_id": "D",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "1SP8",
+     "template_auth_asym_id": "B",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "5YY6",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "5EC3",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P93836-F1-model_v6.cif"
+  },
+  "P9WFX5": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "b2b0599119825ca7e939c9bfd81a52e02cfb15541529c64373a8042e0120e17e",
+   "sha256": "b2b0599119825ca7e939c9bfd81a52e02cfb15541529c64373a8042e0120e17e",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "P9WFX5",
+   "templates": [
+    {
+     "pdb_id": "1O17",
+     "template_auth_asym_id": "D",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "1VQU",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "1KGZ",
+     "template_auth_asym_id": "B",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "4HKM",
+     "template_auth_asym_id": "B",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-P9WFX5-F1-model_v6.cif"
+  },
+  "Q06830": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "b5864bbc6329daaef59d3dc38181f3a71796c34e980a4961bda2fa4adea6b9ed",
+   "sha256": "b5864bbc6329daaef59d3dc38181f3a71796c34e980a4961bda2fa4adea6b9ed",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q06830",
+   "templates": [
+    {
+     "pdb_id": "3TKR",
+     "template_auth_asym_id": "I",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "5UCX",
+     "template_auth_asym_id": "C",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "3QPM",
+     "template_auth_asym_id": "E",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "4LLR",
+     "template_auth_asym_id": "E",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q06830-F1-model_v6.cif"
+  },
+  "Q07422": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "d12f37b17e9955be671288e2ca4b216bbeda0d0ca46163a20b9c1b666832ad88",
+   "sha256": "d12f37b17e9955be671288e2ca4b216bbeda0d0ca46163a20b9c1b666832ad88",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q07422",
+   "templates": [
+    {
+     "pdb_id": "6AOI",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "4EIL",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "6LHJ",
+     "template_auth_asym_id": "B",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "6KP7",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q07422-F1-model_v6.cif"
+  },
+  "Q10175": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "4111ee0d1ece58272812ac810e716bb2a25ba9b752d5528e745855de34cfd66b",
+   "sha256": "4111ee0d1ece58272812ac810e716bb2a25ba9b752d5528e745855de34cfd66b",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q10175",
+   "templates": [
+    {
+     "pdb_id": "4BF8",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "1U79",
+     "template_auth_asym_id": "D",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "1Y0O",
+     "template_auth_asym_id": "D",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "2F4E",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q10175-F1-model_v6.cif"
+  },
+  "Q13177": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "103fc2167a8110312df5d3706b1e7affafdf095c7a22abe918a674175b4d4be9",
+   "sha256": "103fc2167a8110312df5d3706b1e7affafdf095c7a22abe918a674175b4d4be9",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q13177",
+   "templates": [
+    {
+     "pdb_id": "6FD3",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "4FIE",
+     "template_auth_asym_id": "B",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "5KBQ",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "5ZJW",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q13177-F1-model_v6.cif"
+  },
+  "Q2G0P5": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "86580d14f440b9d083f98e3f05926f894b7c383078b833397071497ba99361db",
+   "sha256": "86580d14f440b9d083f98e3f05926f894b7c383078b833397071497ba99361db",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q2G0P5",
+   "templates": [
+    {
+     "pdb_id": "3J3T",
+     "template_auth_asym_id": "D",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "6EM9",
+     "template_auth_asym_id": "F",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "6E10",
+     "template_auth_asym_id": "4",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "6E11",
+     "template_auth_asym_id": "4",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q2G0P5-F1-model_v6.cif"
+  },
+  "Q2YIQ6": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "9730c56ded409d265e8d5a5270d23bde15537adf8cf8288b792e148d9abc9c69",
+   "sha256": "9730c56ded409d265e8d5a5270d23bde15537adf8cf8288b792e148d9abc9c69",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q2YIQ6",
+   "templates": [
+    {
+     "pdb_id": "4MVA",
+     "template_auth_asym_id": "B",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "4MKN",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "1M6J",
+     "template_auth_asym_id": "B",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "6W4U",
+     "template_auth_asym_id": "B",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q2YIQ6-F1-model_v6.cif"
+  },
+  "Q45NF4": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "b47bfad4e0392123f109c235e276459f04315410419cd52cfe7942457e794b52",
+   "sha256": "b47bfad4e0392123f109c235e276459f04315410419cd52cfe7942457e794b52",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q45NF4",
+   "templates": [
+    {
+     "pdb_id": "6CC0",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "4Y13",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "3SZT",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "6CC0",
+     "template_auth_asym_id": "B",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q45NF4-F1-model_v6.cif"
+  },
+  "Q4KH59": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "4e3111413e19a144b6e5a77636215ce51ea02f7f79c089d9ec77a97fdc0ed713",
+   "sha256": "4e3111413e19a144b6e5a77636215ce51ea02f7f79c089d9ec77a97fdc0ed713",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q4KH59",
+   "templates": [
+    {
+     "pdb_id": "1BRV",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "5ZIH",
+     "template_auth_asym_id": "B",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "3JQO",
+     "template_auth_asym_id": "L",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "5E24",
+     "template_auth_asym_id": "D",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q4KH59-F1-model_v6.cif"
+  },
+  "Q4Q1U0": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "db5e96707a66b4a8ab338e22c109bb4e2710062082f07977029c8704880fbb67",
+   "sha256": "db5e96707a66b4a8ab338e22c109bb4e2710062082f07977029c8704880fbb67",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q4Q1U0",
+   "templates": [
+    {
+     "pdb_id": "2AK3",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "1ZAK",
+     "template_auth_asym_id": "B",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "2BBW",
+     "template_auth_asym_id": "B",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "2AR7",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q4Q1U0-F1-model_v6.cif"
+  },
+  "Q4Q5L3": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "a0dc9f78feca727fec8dbc2e2cad104854b32f3c0c1f9f3a57fdf46a93dffbe6",
+   "sha256": "a0dc9f78feca727fec8dbc2e2cad104854b32f3c0c1f9f3a57fdf46a93dffbe6",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q4Q5L3",
+   "templates": [
+    {
+     "pdb_id": "1YF9",
+     "template_auth_asym_id": "B",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "6R75",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "2Z5D",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "2Z5D",
+     "template_auth_asym_id": "B",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q4Q5L3-F1-model_v6.cif"
+  },
+  "Q55199": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "75efc6d02403f794651c674c1167095295e8171bab974bdf40c9c1505a09e5e7",
+   "sha256": "75efc6d02403f794651c674c1167095295e8171bab974bdf40c9c1505a09e5e7",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q55199",
+   "templates": [
+    {
+     "pdb_id": "5WNN",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "5I84",
+     "template_auth_asym_id": "F",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "1PC3",
+     "template_auth_asym_id": "B",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "7DM1",
+     "template_auth_asym_id": "B",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q55199-F1-model_v6.cif"
+  },
+  "Q55200": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "977a52df02ca6ce880cac8d06c79c09886b3c733f3e128dd3ab2c244b7d6fa84",
+   "sha256": "977a52df02ca6ce880cac8d06c79c09886b3c733f3e128dd3ab2c244b7d6fa84",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q55200",
+   "templates": [
+    {
+     "pdb_id": "1IXG",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "1IXH",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "5WNN",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "5JK4",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q55200-F1-model_v6.cif"
+  },
+  "Q5B9S0": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "38cd2976ed1f623bd4bfcf407d93d8061d33d02f0870d2542eaf304dfa7e9a8c",
+   "sha256": "38cd2976ed1f623bd4bfcf407d93d8061d33d02f0870d2542eaf304dfa7e9a8c",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q5B9S0",
+   "templates": [
+    {
+     "pdb_id": "5JUG",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "5XU5",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "5XTT",
+     "template_auth_asym_id": "B",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "5XXA",
+     "template_auth_asym_id": "B",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q5B9S0-F1-model_v6.cif"
+  },
+  "Q5JF22": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "7e896c80a6bac848e4a6cdf7fb396faecb70d6316e3840be2d87d8806baf459c",
+   "sha256": "7e896c80a6bac848e4a6cdf7fb396faecb70d6316e3840be2d87d8806baf459c",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q5JF22",
+   "templates": [
+    {
+     "pdb_id": "6S83",
+     "template_auth_asym_id": "B",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "4K0B",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "4L7I",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "4L2Z",
+     "template_auth_asym_id": "B",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q5JF22-F1-model_v6.cif"
+  },
+  "Q5SUL5": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "56aca2266954542063c9d4f2580143bc395d0c21e76e175c38a9eff24b345a1e",
+   "sha256": "56aca2266954542063c9d4f2580143bc395d0c21e76e175c38a9eff24b345a1e",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q5SUL5",
+   "templates": [
+    {
+     "pdb_id": "6ENY",
+     "template_auth_asym_id": "F",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "6FGB",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "1MHC",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "1K5N",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q5SUL5-F1-model_v6.cif"
+  },
+  "Q5UE59": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "1c6b51d71fa75e920dd00294665749102b14ab07c4870a7ca2aae77b9d581959",
+   "sha256": "1c6b51d71fa75e920dd00294665749102b14ab07c4870a7ca2aae77b9d581959",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q5UE59",
+   "templates": [
+    {
+     "pdb_id": "6EJN",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "6EJN",
+     "template_auth_asym_id": "B",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "6SWU",
+     "template_auth_asym_id": "AAA",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "6SWU",
+     "template_auth_asym_id": "FFF",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q5UE59-F1-model_v6.cif"
+  },
+  "Q5XJ23": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "76b197304fe6a85d428e1e36ba04f326171d363b49508839372508a67da8fc2d",
+   "sha256": "76b197304fe6a85d428e1e36ba04f326171d363b49508839372508a67da8fc2d",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q5XJ23",
+   "templates": [
+    {
+     "pdb_id": "4OOP",
+     "template_auth_asym_id": "B",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "2HQU",
+     "template_auth_asym_id": "B",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "6LJJ",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "3CA9",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q5XJ23-F1-model_v6.cif"
+  },
+  "Q6H4V1": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "ec5c714f9f2a97d65a15759a0a08ddf76ae5ed0847bcf6ad751500c14802ec35",
+   "sha256": "ec5c714f9f2a97d65a15759a0a08ddf76ae5ed0847bcf6ad751500c14802ec35",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q6H4V1",
+   "templates": [
+    {
+     "pdb_id": "1SP8",
+     "template_auth_asym_id": "D",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "1SP8",
+     "template_auth_asym_id": "B",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "6LGT",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "5EC3",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q6H4V1-F1-model_v6.cif"
+  },
+  "Q6MP94": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "3fabc8b81b0d5111749c0406e802ba32759dbe08bd251e38ca52c7e131851132",
+   "sha256": "3fabc8b81b0d5111749c0406e802ba32759dbe08bd251e38ca52c7e131851132",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q6MP94",
+   "templates": [
+    {
+     "pdb_id": "5WQL",
+     "template_auth_asym_id": "C",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "6IQU",
+     "template_auth_asym_id": "B",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "6IQS",
+     "template_auth_asym_id": "D",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "4QL6",
+     "template_auth_asym_id": "B",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q6MP94-F1-model_v6.cif"
+  },
+  "Q6QWR1": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "52258c6e8ea8f98bd96514d33b9d21fac22035c5e94f52cbedc397cf45bc6062",
+   "sha256": "52258c6e8ea8f98bd96514d33b9d21fac22035c5e94f52cbedc397cf45bc6062",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q6QWR1",
+   "templates": [
+    {
+     "pdb_id": "3PL8",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "1TT0",
+     "template_auth_asym_id": "C",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "2F6C",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "4QI4",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q6QWR1-F1-model_v6.cif"
+  },
+  "Q73NT1": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "154ca91ccc8e046154fed8d9948fe436c3135808f40723d59f78aaf251687b93",
+   "sha256": "154ca91ccc8e046154fed8d9948fe436c3135808f40723d59f78aaf251687b93",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q73NT1",
+   "templates": [
+    {
+     "pdb_id": "1XOC",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "2GRV",
+     "template_auth_asym_id": "C",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "1UQW",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "3ZS6",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q73NT1-F1-model_v6.cif"
+  },
+  "Q8CM25": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "f696e5168d7cb84cd79a1d39697ddb8a6de1ef4402ee1a9e218cdab2a86efca6",
+   "sha256": "f696e5168d7cb84cd79a1d39697ddb8a6de1ef4402ee1a9e218cdab2a86efca6",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q8CM25",
+   "templates": [
+    {
+     "pdb_id": "5V2C",
+     "template_auth_asym_id": "D",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "5B66",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "5V2C",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "6YP7",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q8CM25-F1-model_v6.cif"
+  },
+  "Q8DHA7": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "2ea5215758b9fe826120aca670755a0117b9d9ea389ab6bd82034c151cfdb037",
+   "sha256": "2ea5215758b9fe826120aca670755a0117b9d9ea389ab6bd82034c151cfdb037",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q8DHA7",
+   "templates": [
+    {
+     "pdb_id": "6J3Y",
+     "template_auth_asym_id": "m",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "4YUU",
+     "template_auth_asym_id": "m2",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "6WJ6",
+     "template_auth_asym_id": "M",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "6JLU",
+     "template_auth_asym_id": "M",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q8DHA7-F1-model_v6.cif"
+  },
+  "Q8DHJ2": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "3a7347cbc162b0b9c47bdfef2bde54ed7d71db785316f81a48c15a5dc8d76ecd",
+   "sha256": "3a7347cbc162b0b9c47bdfef2bde54ed7d71db785316f81a48c15a5dc8d76ecd",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q8DHJ2",
+   "templates": [
+    {
+     "pdb_id": "6KAC",
+     "template_auth_asym_id": "z",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "6KAF",
+     "template_auth_asym_id": "Z",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "4YUU",
+     "template_auth_asym_id": "z2",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "6YP7",
+     "template_auth_asym_id": "Z",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q8DHJ2-F1-model_v6.cif"
+  },
+  "Q8DIF8": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "f90dbd3ce00f319852d24d9ee8dc73ba962e66012d9700df6e2983bc221282ea",
+   "sha256": "f90dbd3ce00f319852d24d9ee8dc73ba962e66012d9700df6e2983bc221282ea",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q8DIF8",
+   "templates": [
+    {
+     "pdb_id": "5V2C",
+     "template_auth_asym_id": "C",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "6YP7",
+     "template_auth_asym_id": "C",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "5B66",
+     "template_auth_asym_id": "B",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "5V2C",
+     "template_auth_asym_id": "b",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q8DIF8-F1-model_v6.cif"
+  },
+  "Q8DIN8": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "7e4254b8e39ee283e7004abd29b33ddb69fd5a9e56fc484f3682a256f0129829",
+   "sha256": "7e4254b8e39ee283e7004abd29b33ddb69fd5a9e56fc484f3682a256f0129829",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q8DIN8",
+   "templates": [
+    {
+     "pdb_id": "6YP7",
+     "template_auth_asym_id": "L",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "5H2F",
+     "template_auth_asym_id": "l",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "6T0B",
+     "template_auth_asym_id": "y",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "6T15",
+     "template_auth_asym_id": "l",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q8DIN8-F1-model_v6.cif"
+  },
+  "Q8DIN9": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "a580108e3570da96d8b93b82b2ab1a6ed4b07f09d4c174e54fc1dc5b9707e42f",
+   "sha256": "a580108e3570da96d8b93b82b2ab1a6ed4b07f09d4c174e54fc1dc5b9707e42f",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q8DIN9",
+   "templates": [
+    {
+     "pdb_id": "6KAC",
+     "template_auth_asym_id": "F",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "6KAD",
+     "template_auth_asym_id": "F",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "4YUU",
+     "template_auth_asym_id": "f2",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "3JCU",
+     "template_auth_asym_id": "f",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q8DIN9-F1-model_v6.cif"
+  },
+  "Q8DIP0": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "250318122282adb2a1f51b1c253f3966f0156feaecb06a06bdab14816697d237",
+   "sha256": "250318122282adb2a1f51b1c253f3966f0156feaecb06a06bdab14816697d237",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q8DIP0",
+   "templates": [
+    {
+     "pdb_id": "4YUU",
+     "template_auth_asym_id": "e1",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "6KAC",
+     "template_auth_asym_id": "E",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "6YP7",
+     "template_auth_asym_id": "E",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "6WJ6",
+     "template_auth_asym_id": "E",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q8DIP0-F1-model_v6.cif"
+  },
+  "Q8DIQ1": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "0480fb7acb5a368cfef6e36ff68ca57c8a852e66bb1293f7cc151e870a7bd20a",
+   "sha256": "0480fb7acb5a368cfef6e36ff68ca57c8a852e66bb1293f7cc151e870a7bd20a",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q8DIQ1",
+   "templates": [
+    {
+     "pdb_id": "5V2C",
+     "template_auth_asym_id": "b",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "5B66",
+     "template_auth_asym_id": "B",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "6YP7",
+     "template_auth_asym_id": "B",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "5V2C",
+     "template_auth_asym_id": "C",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q8DIQ1-F1-model_v6.cif"
+  },
+  "Q8DJ43": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "430c134b538b1fb5770221032277ffc58a072c37f192725c37234a2fe67623c2",
+   "sha256": "430c134b538b1fb5770221032277ffc58a072c37f192725c37234a2fe67623c2",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q8DJ43",
+   "templates": [
+    {
+     "pdb_id": "4YUU",
+     "template_auth_asym_id": "h2",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "6KAD",
+     "template_auth_asym_id": "H",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "6KAC",
+     "template_auth_asym_id": "h",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "6JLU",
+     "template_auth_asym_id": "h",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q8DJ43-F1-model_v6.cif"
+  },
+  "Q8DJI1": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "90e36a630bcaa244ab4e58dccb0dd8b7f5731f6cbc85ce6ff871bbca1edf130a",
+   "sha256": "90e36a630bcaa244ab4e58dccb0dd8b7f5731f6cbc85ce6ff871bbca1edf130a",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q8DJI1",
+   "templates": [
+    {
+     "pdb_id": "6J3Y",
+     "template_auth_asym_id": "y",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "6KAC",
+     "template_auth_asym_id": "v",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "6KAD",
+     "template_auth_asym_id": "V",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "4YUU",
+     "template_auth_asym_id": "Y1",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q8DJI1-F1-model_v6.cif"
+  },
+  "Q8DJZ6": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "8876027087f4074862464bc68cab60cc4235e2f190086abbf94303358ec31838",
+   "sha256": "8876027087f4074862464bc68cab60cc4235e2f190086abbf94303358ec31838",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q8DJZ6",
+   "templates": [
+    {
+     "pdb_id": "6KAC",
+     "template_auth_asym_id": "i",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "6YP7",
+     "template_auth_asym_id": "I",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "5OC9",
+     "template_auth_asym_id": "B",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "6R7X",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q8DJZ6-F1-model_v6.cif"
+  },
+  "Q8IYX4": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "49d230d4d709fd9d683507926207d3a009a5e9f04cf5062a3950489379ebf9e0",
+   "sha256": "49d230d4d709fd9d683507926207d3a009a5e9f04cf5062a3950489379ebf9e0",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q8IYX4",
+   "templates": [
+    {
+     "pdb_id": "6Y50",
+     "template_auth_asym_id": "q",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "6Y5Q",
+     "template_auth_asym_id": "q",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "6R5K",
+     "template_auth_asym_id": "H",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "5IFM",
+     "template_auth_asym_id": "B",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q8IYX4-F1-model_v6.cif"
+  },
+  "Q8NFU5": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "5162d7033e2cd479762a9f0fc1500f660c5660ec2adcb6b67ee7c70361e3ebf0",
+   "sha256": "5162d7033e2cd479762a9f0fc1500f660c5660ec2adcb6b67ee7c70361e3ebf0",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q8NFU5",
+   "templates": [
+    {
+     "pdb_id": "5W2I",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "4FRF",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "4O4B",
+     "template_auth_asym_id": "B",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "4O4F",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q8NFU5-F1-model_v6.cif"
+  },
+  "Q8TZG9": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "e02fa52f3bbc9f3e93f8fd49f91a589422a323c0b4bb6370811523f2452a83e1",
+   "sha256": "e02fa52f3bbc9f3e93f8fd49f91a589422a323c0b4bb6370811523f2452a83e1",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q8TZG9",
+   "templates": [
+    {
+     "pdb_id": "1EO1",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "2WFB",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "1T3V",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "1RDU",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q8TZG9-F1-model_v6.cif"
+  },
+  "Q8WLS4": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "31fec7adf161ef0356d92958a6a5620a58ebd00d46f42a0fedaf8a2d977fbe95",
+   "sha256": "31fec7adf161ef0356d92958a6a5620a58ebd00d46f42a0fedaf8a2d977fbe95",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q8WLS4",
+   "templates": [
+    {
+     "pdb_id": "1MHC",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "1K5N",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "4U1M",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "6ENY",
+     "template_auth_asym_id": "F",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q8WLS4-F1-model_v6.cif"
+  },
+  "Q8ZUN8": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "0b9ca148aa6524fc947412988235e4a6ddb3315204cfee158674e4316cc6cc1a",
+   "sha256": "0b9ca148aa6524fc947412988235e4a6ddb3315204cfee158674e4316cc6cc1a",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q8ZUN8",
+   "templates": [
+    {
+     "pdb_id": "3A9G",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "3A9H",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "2WG3",
+     "template_auth_asym_id": "C",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "2G8S",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q8ZUN8-F1-model_v6.cif"
+  },
+  "Q99040": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "b77e9c8e1f7fdc92b3c42219335cff3c17b4842d7c23876f0a916fdd89bb2880",
+   "sha256": "b77e9c8e1f7fdc92b3c42219335cff3c17b4842d7c23876f0a916fdd89bb2880",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q99040",
+   "templates": [
+    {
+     "pdb_id": "4XB3",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "4WLC",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "1UOK",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "4AIE",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q99040-F1-model_v6.cif"
+  },
+  "Q9F0J8": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "04187732b7b0ab13c345433b6e58e78331116a9047b5a382b7e1cd6e167f6480",
+   "sha256": "04187732b7b0ab13c345433b6e58e78331116a9047b5a382b7e1cd6e167f6480",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q9F0J8",
+   "templates": [
+    {
+     "pdb_id": "6H49",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "6H4C",
+     "template_auth_asym_id": "D",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "6H4B",
+     "template_auth_asym_id": "B",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "6H48",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q9F0J8-F1-model_v6.cif"
+  },
+  "Q9F1K9": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "78bd2a506a19666c0cfa0b586d0f61db1ed35615243cb45ee298d161fc6f0a5d",
+   "sha256": "78bd2a506a19666c0cfa0b586d0f61db1ed35615243cb45ee298d161fc6f0a5d",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q9F1K9",
+   "templates": [
+    {
+     "pdb_id": "3JCU",
+     "template_auth_asym_id": "k",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "6J3Y",
+     "template_auth_asym_id": "k",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "4RVY",
+     "template_auth_asym_id": "K",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "5B66",
+     "template_auth_asym_id": "K",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q9F1K9-F1-model_v6.cif"
+  },
+  "Q9F1L5": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "afb75c873e4c8bff06af8c16088659479dbc141bcdc9f8e82a52a0736e41c288",
+   "sha256": "afb75c873e4c8bff06af8c16088659479dbc141bcdc9f8e82a52a0736e41c288",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q9F1L5",
+   "templates": [
+    {
+     "pdb_id": "5V2C",
+     "template_auth_asym_id": "u",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "5B66",
+     "template_auth_asym_id": "u",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "4RVY",
+     "template_auth_asym_id": "U",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "4YUU",
+     "template_auth_asym_id": "u2",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q9F1L5-F1-model_v6.cif"
+  },
+  "Q9F1R6": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "6a978bc803236674e1e802f94ef22d2faf52ab6f04e40f12e7a640e62149f074",
+   "sha256": "6a978bc803236674e1e802f94ef22d2faf52ab6f04e40f12e7a640e62149f074",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q9F1R6",
+   "templates": [
+    {
+     "pdb_id": "1S5L",
+     "template_auth_asym_id": "X",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "4V62",
+     "template_auth_asym_id": "AX",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "5XNL",
+     "template_auth_asym_id": "X",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "3JCU",
+     "template_auth_asym_id": "X",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q9F1R6-F1-model_v6.cif"
+  },
+  "Q9H999": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "4e56bf4f1f6255812a82689df6fe2775b59a5f5b18b26612a3f0a2b60d4e91ee",
+   "sha256": "4e56bf4f1f6255812a82689df6fe2775b59a5f5b18b26612a3f0a2b60d4e91ee",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q9H999",
+   "templates": [
+    {
+     "pdb_id": "5KPR",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "5E26",
+     "template_auth_asym_id": "B",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "6PE6",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "6UJ5",
+     "template_auth_asym_id": "B",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q9H999-F1-model_v6.cif"
+  },
+  "Q9HWK6": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "3d9175c6aa4572cdeca2976594ca4fa3dc57162c285acf166b72f556900cebd9",
+   "sha256": "3d9175c6aa4572cdeca2976594ca4fa3dc57162c285acf166b72f556900cebd9",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q9HWK6",
+   "templates": [
+    {
+     "pdb_id": "4GPG",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "4NSV",
+     "template_auth_asym_id": "B",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "3CP7",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "4IC5",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q9HWK6-F1-model_v6.cif"
+  },
+  "Q9V099": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "43b18f1488466ec9d81035de6d15d358544aa72212b3c904742b96332238af07",
+   "sha256": "43b18f1488466ec9d81035de6d15d358544aa72212b3c904742b96332238af07",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q9V099",
+   "templates": [
+    {
+     "pdb_id": "1IRO",
+     "template_auth_asym_id": "A",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "1R0I",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "1B2O",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "5NW3",
+     "template_auth_asym_id": "A",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q9V099-F1-model_v6.cif"
+  },
+  "Q9XGZ2": {
+   "model_group_name": [
+    "AlphaFold Monomer v2.0 model"
+   ],
+   "non_pdb_template_refs": 0,
+   "raw_name": "5fd61aa65694b597b493aa6679a95db70e240c4b41a703a3db3f26f59319a4af",
+   "sha256": "5fd61aa65694b597b493aa6679a95db70e240c4b41a703a3db3f26f59319a4af",
+   "software": [
+    {
+     "name": "AlphaFold",
+     "version": "v2.0"
+    },
+    {
+     "name": "dssp",
+     "version": "4"
+    }
+   ],
+   "target_db_accession": "Q9XGZ2",
+   "templates": [
+    {
+     "pdb_id": "5GIJ",
+     "template_auth_asym_id": "B",
+     "template_id": "1"
+    },
+    {
+     "pdb_id": "5IXQ",
+     "template_auth_asym_id": "A",
+     "template_id": "2"
+    },
+    {
+     "pdb_id": "5IXO",
+     "template_auth_asym_id": "A",
+     "template_id": "3"
+    },
+    {
+     "pdb_id": "5GR9",
+     "template_auth_asym_id": "B",
+     "template_id": "4"
+    }
+   ],
+   "url": "https://alphafold.ebi.ac.uk/files/AF-Q9XGZ2-F1-model_v6.cif"
+  }
+ },
+ "n_accessions": 138,
+ "schema": "v5-afdb-template-table-v1",
+ "source": "AFDB model files of the e422 census roster (results/e422/raw), selected via the batch 1-4 checkpoint receipts; AlphaFold DB data, CC BY 4.0"
+}

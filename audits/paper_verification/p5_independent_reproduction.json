@@ -1,0 +1,483 @@
+{
+  "excluding_K7PQ54_posthoc": {
+    "accessions_by_stratum": {
+      "no_close_relative": 50,
+      "prior_relative": 87,
+      "unresolved": 0
+    },
+    "levels": {
+      "0.9": {
+        "by_stratum_protein_averaged": {
+          "no_close_relative": {
+            "R": 200,
+            "mcse": 0.005414489020619471,
+            "mean": 0.894334712947157
+          },
+          "prior_relative": {
+            "R": 200,
+            "mcse": 0.00559896393386254,
+            "mean": 0.8793231017814168
+          }
+        },
+        "by_stratum_residue_weighted": {
+          "no_close_relative": {
+            "R": 200,
+            "mcse": 0.007071610334206594,
+            "mean": 0.8729215858871804
+          },
+          "prior_relative": {
+            "R": 200,
+            "mcse": 0.0064926635748017705,
+            "mean": 0.8822011622469104
+          }
+        },
+        "miss_concentration_across_test_predictions": {
+          "K7PQ54_misses": 0,
+          "K7PQ54_share": 0.0,
+          "n_misses": 600701,
+          "n_test_predictions": 5120156,
+          "top_10_accessions_by_miss_count": [
+            {
+              "accession": "Q9HWK6",
+              "misses": 67157,
+              "share_of_misses": 0.1117977163347489
+            },
+            {
+              "accession": "Q6MP94",
+              "misses": 57590,
+              "share_of_misses": 0.09587132367017867
+            },
+            {
+              "accession": "Q5JF22",
+              "misses": 47309,
+              "share_of_misses": 0.07875631969981738
+            },
+            {
+              "accession": "P07342",
+              "misses": 44659,
+              "share_of_misses": 0.07434480715031272
+            },
+            {
+              "accession": "A0A4Q0WMG2",
+              "misses": 29824,
+              "share_of_misses": 0.04964866048167058
+            },
+            {
+              "accession": "Q4Q5L3",
+              "misses": 28581,
+              "share_of_misses": 0.04757941138769538
+            },
+            {
+              "accession": "A7VSG1",
+              "misses": 28455,
+              "share_of_misses": 0.047369656451379305
+            },
+            {
+              "accession": "F6BL85",
+              "misses": 26230,
+              "share_of_misses": 0.04366565063151218
+            },
+            {
+              "accession": "P0A431",
+              "misses": 22354,
+              "share_of_misses": 0.03721318925721782
+            },
+            {
+              "accession": "Q5XJ23",
+              "misses": 21710,
+              "share_of_misses": 0.036141108471602346
+            }
+          ]
+        },
+        "protein_averaged": {
+          "R": 200,
+          "mcse": 0.004909853828358097,
+          "mean": 0.8850122915484576
+        },
+        "residue_weighted": {
+          "R": 200,
+          "mcse": 0.005815574215348277,
+          "mean": 0.8792035673971079
+        }
+      },
+      "0.95": {
+        "by_stratum_protein_averaged": {
+          "no_close_relative": {
+            "R": 200,
+            "mcse": 0.0034368520850275247,
+            "mean": 0.9410965083243862
+          },
+          "prior_relative": {
+            "R": 200,
+            "mcse": 0.003522148699727249,
+            "mean": 0.9363903891488573
+          }
+        },
+        "by_stratum_residue_weighted": {
+          "no_close_relative": {
+            "R": 200,
+            "mcse": 0.0046910684443743035,
+            "mean": 0.9254283068513675
+          },
+          "prior_relative": {
+            "R": 200,
+            "mcse": 0.00391463927994615,
+            "mean": 0.9392400107171235
+          }
+        },
+        "miss_concentration_across_test_predictions": {
+          "K7PQ54_misses": 0,
+          "K7PQ54_share": 0.0,
+          "n_misses": 326908,
+          "n_test_predictions": 5120156,
+          "top_10_accessions_by_miss_count": [
+            {
+              "accession": "Q9HWK6",
+              "misses": 48367,
+              "share_of_misses": 0.14795294088856803
+            },
+            {
+              "accession": "Q5JF22",
+              "misses": 32944,
+              "share_of_misses": 0.10077452983714072
+            },
+            {
+              "accession": "P07342",
+              "misses": 27075,
+              "share_of_misses": 0.08282146658998862
+            },
+            {
+              "accession": "Q6MP94",
+              "misses": 24261,
+              "share_of_misses": 0.0742135402009128
+            },
+            {
+              "accession": "A0A4Q0WMG2",
+              "misses": 19869,
+              "share_of_misses": 0.06077856767041492
+            },
+            {
+              "accession": "A7VSG1",
+              "misses": 18174,
+              "share_of_misses": 0.055593622670598454
+            },
+            {
+              "accession": "F6BL85",
+              "misses": 16318,
+              "share_of_misses": 0.04991618436991447
+            },
+            {
+              "accession": "P0A431",
+              "misses": 14801,
+              "share_of_misses": 0.04527573506919378
+            },
+            {
+              "accession": "C0PF72",
+              "misses": 14446,
+              "share_of_misses": 0.0441898026356039
+            },
+            {
+              "accession": "Q5XJ23",
+              "misses": 12104,
+              "share_of_misses": 0.037025707538512365
+            }
+          ]
+        },
+        "protein_averaged": {
+          "R": 200,
+          "mcse": 0.003090194231539342,
+          "mean": 0.9381983931808568
+        },
+        "residue_weighted": {
+          "R": 200,
+          "mcse": 0.0036299623544182574,
+          "mean": 0.9342073666287075
+        }
+      }
+    },
+    "n_accessions": 137,
+    "n_rows": 100958,
+    "rows_by_stratum": {
+      "no_close_relative": 42154,
+      "prior_relative": 58804,
+      "unresolved": 0
+    }
+  },
+  "exclusion_counts": {},
+  "including_K7PQ54": {
+    "accessions_by_stratum": {
+      "no_close_relative": 51,
+      "prior_relative": 87,
+      "unresolved": 0
+    },
+    "levels": {
+      "0.9": {
+        "by_stratum_protein_averaged": {
+          "no_close_relative": {
+            "R": 200,
+            "mcse": 0.005927655031427632,
+            "mean": 0.9017969217314612
+          },
+          "prior_relative": {
+            "R": 200,
+            "mcse": 0.005458050770611465,
+            "mean": 0.9028650868525895
+          }
+        },
+        "by_stratum_residue_weighted": {
+          "no_close_relative": {
+            "R": 200,
+            "mcse": 0.010509538674748494,
+            "mean": 0.8296491874528807
+          },
+          "prior_relative": {
+            "R": 200,
+            "mcse": 0.005711813239892797,
+            "mean": 0.9049548637014883
+          }
+        },
+        "miss_concentration_across_test_predictions": {
+          "K7PQ54_misses": 489593,
+          "K7PQ54_share": 0.4983576153817183,
+          "n_misses": 982413,
+          "n_test_predictions": 6115703,
+          "top_10_accessions_by_miss_count": [
+            {
+              "accession": "K7PQ54",
+              "misses": 489593,
+              "share_of_misses": 0.4983576153817183
+            },
+            {
+              "accession": "Q9HWK6",
+              "misses": 61556,
+              "share_of_misses": 0.06265796564174131
+            },
+            {
+              "accession": "Q5JF22",
+              "misses": 46217,
+              "share_of_misses": 0.047044369323288676
+            },
+            {
+              "accession": "Q6MP94",
+              "misses": 42622,
+              "share_of_misses": 0.043385012209732565
+            },
+            {
+              "accession": "P07342",
+              "misses": 31366,
+              "share_of_misses": 0.0319275091025872
+            },
+            {
+              "accession": "A0A4Q0WMG2",
+              "misses": 25200,
+              "share_of_misses": 0.025651126359280668
+            },
+            {
+              "accession": "Q4Q5L3",
+              "misses": 23609,
+              "share_of_misses": 0.024031644532391164
+            },
+            {
+              "accession": "A7VSG1",
+              "misses": 22693,
+              "share_of_misses": 0.023099246447268105
+            },
+            {
+              "accession": "F6BL85",
+              "misses": 22114,
+              "share_of_misses": 0.02250988128210844
+            },
+            {
+              "accession": "Q8DIF8",
+              "misses": 18974,
+              "share_of_misses": 0.019313669505594898
+            }
+          ]
+        },
+        "protein_averaged": {
+          "R": 200,
+          "mcse": 0.005066952027086311,
+          "mean": 0.9030778504518053
+        },
+        "residue_weighted": {
+          "R": 200,
+          "mcse": 0.008005419959574041,
+          "mean": 0.8580359689396587
+        }
+      },
+      "0.95": {
+        "by_stratum_protein_averaged": {
+          "no_close_relative": {
+            "R": 200,
+            "mcse": 0.003809572085846806,
+            "mean": 0.9441207716863118
+          },
+          "prior_relative": {
+            "R": 200,
+            "mcse": 0.003573235108462521,
+            "mean": 0.9488577757917217
+          }
+        },
+        "by_stratum_residue_weighted": {
+          "no_close_relative": {
+            "R": 200,
+            "mcse": 0.007517825532706102,
+            "mean": 0.8937138704225904
+          },
+          "prior_relative": {
+            "R": 200,
+            "mcse": 0.00374030006991692,
+            "mean": 0.9505538993288418
+          }
+        },
+        "miss_concentration_across_test_predictions": {
+          "K7PQ54_misses": 332152,
+          "K7PQ54_share": 0.5568376706001874,
+          "n_misses": 596497,
+          "n_test_predictions": 6115703,
+          "top_10_accessions_by_miss_count": [
+            {
+              "accession": "K7PQ54",
+              "misses": 332152,
+              "share_of_misses": 0.5568376706001874
+            },
+            {
+              "accession": "Q9HWK6",
+              "misses": 42426,
+              "share_of_misses": 0.07112525293505248
+            },
+            {
+              "accession": "Q5JF22",
+              "misses": 30908,
+              "share_of_misses": 0.05181585154661297
+            },
+            {
+              "accession": "P07342",
+              "misses": 18620,
+              "share_of_misses": 0.031215580296296546
+            },
+            {
+              "accession": "Q6MP94",
+              "misses": 16237,
+              "share_of_misses": 0.027220589541942373
+            },
+            {
+              "accession": "A0A4Q0WMG2",
+              "misses": 16164,
+              "share_of_misses": 0.027098208373218975
+            },
+            {
+              "accession": "A7VSG1",
+              "misses": 13896,
+              "share_of_misses": 0.023296009870963308
+            },
+            {
+              "accession": "F6BL85",
+              "misses": 13652,
+              "share_of_misses": 0.02288695500564127
+            },
+            {
+              "accession": "C0PF72",
+              "misses": 12719,
+              "share_of_misses": 0.021322823082094294
+            },
+            {
+              "accession": "Q4Q5L3",
+              "misses": 9330,
+              "share_of_misses": 0.015641319235469752
+            }
+          ]
+        },
+        "protein_averaged": {
+          "R": 200,
+          "mcse": 0.0033135481514864544,
+          "mean": 0.9475263960590351
+        },
+        "residue_weighted": {
+          "R": 200,
+          "mcse": 0.005714810731495711,
+          "mean": 0.9152764843176768
+        }
+      }
+    },
+    "mechanism_K7PQ54": {
+      "calibration": {
+        "mean_half_width": 0.8257386363636364,
+        "mean_other_test_protein_coverage": 0.9723520756799112,
+        "n_repeats": 44
+      },
+      "test": {
+        "mean_half_width": 0.7084991228070174,
+        "mean_other_test_protein_coverage": 0.881833727944844,
+        "n_repeats": 57
+      },
+      "train": {
+        "mean_half_width": 0.6884893939393939,
+        "mean_other_test_protein_coverage": 0.8909144726824755,
+        "n_repeats": 99
+      }
+    },
+    "n_accessions": 138,
+    "n_rows": 117905,
+    "rows_by_stratum": {
+      "no_close_relative": 59101,
+      "prior_relative": 58804,
+      "unresolved": 0
+    }
+  },
+  "inputs": [
+    {
+      "batch_index": 1,
+      "n_rows": 0,
+      "path": "/home/dineshai/Drives/Code/AllCode/moluq/results/e422/batches/e422_batch01_checkpoint.json",
+      "sha256": "526fd4c54603ae128a2b6313a09c10c7a18e5f5699af3a3d7fc46bfb81c5d029"
+    },
+    {
+      "batch_index": 2,
+      "n_rows": 29054,
+      "path": "/home/dineshai/Drives/Code/AllCode/moluq/results/e422/batches/e422_batch02_checkpoint.json",
+      "sha256": "08cc71203d3830813f5b096e27a73e6d1e53cfc1776b20a0a04cb95c772a4aea"
+    },
+    {
+      "batch_index": 3,
+      "n_rows": 45405,
+      "path": "/home/dineshai/Drives/Code/AllCode/moluq/results/e422/batches/e422_batch03_checkpoint.json",
+      "sha256": "b31e0ad5a00ea6e12c8c809d51f59e5eba75966f3dd8f38f42b61f51b6d61c3c"
+    },
+    {
+      "batch_index": 4,
+      "n_rows": 43446,
+      "path": "/home/dineshai/Drives/Code/AllCode/moluq/results/e422/batches/e422_batch04_checkpoint.json",
+      "sha256": "a08e538db7dd54f2a046f2bbc7ed3c9f37e6c2e1ba2c30f42403aa66f6fa934b"
+    },
+    {
+      "path": "/home/dineshai/Drives/Code/AllCode/moluq/paper/arxiv/verification/out/v2_prior_exposure.json",
+      "sha256": "19fcabc7a36bc73f02fa5be0f963e53cc84cdc702c80285c7ad7fe88878ce720"
+    },
+    {
+      "path": "/home/dineshai/Drives/Code/AllCode/moluq/results/e422/evals/e422_batch04_evaluation.json",
+      "sha256": "b3df60bb07b8106d0fce00185d31cf15ba850bd6790e4c7b72362164e82ef9ce"
+    }
+  ],
+  "method": {
+    "interval": "training median lDDT; absolute calibration residual; ceil((n_cal_rows+1)*(1-alpha)) order statistic; inclusive coverage",
+    "mcse": "sample standard deviation across 200 repeat statistics divided by sqrt(R)",
+    "no_p6_p7": "only the pooled interval was computed; no per-bin conditional coverage and no Mondrian/CQR comparison",
+    "numpy_version": "1.26.4",
+    "registration": "docs/e422_registration.md \u00a73A.1",
+    "split": "sorted eligible accessions; default_rng(seed).permutation(n); floor-half train, floor-half-of-remainder calibration, remainder test; seeds 0..199",
+    "strata": "prior_relative = SAME_ACCESSION or SEQ95; no_close_relative = SEQ30 or NOVEL; strata are descriptive"
+  },
+  "registered_evaluation_comparison": {
+    "0.9": {
+      "registered_mcse": 0.008006620040853207,
+      "registered_mean_coverage": 0.8579652901901389,
+      "registered_n_repeats": 200
+    },
+    "0.95": {
+      "registered_mcse": 0.005718436143400944,
+      "registered_mean_coverage": 0.9151961367793325,
+      "registered_n_repeats": 200
+    }
+  }
+}

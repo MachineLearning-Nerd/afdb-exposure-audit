@@ -1,0 +1,98 @@
+{
+ "batches": {
+  "2": {
+   "corrected_manifest_sha_equal": true,
+   "corrected_mapping_failures": 10,
+   "corrected_n_rows": 31868,
+   "corrected_sha256": "dfd3629e1cd43254a7a7e6eeb4d4bdc59c10cda1cf93587bc2d829ea3919d614",
+   "corrected_triple_failures": {
+    "E422_ABSENT_FROM_SNAPSHOT": 163,
+    "E422_INSUFFICIENT_ALIGNED": 4,
+    "E422_REF_INSUFFICIENT_CA": 1
+   },
+   "original_mapping_failures": 10,
+   "original_n_rows": 29054,
+   "original_sha256": "312d9ab0412ce9c141b1de28d405a77bf6e29fd7a2cbbac950425e46c996c303",
+   "original_triple_failures": {
+    "E422_ABSENT_FROM_SNAPSHOT": 158,
+    "E422_INSUFFICIENT_ALIGNED": 5,
+    "E422_REF_INSUFFICIENT_CA": 1
+   },
+   "receipts_unconsumed_corrected": 0,
+   "self_check": {
+    "all_receipts_consumed": true,
+    "census_entries_equal": true,
+    "entries_with_mappings_equal": true,
+    "exclusions_equal": true,
+    "manifest_admitted_new_equal": true,
+    "manifest_checkpoint_sha256_equal": true,
+    "rows_equal": true,
+    "verified_accessions_equal": true
+   }
+  },
+  "3": {
+   "corrected_manifest_sha_equal": true,
+   "corrected_mapping_failures": 18,
+   "corrected_n_rows": 45903,
+   "corrected_sha256": "bc2589d3daff392c5d6829ec6524cc8a04b3d17167c4040bb52f382ba622dc12",
+   "corrected_triple_failures": {
+    "E422_ABSENT_FROM_SNAPSHOT": 83,
+    "E422_INSUFFICIENT_ALIGNED": 1,
+    "E422_REF_CIF_FETCH_FAILED": 8,
+    "E422_REF_INSUFFICIENT_CA": 11
+   },
+   "original_mapping_failures": 19,
+   "original_n_rows": 45405,
+   "original_sha256": "c356084fee3ef300e08aeee2f355d4ecaf905f2b7358b647a9001bae7a5238f1",
+   "original_triple_failures": {
+    "E422_ABSENT_FROM_SNAPSHOT": 83,
+    "E422_INSUFFICIENT_ALIGNED": 2,
+    "E422_REF_INSUFFICIENT_CA": 11
+   },
+   "receipts_unconsumed_corrected": 0,
+   "self_check": {
+    "all_receipts_consumed": true,
+    "census_entries_equal": true,
+    "entries_with_mappings_equal": true,
+    "exclusions_equal": true,
+    "manifest_admitted_new_equal": true,
+    "manifest_checkpoint_sha256_equal": true,
+    "rows_equal": true,
+    "verified_accessions_equal": true
+   }
+  },
+  "4": {
+   "corrected_manifest_sha_equal": true,
+   "corrected_mapping_failures": 16,
+   "corrected_n_rows": 45683,
+   "corrected_sha256": "cfeff7e87284699e83cd4a33b5fc619a173ffc4283012b9b2c5f06bed613d5dd",
+   "corrected_triple_failures": {
+    "E422_ABSENT_FROM_SNAPSHOT": 66,
+    "E422_REF_INSUFFICIENT_CA": 5
+   },
+   "original_mapping_failures": 16,
+   "original_n_rows": 43446,
+   "original_sha256": "d860ab55305f249f0124be7e562ccbea72650df24709834ec098c4d668354b5b",
+   "original_triple_failures": {
+    "E422_ABSENT_FROM_SNAPSHOT": 64,
+    "E422_INSUFFICIENT_ALIGNED": 2,
+    "E422_REF_INSUFFICIENT_CA": 5
+   },
+   "receipts_unconsumed_corrected": 0,
+   "self_check": {
+    "all_receipts_consumed": true,
+    "census_entries_equal": true,
+    "entries_with_mappings_equal": true,
+    "exclusions_equal": true,
+    "manifest_admitted_new_equal": true,
+    "manifest_checkpoint_sha256_equal": true,
+    "rows_equal": true,
+    "verified_accessions_equal": true
+   }
+  }
+ },
+ "replay_utc": "2026-10-07T15:36:02.342271+00:00",
+ "schema": "e427-replay-report-v1",
+ "t0_utc": "2026-09-11T00:00:00Z",
+ "verdict": "OK"
+}

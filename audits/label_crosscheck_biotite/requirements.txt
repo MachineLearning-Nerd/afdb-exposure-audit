@@ -1,0 +1,3 @@
+# Separate environment for audits/label_crosscheck_biotite (Python 3.12). Network is needed for
+# fetch_updated_mmcif.py (PDBe updated mmCIF) and data/fetch/fetch_raw.py --set e422 (census source bytes).
+biotite==1.7.1

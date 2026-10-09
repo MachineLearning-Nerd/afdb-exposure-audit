@@ -22,12 +22,16 @@ not included.
   OpenTimestamps-stamped, the exact stamped version was recovered from git
   history (commit shown) and shipped next to its proof. The `.ots` files were
   renamed where needed so that `ots verify X.ots` finds `X`; `.ots` bytes are
-  unchanged.
-- **Subsets.** Only RCSB Search/Data API records (CC0) were copied from the
-  request-keyed HTTP caches (`data/paper_verification/http`: 897 of 1,096;
-  `paper/arxiv/verification/cache/v2c/http`: 111 of 136); UniProt and PDBe
-  responses were left out (re-fetched live). The V5 template-lookup cache was
-  left out. 1,008 cache files were copied, all byte-identical.
+  those of the source (19 proofs were later replaced by their upgraded
+  versions; see "Final paper" below).
+- **Request caches.** The request-keyed HTTP caches are copied in full, all
+  files byte-identical: `data/paper_verification/http` (1,096: 897 RCSB,
+  199 UniProt FASTA), `paper/arxiv/verification/cache/v2c/http` (136: 111
+  RCSB, 25 UniProt) and `paper/arxiv/verification/cache/v5/http` (815: 403
+  PDBe SIFTS mapping, 412 RCSB entry responses; 8.3 MB). The first release
+  shipped only the 1,008 RCSB files; the 224 UniProt and 815 V5 files were
+  added in the revision below. The V5 run logs in the source cache directory
+  are not copied.
 - **Withheld.** The batch-4 evaluation artifacts are replaced by the
   key-selected extract `data/derived/p5_batch04_outcomes.json` (see README).
 
@@ -39,7 +43,94 @@ fetched from creativecommons.org), `CITATION.cff`, `requirements.txt`,
 `code/reproduce_p5.py`, `code/paper_numbers.py`, `code/tools/make_workroot.py`,
 `code/tools/extract_p5_outcomes.py`, `data/fetch/fetch_raw.py`,
 `data/fetch/README.md`, `data/derived/p5_batch04_outcomes.json` (output of
-`extract_p5_outcomes.py`).
+`extract_p5_outcomes.py`), `audits/README.md`.
+
+## Revision of 2026-10-09 (after three independent code reviews)
+
+No registered, frozen or historical file was edited; all changes are new
+files or files written for this release.
+
+- `code/paper_numbers.py` rewritten: 160 checks, each labelled RECOMPUTED
+  (114), RECONCILED (34) or RE-READ (12); recomputation from row- and
+  request-level data instead of re-reading stored outputs; no silent skips
+  (the number of checks is asserted; missing inputs exit with status 2).
+- `code/reproduce_p5.py`: verifies the ledger checkpoints' canonical digests
+  and `MANIFEST.sha256` entries before computing; compares mean, MCSE and
+  threshold with the registered evaluator at 1e-12; explicit exit codes
+  instead of `assert`.
+- New: `code/tools/extract_v5_template_table.py` and its output
+  `data/derived/paper/arxiv/verification/v5_afdb_template_table.json` (the
+  template list, software and target of the 138 AFDB model files read by V5;
+  the model files themselves, 38.6 MB, are still re-fetched).
+- New: the UniProt and V5 cache files listed under "Request caches".
+- `audits/census_correction/` and `audits/paper_verification/` (27 files)
+  are byte-identical copies of the source repository's `results/e427/audit/`
+  and `paper/arxiv/verification/audit/` files of the same names (checked
+  2026-10-09; digests in `MANIFEST.sha256`); they were present in the first
+  release's working tree but not listed here.
+- New: `audits/label_crosscheck_biotite/` (biotite cross-check of the
+  corrected labels: scripts, outputs, the SHA-256 of the PDBe updated mmCIF
+  files used, README).
+- Documentation: `README.md` (title, paper_numbers classes, V3/V6 usage,
+  paths, blinding scope), `audits/README.md` (per-script table, boundary
+  convention, verify_digests warning), `data/fetch/README.md`, `CITATION.cff`
+  (title).
+- Not changed, documented instead: `code/verification/v1_channel_recount.py`
+  relies on the label-run receipt having `ledger_rows == 0`; it is kept
+  byte-identical and `code/paper_numbers.py` checks the condition.
+
+## Revision of 2026-10-09 (final paper)
+
+No registered, frozen or historical file was edited.
+
+- **OpenTimestamps proofs upgraded.** All `.ots` proofs of the source
+  repository were upgraded with `ots upgrade` on 2026-10-09 (source commit
+  `c261d0fe`), which adds Bitcoin block-header attestations; the stamped file
+  digest recorded in every proof is unchanged (checked with `ots info` against
+  the first-release proofs). The 19 proofs below were shipped in their
+  pre-upgrade form and are now replaced by the upgraded source files, so their
+  own SHA-256 differ from those of the first release; the table gives the new
+  values. Every shipped `.ots` (36, including the two in
+  `audits/census_correction/`) now carries at least one Bitcoin attestation
+  and is byte-identical to the source at `c261d0fe`. First-release
+  (pre-upgrade) SHA-256:
+  - `data/derived/results/e427/batches/e422_batch02_checkpoint.json.ots`: `89af19f07d8f27b7e4ff654a1cb5733875a5bba6b0051cf58a3325f3c3eb270f`
+  - `data/derived/results/e427/batches/e422_batch03_checkpoint.json.ots`: `743e5a37c95c68082235306068d45b487ac21cf0eeb99f0f3fb46eb6039807fe`
+  - `data/derived/results/e427/batches/e422_batch04_checkpoint.json.ots`: `a4ffa7de3979501755edb1b7c6559cc4bf8af753036fc3472f3f3c2691043f63`
+  - `data/derived/results/e427/batches/e422_binding_state.json.ots`: `c47e63e29012affc1a62459b5301fc2e6bcc95ed0003962d446fc77101deb63d`
+  - `data/derived/results/e427/e421_relabel/census_results.json.ots`: `89c4cd8547ac8628726011f80ae5932fc627dca000f1ebc865cf1876e4549667`
+  - `data/derived/results/e427/e421_relabel/receipts.json.ots`: `16cd3e5cd2be5c6595fcaca20f66a937147aff4d0e1dce8ac7cf0015d35f9098`
+  - `data/derived/results/e427/e421_relabel/summary.json.ots`: `6b00aac4f1ccf88df7fcb935f698b84ee9186e4a964ec25939e3e274fe9b0e0d`
+  - `data/derived/results/e427/evals/e422_batch04_evaluation.json.ots`: `026e927c93d35dabd66dec56abcfae11669b754008e6c590c918d4586ea7aac6`
+  - `data/derived/results/e427/evals/e422_batch04_execution_receipt.json.ots`: `91c505d27845e0845b4e18303d94620261a285eba1179a169a95efa9963836ef`
+  - `data/derived/results/e427/replay_report.json.ots`: `af3fdbc691b10ba68fa30b79f6a70f64d142929a047870fd6885d61fed132a29`
+  - `registrations/e421_post_run_checkpoint_v2.json.ots`: `e092fabfab3e0e11b1e3a7a8fc33f3abccf3a6990fa2f1fdfc90a0b0d225219c`
+  - `registrations/e421_post_run_checkpoint_v3.json.ots`: `8bcac02f528056f94861b76d1049ffcd327c2948a3f65df4e65c961253c95483`
+  - `registrations/e421_pre_source_checkpoint.json.ots`: `32fbee6f98d4187fd88cf4facab5670b5de78d9fda6e549b56960e0bc10cfb9b`
+  - `registrations/e422_correction_of_record_20261007.md.ots`: `6a0bd15350e734257cf1c70f13f82b1397a0c3d285616b1879dfb95ded1ac43d`
+  - `registrations/e427_registration.md.ots`: `6839a50ee30171e005fd1cf11649f79096592b978a8d7b0cd8456887d3e853ae`
+  - `registrations/stamped_versions/e422_correction_of_record_20261007_add20261008.md.ots`: `1bd59f18d92ea56598c8ae4dd31dbd354c580a169386485121caf7b2e37c7146`
+  - `registrations/stamped_versions/e422_correction_of_record_20261007_add20261009a.md.ots`: `74cc1b8a07a019718d4618495a0d641116df1882f8a894408f963c8e929bce64`
+  - `registrations/verification/REGISTRATION_A3_24a51a94.md.ots`: `36c7c8f90e2421a9c2424b0559d33d304461a4a36bbde1106c014a2a95f4d919`
+  - `registrations/verification/REGISTRATION_A4_de0e7a32.md.ots`: `05070eb34657eb2a2040797e902c39dceff3012c090dbb602ad6c365483b1387`
+- **Final paper.** `paper/temporal_leakage.tex` and `paper/references.bib`
+  replaced by the final versions (source working tree, 2026-10-09; not yet
+  committed there); new `paper/figures/rev4/f1_mechanism.pdf`,
+  `paper/figures/rev4/f2_scope.pdf` and `code/verification/make_figures_rev4.py`
+  (styling-only revision of `make_figures_rev3.py`, kept alongside it; run in
+  a work root it reproduces `figures_rev3_numbers.json` byte-for-byte and the
+  two PDFs pixel-identically at 150 dpi, only `/CreationDate` differing).
+  `paper/temporal_leakage_paper.pdf` is built here from the tex with tectonic
+  (no undefined references, no overfull boxes).
+- `code/paper_numbers.py`: 208 checks (RECOMPUTED 147, RECONCILED 43,
+  RE-READ 18), covering every quantitative statement of the final paper
+  except the dates and design parameters listed in the README.
+- New: `code/tools/extract_e421_model_table.py` and its output
+  `data/derived/results/e427/e421_relabel/afdb_model_table.json` (model
+  type, software and SHA-256 of the 93 AFDB model files downloaded by the
+  post-2022 relabel; no coordinates or pLDDT).
+- `.gitignore`: exception so that `audits/label_crosscheck_biotite/full_ledger_out.log`
+  is shipped.
 
 ## Copied files
 
@@ -94,6 +185,7 @@ earlier stamped version was recovered.
 | `code/tests/test_e426_attested_empty.py` | `tests/test_e426_attested_empty.py` | `72f0f0517a0538259992895d8ca0bb83a09a63d7a457f58ca5e3a31818945b8b` | identical | = HEAD |
 | `code/tests/test_e427_label_repair.py` | `tests/test_e427_label_repair.py` | `addbddc45e390b698eefbe20c1bcac69bf0d1bf0bf7a298bf14eb1456b96d382` | identical | = HEAD |
 | `code/verification/make_figures_rev3.py` | `paper/arxiv/verification/make_figures_rev3.py` | `651001efc3932396a90388f311883adc5459313b5a8137e4d1517d0569e0075f` | identical | = HEAD |
+| `code/verification/make_figures_rev4.py` | `paper/arxiv/verification/make_figures_rev4.py` | `ed56281438d6f58a90b641ec4fd54ba5a2bc114bdfb616a70b45336fdf5eee4f` | identical | not tracked |
 | `code/verification/v1_channel_recount.py` | `paper/arxiv/verification/v1_channel_recount.py` | `06ee861947492e424bb7863d1c0a148a0c1c074b0490ac4f3702772c08555655` | identical | = HEAD |
 | `code/verification/v2_prior_exposure.py` | `paper/arxiv/verification/v2_prior_exposure.py` | `4c8359e422a4be33e4051c452784b39ec603fd775e886929afe2477cfc25d33f` | identical | = HEAD |
 | `code/verification/v2c_coverage_extension.py` | `paper/arxiv/verification/v2c_coverage_extension.py` | `3a44267d22ee28f84d71a526365400d0da279d2dab22a8913898e655390de3d5` | identical | = HEAD |
@@ -148,49 +240,51 @@ earlier stamped version was recovered.
 | `data/derived/results/e427/batches/e422_batch01_checkpoint.json` | `results/e427/batches/e422_batch01_checkpoint.json` | `526fd4c54603ae128a2b6313a09c10c7a18e5f5699af3a3d7fc46bfb81c5d029` | identical | = HEAD |
 | `data/derived/results/e427/batches/e422_batch01_freeze.json` | `results/e427/batches/e422_batch01_freeze.json` | `bf46fee816e41ab68457fc06a84eb96a6abccd87d940a7ca7a40ccec3f028011` | identical | = HEAD |
 | `data/derived/results/e427/batches/e422_batch02_checkpoint.json` | `results/e427/batches/e422_batch02_checkpoint.json` | `98b5ccb8af4e7899f665d703d1f55f75cda3d2387391a92199e9817881548935` | identical | = HEAD |
-| `data/derived/results/e427/batches/e422_batch02_checkpoint.json.ots` | `results/e427/batches/e422_batch02_checkpoint.json.ots` | `89af19f07d8f27b7e4ff654a1cb5733875a5bba6b0051cf58a3325f3c3eb270f` | identical | = HEAD |
+| `data/derived/results/e427/batches/e422_batch02_checkpoint.json.ots` | `results/e427/batches/e422_batch02_checkpoint.json.ots` | `fe768b09d8e92e1a138f24372409216c47791b4a9e7314d2026972a7b5390470` | identical | = `c261d0fe` (upgraded proof; first-release SHA-256 below) |
 | `data/derived/results/e427/batches/e422_batch02_freeze.json` | `results/e427/batches/e422_batch02_freeze.json` | `c96a2b8b88bc2fde46375227b71a02ddb344bf5797242abcc83f59429d52c03b` | identical | = HEAD |
 | `data/derived/results/e427/batches/e422_batch03_checkpoint.json` | `results/e427/batches/e422_batch03_checkpoint.json` | `7153a7f69b7cbd3d4c894b9a9638ef3e28d9c7dea3979960fc0b4bd189f8c8d3` | identical | = HEAD |
-| `data/derived/results/e427/batches/e422_batch03_checkpoint.json.ots` | `results/e427/batches/e422_batch03_checkpoint.json.ots` | `743e5a37c95c68082235306068d45b487ac21cf0eeb99f0f3fb46eb6039807fe` | identical | = HEAD |
+| `data/derived/results/e427/batches/e422_batch03_checkpoint.json.ots` | `results/e427/batches/e422_batch03_checkpoint.json.ots` | `d043a907b64be669ed977c188aa6d99946f02638f9d1da582853617cdb557a90` | identical | = `c261d0fe` (upgraded proof; first-release SHA-256 below) |
 | `data/derived/results/e427/batches/e422_batch03_freeze.json` | `results/e427/batches/e422_batch03_freeze.json` | `654e5b78a5d66290239cef2957fa7b02dca915db25acad3a0a42c28ea50abf48` | identical | = HEAD |
 | `data/derived/results/e427/batches/e422_batch04_checkpoint.json` | `results/e427/batches/e422_batch04_checkpoint.json` | `2a2810a02d9b5a14ac70bebe5a92462353da81b229b875971ff68ec7720330d8` | identical | = HEAD |
-| `data/derived/results/e427/batches/e422_batch04_checkpoint.json.ots` | `results/e427/batches/e422_batch04_checkpoint.json.ots` | `a4ffa7de3979501755edb1b7c6559cc4bf8af753036fc3472f3f3c2691043f63` | identical | = HEAD |
+| `data/derived/results/e427/batches/e422_batch04_checkpoint.json.ots` | `results/e427/batches/e422_batch04_checkpoint.json.ots` | `31e1637d9a4b1e12d150f43eae074bb09a1e687f8f0cc3d029c933c466ff5a9b` | identical | = `c261d0fe` (upgraded proof; first-release SHA-256 below) |
 | `data/derived/results/e427/batches/e422_batch04_freeze.json` | `results/e427/batches/e422_batch04_freeze.json` | `5dbe67e1a15678e22ffb5545e2f52251c140c7e022de6002f88d1628c9f5775b` | identical | = HEAD |
 | `data/derived/results/e427/batches/e422_binding_state.json` | `results/e427/batches/e422_binding_state.json` | `f023cdbd2c5cf351cdde05f9e9e690a9115b0806f362338d209e34db99189c6f` | identical | = HEAD |
-| `data/derived/results/e427/batches/e422_binding_state.json.ots` | `results/e427/batches/e422_binding_state.json.ots` | `c47e63e29012affc1a62459b5301fc2e6bcc95ed0003962d446fc77101deb63d` | identical | = HEAD |
+| `data/derived/results/e427/batches/e422_binding_state.json.ots` | `results/e427/batches/e422_binding_state.json.ots` | `75740a8616f8cb329739660809bc2b31ae96444818fff2bc875a0cfe22ab161d` | identical | = `c261d0fe` (upgraded proof; first-release SHA-256 below) |
 | `data/derived/results/e427/e421_relabel/census_results.json` | `results/e427/e421_relabel/census_results.json` | `7cec7709b0fd97d44193835e72ae6abe4d36a6886dd9bf0d619889c21c1d47db` | identical | = HEAD |
-| `data/derived/results/e427/e421_relabel/census_results.json.ots` | `results/e427/e421_relabel/census_results.json.ots` | `89c4cd8547ac8628726011f80ae5932fc627dca000f1ebc865cf1876e4549667` | identical | = HEAD |
+| `data/derived/results/e427/e421_relabel/census_results.json.ots` | `results/e427/e421_relabel/census_results.json.ots` | `a3fa82eb27f28741ca57c0ae3da66f446acbe03f1b4887c788faafe60670a917` | identical | = `c261d0fe` (upgraded proof; first-release SHA-256 below) |
 | `data/derived/results/e427/e421_relabel/receipts.json` | `results/e427/e421_relabel/receipts.json` | `253545ebf225190f16c8eddb188be58ebc028f32c3e569a2593942a03f9e2990` | identical | = HEAD |
-| `data/derived/results/e427/e421_relabel/receipts.json.ots` | `results/e427/e421_relabel/receipts.json.ots` | `16cd3e5cd2be5c6595fcaca20f66a937147aff4d0e1dce8ac7cf0015d35f9098` | identical | = HEAD |
+| `data/derived/results/e427/e421_relabel/receipts.json.ots` | `results/e427/e421_relabel/receipts.json.ots` | `39c47fbc6e18fd3260c1d761ca69893d7f57296b30fe94b736b229d1b272bab5` | identical | = `c261d0fe` (upgraded proof; first-release SHA-256 below) |
 | `data/derived/results/e427/e421_relabel/summary.json` | `results/e427/e421_relabel/summary.json` | `4aac0678f21057391597319675a6950111f4c1bf89eb60c87546154e4a06d511` | identical | = HEAD |
-| `data/derived/results/e427/e421_relabel/summary.json.ots` | `results/e427/e421_relabel/summary.json.ots` | `6b00aac4f1ccf88df7fcb935f698b84ee9186e4a964ec25939e3e274fe9b0e0d` | identical | = HEAD |
-| `data/derived/results/e427/evals/e422_batch04_evaluation.json.ots` | `results/e427/evals/e422_batch04_evaluation.json.ots` | `026e927c93d35dabd66dec56abcfae11669b754008e6c590c918d4586ea7aac6` | identical | = HEAD |
+| `data/derived/results/e427/e421_relabel/summary.json.ots` | `results/e427/e421_relabel/summary.json.ots` | `2721f8ce54b80589e3a63ef7b675297b22703428079242c0fc630fcc8ae48297` | identical | = `c261d0fe` (upgraded proof; first-release SHA-256 below) |
+| `data/derived/results/e427/evals/e422_batch04_evaluation.json.ots` | `results/e427/evals/e422_batch04_evaluation.json.ots` | `1e1470b3bb2e5223ed8c9fbd3c1f72a14006c690adaa397be0af6d8dbf678c0d` | identical | = `c261d0fe` (upgraded proof; first-release SHA-256 below) |
 | `data/derived/results/e427/evals/e422_batch04_execution_receipt.json` | `results/e427/evals/e422_batch04_execution_receipt.json` | `766f4c1f8a72ed2e89d275aea17ef22e49ec4419e3c137c3db4bb1e54587d198` | identical | = HEAD |
-| `data/derived/results/e427/evals/e422_batch04_execution_receipt.json.ots` | `results/e427/evals/e422_batch04_execution_receipt.json.ots` | `91c505d27845e0845b4e18303d94620261a285eba1179a169a95efa9963836ef` | identical | = HEAD |
+| `data/derived/results/e427/evals/e422_batch04_execution_receipt.json.ots` | `results/e427/evals/e422_batch04_execution_receipt.json.ots` | `7eccd0a6a7aca34dcdd40ee1d29029f6962c214a16223edb9e8fc2dd51481b0b` | identical | = `c261d0fe` (upgraded proof; first-release SHA-256 below) |
 | `data/derived/results/e427/replay_report.json` | `results/e427/replay_report.json` | `f9b540026b35abc9d271b7121d8017259f58f0d44148d44aae9c36dd15f779bc` | identical | = HEAD |
-| `data/derived/results/e427/replay_report.json.ots` | `results/e427/replay_report.json.ots` | `af3fdbc691b10ba68fa30b79f6a70f64d142929a047870fd6885d61fed132a29` | identical | = HEAD |
+| `data/derived/results/e427/replay_report.json.ots` | `results/e427/replay_report.json.ots` | `3dc53768674d73ae604d1b98f93602287ae9a162d55450233c9081f62a18a23e` | identical | = `c261d0fe` (upgraded proof; first-release SHA-256 below) |
 | `data/derived/results/e427_repair/offline_relabel_comparison.json` | `results/e427_repair/offline_relabel_comparison.json` | `ff969c4f37115f6d5325cfe539d1a2f59551d979ee900622f296b1886e24186a` | identical | = HEAD |
 | `data/derived/results/e427_repair/repaired_rows_batches01-04.json.gz` | `results/e427_repair/repaired_rows_batches01-04.json.gz` | `712dedc48e49ddd2bb27c28231ff107e84938d69febb96bdf761e1801034f1fd` | identical | = HEAD |
 | `paper/figures/rev3/f1_mechanism.pdf` | `paper/arxiv/figures/rev3/f1_mechanism.pdf` | `e3d67e95069094ba1463b1b587ada0459d3183181f11f9ec4ed7ac47e9092139` | identical | = HEAD |
 | `paper/figures/rev3/f2_scope.pdf` | `paper/arxiv/figures/rev3/f2_scope.pdf` | `5c9cf2552ecb46a42beb670c60a27c721fe70e897fbfab35a2a22083ea4ea305` | identical | = HEAD |
 | `paper/figures/rev3/f3_exposure.pdf` | `paper/arxiv/figures/rev3/f3_exposure.pdf` | `75d3a20a57a16c36f87d49019068b3b71b86c0fbd245f2e2eb105479f87dd403` | identical | = HEAD |
-| `paper/references.bib` | `paper/arxiv/references.bib` | `c5d889c71c88a45781e51fb5cf5c958175970d2a812e2cd7c839305d2d644f60` | identical | = HEAD |
-| `paper/temporal_leakage.tex` | `paper/arxiv/temporal_leakage.tex` | `4852ac98a2ae275f45a0ff3c2cfa9e20aa7f278378d1fafe0fe3191255978758` | identical | = HEAD |
-| `paper/temporal_leakage_paper.pdf` | `paper/arxiv/temporal_leakage_paper.pdf` | `3a5f5bbd540911edbc7eeeaa6647ea5b75ae8acbd8516cab8e87d3503773f28a` | identical | = HEAD |
+| `paper/figures/rev4/f1_mechanism.pdf` | `paper/arxiv/figures/rev4/f1_mechanism.pdf` | `3b2b9b62e881c21fc025d6fc0c6872ca5b702ac3ac75314c63b461d17103ed1c` | identical | not tracked |
+| `paper/figures/rev4/f2_scope.pdf` | `paper/arxiv/figures/rev4/f2_scope.pdf` | `f12520c1a2a87cfcdddbf6375c8bbf61cca6648d26a688420592c5f80fef95a0` | identical | not tracked |
+| `paper/references.bib` | `paper/arxiv/references.bib` | `09aa2864adcd3850d97e5608ff3a5825c7406c2d3be2b30e459e0140a8899a61` | identical | final version, working tree 2026-10-09 (not committed) |
+| `paper/temporal_leakage.tex` | `paper/arxiv/temporal_leakage.tex` | `a534b8cbc458319cbe4af0fcd7849b56de36e343801a5e6e1710d7f0c5f9f15c` | identical | final version, working tree 2026-10-09 (not committed) |
+| `paper/temporal_leakage_paper.pdf` | built from `paper/temporal_leakage.tex` | `994948f2e37189f3aadc0bf67760100f0f008f85c726591acee3c36f3146f20c` | built here (tectonic) | not copied |
 | `registrations/e420_registration.md` | `docs/e420_registration.md` | `ea6d8725e23f504607e75a869ae33c3e189bcd28f6533a2f739b388462789d99` | identical | = HEAD |
 | `registrations/e421_post_run_checkpoint.json` | `docs/e421_post_run_checkpoint.json` | `a0ebfa59719a19c0af32a6a40eb628435b37ec44f2809a31f99d7249243a13a1` | identical | = HEAD |
 | `registrations/e421_post_run_checkpoint.json.ots` | `docs/e421_post_run_checkpoint.json.ots` | `7fac3db8adaff048052281a4f938d3d483dd9210db5ddd96bb2a7d5cc1679764` | identical | = HEAD |
 | `registrations/e421_post_run_checkpoint_v2.json` | `docs/e421_post_run_checkpoint_v2.json` | `2201ecf6f02c39b7c75ff8984d1e02771c0cf859c24d02123053d23f0c924fb4` | identical | = HEAD |
-| `registrations/e421_post_run_checkpoint_v2.json.ots` | `docs/e421_post_run_checkpoint_v2.json.ots` | `e092fabfab3e0e11b1e3a7a8fc33f3abccf3a6990fa2f1fdfc90a0b0d225219c` | identical | = HEAD |
+| `registrations/e421_post_run_checkpoint_v2.json.ots` | `docs/e421_post_run_checkpoint_v2.json.ots` | `9b78ef03b21ed019fe578c20f843a8d4434186aa85df917873a8fa5ba4476f01` | identical | = `c261d0fe` (upgraded proof; first-release SHA-256 below) |
 | `registrations/e421_post_run_checkpoint_v3.json` | `docs/e421_post_run_checkpoint_v3.json` | `0d34ba08bdbba075d367e77b876fd0c69823f7d3dc7d5cf5c22f3bf0214157b7` | identical | = HEAD |
-| `registrations/e421_post_run_checkpoint_v3.json.ots` | `docs/e421_post_run_checkpoint_v3.json.ots` | `8bcac02f528056f94861b76d1049ffcd327c2948a3f65df4e65c961253c95483` | identical | = HEAD |
+| `registrations/e421_post_run_checkpoint_v3.json.ots` | `docs/e421_post_run_checkpoint_v3.json.ots` | `d4870af2dfb4f40f52dfd8a1e6ee5e691d926401170225fa963f9d96ce12cc5a` | identical | = `c261d0fe` (upgraded proof; first-release SHA-256 below) |
 | `registrations/e421_pre_source_checkpoint.json` | `docs/e421_pre_source_checkpoint.json` | `afc0cae93d118a8616d205720d5d9cd0c54e8685dc1be743bd9ed37525687f8e` | identical | = HEAD |
-| `registrations/e421_pre_source_checkpoint.json.ots` | `docs/e421_pre_source_checkpoint.json.ots` | `32fbee6f98d4187fd88cf4facab5670b5de78d9fda6e549b56960e0bc10cfb9b` | identical | = HEAD |
+| `registrations/e421_pre_source_checkpoint.json.ots` | `docs/e421_pre_source_checkpoint.json.ots` | `281d3399fc1244ed87873aaf77365160e235b7aacc9bc4cfce7321410cae5e30` | identical | = `c261d0fe` (upgraded proof; first-release SHA-256 below) |
 | `registrations/e421_registration.md` | `docs/e421_registration.md` | `c298bef55fe21c4d73bce93266de1166540f5c77e0788fe5fc9cfb7111a1cd7c` | identical | = HEAD |
 | `registrations/e422_anchor_receipt_gate_a_20260909.json` | `docs/e422_anchor_receipt_gate_a_20260909.json` | `0174948fbe40f273d5a98a895289a2476a678407122352fed7fa4b9bd23d44cc` | identical | = HEAD |
 | `registrations/e422_batch_runbook.md` | `docs/e422_batch_runbook.md` | `c0cdb9b7dff3ee7ed567d656a41606f4914b10cd0ca144dffcd8d3777b7adee3` | identical | = HEAD |
 | `registrations/e422_correction_of_record_20261007.md` | `docs/e422_correction_of_record_20261007.md` | `e8fe3fa520738cd9929147a7b7cd7ae6be943da9699c83dc7bd99167363cac7b` | identical | = HEAD |
-| `registrations/e422_correction_of_record_20261007.md.ots` | `docs/e422_correction_of_record_20261007.md.ots` | `6a0bd15350e734257cf1c70f13f82b1397a0c3d285616b1879dfb95ded1ac43d` | identical | = HEAD |
+| `registrations/e422_correction_of_record_20261007.md.ots` | `docs/e422_correction_of_record_20261007.md.ots` | `7bef47c63746d8be5439cb654688ea6c300774e9e720c16e93925da018b1c09c` | identical | = `c261d0fe` (upgraded proof; first-release SHA-256 below) |
 | `registrations/e422_freeze_gate_a_20260909.md` | `docs/e422_freeze_gate_a_20260909.md` | `6220f7bc8f199b32ea1bb484693bacba5dc69824944cfec54c850f829e05b383` | identical | = HEAD |
 | `registrations/e422_freeze_gate_a_20260909.md.ots` | `docs/e422_freeze_gate_a_20260909.md.ots` | `388bc60fe41bcf814ed00e8df8bc4b1eb0e4822f9f7bc606e771f64a0314315a` | identical | = HEAD |
 | `registrations/e422_registration.md` | `docs/e422_registration.md` | `dc7a362773fbf3a03e759aa7d178125963a14d88d9bbd61b66389a04ba8d7b3b` | identical | = HEAD |
@@ -200,19 +294,19 @@ earlier stamped version was recovered.
 | `registrations/e425_execution_receipts_record_20260910.md` | `docs/e425_execution_receipts_record_20260910.md` | `9dceab94cb80afec03a95bc385b53b4a09a6933b486166c66b0dad96a6061544` | identical | = HEAD |
 | `registrations/e425_execution_receipts_record_20260910.md.ots` | `docs/e425_execution_receipts_record_20260910.md.ots` | `5d1b6866daeaf814e6406b7d902b65df03a701eef2e1aa5781242a95564fb038` | identical | = HEAD |
 | `registrations/e427_registration.md` | `docs/e427_registration.md` | `dbec42fbe1db1dc18592d651b988755fc6e02a7b883c61ea0f5f9030ab2f4fd5` | identical | = HEAD |
-| `registrations/e427_registration.md.ots` | `docs/e427_registration.md.ots` | `6839a50ee30171e005fd1cf11649f79096592b978a8d7b0cd8456887d3e853ae` | identical | = HEAD |
+| `registrations/e427_registration.md.ots` | `docs/e427_registration.md.ots` | `90aa7c8c9f531eb8410cf222d3f84a82fa93f9836f6483084082a23ba86a1b5c` | identical | = `c261d0fe` (upgraded proof; first-release SHA-256 below) |
 | `registrations/stamped_versions/e422_correction_of_record_20261007_add20261008.md` | `docs/e422_correction_of_record_20261007.md` | `faf68a06e4fc13988e0861898b20c7ac2dd7670ed42cf29846e41ee3f76dc863` | identical | git `a950b9fc` (OTS-stamped version) |
-| `registrations/stamped_versions/e422_correction_of_record_20261007_add20261008.md.ots` | `docs/e422_correction_of_record_20261007_add20261008.md.ots` | `1bd59f18d92ea56598c8ae4dd31dbd354c580a169386485121caf7b2e37c7146` | identical | = HEAD |
+| `registrations/stamped_versions/e422_correction_of_record_20261007_add20261008.md.ots` | `docs/e422_correction_of_record_20261007_add20261008.md.ots` | `7771ee05d7f8745030feb9513e3b2e2bb144131d9ab70ee06bf1586aa8e29f50` | identical | = `c261d0fe` (upgraded proof; first-release SHA-256 below) |
 | `registrations/stamped_versions/e422_correction_of_record_20261007_add20261009a.md` | `docs/e422_correction_of_record_20261007.md` | `f3675e3dc9504c7290be16b2f50869b63735b7a80e59479bc651127e6b1e0de1` | identical | git `bf55c601` (OTS-stamped version) |
-| `registrations/stamped_versions/e422_correction_of_record_20261007_add20261009a.md.ots` | `docs/e422_correction_of_record_20261007_add20261009a.md.ots` | `74cc1b8a07a019718d4618495a0d641116df1882f8a894408f963c8e929bce64` | identical | = HEAD |
+| `registrations/stamped_versions/e422_correction_of_record_20261007_add20261009a.md.ots` | `docs/e422_correction_of_record_20261007_add20261009a.md.ots` | `088d1d2e08dd40a1ba7bac980a2105ceaa1b195fc3b1fc3e07cff9929d26bbb3` | identical | = `c261d0fe` (upgraded proof; first-release SHA-256 below) |
 | `registrations/stamped_versions/e423_dispatch_repair_record_20260910.stamped_4e31778c.md` | `docs/e423_dispatch_repair_record_20260910.md` | `e4967215dd60c53db30e7d2612be7c3e21e5d9f7bfea65d8f758bff0eb416d4c` | identical | git `4e31778c` (OTS-stamped version) |
 | `registrations/stamped_versions/e423_dispatch_repair_record_20260910.stamped_4e31778c.md.ots` | `docs/e423_dispatch_repair_record_20260910.md.ots` | `ad8aa09269273430c582b2aabfdbac7f69cd00d4f73963cc3e4c50ba5dabd1d6` | identical | = HEAD |
 | `registrations/stamped_versions/e424_binding_gate_record_20260910.stamped_88310235.md` | `docs/e424_binding_gate_record_20260910.md` | `b17189f431fe99a799da95d34e8317cbb8737dacc1ba0d41f7b5d43a7bf31bf5` | identical | git `88310235` (OTS-stamped version) |
 | `registrations/stamped_versions/e424_binding_gate_record_20260910.stamped_88310235.md.ots` | `docs/e424_binding_gate_record_20260910.md.ots` | `354139c448c25f1fee3f70b5a5513c08ad0afc8c5ebbeead5a4844bcd85f9934` | identical | = HEAD |
 | `registrations/verification/REGISTRATION.md` | `paper/arxiv/verification/REGISTRATION.md` | `9c88e1c14c88fa8a2f52596dab5bec9217101814a1649f832f738c52fc889857` | identical | = HEAD |
 | `registrations/verification/REGISTRATION_A3_24a51a94.md` | `paper/arxiv/verification/REGISTRATION.md` | `b0b917a9638dd88c7ef41b9322ff1d120c44ac0fd640b7e1ade60f46050e6008` | identical | git `24a51a94` (OTS-stamped version) |
-| `registrations/verification/REGISTRATION_A3_24a51a94.md.ots` | `paper/arxiv/verification/REGISTRATION_A3_24a51a94.md.ots` | `36c7c8f90e2421a9c2424b0559d33d304461a4a36bbde1106c014a2a95f4d919` | identical | = HEAD |
+| `registrations/verification/REGISTRATION_A3_24a51a94.md.ots` | `paper/arxiv/verification/REGISTRATION_A3_24a51a94.md.ots` | `a6d556ed01ce23c60e4e9c01afbb7436d7ededa383bdb1757359f8e39a979c92` | identical | = `c261d0fe` (upgraded proof; first-release SHA-256 below) |
 | `registrations/verification/REGISTRATION_A4_de0e7a32.md` | `paper/arxiv/verification/REGISTRATION.md` | `74cc5059eeff4340143f24ee9a5e21565004a523cd36bb06237b62017a5f3969` | identical | git `de0e7a32` (OTS-stamped version) |
-| `registrations/verification/REGISTRATION_A4_de0e7a32.md.ots` | `paper/arxiv/verification/REGISTRATION.md.ots` | `05070eb34657eb2a2040797e902c39dceff3012c090dbb602ad6c365483b1387` | identical | = HEAD |
+| `registrations/verification/REGISTRATION_A4_de0e7a32.md.ots` | `paper/arxiv/verification/REGISTRATION.md.ots` | `4d67f7ba90b2c26b469140f42bd8c3c96ba6538e326811f2633580a43fd03b17` | identical | = `c261d0fe` (upgraded proof; first-release SHA-256 below) |
 
-Plus 1,008 cached RCSB API response files under `data/derived/data/paper_verification/http/` and `data/derived/paper/arxiv/verification/cache/v2c/http/`, each byte-identical to the file of the same name in the source repository (each file's name is the SHA-256 of its request; its `sha256` field is the SHA-256 of the response body).
+Plus 2,047 cached API response files under `data/derived/data/paper_verification/http/` (1,096), `data/derived/paper/arxiv/verification/cache/v2c/http/` (136) and `data/derived/paper/arxiv/verification/cache/v5/http/` (815), each byte-identical to the file of the same name in the source repository (each file's name is the SHA-256 of its request; its `sha256` field is the SHA-256 of the response body).
