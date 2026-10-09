@@ -9,7 +9,7 @@
 \emergencystretch=1.5em
 \setlength{\textfloatsep}{14pt plus 2pt minus 4pt}
 \setlength{\floatsep}{10pt plus 2pt minus 2pt}
-\hyphenation{Section Sections}
+\hyphenation{Section Sections errors}
 \title{Exposure and Residue Correspondence:\\
 Two Silent Failure Modes When Comparing\\
 AlphaFold Database Models with Experimental Structures}
@@ -24,29 +24,27 @@ Samma Labs\\
 
 \begin{abstract}
 Comparisons of AlphaFold Database (AFDB) models with experimental structures
-underpin knowledge of pLDDT, AlphaFold's prediction of the local
-distance difference test (lDDT). Two problems can distort them silently:
-data leakage, when the model has seen the reference or a close relative, and
-residues paired with the wrong reference atoms. In the ATLAS
-molecular-dynamics corpus, 791 of 868 proteins (91\%) had only references
-dated on or before AlphaFold2's training cutoff. In the first four batches
-of a preregistered census of structures released after 2026-09-11, 87 of 138
-proteins (63\%) had a same-protein or $\ge$95\%-identical structure from
-before the cutoff, 10 (7\%) had no relative at $\ge$30\% identity, and 45
-models (33\%) were given a same-protein template. In an exploratory
-comparison on an earlier census, proteins with close relatives had slightly
-higher lDDT, higher pLDDT by a larger margin and similar shares of confident
-errors. The second problem arose in our pipeline, which applied PDBe/SIFTS
-\texttt{label\_seq\_id} positions to atoms indexed by
-\texttt{auth\_seq\_id}. Correcting it changed the median lDDT of 188 of 488
-chain segments (151 by more than 0.2) and removed spurious confident errors
-mimicking AlphaFold overconfidence. A preregistered coverage prediction that
-tests the lDDT values and pipeline, not pLDDT, failed on the original
-values; we withdraw that recorded outcome as invalid. A re-evaluation
-registered after the error was found and a preliminary result was known
-meets it: mean coverage 0.8945 and 0.9456, slightly below nominal but above
-the thresholds (nominal minus three Monte Carlo standard errors) of 0.8914
-and 0.9449.
+underpin knowledge of pLDDT, AlphaFold's prediction of the
+local distance difference test (lDDT). Two problems can distort them
+silently: exposure, when the model has seen the reference or a close
+relative, and wrong residue correspondence, when residues are paired with
+wrong reference atoms. In the ATLAS molecular-dynamics corpus, 791
+of 868 proteins (91\%) had no reference released after
+AlphaFold2's training cutoff. In the first four batches of a preregistered
+census of X-ray PDB entries released after 2026-09-11, 87 of 138 proteins
+(63\%) had a same-protein or $\ge$95\%-identical structure from before the
+cutoff, 10 (7\%) had no relative at $\ge$30\% identity, and 45 models (33\%)
+were given a same-protein template. In an earlier, exploratory census,
+proteins with such relatives had slightly higher lDDT,
+higher pLDDT by a larger margin, and indistinguishable shares of confident
+errors (pLDDT $\ge$ 90, lDDT $<$ 0.60). Our pipeline had the second: for some chains it mapped residues in label numbering but looked atoms up in
+author numbering. Correcting it changed the median lDDT of 188 of 488 chain
+segments (151 by more than 0.2) and removed spurious confident errors
+mimicking overconfidence. A preregistered coverage test of
+conformal intervals for lDDT, which does not use pLDDT, failed on the
+original values; we withdraw that outcome. A rerun registered
+after the error and a preliminary result were known passes on corrected
+values: mean coverage 0.8945 and 0.9456 at nominal 0.90 and 0.95, above preregistered thresholds of 0.8914 and 0.9449.
 \end{abstract}
 
 \section{Introduction}
@@ -69,8 +67,8 @@ without stopping the pipeline. Agreement can look too good because the model
 has seen the reference or something close to it. It can look too bad because
 model residues were paired with the wrong reference atoms.
 
-The first problem is \emph{exposure}, any route by which the reference or a
-close relative could have informed the model: as a training example, as a
+The first problem is \emph{exposure}: the reference or a close relative
+could have informed the model, as a training example, as a
 \emph{template} (a known structure given to the network as input at
 prediction time), or as a close homologue in the training data. For some
 questions, such as describing AFDB as it is used, exposure does not matter.
@@ -83,11 +81,11 @@ leakage through blind and time-split evaluation
 \citep{kryshtafovych2021,haas2018,jumper2021}, and recent benchmarks show
 that release-date splits alone still leak through homology
 \citep{buttenschoen2024,durairaj2024,dobson2025beta,bushuiev2024}. In a
-retrospective AFDB comparison the model is fixed and part of what it saw is
-recorded in its model file, so exposure can be measured rather than assumed.
+retrospective AFDB comparison the model is fixed and the templates it was given
+are recorded in its model file, so template exposure can be measured rather than assumed.
 
 The second problem is \emph{residue correspondence}. Model residues are
-numbered by their position in the UniProt sequence. Reference atoms are
+numbered by their position in the UniProt sequence. Reference residues are
 numbered within an entry of the Protein Data Bank (PDB), whose mmCIF
 (macromolecular Crystallographic Information File) format carries two
 schemes: a sequential \emph{label numbering} (\texttt{label\_seq\_id}) and an
@@ -112,25 +110,30 @@ second from our own pipeline. Our contributions are the following.
 \item In ATLAS \citep{vandermeersche2024}, a molecular-dynamics corpus that
       has been reused to train and evaluate structure-ensemble generators
       \citep{jing2024alphaflow}, 791 of 868 proteins have only references
-      released on or before AlphaFold2's training cutoff
+      released on or before AlphaFold2's training cutoff of 2018-04-30
       (Section~\ref{sec:atlas}).
-\item We registered a census of PDB entries released after 2026-09-11
-      before any data existed. In its first four batches (an empty 48-hour
-      batch followed by three weekly ones), 87 of 138 proteins already had a
-      structure of the same protein or a $\ge$95\%-identical one in the
-      \emph{training-era PDB} (entries released on or before the 2018-04-30
-      cutoff), and 45 of the 138 AFDB models were given a same-protein
-      template. In an earlier census, proteins with a close relative had
-      slightly higher lDDT, higher pLDDT by a larger margin and a similar
-      share of confident errors (Section~\ref{sec:homology}).
-\item In our census pipeline, a fallback between the two numbering schemes
-      shifted the pairing of whole runs of residues and created residues
-      with high pLDDT and low lDDT. A preregistered coverage prediction,
-      which does not use pLDDT, failed on these values, and we withdraw that
-      recorded outcome as invalid. A re-evaluation registered after the
-      error was found, and after a preliminary result was known, meets the
-      prediction on corrected values, at the 0.95 level by a margin of
-      0.0007. We give the mechanism, how often it is triggered and the checks
+\item Before any of its entries had been released, we preregistered a
+      census of X-ray PDB entries released after 2026-09-11, collected in
+      weekly batches: its design, code and predictions were fixed and
+      timestamped. In its first four batches, covering releases up to
+      2026-10-04, 87 of 138 proteins already had a structure of the same
+      protein or a $\ge$95\%-identical one in the \emph{training-era PDB}
+      (entries released on or before the training cutoff), and 45 of the 138
+      AFDB models were given a same-protein template. In an earlier,
+      exploratory census of entries released after 2022-06-02, proteins with
+      such a relative had slightly higher lDDT, higher pLDDT by a larger
+      margin and a share of \emph{confident errors} (residues with pLDDT
+      $\ge$ 90 and lDDT $<$ 0.60) that we could not distinguish from that of
+      other proteins (Section~\ref{sec:homology}).
+\item In our census pipeline, a fallback that built the residue map in
+      label numbering while looking atoms up by author numbering shifted the
+      pairing of whole runs of residues and created residues with high pLDDT
+      and low lDDT. A preregistered prediction about the coverage of
+      conformal intervals for lDDT, which do not use pLDDT, failed on these
+      values, and we withdraw that outcome as invalid. A rerun on corrected
+      values, registered after the error was found and after a preliminary
+      result was known, meets the prediction at both nominal levels (0.90 and
+      0.95), and at 0.95 exceeds its threshold by only 0.0007. We give the mechanism, how often it is triggered and the checks
       that catch it (Section~\ref{sec:defect}, Figure~\ref{fig:mechanism}).
 \item A table of practical checks (Section~\ref{sec:recommendations}) and a
       public release of the registrations, code and derived tables.
@@ -144,13 +147,14 @@ recommendations and limitations.
 \centering
 \includegraphics[width=0.94\textwidth]{rev4/f1_mechanism.pdf}
 \caption{How the numbering fallback shifted PDB entry 9qj6, chain~A
-(protein K7PQ54). Its SIFTS segment (Section~\ref{sec:setup}) begins at an
+(protein K7PQ54). Its SIFTS segment, a contiguous stretch mapped to UniProt
+(Section~\ref{sec:setup}), begins at an
 unobserved residue (dashed box), so its starting author number is missing and
 our code built the residue map from label numbers. It then looked atoms up by
-author number, which runs 34 ahead of label numbering, so the atom with
+author number, which runs 34 ahead of label numbering, so the residue with
 author number~36 was paired with UniProt position~70 instead of~36. Under
 this shift the chain's median lDDT was 0.198 at a median pLDDT of 98.4. With
-the mapping fixed it is 0.993.}
+the mapping fixed it was 0.993.}
 \label{fig:mechanism}
 \end{figure}
 
@@ -186,7 +190,8 @@ what is withheld \citep{ahdritz2024}.
 archive to address inconsistencies introduced over the years
 \citep{henrick2008}. Mapping PDB chains to UniProt has long been non-trivial
 \citep{martin2005}. SIFTS provides residue-level mappings between the two
-\citep{velankar2013,dana2019}, records them in label numbering and documents
+\citep{velankar2013,dana2019}, records them in label numbering, and in
+author numbering where residues were observed, and documents
 the complications added by missing residues, insertions, expression tags and
 linkers \citep{choudhary2023sifts}. Standard sequence alignments often
 misalign the regions next to unobserved residues \citep{velankar2013}.
@@ -200,8 +205,9 @@ gives finite-sample marginal coverage under exchangeability
 exchangeable with residues of other proteins, and such hierarchical data
 need their own guarantees \citep{dunn2023,lee2023}, as do non-exchangeable
 data more generally \citep{barber2023}. CalPro applies evidential and
-conformal methods to pLDDT \citep{shihab2026calpro}. We do not re-evaluate
-CalPro here.
+conformal methods to pLDDT \citep{shihab2026calpro}. Our census
+registration includes a split-conformal coverage test
+(Section~\ref{sec:p5}); we do not re-evaluate CalPro.
 
 \section{Exposure channels}
 \label{sec:channels}
@@ -209,12 +215,6 @@ CalPro here.
 Let $R$ be an experimental reference structure, first released on date $r$,
 compared with an AFDB model $M$ of the same protein. We distinguish three
 channels through which $R$, or structures like it, could have informed $M$.
-All 138 model files in the first four batches of the preregistered census
-are AlphaFold2 models (``AlphaFold Monomer v2.0''). AFDB also serves
-ColabFold models \citep{mirdita2022}. Of the 93 model files downloaded for
-the post-2022 census (Section~\ref{sec:setup}), 6 are ColabFold Monomer
-v1.5.2 models and 87 are AlphaFold Monomer v2.0, and none of the six belongs
-to a protein in the exposure comparison of Section~\ref{sec:effect}.
 
 \paragraph{Training.} AlphaFold2 was trained on PDB structures with a
 maximum release date of 2018-04-30 \citep{jumper2021}. If $r$ is on or
@@ -236,16 +236,17 @@ model. The list records which templates the network was given, not how much
 the prediction relied on them.
 
 \paragraph{Homology.} Even when $R$ post-dates both cutoffs, the same
-protein or a close relative may have been in the training-era PDB. This
-channel is measured by sequence similarity to the training-era PDB
-\citep{jumper2021,buttenschoen2024}, which release dates cannot capture.
+protein or a close relative may have been in the training-era PDB. Release
+dates cannot capture this channel; we measure it by sequence similarity to
+the training-era PDB \citep{jumper2021,buttenschoen2024}.
 
 AFDB entries also carry a \texttt{modelCreatedDate}, documented as the date
 the entry was created \citep{afdbmetadata}. In version~6, unchanged models
 received new metadata and the v6 label while their coordinates were carried
 over from version~4 \citep{pdbereleasenotes}. The creation date therefore
-records neither when a prediction ran nor what it could see, and we use it
-only to exclude models created on or after the census start date.
+records neither when a prediction ran nor what it could see. We use it only
+to exclude models created on or after the start of the preregistered census
+(Section~\ref{sec:setup}).
 
 \section{Data and methods}
 \label{sec:setup}
@@ -258,88 +259,117 @@ SIFTS describes it as one or more \emph{SIFTS segments}, each a contiguous
 stretch with its own start and end. A residue is a \emph{confident error} if
 its pLDDT is at least 90 and its lDDT below 0.60. At the chain level we use a
 separate \emph{low-agreement screen}, which flags a chain segment of at least
-30 residues with median pLDDT $\ge$ 90 and median lDDT $<$ 0.4. A
+30 residues with median pLDDT $\ge$ 90 and median lDDT $<$ 0.4. The
+\emph{training-era PDB} is the set of entries released on or before
+2018-04-30, and an \emph{accession--entry pair} is one protein in one PDB
+entry. A residue is \emph{scored} if it has an lDDT value. A
 \emph{registration} is an analysis plan, with its code and predictions,
-frozen in the project repository and timestamped with OpenTimestamps
+fixed in a version-controlled repository, now public (Data and code availability), and timestamped
+with OpenTimestamps
 \citep{opentimestamps}, which anchors a file's SHA-256 hash in the Bitcoin
 blockchain. We call an analysis \emph{preregistered} if it was registered
 before any lDDT value it uses existed.
 
-\paragraph{ATLAS.} When we queried the ATLAS web resource \citep{atlasweb}
-on 2026-09-04, it listed 1{,}938 entry--chain records covering 1{,}735 PDB
-entries and 943 proteins, more than the datasets described in the ATLAS
-paper \citep{vandermeersche2024}. Of these proteins, 869 have both an AFDB
-model and a SIFTS mapping \citep{velankar2013,dana2019}. One has an AFDB
-record we could not parse, which leaves 868 proteins and 935
-accession--entry pairs. For each reference we took the initial release date,
+\paragraph{ATLAS.} The list of entries in the ATLAS download archive
+\citep{atlasweb}, retrieved on 2026-08-30, has 1{,}938 entry--chain records
+covering 1{,}735 PDB entries and 943 proteins, more than the datasets
+described in the ATLAS paper \citep{vandermeersche2024}. On 2026-09-04 we
+checked each record against PDBe and AFDB and kept chains that map to a
+single UniProt accession through SIFTS \citep{velankar2013,dana2019}, with
+the identity and coverage reported by PDBe at least 0.90 and 0.80, and whose
+protein has an AFDB model. Four of the 1{,}938 records could not be checked because of network errors. The kept chains cover 869 proteins. One has an AFDB record
+we could not parse, which leaves 868 proteins and 935 accession--entry
+pairs. For each reference we took the initial release date,
 the first record in the mmCIF category
 \texttt{\_pdbx\_audit\_revision\_history} \citep{mmcifdict}.
 
-\paragraph{Preregistered census.} Before any lDDT value existed, we
-registered a census design, its analysis code and its predictions. The
-design fixes an AFDB version~6 snapshot at $T_0$ = 2026-09-11 00:00 UTC and
-collects, in weekly batches, X-ray entries released after $T_0$ at
-2.5\,\AA{} resolution or better. Models created on or after $T_0$ are
-excluded. Apart from the release-date filter, which places every reference
-after AFDB's 2021-02-15 template cutoff, the design adds no exposure
-control. What it adds is that every choice in the original design, including
-two dated amendments made before any data arrived, was fixed before any lDDT
-value was computed. The residue mapping was replaced later, after the error
-described in Section~\ref{sec:defect}. We report the first four of 12
-planned batches, ending on 4 October 2026: an empty first batch, shortened
-to 48 hours by one of the amendments, followed by three weekly ones. With
-the original mapping the four batches gave 488 chain segments from 272
-accession--entry pairs and 138 proteins, and with the corrected mapping 495
-chain segments and 141 proteins (Section~\ref{sec:scope}).
+\paragraph{Preregistered census.} To obtain references released after both cutoffs of Section~\ref{sec:channels}, we preregistered a census: every X-ray PDB entry at
+2.5\,\AA{} resolution or better released after $T_0$ = 2026-09-11 00:00 UTC,
+collected in weekly batches. $T_0$ is also the time of the AFDB version~6
+snapshot we compare against, and models created on or after $T_0$ are
+excluded. The design, analysis code and predictions were registered on
+2026-09-09, and two dated amendments were made before any data were
+collected: one shortened the first batch to 48 hours and the other fixed the
+code that starts each batch. Apart from the release-date filter, which
+places every reference after AFDB's 2021-02-15 template cutoff, the design
+adds no exposure control. What it adds is that every choice was fixed before
+any lDDT value was computed. The residue mapping was replaced later, after
+the error described in Section~\ref{sec:defect}. We report the first four of
+12 planned batches, covering releases up to 2026-10-04. The first, 48-hour
+batch contained no weekly PDB release day and is empty. With the original
+mapping the four batches gave 488 chain segments from 272 accession--entry
+pairs and 138 proteins, and with the corrected mapping 495 chain segments
+and 141 proteins (Section~\ref{sec:scope}). The exposure measurements of Section~\ref{sec:homology} were made on the 138 proteins of the original set; they need no residue pairing, so the error does not affect them; all lDDT and coverage results use the
+corrected set unless stated otherwise.
 
-\paragraph{Post-2022 census.} An earlier, exploratory census of 168 X-ray
-entries released after 2022-06-02 used the same author-number fallback as
-the preregistered census but discarded pairs whose amino acids differed. We
-use it to check whether findings recur. It was affected by the same error.
-With the corrected mapping, 139 of its entries from 85 proteins are labelled
-(96 entries from 64 proteins before), its homology search covered 86
-proteins, and 93 AFDB model files were downloaded for it. All its results
-outside Section~\ref{sec:post2022} use the corrected lDDT values.
+\paragraph{Post-2022 census.} An earlier census, assembled before the
+preregistered one and not preregistered, covers 168 X-ray entries at
+2.5\,\AA{} or better released after 2022-06-02 and after the creation date
+recorded for their AFDB model. Its residue mapping used the same numbering
+fallback but discarded pairs whose amino acids differed, and it was affected
+by the same error. We use it for the exposure comparison of
+Section~\ref{sec:effect} and to check how the error behaves under a per-pair
+identity filter (Section~\ref{sec:post2022}). With the corrected mapping, 139
+of its entries from 85 proteins are scored (96 entries from 64 proteins
+before). All its results outside Section~\ref{sec:post2022} use the
+corrected lDDT values.
+
+\paragraph{Model versions.} The cutoffs of Section~\ref{sec:channels} are
+those of AlphaFold2, but AFDB also serves ColabFold models
+\citep{mirdita2022}, so we checked the software recorded in each model file.
+All 138 model files of the preregistered census are AlphaFold2 models
+(``AlphaFold Monomer v2.0''). Of the 93 model files downloaded for the
+post-2022 census, 6 are ColabFold Monomer v1.5.2 models and 87 are AlphaFold
+Monomer v2.0, and none of the six belongs to a protein in the exposure
+comparison of Section~\ref{sec:effect}.
 
 \paragraph{Residue pairing and lDDT.} For each reference chain we pair
 C$\alpha$ atoms with AFDB model residues through the PDBe SIFTS UniProt
 mapping. We describe the corrected mapping here, and
 Section~\ref{sec:defect} the original and its error. The corrected code
-(i) indexes the mapping by label numbering (\texttt{label\_seq\_id}) and the
-chain's label identifier (\texttt{struct\_asym\_id}), (ii) maps equal-length
-SIFTS segments by offset and others by global alignment of the chain's full
-deposited sequence to the UniProt sequence, (iii) drops any pair whose amino acids
-differ and (iv) rejects a SIFTS segment if more than 10\% of its pairs
-differ. Chains with fewer than 30 aligned residues are excluded, as are atoms with an alternative location other than A and modified residues other than selenomethionine (16 and 57 residues of the corrected census). We score each residue by
-lDDT-C$\alpha$ \citep{mariani2013}, computed per chain against the AFDB model
-over aligned residues with a 15\,\AA{} inclusion radius and
-distance-difference thresholds of 0.5, 1, 2 and 4\,\AA. We call the
-computation of these per-residue lDDT values \emph{labelling}, and computing
-them again from stored inputs \emph{relabelling}. pLDDT is read from the
-model's B-factor column and is never used in labelling.
+(i) reads both the SIFTS positions and the atoms in label numbering
+(\texttt{label\_seq\_id}), with chains identified by their label identifier
+(\texttt{label\_asym\_id}, called \texttt{struct\_asym\_id} in the SIFTS
+files), so that no lookup crosses numbering schemes; (ii) maps a SIFTS
+segment whose PDB and UniProt ranges have equal length by a constant offset,
+and other segments by global alignment of the chain's full deposited
+sequence to the UniProt sequence; (iii) drops any pair whose amino acids
+differ; and (iv) rejects a SIFTS segment if more than 10\% of its pairs,
+counted before step~(iii), differ. Chain segments with fewer than 30 paired
+residues are excluded. We use C$\alpha$ atoms at alternative location A only
+and exclude modified residues other than selenomethionine; in the four
+batches with the corrected mapping these two rules remove 16 and 57
+residues. We score each residue by lDDT-C$\alpha$ \citep{mariani2013},
+computed per chain segment against its AFDB model over paired residues with
+a 15\,\AA{} inclusion radius and distance-difference thresholds of 0.5, 1, 2
+and 4\,\AA. pLDDT is read from the model's B-factor column and is never used
+in computing lDDT.
 
 \paragraph{Homology exposure.} For each census protein we queried the search
 service of the RCSB PDB (Research Collaboratory for Structural
 Bioinformatics; \citealp{burley2023}) for training-era entries in three
-classes: (i)~same-protein entries, (ii)~entries containing a chain of a
-different accession at $\ge$95\% sequence identity and (iii)~entries
-containing one at $\ge$30\% identity. Sequence searches used MMseqs2
-\citep{steinegger2017} with an E-value of at most 0.1 and the canonical
+classes: (i)~entries mapped to the same UniProt accession, (ii)~entries containing a
+chain of a different accession at $\ge$95\% sequence identity and
+(iii)~entries containing one at $\ge$30\% identity. Classes (ii) and (iii)
+come from MMseqs2 sequence searches \citep{steinegger2017} with an E-value of at most 0.1 and the canonical
 UniProt sequence as query. We set no coverage threshold, so a hit, even a
 same-protein hit, may cover only part of the protein. Each protein is
 assigned its strongest class. A failed query would leave a protein
-unresolved rather than novel. Across the
-224 proteins queried for the two censuses, 594 lookups returned results (HTTP 200, two of them repeats of an identical query), 408 ran and found nothing (HTTP 204) and none failed
-\citep{rcsbsearchapi}. Every request and response was cached and hashed.
+unresolved rather than novel, but none failed: for the 224 proteins queried
+(138 from the preregistered census and 86 from the post-2022 census), 594
+queries returned hits, two of them repeats of an identical query, and 408
+returned none \citep{rcsbsearchapi}.
 
 \paragraph{Template exposure.} From each AFDB model file we read the
 template PDB IDs, mapped each template to UniProt through SIFTS and recorded
 its release date. A model has a \emph{same-protein template} if any template
-maps to its accession.
+maps to its accession. It is \emph{unresolved} if none does and at least one
+template could not be mapped.
 
-\paragraph{Preregistered coverage prediction.} The census registration
-includes a conformal-coverage prediction that does not use pLDDT.
-Section~\ref{sec:p5} describes it together with its result.
+\paragraph{Preregistered coverage prediction.} The census registration also
+predicts the coverage of split-conformal intervals for residue lDDT that are
+built without pLDDT, so the prediction tests the lDDT values and the
+pipeline rather than pLDDT; we call its evaluation the coverage test. Section~\ref{sec:p5} describes it with its result.
 
 \section{Most ATLAS references predate the training cutoff}
 \label{sec:atlas}
@@ -348,20 +378,28 @@ For ATLAS we measured only the training channel. We count a protein as
 training-eligible when all of its references were released on or before
 2018-04-30. Of 868 ATLAS proteins, 791 (91.1\%) are training-eligible in
 this sense, and so are 851 of the 935 accession--entry pairs (91.0\%). The
-references were released between 1988 and 2023 (median 2008). Only 77
+references were released between 1988 and 2023 (median release year 2008
+over the 935 pairs). Only 77
 proteins have any reference released after the cutoff, so agreement between
 AFDB models and ATLAS references cannot by itself be read as evidence of
-generalisation. Using the AFDB creation date as the cutoff instead, a
-tempting but wrong proxy (Section~\ref{sec:channels}), would place every
-reference before the model for 863 of 868 proteins (99.4\%).
+generalisation. Comparing each reference's release date with its model's
+\texttt{modelCreatedDate} instead, a tempting but wrong proxy
+(Section~\ref{sec:channels}), would make all references of 863 of 868
+proteins (99.4\%) predate their model.
 
 ATLAS was built to describe dynamics, and reusing it to study AlphaFold
 error requires an explicit exposure control. The obvious control is to keep
-only references released after the cutoff. Section~\ref{sec:homology} asks
-how much that achieves.
+only references released after the cutoff. Section~\ref{sec:homology} asks,
+on a separate set of newly released structures, how much that achieves.
 
 \section{A post-cutoff release does not imply an unseen protein}
 \label{sec:homology}
+
+This section measures the homology and template channels in the
+preregistered census, whose references were all released after both
+cutoffs (Sections~\ref{sec:homexp} and~\ref{sec:tmplexp}). It then asks, in
+the post-2022 census, whether exposure goes with higher agreement
+(Section~\ref{sec:effect}).
 
 \begin{table}[tbp]
 \centering
@@ -369,8 +407,9 @@ how much that achieves.
 census, 63\% had a same-protein or $\ge$95\%-identical structure in the
 training-era PDB and 33\% were given a same-protein template. Homology:
 class of the strongest relative, one per protein. Templates: as listed in
-the AFDB model file. The three proteins added by the corrected mapping
-(Section~\ref{sec:scope}) are excluded.}
+the AFDB model file. The protein set is that of the original residue
+mapping; the three proteins added by the corrected mapping
+(Section~\ref{sec:scope}) are not included.}
 \label{tab:homology}
 \begin{tabular}{lrr}
 \toprule
@@ -379,7 +418,7 @@ Class & Proteins & Share \\
 \multicolumn{3}{l}{\emph{Homology (training-era PDB)}}\\
 Same protein (UniProt accession) & 78 & 56.5\% \\
 Different accession, $\ge$95\% identity & 9 & 6.5\% \\
-Different accession, $\ge$30\% identity & 41 & 29.7\% \\
+Different accession, $\ge$30\% and $<$95\% identity & 41 & 29.7\% \\
 No relative at $\ge$30\% identity & 10 & 7.2\% \\
 \midrule
 \multicolumn{3}{l}{\emph{Templates (AFDB model file)}}\\
@@ -390,13 +429,15 @@ Unresolved\textsuperscript{a} & 5 & 3.6\% \\
 \end{tabular}
 
 \smallskip
-\footnotesize \textsuperscript{a}The SIFTS lookup failed for at least one
-template, and no other template maps to the protein.
+\footnotesize \textsuperscript{a}At least one template could not be mapped
+to UniProt through SIFTS and none of the others maps to the protein, so
+whether the model had a same-protein template is unknown.
 \end{table}
 
 \subsection{Homology exposure}
+\label{sec:homexp}
 
-Every structure in the census was released more than eight years after the
+Every structure in the preregistered census was released more than eight years after the
 training cutoff, yet 87 of the 138 proteins (63\%) had a same-protein or
 near-identical ($\ge$95\% identity) structure in the training-era PDB, 128
 (93\%) had a relative at $\ge$30\% identity, and only 10 (7\%) had none
@@ -405,69 +446,79 @@ cover only part of the protein. Some well-studied proteins have hundreds of
 such structures: hen egg-white lysozyme (P00698) had 730 same-protein
 entries in the training-era PDB, human carbonic anhydrase~2 (P00918) had 700
 and $\beta_2$-microglobulin (P61769) had 693. These hits show only that a
-related structure existed, not whether it differs by ligand, mutation,
-construct or crystal form.
+related structure existed, not how it differs, for example by ligand,
+mutation, construct or crystal form.
 
 \subsection{Template exposure}
+\label{sec:tmplexp}
 
 The template lists give a more direct measure. All 138 model files list four
 PDB templates each, released between 1988 and January 2021, so none
-post-dates the documented 2021-02-15 limit. For 45 proteins (33\%) at least
-one template is a structure of the same protein, for 88 all templates are of
-other proteins, and 5 are unresolved (Table~\ref{tab:homology}). The
+post-dates the documented 2021-02-15 cutoff. For 45 of the 138 models
+(33\%) at least one template is a structure of the same protein, for 88 all
+templates are of other proteins, and 5 are unresolved (Table~\ref{tab:homology}). The
 homology and template channels overlap only in part. Of the 78 proteins with
 a same-protein structure in the training-era PDB, 43 were given a
-same-protein template and 35 were not. Conversely, two proteins with no
+same-protein template and 35 were not; none of the 35 is unresolved. Conversely, two proteins with no
 same-protein structure in the training-era PDB were given a same-protein
 template (released in 2019 and 2020). One of them, Q9F0J8, has no
-training-era relative at $\ge$30\% identity.
+training-era relative at $\ge$30\% identity, so a homology screen alone
+would call it novel although its model was given a structure of the same
+protein as a template.
 
 \subsection{Is exposure associated with agreement?}
 \label{sec:effect}
 
-To ask whether exposure goes with better agreement, we compared proteins of
-the post-2022 census with and without a close relative in the training-era
-PDB (same protein or $\ge$95\% identity), using lDDT values recomputed with
-the corrected mapping (Section~\ref{sec:post2022}). The comparison was
-registered in advance as analysis~6 of a separate verification plan in the
-repository. For each protein we took the median lDDT and the median pLDDT
-over its residues, and for each group we then averaged these per-protein
-medians. The 40 proteins with a close relative had a mean median lDDT of
-0.975, against 0.959 for the 45 without (difference 0.016, 95\% bootstrap
-interval 0.003--0.032). Their mean median pLDDT was also higher, 96.1
-against 92.3 (difference 3.8, interval 1.7--6.0), a larger gap than in lDDT
-(3.8 against 1.6 points on a 0--100 scale). The mean per-protein share of
-confident errors was similar in the two groups (0.12\% and 0.13\%,
-difference $-0.01$ percentage points, interval $-0.18$ to $0.17$), although
-the interval is too wide to rule out a small difference. We did not run this
-comparison on the preregistered census, whose registered predictions about
-pLDDT-conditional coverage have not yet been evaluated.
+This comparison uses the post-2022 census, for a reason given at the end
+of this section. We compared its proteins with and without a \emph{close
+relative} in the training-era PDB (a same-protein structure or one at
+$\ge$95\% identity), using lDDT values recomputed with the corrected mapping
+(Section~\ref{sec:post2022}). We fixed the comparison in a timestamped plan
+before running it, but after its lDDT values existed, so it is exploratory.
+For each protein we took the median lDDT and the median pLDDT over its
+residues, and for each group we then averaged these per-protein medians.
+Intervals are 95\% percentile bootstrap intervals from 10{,}000 resamples of
+proteins within each group. Of the 85 scored proteins, the 40 with a close
+relative had a mean median lDDT of 0.975, against 0.959 for the 45 without
+one (difference 0.016, interval 0.003--0.032). Their mean median pLDDT was
+also higher, 96.1 against 92.3 (difference 3.8, interval 1.7--6.0), a larger
+gap than in lDDT (3.8 against 1.6 points on a 0--100 scale), although we did
+not test the difference between the two gaps formally. The mean per-protein
+share of confident errors was 0.12\% with a close relative and 0.13\% without
+(difference $-0.01$ percentage points, interval $-0.18$ to $0.17$). The
+interval is wider than either share, so the data cannot tell the groups
+apart on this measure. We did not run this comparison on the preregistered
+census because its registration also makes predictions about coverage within
+pLDDT bins that are not yet evaluated, and comparing pLDDT with lDDT there
+first would compromise their blindness.
 
-\section{A residue-numbering error created spurious confident errors}
+\section{A residue-correspondence error created spurious confident errors}
 \label{sec:defect}
 
 The exposure measurements need no residue pairing, but any comparison of
 agreement does. It needs per-residue lDDT values, and computing them for the
 census is where our own pipeline failed. After the fourth batch the
 preregistered coverage prediction, which does not use pLDDT, failed at both
-levels (Section~\ref{sec:p5}). A post hoc check found that one protein,
-K7PQ54, held 14\% of the labelled residues and half of the test residues
-that fell outside the 0.90 intervals. Tracing it led to a residue-numbering
-error that, unlike exposure, makes the model look worse than it is. The
-registration and the stored source files let us confirm the cause and
-relabel the census.
+nominal levels, 0.90 and 0.95 (Section~\ref{sec:p5}). A post hoc check
+found that one protein, K7PQ54, held 14\% of the scored residues and about
+half of the residues that fell outside the 90\% intervals, pooled over the
+200 test splits. Tracing it led to the numbering fallback, an error that, unlike exposure,
+makes the model look worse than it is. The registration and the stored
+source files let us confirm the cause and rescore the census.
 
 \subsection{Mechanism}
 \label{sec:mechanism}
 
-In the PDBe SIFTS mapping files we used, each SIFTS segment has a start and
+In the segment-level PDBe SIFTS mapping files we used (PDBe also distributes
+per-residue mappings), each SIFTS segment has a start and
 an end in label numbering and, when the boundary residue was observed, in
 author numbering. Our census code built each SIFTS segment's residue map
 from its starting author number and fell back to the starting label number
 when the author number was missing, which happens whenever the first residue
 of the segment is unobserved. Our code then looked atoms up by author
-number. When the two schemes differed by an offset, every residue of the
-segment was paired with the wrong UniProt position, a \emph{register shift}.
+number. In a segment where the fallback was used and author numbers
+differed from label numbers by a constant offset, every residue was paired
+with a UniProt position displaced by that offset, a \emph{register shift}.
 The code had no amino-acid identity check to catch it.
 
 Figure~\ref{fig:mechanism} shows chain~A of entry 9qj6, a structure of
@@ -478,18 +529,19 @@ numbering runs 34 ahead of label numbering, so the atom with author
 number~36 (label~2, UniProt~36) was assigned UniProt~70. Under this shift
 chain~A had a median lDDT of 0.198 at a median pLDDT of 98.4, and chain~B,
 shifted in the same way, had 0.199. With the mapping fixed, chains~A and~B
-aligned over 472 and 471 residues with no sequence mismatch and had median
+paired 472 and 471 residues with no sequence mismatch and had median
 lDDT 0.993 and 0.995.
 
-\subsection{Scope}
+\subsection{How many chain segments the error affected}
 \label{sec:scope}
 
-We relabelled the four batches from their stored source files, after
-checking their hashes, once with each mapping. With the original mapping the
-relabelling reproduced every stored batch exactly, which confirms that it
-re-executes the preregistered pipeline. One qualifying entry, 9zxa (protein
-Q92802, 8~chains), is missing from both sets because the original run never
-fetched its reference file. Table~\ref{tab:scope} compares the two sets of
+We rescored the four batches from their stored reference mmCIF, SIFTS and
+AFDB model files, after checking their hashes, once with each mapping. With
+the original mapping the rescoring reproduced the stored lDDT values of
+every batch exactly, which confirms that it re-executes the preregistered
+pipeline. One entry that meets the census criteria, 9zxa (protein Q92802,
+8~chains), is absent from both sets because the original run never
+downloaded its reference file. Table~\ref{tab:scope} compares the two sets of
 lDDT values.
 
 \begin{table}[tbp]
@@ -502,7 +554,7 @@ lDDT values from the original and the corrected residue mapping.}
 \toprule
  & Original & Corrected \\
 \midrule
-Labelled residues & 117{,}905 & 123{,}454 \\
+Scored residues & 117{,}905 & 123{,}454 \\
 Chain segments & 488 & 495 \\
 Proteins & 138 & 141 \\
 Residues with lDDT $<$ 0.60 & 31.9\% & 1.1\% \\
@@ -520,78 +572,85 @@ Correcting the mapping changed the median lDDT of 188 of the 488 original
 chain segments. For 151 of them, from 40 proteins, the change exceeded 0.2,
 and all 151 moved upward (Figure~\ref{fig:scope}). The other 37 changed by
 at most 0.056. After correction the low-agreement screen flags no chain
-segment, and the 13 entries whose chains had differed from each other by
-0.4 or more in median lDDT no longer do.
+segment, and 13 entries in which two chains had differed by 0.4 or more in
+median lDDT no longer differ that much.
 
-The corrected set is not a superset of the original. It labels 6{,}465
+The corrected set is not a superset of the original. It scores 6{,}465
 residue positions that the original did not and drops 916 that it did, a
 net gain of 5{,}549, and it adds three proteins and seven chain segments
 that the original mapping had rejected. A reimplementation with a separately
-written parser and lDDT code reproduced the corrected lDDT values of 36
-chain segments (26 targeted, 10 random) exactly. A second check, with a
-different mmCIF parser and lDDT implementation \citep{kunzmann2018biotite}
-and residue-level SIFTS mappings from PDBe, reproduced 494 of the 495
-corrected chain segments, every lDDT value within $5\times10^{-5}$. In the
-remaining one, chain~A of entry 21xg, an alignment tie next to two
-crosslinked residues makes our corrected mapping pair one residue with the
-UniProt position next to the one that residue-level SIFTS gives. This moves
+written parser and lDDT code reproduced the stored corrected lDDT values
+(four decimals) of 36 chain segments exactly: 26 chosen from proteins
+affected by the error or with unusual chain identifiers, and 10 unchanged
+segments drawn at random. A second check, with a different mmCIF parser and
+lDDT implementation \citep{kunzmann2018biotite} and PDBe's per-residue SIFTS
+mapping, which gives each residue's UniProt position directly rather than
+through segment boundaries, reproduced 494 of the 495 corrected chain
+segments, every lDDT value within $5\times10^{-5}$. In the remaining one,
+chain~A of entry 21xg, two crosslinked residues leave the global alignment
+of step~(ii) with two equally good solutions, and ours pairs one residue
+with the UniProt position next to the one that the per-residue mapping
+gives. This moves
 18 lDDT values by up to 0.054 and the chain's median by 0.003, and leaves
 the share of residues below 0.60 unchanged.
 
 \begin{figure}[tbp]
 \centering
 \includegraphics[width=0.92\textwidth]{rev4/f2_scope.pdf}
-\caption{The correction raised every chain segment that it changed by more
-than 0.2. (a)~Median lDDT per chain segment with the original ($x$) and the
+\caption{The correction raised the median lDDT of every chain segment that
+it changed by more than 0.2. (a)~Median lDDT per chain segment with the original ($x$) and the
 corrected ($y$) mapping. The change is the absolute difference between the
 two medians, and the dashed line marks no change. The 151 chain segments
 with a change above 0.2 (orange) moved from original medians of 0.17--0.70
 to corrected medians of at least 0.87. Diamonds at the left, spread
 sideways for visibility, are the seven chain segments that only the
-corrected mapping labels. (b)~Distribution of residue lDDT under each
+corrected mapping scores. (b)~Distribution of residue lDDT under each
 mapping (logarithmic $y$ axis).}
 \label{fig:scope}
 \end{figure}
 
-\subsection{The error mimics overconfidence, and segment checks catch it}
+\subsection{The error mimics overconfidence, and a SIFTS-segment identity check catches it}
 \label{sec:detect}
 
 The error created residues with high pLDDT and very low lDDT, the pattern an
 overconfident model would produce. A calibration study run on these values
 could have concluded that AlphaFold2 is overconfident on new structures, and
-our preregistered coverage test did fail on them.
+our preregistered coverage test, which does not use pLDDT, also failed on
+them (Section~\ref{sec:p5}).
 
-The precondition, a SIFTS segment that begins on an unobserved residue, is
-common: 304 of the 492 SIFTS segments mapped to the 138 original proteins
+The fallback is triggered by a SIFTS segment that begins on an unobserved
+residue, and this is common: 304 of the 492 SIFTS segments mapped to the 138 original proteins
 (62\%) begin this way. It causes a shift only when author and label
 numbering are offset at the start of the segment. That was the case for 147
-of the 492 SIFTS segments (30\%), from 39 proteins, with offsets from $-31$
-to $+201$. In a comparison we added after the fact, all 147 lay within the
+of the 492 SIFTS segments (30\%), from 39 proteins, with offsets (author minus label number) from $-31$
+to $+201$. In a post hoc comparison, all 147 lay within the
 151 chain segments whose median lDDT changed by more than 0.2. Each of the
 other four of those 151 contains a SIFTS segment whose offset changes
 partway along it.
 
 Checking amino-acid identity for every pair is necessary but not
 sufficient. Under a register shift only about 5--7\% of pairs match by
-chance in the segments we tested, and those pairs pass a per-pair filter.
+chance in the shifted SIFTS segments we tested, and those pairs pass a
+per-pair filter.
 What catches the shift is the per-pair check together with rejecting any
 SIFTS segment in which more than 10\% of pairs differ. The post-2022 census
 had only the per-pair check. It therefore lost most shifted residues but
 kept those that matched by chance (Section~\ref{sec:post2022}). Coarser
 checks catch some cases. A set in which 31.9\% of residues fall below 0.60
-lDDT is far from the 2.6\% seen in the corrected post-2022 census, and 13
-entries had chains that differed by 0.4 or more in median lDDT. A
-chain-agreement check would still miss entries such as 9qj6, where both
+lDDT is far from the 2.6\% in a separate set, the corrected post-2022
+census, and 13 entries had chains that differed by 0.4 or more in median
+lDDT. A chain-consistency check, which compares median lDDT across an
+entry's chains, would still miss entries such as 9qj6, where both
 chains were shifted alike.
 
 \subsection{The same error in the post-2022 census}
 \label{sec:post2022}
 
-In the post-2022 census, 69 entries had been rejected for having too few
-aligned residues and 3 because the model could not be downloaded. With the
-corrected mapping, 45 of those 69 entries yield lDDT values. In all, 139
-entries are labelled instead of 96 (37{,}531 labelled residues instead of
-24{,}457). The total is 96 + 45 $-$ 2 because two previously labelled
+Of the 168 entries of the post-2022 census, 96 had originally been scored,
+69 had been rejected for having too few paired residues and 3 because the
+model could not be downloaded. With the corrected mapping, 45 of those 69
+entries yield lDDT values. In all, 139 entries are scored instead of 96
+(37{,}531 scored residues instead of 24{,}457). The total is 96 + 45 $-$ 2 because two previously scored
 entries, 10pa and 10ps, are now rejected by the identity checks. The
 Spearman rank correlation between pLDDT and lDDT rose from 0.617 to 0.643.
 The pooled residue-level share of confident errors, taken over all residues
@@ -600,11 +659,14 @@ with pLDDT $\ge$ 90, halved from 0.58\% ($n = 20{,}777$) to 0.29\%
 below 0.60 lDDT rose from 58\% ($n = 177$) to 75\% ($n = 314$).
 
 The added residues and the rise in the lowest-confidence bin come from the
-45 newly labelled entries. Most of the rise in rank correlation, and more
+45 newly scored entries. Most of the rise in rank correlation, and more
 than half of the fall in confident errors, come from recomputing entries
-that were already labelled, where shifted residues had matched by chance and
-passed the per-pair filter. Entry 10ke, for example, held 22 of the 121 original confident errors. Because the September source files had not been kept,
-this recomputation used files fetched again in October 2026.
+that were already scored, where shifted residues had matched by chance and
+passed the per-pair filter. Entry 10ke, for example, held 22 of the 121 original confident errors. The
+input files of the original post-2022 run, downloaded in September 2026, had
+not been kept, so this recomputation used files downloaded again in October
+2026; changes to those files between the two downloads could account for
+part of the difference.
 
 \subsection{The preregistered coverage prediction before and after correction}
 \label{sec:p5}
@@ -620,8 +682,9 @@ $\lceil (n_{\mathrm{cal}}+1)(1-\alpha)\rceil$-th smallest of the calibration
 scores $|y-\hat y|$ and $n_{\mathrm{cal}}$ is the number of calibration
 residues \citep{vovk2005,lei2018}. At $1-\alpha = 0.90$ and $0.95$, we
 predicted that mean residue-level test coverage over the 200 splits would be
-at least the nominal level minus three Monte Carlo standard errors (MCSE;
-Table~\ref{tab:p5}), a threshold that depends on the data. Calibration
+at least the nominal level minus three Monte Carlo standard errors (MCSE,
+the standard deviation of coverage across splits divided by $\sqrt{200}$),
+a threshold that depends on the data. Calibration
 residues are pooled across proteins of different sizes, and for such
 hierarchical data marginal residue-level coverage carries no finite-sample
 guarantee \citep{dunn2023,lee2023}.
@@ -648,30 +711,33 @@ Nominal & Mean & Threshold & Margin & Mean & Threshold & Margin \\
 \end{table}
 
 On the original lDDT values the prediction failed at both levels
-(Table~\ref{tab:p5}). Those values were corrupted, so we withdraw that
-recorded outcome as invalid; a dated correction of record in the repository
-documents this (Appendix~\ref{app:provenance}). The original outputs remain
-archived unchanged. The original MCSE (0.0080 and 0.0057) was more than twice the corrected one, which lowered the original thresholds; K7PQ54 alone held 14\% of the original residues, so whether it fell in the test set could change a split's coverage considerably. On the
-corrected values (123{,}454 residues from 141 proteins) both means are
-slightly below nominal but pass their thresholds. At 0.90 the mean exceeds
-the threshold by 0.0031, about one MCSE. At 0.95 it exceeds it by 0.0007,
-less than half an MCSE (0.0017), so this level passes narrowly and could
-reverse under a different but equally defensible correction. Counting residues
-on the interval boundary as uncovered leaves the pass intact (0.9453 against
-0.9449).
+(Table~\ref{tab:p5}). Because those values were corrupted by the numbering fallback, we withdraw this outcome as invalid; a dated, timestamped correction
+notice in the repository states this and why (Appendix~\ref{app:provenance}).
+The original outputs remain archived unchanged. On the corrected values
+(123{,}454 residues from 141 proteins) both means are slightly below nominal
+but pass their thresholds. At 0.90 the mean exceeds the threshold by 0.0031,
+about one MCSE. At 0.95 it exceeds it by 0.0007, less than half an MCSE
+(0.0017), so this level passes narrowly and could reverse under a different
+but equally defensible correction of the residue mapping. lDDT takes a
+limited set of values, so some test residues lie exactly on an interval end
+$\hat y \pm q$; counting them as uncovered leaves the pass intact (0.9453
+against 0.9449). The original thresholds were lower because the original
+MCSE (0.0080 at 0.90, 0.0057 at 0.95) was more than twice the corrected one:
+K7PQ54 alone held 14\% of the original residues, so a split's coverage
+depended strongly on whether K7PQ54 fell in its test set.
 
 The seeds and the decision rule were fixed by the original registration, and
-the corrected mapping and the re-evaluation protocol were registered before
-the re-evaluation ran. The re-evaluation is not blind. Before registering it, we
-computed the same statistic outside the registered pipeline on an early
-version of the corrected mapping (122{,}024 residues rather than 123{,}454)
-and obtained 0.898 and 0.947. The re-evaluation used the registered
-evaluation code, invoked directly while data collection was paused. Two
-reimplementations written from the registration, without importing the
-evaluation code, reproduced both means exactly, and one also reproduced the
-original failure. Together with the mechanism in
-Section~\ref{sec:mechanism}, this makes the original failure consistent with
-a labelling artefact. Because the interval ignores pLDDT, the corrected
+the corrected mapping and the protocol for rerunning the test on corrected
+values were registered before the rerun. The rerun is not blind. Before
+registering it, we computed the same statistic outside the registered
+pipeline on an early version of the corrected mapping (122{,}024 residues
+rather than 123{,}454) and obtained 0.898 and 0.947. The rerun used the
+registered evaluation code unchanged, and no new batches were collected
+until it finished. Two reimplementations written from the registration,
+without importing the evaluation code, reproduced both means exactly, and
+one also reproduced the original failure. The corrected pass, together with
+the mechanism in Section~\ref{sec:mechanism}, makes the original failure
+consistent with an artefact of the residue mapping. Because the interval ignores pLDDT, the corrected
 result tests the lDDT values and the pipeline. It says nothing about how
 well pLDDT tracks error.
 
@@ -689,23 +755,23 @@ in this paper.}
 \toprule
 Check & What it catches & How & Evidence here \\
 \midrule
-\rc Training eligibility & \rc Possible training example & \rc Release date on or before 2018-04-30 & \rc ATLAS: 791 of 868 proteins (Section~\ref{sec:atlas}) \tabularnewline
-\rc Template exposure & \rc Same protein as template & \rc Template list in the model file, mapped through SIFTS & \rc Census: 45 of 138 models (Section~\ref{sec:homology}) \tabularnewline
-\rc Homology exposure & \rc Close training-era relative & \rc Sequence search of the training-era PDB & \rc Census: 87 of 138 same-protein or $\ge$95\%, 10 none at $\ge$30\% (Section~\ref{sec:homology}) \tabularnewline
-\rc Identity check & \rc Register shifts & \rc Amino acids of each pair match; reject segments with $>$10\% mismatches & \rc Under a register shift only about 5--7\% of pairs match by chance in the segments we tested (Section~\ref{sec:detect}) \tabularnewline
-\rc lDDT distribution & \rc Gross corruption & \rc Share of lDDT $<$ 0.60 against a clean set & \rc 31.9\% original, 1.1\% corrected (Section~\ref{sec:scope}) \tabularnewline
-\rc Chain agreement & \rc Shifts in one chain & \rc Median lDDT across an entry's chains & \rc 13 entries flagged, 9qj6 missed (Section~\ref{sec:detect}) \tabularnewline
-\rc Registration, stored inputs & \rc Errors found later & \rc Freeze the design, keep hashed inputs & \rc Relabelling with the original mapping reproduced every stored batch (Section~\ref{sec:scope}) \tabularnewline
+\rc Training eligibility & \rc Possible training example & \rc Release date on or before 2018-04-30 & \rc ATLAS: 791 of 868 proteins training-eligible (Section~\ref{sec:atlas}) \tabularnewline
+\rc Template exposure & \rc Same protein as template & \rc Template list in the model file, mapped through SIFTS & \rc Preregistered census: 45 of 138 models (Section~\ref{sec:homology}) \tabularnewline
+\rc Homology exposure & \rc Close training-era relative & \rc Sequence search of the training-era PDB & \rc Preregistered census: 87 of 138 proteins with a same-protein or $\ge$95\%-identical relative; 10 with none at $\ge$30\% (Section~\ref{sec:homology}) \tabularnewline
+\rc Identity check & \rc Register shifts & \rc Amino acids of each pair match; reject SIFTS segments with $>$10\% mismatches & \rc Under a register shift only about 5--7\% of pairs match by chance, so the segment rule rejects shifted segments; the per-pair check alone kept chance matches in the post-2022 census (Sections~\ref{sec:detect}, \ref{sec:post2022}) \tabularnewline
+\rc lDDT distribution & \rc Gross corruption & \rc Compare the share of lDDT $<$ 0.60 with a separate set & \rc 31.9\% original, against 2.6\% in the corrected post-2022 census (Section~\ref{sec:detect}) \tabularnewline
+\rc Chain consistency & \rc Shifts in one chain & \rc Compare median lDDT across an entry's chains (flag differences $\ge$0.4) & \rc 13 entries flagged, 9qj6 missed (Section~\ref{sec:detect}) \tabularnewline
+\rc Registration, stored inputs & \rc Lets errors found later be diagnosed and corrected & \rc Fix the design in advance, keep hashed inputs & \rc Rescoring with the original mapping reproduced the stored lDDT values of every batch (Section~\ref{sec:scope}) \tabularnewline
 \bottomrule
 \end{tabular}
 \end{table}
 
-Table~\ref{tab:checks} lists the checks that would have exposed the problems
-reported here. We recommend the following.
+Table~\ref{tab:checks} lists checks for the two problems reported here, with
+the evidence for each. We recommend the following.
 \begin{enumerate}\setlength{\itemsep}{1pt}
 \item Report exposure by channel, and state which channels the question
       requires to be controlled. Release dates alone measure only training
-      eligibility, and database creation dates measure none of the channels
+      eligibility, and AFDB creation dates measure none of the channels
       (Section~\ref{sec:atlas}).
 \item For AFDB models, read the template list from the model file
       (Section~\ref{sec:homology}).
@@ -716,9 +782,10 @@ reported here. We recommend the following.
       every pair, reject any SIFTS segment with more than 10\% mismatches,
       and run the coarser checks of Table~\ref{tab:checks} before any
       downstream analysis (Section~\ref{sec:detect}).
-\item Treat a failed calibration test as a possible pipeline failure first.
-      Ours is consistent with an error in the lDDT values rather than in the
-      model (Section~\ref{sec:p5}).
+\item Before attributing a failed calibration or coverage test to the model,
+      rule out errors in the reference values. Our failed coverage test,
+      which does not use pLDDT, is consistent with an error in the lDDT values
+      (Section~\ref{sec:p5}).
 \item Register analyses before lDDT values exist and keep the raw inputs
       (Sections~\ref{sec:scope} and~\ref{sec:post2022}).
 \end{enumerate}
@@ -726,26 +793,29 @@ reported here. We recommend the following.
 \section{Limitations}
 \label{sec:limitations}
 
-Other AlphaFold versions, including AlphaFold3 \citep{abramson2024}, have
-their own cutoffs. We did not measure exposure through multiple sequence
-alignments or self-distillation, and template lists do not show reliance
-(Section~\ref{sec:channels}). Homology was measured with fixed identity
+Our training channel uses AlphaFold2's 2018-04-30 cutoff. Other versions,
+including AlphaFold3 \citep{abramson2024}, have their own cutoffs, and our
+shares do not transfer to them. We did not measure exposure through multiple
+sequence alignments or self-distillation, and template lists do not show how
+much a prediction relied on its templates (Section~\ref{sec:channels}). Homology was measured with fixed identity
 thresholds, a single canonical sequence and no coverage threshold. A
 $\ge$30\% hit can be a short domain match, which overstates homology
 exposure, and a single canonical sequence can miss isoform-specific hits,
-which understates it. lDDT values compare single chains with monomer
-models and ignore interfaces and ligands in the crystal, which can lower
-lDDT for reasons unrelated to exposure. We score C$\alpha$ lDDT, so our values are
+which understates it. lDDT compares one experimental chain with a
+monomer model, so partner chains, ligands or crystal packing can change the
+experimental conformation and lower lDDT for reasons unrelated to
+exposure. We score C$\alpha$ lDDT, so our values are
 not directly comparable with all-atom lDDT.
 
-The census samples new PDB entries, which over-represent proteins that are
+The preregistered census samples new PDB entries, which over-represent proteins that are
 crystallised repeatedly, so its exposure shares describe what a post-cutoff
 release filter yields rather than the novelty of proteins in general. It is
 reported after four of its 12 batches, and the full census may differ.
 Because the correction adds and drops residues, the before-and-after
 coverage comparison is not made on identical residues
-(Section~\ref{sec:scope}). Finally, the numbering error is documented in one
-pipeline, ours. The trigger frequencies we report describe this census, and
+(Section~\ref{sec:scope}). The corrected coverage result comes from a rerun
+registered after a preliminary result was known, and it passes at 0.95 by
+less than half an MCSE (Section~\ref{sec:p5}). Finally, the numbering fallback is documented in one pipeline, ours. The trigger rates we report (Section~\ref{sec:detect}) describe this census, and
 we have not examined whether any published analysis is affected.
 
 \section{Conclusion}
@@ -754,13 +824,15 @@ Agreement between an AFDB model and an experimental structure is evidence
 about AlphaFold only if two things are known: what the model could have
 seen, and that the residues being compared are the same residues. In ATLAS,
 91\% of proteins had only training-eligible references. In the preregistered
-census, whose references all post-date the cutoff, 63\% of proteins had a
+census, whose references all post-date the training cutoff, 63\% of proteins had a
 same-protein or $\ge$95\%-identical structure in the training-era PDB. In an
-exploratory comparison, proteins with such a relative had slightly higher
-lDDT and higher pLDDT. In our own pipeline a numbering fallback, with no
-segment-level identity check to catch it, made accurate predictions look
-like confident errors, and a preregistered prediction failed on the
-resulting values and held once they were corrected. Registration, stored
+exploratory comparison on an earlier census, proteins with such a relative
+had slightly higher lDDT and higher pLDDT. In our own pipeline a numbering fallback, with no
+SIFTS-segment identity check to catch it, made accurate predictions look
+like confident errors. A preregistered coverage prediction, which does not
+use pLDDT, failed on the resulting values; a rerun registered after the
+error and a preliminary result were known meets it on corrected values,
+narrowly at the 0.95 level. Registration, stored
 inputs and the checks in Table~\ref{tab:checks} are cheap enough to be
 routine for AFDB comparisons.
 
@@ -769,34 +841,38 @@ routine for AFDB comparisons.
 \section{Provenance}
 \label{app:provenance}
 
-Table~\ref{tab:timeline} lists the main events. The README of the
-repository maps each section, table and figure of this paper to its
-registration, code and output files. The correction of record is a dated
+This appendix records when each step of the preregistered census and its
+correction happened, so that readers can check which decisions preceded
+which data (Table~\ref{tab:timeline}). The README of the repository (Data
+and code availability) maps each section, table and figure of this paper to
+its registration, code and output files. The correction notice is a dated
 document, timestamped like the registrations, that withdraws the original
 outcome of the coverage test and states why. Registrations and intermediate
-outputs carry timestamped hashes, and the audit reports are in the
-\texttt{audits/} directory.
+outputs carry timestamped hashes. The repository also holds the reports of
+the independent checks of Sections~\ref{sec:scope} and~\ref{sec:p5}, each
+made with separately written code.
 
 \begin{table}[!h]
 \centering
-\caption{Timeline of the preregistered census and its correction.}
+\caption{Timeline of the preregistered census and its correction. Events on
+the same date are listed in the order in which they occurred.}
 \label{tab:timeline}
 \small
 \begin{tabular}{@{}lp{13.2cm}@{}}
 \toprule
 Date (2026) & Event \\
 \midrule
-9 Sep & Design, analysis code and predictions registered (proof anchored in Bitcoin 10 Sep) \\
-10 Sep & Two dated amendments before any data: batch~1 shortened to 48~h; repair of the code that dispatches batches \\
-11 Sep & AFDB snapshot time $T_0$ \\
-4--5 Oct & Evaluation after batch 4 records the coverage failure \\
-7 Oct & Audit traces the 9qj6 anomaly to the numbering fallback; collection paused \\
-7 Oct & Unregistered preliminary calculation on an early version of the corrected mapping (0.898, 0.947) \\
-7 Oct & Corrected mapping, re-evaluation protocol and correction of record registered \\
-7 Oct & Batches 1--4 relabelled with the original and corrected mappings; post-2022 census relabelled \\
-7 Oct & Audit of the corrected mapping, the relabelling and the post-2022 recomputation \\
-9 Oct & Registered re-evaluation of the coverage prediction on corrected lDDT values completes \\
-9 Oct & Audits and recomputation of the re-evaluation \\
+9 Sep & Design, analysis code and predictions registered (OpenTimestamps proof confirmed in Bitcoin on 10 Sep) \\
+10 Sep & Two dated amendments made before any data were collected: batch~1 shortened to 48~h; fix to the code that starts each batch \\
+11 Sep & Census start $T_0$: AFDB version~6 snapshot fixed; only entries released later qualify \\
+4--5 Oct & Evaluation after batch 4: coverage prediction fails at both levels \\
+7 Oct & Post hoc check traces the low lDDT of K7PQ54 (entry 9qj6) to the numbering fallback; data collection paused \\
+7 Oct & Unregistered preliminary calculation on an early version of the corrected mapping (mean coverage 0.898 at 0.90, 0.947 at 0.95) \\
+7 Oct & Corrected mapping, protocol for rerunning the coverage test, and correction notice registered \\
+7 Oct & Batches 1--4 rescored from stored files with both mappings; post-2022 census rescored with the corrected mapping from re-downloaded files \\
+7 Oct & Independent check of the corrected mapping, the rescoring and the post-2022 recomputation \\
+9 Oct & Registered rerun of the coverage test on corrected lDDT values completes; passes at both levels \\
+9 Oct & Two independent reimplementations reproduce the rerun \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -804,17 +880,19 @@ Date (2026) & Event \\
 \section*{Data and code availability}
 
 The registrations with their timestamp proofs, the analysis code, the
-derived residue-level tables, the SHA-256 hashes of every request and
-response, and the audit reports are available at
-\url{https://github.com/MachineLearning-Nerd/afdb-exposure-audit}, with a script that checks 208 numbers in the paper, 147 of them recomputed from the row-level tables and the rest reconciled with them or read from stored outputs. The full evaluation records of the preregistered census
-contain registered predictions that have not yet been evaluated and will be
-added when the census closes. Raw files from the PDB, AFDB, PDBe/SIFTS,
+derived residue-level tables, the SHA-256 hashes of the downloaded files and
+web responses, and the reports of the independent checks are available at
+\url{https://github.com/MachineLearning-Nerd/afdb-exposure-audit}. A script
+in the repository runs 208 checks: 147 recompute numbers in this paper from
+the row-level tables, 43 check stored outputs against those recomputations,
+and 18 compare numbers in the paper with stored outputs. Outputs for the
+census's other registered predictions, which have not yet been evaluated,
+will be released when the census closes. Raw files from the PDB, AFDB, PDBe/SIFTS,
 UniProt and ATLAS are not redistributed but can be re-fetched, and the
 recorded hashes identify the exact files used. The ATLAS counts in
-Section~\ref{sec:setup} (records, entries, and proteins with a model and a
-mapping) depend on a candidate-pool file from a separate ongoing study that
-is not released, so that step cannot be rerun from the repository. Its
-outputs and run records are included.
+Sections~\ref{sec:setup} and~\ref{sec:atlas} are computed from released
+tables. One intermediate step, which sorted the 869 proteins into two lists for a separate, unpublished study (this paper uses both lists), reads a file that is not released, so
+that step cannot be rerun; its outputs are included.
 
 \bibliographystyle{plainnat}
 {\raggedright\small

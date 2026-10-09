@@ -151,7 +151,7 @@ def fig1(n, fdir):
             box(x, y["auth"], str(auth), edge=INK if is_first else INK2, lw=1.3 if is_first else 0.7,
                 weight="bold" if is_first else "normal")
         else:
-            box(x, y["auth"], "null", observed=False)
+            box(x, y["auth"], "–", observed=False)
     x0 = xs[labels.index(n["first_observed_label_seq_id"])]
     xh = xs[labels.index(hit)]
     xu = xs[labels.index(n["sifts_start_label_seq_id"])]
@@ -178,15 +178,15 @@ def fig1(n, fdir):
     ax.text(tx, 2.45, f"PDB {n['entry']} chain {n['chain']} ({n['accession']})", fontsize=8, color=INK,
             fontweight="bold", va="top")
     ax.text(tx, 2.05, f"SIFTS segment: label {n['sifts_start_label_seq_id']}–{n['sifts_end_label_seq_id']}"
-            f" ↔ UniProt {n['sifts_unp_start']}–{n['sifts_unp_end']};\nstart author number is null",
+            f" ↔ UniProt {n['sifts_unp_start']}–{n['sifts_unp_end']};\nfirst residue unobserved: no start author number",
             fontsize=7.5, color=INK, va="top", linespacing=1.25)
     ax.plot([tx, tx + 0.45], [1.15, 1.15], color=BLUE, lw=1.4)
-    ax.text(tx + 0.6, 1.15, f"correct: atom auth {n['first_observed_auth_seq_id']} = label "
-            f"{n['first_observed_label_seq_id']}\n→ UniProt {n['first_observed_correct_uniprot']}",
+    ax.text(tx + 0.6, 1.15, f"correct: author {n['first_observed_auth_seq_id']} = label "
+            f"{n['first_observed_label_seq_id']} → UniProt {n['first_observed_correct_uniprot']}",
             fontsize=7.5, color=INK, va="center", linespacing=1.25)
     ax.plot([tx, tx + 0.45], [0.35, 0.35], color=ORANGE, lw=1.4, ls=(0, (4, 2)))
-    ax.text(tx + 0.6, 0.35, f"faulty fallback: map keyed by label,\natom looked up by auth "
-            f"{n['first_observed_auth_seq_id']} → key {hit}\n→ UniProt {n['faulty_uniprot_for_first_atom']}",
+    ax.text(tx + 0.6, 0.35, f"faulty fallback: map built in label numbers,\nauthor "
+            f"{n['first_observed_auth_seq_id']} looked up as label {hit}\n→ UniProt {n['faulty_uniprot_for_first_atom']}",
             fontsize=7.5, color=INK, va="center", linespacing=1.25)
     save(fig, fdir, "f1_mechanism")
 

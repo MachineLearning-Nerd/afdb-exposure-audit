@@ -131,6 +131,15 @@ No registered, frozen or historical file was edited.
   post-2022 relabel; no coordinates or pLDDT).
 - `.gitignore`: exception so that `audits/label_crosscheck_biotite/full_ledger_out.log`
   is shipped.
+- **Revision 5 (2026-10-09).** `paper/` replaced by the source's revision 5
+  (git `52345ba7`): wording revised section by section for readers outside
+  the project, no number changed; the ATLAS step and the registration
+  repository described more precisely. `code/verification/make_figures_rev4.py`:
+  Figure 1 labels in plain words only (numbers JSON unchanged). README section
+  map, `code/paper_numbers.py` check labels and docstrings,
+  `code/reproduce_p5.py` and `audits/README.md` renumbered to the paper's
+  tables and sections (homology Table 1, defect scope Table 2, coverage
+  Table 3); no check logic changed, 208/208 still pass.
 
 ## Copied files
 
@@ -185,7 +194,7 @@ earlier stamped version was recovered.
 | `code/tests/test_e426_attested_empty.py` | `tests/test_e426_attested_empty.py` | `72f0f0517a0538259992895d8ca0bb83a09a63d7a457f58ca5e3a31818945b8b` | identical | = HEAD |
 | `code/tests/test_e427_label_repair.py` | `tests/test_e427_label_repair.py` | `addbddc45e390b698eefbe20c1bcac69bf0d1bf0bf7a298bf14eb1456b96d382` | identical | = HEAD |
 | `code/verification/make_figures_rev3.py` | `paper/arxiv/verification/make_figures_rev3.py` | `651001efc3932396a90388f311883adc5459313b5a8137e4d1517d0569e0075f` | identical | = HEAD |
-| `code/verification/make_figures_rev4.py` | `paper/arxiv/verification/make_figures_rev4.py` | `ed56281438d6f58a90b641ec4fd54ba5a2bc114bdfb616a70b45336fdf5eee4f` | identical | not tracked |
+| `code/verification/make_figures_rev4.py` | `paper/arxiv/verification/make_figures_rev4.py` | `0f9e6c2a408002b3b1f37a96bfe7860cc04e1fac2e409a458c9ada8c0b6c6522` | identical | git `52345ba7` |
 | `code/verification/v1_channel_recount.py` | `paper/arxiv/verification/v1_channel_recount.py` | `06ee861947492e424bb7863d1c0a148a0c1c074b0490ac4f3702772c08555655` | identical | = HEAD |
 | `code/verification/v2_prior_exposure.py` | `paper/arxiv/verification/v2_prior_exposure.py` | `4c8359e422a4be33e4051c452784b39ec603fd775e886929afe2477cfc25d33f` | identical | = HEAD |
 | `code/verification/v2c_coverage_extension.py` | `paper/arxiv/verification/v2c_coverage_extension.py` | `3a44267d22ee28f84d71a526365400d0da279d2dab22a8913898e655390de3d5` | identical | = HEAD |
@@ -266,11 +275,11 @@ earlier stamped version was recovered.
 | `paper/figures/rev3/f1_mechanism.pdf` | `paper/arxiv/figures/rev3/f1_mechanism.pdf` | `e3d67e95069094ba1463b1b587ada0459d3183181f11f9ec4ed7ac47e9092139` | identical | = HEAD |
 | `paper/figures/rev3/f2_scope.pdf` | `paper/arxiv/figures/rev3/f2_scope.pdf` | `5c9cf2552ecb46a42beb670c60a27c721fe70e897fbfab35a2a22083ea4ea305` | identical | = HEAD |
 | `paper/figures/rev3/f3_exposure.pdf` | `paper/arxiv/figures/rev3/f3_exposure.pdf` | `75d3a20a57a16c36f87d49019068b3b71b86c0fbd245f2e2eb105479f87dd403` | identical | = HEAD |
-| `paper/figures/rev4/f1_mechanism.pdf` | `paper/arxiv/figures/rev4/f1_mechanism.pdf` | `3b2b9b62e881c21fc025d6fc0c6872ca5b702ac3ac75314c63b461d17103ed1c` | identical | not tracked |
+| `paper/figures/rev4/f1_mechanism.pdf` | `paper/arxiv/figures/rev4/f1_mechanism.pdf` | `c6d6d49a1d02e2a67198a25afe31c9e807ea5fff7b45937e4c110d44730ffbac` | identical | git `52345ba7` |
 | `paper/figures/rev4/f2_scope.pdf` | `paper/arxiv/figures/rev4/f2_scope.pdf` | `f12520c1a2a87cfcdddbf6375c8bbf61cca6648d26a688420592c5f80fef95a0` | identical | not tracked |
-| `paper/references.bib` | `paper/arxiv/references.bib` | `09aa2864adcd3850d97e5608ff3a5825c7406c2d3be2b30e459e0140a8899a61` | identical | final version, working tree 2026-10-09 (not committed) |
-| `paper/temporal_leakage.tex` | `paper/arxiv/temporal_leakage.tex` | `a534b8cbc458319cbe4af0fcd7849b56de36e343801a5e6e1710d7f0c5f9f15c` | identical | final version, working tree 2026-10-09 (not committed) |
-| `paper/temporal_leakage_paper.pdf` | built from `paper/temporal_leakage.tex` | `994948f2e37189f3aadc0bf67760100f0f008f85c726591acee3c36f3146f20c` | built here (tectonic) | not copied |
+| `paper/references.bib` | `paper/arxiv/references.bib` | `3cf2d521d1ddfa00b3258892bd0fc88220cf9ca9984332faac9db647dd3ee940` | identical | git `52345ba7` |
+| `paper/temporal_leakage.tex` | `paper/arxiv/temporal_leakage.tex` | `e7422cfa2f3ff11bb0e2bdddd0107dc4b2af03472f4c01ed19b62fcb17cab548` | identical | git `52345ba7` |
+| `paper/temporal_leakage_paper.pdf` | `paper/arxiv/temporal_leakage_paper.pdf` | `53a0639babb93293716f32f7627f8489a35ddb7ff23ceee72f910510625bf987` | identical (built with tectonic) | git `52345ba7` |
 | `registrations/e420_registration.md` | `docs/e420_registration.md` | `ea6d8725e23f504607e75a869ae33c3e189bcd28f6533a2f739b388462789d99` | identical | = HEAD |
 | `registrations/e421_post_run_checkpoint.json` | `docs/e421_post_run_checkpoint.json` | `a0ebfa59719a19c0af32a6a40eb628435b37ec44f2809a31f99d7249243a13a1` | identical | = HEAD |
 | `registrations/e421_post_run_checkpoint.json.ots` | `docs/e421_post_run_checkpoint.json.ots` | `7fac3db8adaff048052281a4f938d3d483dd9210db5ddd96bb2a7d5cc1679764` | identical | = HEAD |

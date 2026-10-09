@@ -38,7 +38,7 @@ Internal analysis identifiers used throughout (paper, Appendix A):
 python3.12 -m venv .venv && . .venv/bin/activate
 pip install -r requirements.txt
 python -I code/paper_numbers.py      # 208 checks of the paper's numbers -> "208/208 checks OK" / "ALL CHECKS OK"
-python -I code/reproduce_p5.py       # Table 4 from the ledgers -> "ALL MATCH" with the registered evaluator
+python -I code/reproduce_p5.py       # Table 3 from the ledgers -> "ALL MATCH" with the registered evaluator
 ```
 
 `paper_numbers.py` prints one line per check with its class, the value in
@@ -74,11 +74,16 @@ the paper, the value obtained, and the source:
 
 Not checked by the script: design parameters stated as definitions (lDDT
 radius and thresholds, the 0.60/0.4/90/30-residue/10% cut-offs, 2.5 Å, the
-E-value, 200 splits and the 50/25/25 split), the 12 planned batches, and the
-registration and amendment dates of the Appendix A timeline (9–10 September),
-which are attested by the `.ots` proofs rather than by a data file. The
-paper's data statement still says "127 numbers"; the script now has 208
-checks.
+E-value, 200 splits and the 50/25/25 split, the SIFTS identity and coverage
+cut-offs 0.90/0.80 of the ATLAS step, the 10,000 bootstrap resamples), the 12
+planned batches, the ATLAS archive and check dates (2026-08-30, 2026-09-04),
+and the registration and amendment dates of the Appendix A timeline (9–10
+September), which are attested by the `.ots` proofs rather than by a data
+file. Also not checked: the four ATLAS records that could not be checked
+because of network errors (rows of
+`data/derived/results/e420/source_availability_manifest.json` with
+`failure_code` `E420_TRANSPORT_ERROR`). The paper's data statement describes
+the 208 checks by class (147 / 43 / 18).
 
 The script imports nothing from `code/experiments`, `code/verification` or
 `reproduce_p5.py`. It exits 0 only if all 208 checks ran and passed, 1 if a
@@ -98,7 +103,7 @@ is blind for its pLDDT-conditional predictions until the batch-8
 evaluation. Nothing here computes pLDDT-binned or pLDDT-conditional
 coverage, Mondrian or CQR quantities for it. pLDDT is read from the census
 ledgers only as the registered P5 eligibility filter and, for the
-label-quality checks, as a per-chain median pLDDT (the Table 3 screen for
+label-quality checks, as a per-chain median pLDDT (the Table 2 screen for
 high-confidence chains with median lDDT below 0.4, and the 9qj6 chain): a
 screening statistic, not a coverage quantity, and already reported in the
 paper. The exploratory post-2022 (e421) census is not blinded; its
@@ -180,23 +185,23 @@ W=$PWD                                           # several scripts need an absol
 
 | Paper item | Script (in `_work/`) | Inputs | Output | Needs |
 |---|---|---|---|---|
-| Table 1; Sec. 5 (868, 791, 851, 77, 863, years 1988–2023, median 2008) | `python -I paper/arxiv/verification/v1_channel_recount.py $W rerun/v1.json` | `results/e420/label_run_receipt.json`, `overflow_temporal_check.json` | `out/v1_channel_recount.json` | offline |
+| Sec. 5 (868, 791, 851, 77, 863, years 1988–2023, median 2008) | `python -I paper/arxiv/verification/v1_channel_recount.py $W rerun/v1.json` | `results/e420/label_run_receipt.json`, `overflow_temporal_check.json` | `out/v1_channel_recount.json` | offline |
 | Sec. 4 ATLAS counts (1,938 / 1,735 / 943 / 869) | `experiments/e420_census.py`, `e420_label_run.py`, `e420_overflow_check.py` | ATLAS archive, PDBe, AFDB | `results/e420/source_availability_manifest.json` (`summary`), `label_run_receipt.json`, `overflow_set.json` | network; see limits below |
-| Table 2 (homology), Sec. 6 (87/138, 128/138, P00698 730 …), App. B (224 accessions; 594 × 200, 408 × 204) | `python -I paper/arxiv/verification/v2_prior_exposure.py $W rerun/v2.json`, then `python -I paper/arxiv/verification/v2c_coverage_extension.py $W rerun/v2c.json` | e421 census, e422 ledger + manifest, cached RCSB and UniProt responses | `out/v2_prior_exposure.json`, `out/v2c_extension.json` | offline (every request served from the shipped caches) |
-| Table 2 (templates), Sec. 6 (45/88/5; 43 vs 35; Q9F0J8; template dates) | `python -I paper/arxiv/verification/v5_templates.py $W rerun/v5.json` | the 138 AFDB model files in `results/e422/raw` (`fetch_raw.py --set e422`, 38.6 MB), cached PDBe SIFTS and RCSB responses | `out/v5_templates.json` | AFDB model files; lookups offline. Without the model files, `paper_numbers.py` recomputes the classes from `v5_afdb_template_table.json` and the same cache |
-| Fig. 3 of the earlier revision (not in the final paper; its numbers are in Table 2) | `python -I paper/arxiv/verification/make_figures_rev3.py $W` | `out/v2…`, `out/v5…` | `paper/arxiv/figures/rev3/f3_exposure.pdf` | offline |
-| Sec. 3 post-2022 model types (93 files: 6 ColabFold v1.5.2, 87 AlphaFold Monomer v2.0; no ColabFold model among the 85 proteins of the exposure comparison) | `python -I code/tools/extract_e421_model_table.py data/derived _work/data/e427/e421_raw data/derived/results/e427/e421_relabel/afdb_model_table.json` (from the repo root); counts: `code/paper_numbers.py` | the AFDB files of the post-2022 relabel (`fetch_raw.py --set e421relabel`) | `afdb_model_table.json` | AFDB files for the table; counts offline |
-| Sec. 6 exposure effect (40 vs 45 proteins; 0.016 [0.003, 0.032] …) | `python -I paper/arxiv/verification/v6_exposure_effect.py $W rerun/v6.json` | `results/e427/e421_relabel/census_results.json`, `out/v2`, `out/v2c` | `out/v6_exposure_effect.json` | offline. V6 reads `out/v2…` and `out/v2c…` from the `out/` directory next to the script, not from the root argument: run the work-root copy so that both point to the same tree |
+| Table 1 (homology), Sec. 6.1 (87/138, 128/138, P00698 730 …), Sec. 4 (224 proteins queried; 594 queries with hits, 408 without) | `python -I paper/arxiv/verification/v2_prior_exposure.py $W rerun/v2.json`, then `python -I paper/arxiv/verification/v2c_coverage_extension.py $W rerun/v2c.json` | e421 census, e422 ledger + manifest, cached RCSB and UniProt responses | `out/v2_prior_exposure.json`, `out/v2c_extension.json` | offline (every request served from the shipped caches) |
+| Table 1 (templates), Sec. 6.2 (45/88/5; 43 vs 35; Q9F0J8; template dates) | `python -I paper/arxiv/verification/v5_templates.py $W rerun/v5.json` | the 138 AFDB model files in `results/e422/raw` (`fetch_raw.py --set e422`, 38.6 MB), cached PDBe SIFTS and RCSB responses | `out/v5_templates.json` | AFDB model files; lookups offline. Without the model files, `paper_numbers.py` recomputes the classes from `v5_afdb_template_table.json` and the same cache |
+| Fig. 3 of the earlier revision (not in the final paper; its numbers are in Table 1) | `python -I paper/arxiv/verification/make_figures_rev3.py $W` | `out/v2…`, `out/v5…` | `paper/arxiv/figures/rev3/f3_exposure.pdf` | offline |
+| Sec. 4 (Model versions): post-2022 model types (93 files: 6 ColabFold v1.5.2, 87 AlphaFold Monomer v2.0; no ColabFold model among the 85 proteins of the exposure comparison) | `python -I code/tools/extract_e421_model_table.py data/derived _work/data/e427/e421_raw data/derived/results/e427/e421_relabel/afdb_model_table.json` (from the repo root); counts: `code/paper_numbers.py` | the AFDB files of the post-2022 relabel (`fetch_raw.py --set e421relabel`) | `afdb_model_table.json` | AFDB files for the table; counts offline |
+| Sec. 6.3 exposure effect (40 vs 45 proteins; 0.016 [0.003, 0.032] …) | `python -I paper/arxiv/verification/v6_exposure_effect.py $W rerun/v6.json` | `results/e427/e421_relabel/census_results.json`, `out/v2`, `out/v2c` | `out/v6_exposure_effect.json` | offline. V6 reads `out/v2…` and `out/v2c…` from the `out/` directory next to the script, not from the root argument: run the work-root copy so that both point to the same tree |
 | Sec. 7.1, Fig. 1 (9qj6: shift 34; 0.198/0.199 → 0.993/0.995; 472/471) | `python -I paper/arxiv/verification/audit/k7pq54_mapping_audit.py --pdb … --sifts … --af … --checkpoints results/e422/batches/e422_batch04_checkpoint.json --output rerun/k7.json`; figure via `make_figures_rev4.py $W rerun/fig` | 3 raw files (`fetch_raw.py --set 9qj6`) | `audit/k7pq54_9qj6_audit.json`; `f1_mechanism.pdf` | 3 files from network; figure offline |
-| Table 3, Fig. 2, Sec. 7.2 (488/495 segments, 188 changed, 151 > 0.2, 116 → 0 chains, 13 entries, +6,465/−916 residue positions) | `python -I paper/arxiv/verification/make_figures_rev4.py $W rerun/fig` (F2) and `code/paper_numbers.py` | `results/e422/batches`, `results/e427/batches` | `out/figures_rev3_numbers.json`, `f2_scope.pdf` | offline |
+| Table 2, Fig. 2, Sec. 7.2 (488/495 segments, 188 changed, 151 > 0.2, 116 → 0 chains, 13 entries, +6,465/−916 residue positions) | `python -I paper/arxiv/verification/make_figures_rev4.py $W rerun/fig` (F2) and `code/paper_numbers.py` | `results/e422/batches`, `results/e427/batches` | `out/figures_rev3_numbers.json`, `f2_scope.pdf` | offline |
 | The two ledgers themselves | original: `experiments/e423_dispatch.py` → `e423_runner.py` (batch 1: `e426_attested_empty.py`); replay + corrected: `experiments/e427_replay_relabel.py` (frozen labeller must reproduce every original checkpoint before the corrected one is written) | raw files (`--set e422`) | `results/e422/batches/*`, `results/e427/batches/*`, `results/e427/replay_report.json` | raw files; replay itself offline |
-| Sec. 7.2 (K7PQ54: 14% of rows, half of 0.90-level misses) | `python -I paper/arxiv/verification/v4_k7pq54_diagnostics.py $W rerun/v4.json` | original ledger | `out/v4_k7pq54.json` | offline |
-| Sec. 7.2 (independent audit, 36 segments) | `python -I results/e427/audit/independent_label_sample.py` (the release copy is `code/audit/independent_label_sample.py` = `audits/census_correction/independent_label_sample.py`; `make_workroot.py` places it here because it locates the root as `parents[2]` of its own path) | raw files + both ledgers | `results/e427/audit/independent_label_sample.json` (shipped: `data/derived/results/e427/audit/`) | raw files |
+| Sec. 7 opening (K7PQ54: 14% of rows, half of 0.90-level misses) | `python -I paper/arxiv/verification/v4_k7pq54_diagnostics.py $W rerun/v4.json` | original ledger | `out/v4_k7pq54.json` | offline |
+| Sec. 7.2 (independent reimplementation, 36 segments) | `python -I results/e427/audit/independent_label_sample.py` (the release copy is `code/audit/independent_label_sample.py` = `audits/census_correction/independent_label_sample.py`; `make_workroot.py` places it here because it locates the root as `parents[2]` of its own path) | raw files + both ledgers | `results/e427/audit/independent_label_sample.json` (shipped: `data/derived/results/e427/audit/`) | raw files |
 | Sec. 7.2 (second label check: 494 of 495 segments; 21xg A; 16 altloc and 57 modified residues excluded) | `audits/label_crosscheck_biotite/*.py` (see its README) | raw files + PDBe updated mmCIF | `audits/label_crosscheck_biotite/*_out.json` | raw files, network, `biotite==1.7.1` |
 | Sec. 7.3 (492 segments, 304 triggered, 147 offset, −31…+201) | `python -I paper/arxiv/verification/v7_trigger_prevalence.py $W rerun/v7.json` | raw SIFTS + mmCIF (`--set e422`), both ledgers | `out/v7_trigger_prevalence.json` | raw files |
 | Sec. 7.4 post-2022 census (96 → 139 entries, 0.617 → 0.643, 0.58% → 0.29% …) | original: `experiments/e421_census_fixed.py` (**runs the whole census at import — never import it**); relabel: `experiments/e427_e421_relabel.py` | network (re-fetched 2026-10-07) | `results/e421/census_results.json`, `results/e427/e421_relabel/{census_results,summary,receipts}.json` | network |
-| Table 4, Sec. 7.5 (registered evaluator) | `experiments/e427_rerun_p5.py` → `e425_execreceipt.run_logged_evaluation` → `e424_evalgate` → `e422_evaldriver` / `e422_protocol` (about 20 h) | `results/e427/batches` | `results/e427/evals/*` (withheld, see below) | offline |
-| Table 4 (fast recomputation) | `python -I code/reproduce_p5.py` (from the repo root) | both ledgers | stdout | offline, seconds |
+| Table 3, Sec. 7.5 (registered evaluator) | `experiments/e427_rerun_p5.py` → `e425_execreceipt.run_logged_evaluation` → `e424_evalgate` → `e422_evaldriver` / `e422_protocol` (about 20 h) | `results/e427/batches` | `results/e427/evals/*` (withheld, see below) | offline |
+| Table 3 (fast recomputation) | `python -I code/reproduce_p5.py` (from the repo root) | both ledgers | stdout | offline, seconds |
 | Sec. 7.5 boundary sensitivity (0.9453 vs 0.9449) | `python -I code/reproduce_p5.py --open-interval` (from the repo root); in `_work/`: `python -I results/e427/audit/phaseB_subagent/sensitivity_p5.py $W` (release copy: `code/audit/e427_phaseB/sensitivity_p5.py` = `audits/census_correction/phaseB_subagent/sensitivity_p5.py`) | ledgers | `results/e427/audit/phaseB_subagent/sensitivity_p5.json` | offline |
 | Sec. 7.5 independent reimplementation | in `_work/`: `python -I results/e427/audit/phaseB_subagent/recompute_p5.py $W` (release copy: `code/audit/e427_phaseB/recompute_p5.py`) | corrected ledger | `results/e427/audit/phaseB_subagent/recompute_p5.json` | offline; prints its values, does not compare them (see `audits/README.md`) |
 | Sec. 7.5 preliminary diagnostic (122,024 rows; 0.898 / 0.947) | rows: `experiments/e427_offline_relabel.py --out … --rows-out …`; statistic: `code/paper_numbers.py` | raw files | `results/e427_repair/repaired_rows_batches01-04.json.gz` | raw files for rows; statistic offline |

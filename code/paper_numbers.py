@@ -29,7 +29,7 @@ appendix are not checked unless a stored receipt records them.
 
 Blinding: pLDDT is read from the preregistered census ledgers only (a) as
 the registered P5 eligibility filter (0 <= pLDDT < 100.01) and (b) as the
-per-chain median pLDDT of the Table 3 screen and of the 9qj6 chain, both
+per-chain median pLDDT of the Table 2 screen and of the 9qj6 chain, both
 reported in the paper. No pLDDT-binned or pLDDT-conditional coverage,
 Mondrian or CQR quantity is computed for the census. pLDDT-binned error
 rates are computed only for the exploratory post-2022 (e421) census, as in
@@ -149,7 +149,7 @@ def canonical_sha256(obj):
 
 # =========================================================================== ATLAS
 def atlas():
-    """ATLAS availability census and V1 channel recount (Sec. 4, 5, Table 1)"""
+    """ATLAS availability census and V1 channel recount (Sec. 4, 5)"""
     man = load("results/e420/source_availability_manifest.json")
     rows = man["rows"]
     n_rows, n_ent = len(rows), len({r["entry"] for r in rows})
@@ -173,10 +173,10 @@ def atlas():
     # The admitted pool is enumerated through its typed failures. That is complete only because
     # no admitted row reached the label ledger (every admitted pair failed the strict temporal
     # rule). V1 relies on the same fact; check it instead of assuming it.
-    reconcile("Tab1", "receipt: ledger_rows == 0 and every admitted accession is typed",
+    reconcile("Sec5", "receipt: ledger_rows == 0 and every admitted accession is typed",
               [get(rec, "summary", "ledger_rows"), get(rec, "summary", "accessions_admitted")],
               [0, len(admitted)], "results/e420/label_run_receipt.json")
-    reconcile("Tab1", "overflow set equals the overflow temporal check",
+    reconcile("Sec5", "overflow set equals the overflow temporal check",
               sorted(set(ovs["overflow_accessions"])),
               sorted({r["accession"] for r in ovt["temporal_fail"] + ovt["temporal_pass"]}),
               "overflow_set.json vs overflow_temporal_check.json")
@@ -199,14 +199,14 @@ def atlas():
     ent_t = sum(rel <= CUTOFF for _, rel in pairs.values())
     ent_p = sum(rel <= mc for mc, rel in pairs.values())
     src = "label_run_receipt + overflow_temporal_check"
-    check("RECOMPUTED", "Tab1", "undecodable AFDB record dropped", ["Q582G4"], undated, "label_run_receipt")
-    check("RECOMPUTED", "Tab1", "accessions", 868, accs, src)
-    check("RECOMPUTED", "Tab1", "accession-entry pairs", 935, len(pairs), src)
-    check("RECOMPUTED", "Tab1", "training-eligible accessions (all refs <= 2018-04-30)", 791, acc_t, src)
-    check("RECOMPUTED", "Tab1", "training-eligible accessions (%)", 91.1, pct(acc_t, accs), src)
-    check("RECOMPUTED", "Tab1", "training-eligible pairs", 851, ent_t, src)
-    check("RECOMPUTED", "Tab1", "training-eligible pairs (%)", 91.0, pct(ent_t, len(pairs)), src)
-    check("RECOMPUTED", "Tab1", "accessions with >= 1 later reference", 77, accs - acc_t, src)
+    check("RECOMPUTED", "Sec5", "undecodable AFDB record dropped", ["Q582G4"], undated, "label_run_receipt")
+    check("RECOMPUTED", "Sec5", "accessions", 868, accs, src)
+    check("RECOMPUTED", "Sec5", "accession-entry pairs", 935, len(pairs), src)
+    check("RECOMPUTED", "Sec5", "training-eligible accessions (all refs <= 2018-04-30)", 791, acc_t, src)
+    check("RECOMPUTED", "Sec5", "training-eligible accessions (%)", 91.1, pct(acc_t, accs), src)
+    check("RECOMPUTED", "Sec5", "training-eligible pairs", 851, ent_t, src)
+    check("RECOMPUTED", "Sec5", "training-eligible pairs (%)", 91.0, pct(ent_t, len(pairs)), src)
+    check("RECOMPUTED", "Sec5", "accessions with >= 1 later reference", 77, accs - acc_t, src)
     check("RECOMPUTED", "Sec5", "accessions flagged by the AFDB creation-date rule", 863, acc_p, src)
     check("RECOMPUTED", "Sec5", "  ... as % of accessions", 99.4, pct(acc_p, accs), src)
     years = sorted(int(rel[:4]) for _, rel in pairs.values())
@@ -221,7 +221,7 @@ def atlas():
     u = v1.get("union", {})
     names = ("accessions", "entries", "accessions_all_refs_pre_training_cutoff", "entries_training_channel",
              "accessions_all_refs_pre_model_date", "entries_template_channel", "accessions_with_post_cutoff_ref")
-    reconcile("Tab1", "out/v1 union counts and year histogram equal recomputation",
+    reconcile("Sec5", "out/v1 union counts and year histogram equal recomputation",
               [[u.get(k, MISSING) for k in names], v1.get("release_year_histogram", MISSING)],
               [[accs, len(pairs), acc_t, ent_t, acc_p, ent_p, accs - acc_t],
                dict(sorted(Counter(str(y) for y in years).items()))], "out/v1_channel_recount.json")
@@ -229,7 +229,7 @@ def atlas():
 
 # =========================================================================== census ledgers
 def ledgers():
-    """Preregistered census ledgers: defect scope, 9qj6, label audit (Table 3, Sec. 4, 7.1, 7.2, Fig. 2)"""
+    """Preregistered census ledgers: defect scope, 9qj6, label checks (Table 2, Sec. 4, 7.1, 7.2, Fig. 2)"""
     digest_ok = []
 
     def ledger(sub):
@@ -243,7 +243,7 @@ def ledgers():
 
     orig, corr = ledger("e422"), ledger("e427")
     S["orig"], S["corr"] = orig, corr
-    reconcile("Tab3", "8 checkpoints: stored canonical SHA-256 and n_rows match content", [True] * 8, digest_ok,
+    reconcile("Tab2", "8 checkpoints: stored canonical SHA-256 and n_rows match content", [True] * 8, digest_ok,
               "results/{e422,e427}/batches")
 
     def segs(rows):
@@ -261,9 +261,9 @@ def ledgers():
     for tag, rows, s, n_rows, n_seg, n_acc in (("original", orig, so, 117905, 488, 138),
                                                ("corrected", corr, sc, 123454, 495, 141)):
         src = f"results/{'e422' if tag == 'original' else 'e427'}/batches"
-        check("RECOMPUTED", "Tab3", f"{tag}: residue rows", n_rows, len(rows), src)
-        check("RECOMPUTED", "Tab3", f"{tag}: chain segments", n_seg, len(s), src)
-        check("RECOMPUTED", "Tab3", f"{tag}: accessions", n_acc, len({r['accession'] for r in rows}), src)
+        check("RECOMPUTED", "Tab2", f"{tag}: residue rows", n_rows, len(rows), src)
+        check("RECOMPUTED", "Tab2", f"{tag}: chain segments", n_seg, len(s), src)
+        check("RECOMPUTED", "Tab2", f"{tag}: accessions", n_acc, len({r['accession'] for r in rows}), src)
     check("RECOMPUTED", "Sec4", "original accession-entry pairs", 272,
           len({(r["accession"], r["entry"]) for r in orig}), "results/e422/batches")
 
@@ -271,20 +271,20 @@ def ledgers():
         y = [r["lddt"] for r in rows if fin(r.get("lddt"))]
         return sum(v < 0.60 for v in y) / len(y)
     lo_o, lo_c = low_share(orig), low_share(corr)
-    check("RECOMPUTED", "Tab3", "original: residues with lDDT < 0.60 (%)", 31.9, round(100 * lo_o, 1), "ledger")
-    check("RECOMPUTED", "Tab3", "corrected: residues with lDDT < 0.60 (%)", 1.1, round(100 * lo_c, 1), "ledger")
+    check("RECOMPUTED", "Tab2", "original: residues with lDDT < 0.60 (%)", 31.9, round(100 * lo_o, 1), "ledger")
+    check("RECOMPUTED", "Tab2", "corrected: residues with lDDT < 0.60 (%)", 1.1, round(100 * lo_c, 1), "ledger")
 
     def hcla(s):  # chain screen: >= 30 residues, median pLDDT >= 90, median lDDT < 0.4
         return [k for k, (ml, mp, n) in s.items() if n >= 30 and mp is not None and mp >= 90 and ml < 0.4]
-    check("RECOMPUTED", "Tab3", "original: high-confidence low-accuracy chains", 116, len(hcla(so)),
+    check("RECOMPUTED", "Tab2", "original: high-confidence low-accuracy chains", 116, len(hcla(so)),
           "ledger (per-chain median pLDDT)")
-    check("RECOMPUTED", "Tab3", "  ... spanning accessions", 32, len({k[2] for k in hcla(so)}), "ledger")
-    check("RECOMPUTED", "Tab3", "corrected: high-confidence low-accuracy chains", 0, len(hcla(sc)), "ledger")
+    check("RECOMPUTED", "Tab2", "  ... spanning accessions", 32, len({k[2] for k in hcla(so)}), "ledger")
+    check("RECOMPUTED", "Tab2", "corrected: high-confidence low-accuracy chains", 0, len(hcla(sc)), "ledger")
     k7o = [v[0] for k, v in so.items() if k[2] == "K7PQ54"]
     k7c = [v[0] for k, v in sc.items() if k[2] == "K7PQ54"]
-    check("RECOMPUTED", "Tab3", "K7PQ54 chains with median lDDT < 0.4 (original)", "29/38",
+    check("RECOMPUTED", "Tab2", "K7PQ54 chains with median lDDT < 0.4 (original)", "29/38",
           f"{sum(x < 0.4 for x in k7o)}/{len(k7o)}", "ledger")
-    check("RECOMPUTED", "Tab3", "K7PQ54 chains with median lDDT < 0.4 (corrected)", "0/38",
+    check("RECOMPUTED", "Tab2", "K7PQ54 chains with median lDDT < 0.4 (corrected)", "0/38",
           f"{sum(x < 0.4 for x in k7c)}/{len(k7c)}", "ledger")
     both = set(so) & set(sc)
     changed = [k for k in both if so[k][0] != sc[k][0]]
@@ -566,7 +566,7 @@ def classify(cache, accs, mc_of):
 
 
 def homology():
-    """Pre-cutoff homology exposure (Table 2, Sec. 6, App. B): V2/V2c replayed from the shipped caches"""
+    """Pre-cutoff homology exposure (Table 1, Sec. 4, 6): V2/V2c replayed from the shipped caches"""
     census = load("results/e421/census_results.json")
     qual = load("results/e421/qualifying_entries.json")
     e422_mc = {r["accession"]: r["model_created_date"][:10]
@@ -600,9 +600,9 @@ def homology():
     rec = {a: r for a, r in cls2.items() if a in e422}
     tc = Counter(r["training"]["class"] for r in rec.values())
     src = "RCSB/UniProt cache replay"
-    check("RECOMPUTED", "Tab2", "census proteins", 138, len(rec), "results/e422/batches")
+    check("RECOMPUTED", "Tab1", "census proteins", 138, len(rec), "results/e422/batches")
     for c, n, p in (("SAME_ACCESSION", 78, 56.5), ("SEQ95", 9, 6.5), ("SEQ30", 41, 29.7), ("NOVEL", 10, 7.2)):
-        check("RECOMPUTED", "Tab2", f"homology class {c}", f"{n} ({p}%)", f"{tc[c]} ({pct(tc[c], len(rec))}%)", src)
+        check("RECOMPUTED", "Tab1", f"homology class {c}", f"{n} ({p}%)", f"{tc[c]} ({pct(tc[c], len(rec))}%)", src)
     close_n = tc["SAME_ACCESSION"] + tc["SEQ95"]
     check("RECOMPUTED", "Sec6", "same accession or >= 95% (abstract: 87, 63%)", "87 (63.0%)",
           f"{close_n} ({pct(close_n, len(rec))}%)", src)
@@ -612,7 +612,7 @@ def homology():
     check("RECOMPUTED", "Abs", "rounded shares: close 63%, none at 30% 7%, relative at 30% 93%", "63/7/93",
           f"{round(100 * close_n / len(rec))}/{round(100 * tc['NOVEL'] / len(rec))}/"
           f"{round(100 * (len(rec) - tc['NOVEL']) / len(rec))}", src)
-    check("RECOMPUTED", "Sec3", "post-2022 census proteins in the homology search (64 + 22)", 86,
+    check("RECOMPUTED", "Sec4", "post-2022 census proteins in the homology search (64 + 22)", 86,
           len(e421_ok) + len(new_b), "e421 census + relabel")
     check("RECOMPUTED", "Sec7.1", "K7PQ54 UniProt sequence length", 507, cls2["K7PQ54"]["seq_len"], "UniProt cache")
     for acc, n in (("P00698", 730), ("P00918", 700), ("P61769", 693)):
@@ -627,39 +627,39 @@ def homology():
         tb = r.get("template_bound")
         return [t.get("class"), t.get("same_accession"), t.get("seq95"), t.get("seq30"),
                 tb.get("class") if isinstance(tb, dict) else tb, r.get("seq_len")]
-    reconcile("Tab2", "out/v2 per-accession classes and hit counts equal the replay",
+    reconcile("Tab1", "out/v2 per-accession classes and hit counts equal the replay",
               {a: view(r) for a, r in v2.get("accessions", {}).items()}, {a: view(r) for a, r in cls2.items()},
               "out/v2_prior_exposure.json")
-    reconcile("AppB", "out/v2c per-accession classes and hit counts equal the replay",
+    reconcile("Sec4", "out/v2c per-accession classes and hit counts equal the replay",
               {t: {a: view(r) for a, r in (get(v2c, "results", t, "accessions") or {}).items()}
                if isinstance(get(v2c, "results", t, "accessions"), dict) else MISSING for t in cls2c},
               {t: {a: view(r) for a, r in tab.items()} for t, tab in cls2c.items()}, "out/v2c_extension.json")
-    check("RECOMPUTED", "AppB", "accessions queried (both censuses)", 224, len(universe) + len(new_a) + len(new_b),
+    check("RECOMPUTED", "Sec4", "accessions queried (both censuses)", 224, len(universe) + len(new_a) + len(new_b),
           "ledgers + e421 census + relabel")
     st = Counter(c2.log + c2c.log)
     search_keys = Counter(k for k, h, s_ in c2.keys + c2c.keys if h == "search.rcsb.org" and s_ == 200)
-    check("RECOMPUTED", "Sec3", "HTTP 200 lookups that repeat an identical query", 2,
+    check("RECOMPUTED", "Sec4", "HTTP 200 lookups that repeat an identical query", 2,
           sum(n - 1 for n in search_keys.values()), src)
-    check("RECOMPUTED", "AppB", "RCSB Search queries returning 200", 594, st[("search.rcsb.org", 200)], src)
-    check("RECOMPUTED", "AppB", "RCSB Search queries returning 204", 408, st[("search.rcsb.org", 204)], src)
-    check("RECOMPUTED", "AppB", "failed or uncached requests", 0,
+    check("RECOMPUTED", "Sec4", "RCSB Search queries returning 200", 594, st[("search.rcsb.org", 200)], src)
+    check("RECOMPUTED", "Sec4", "RCSB Search queries returning 204", 408, st[("search.rcsb.org", 204)], src)
+    check("RECOMPUTED", "Sec4", "failed or uncached requests", 0,
           sum(n for (h, s), n in st.items() if s not in (200, 204)), src)
     stored = Counter((r["url"].split("/")[2], r["status"]) for r in v2.get("receipts", []) + v2c.get("receipts", []))
-    reconcile("AppB", "stored receipts: (host, status) multiset equals the replay",
+    reconcile("Sec4", "stored receipts: (host, status) multiset equals the replay",
               {f"{h} {s}": n for (h, s), n in stored.items()},
               {f"{h} {s}": n for (h, s), n in st.items()}, "out/v2 + out/v2c receipts")
 
 
 # =========================================================================== V5
 def templates():
-    """AFDB template channel (Table 2, Sec. 3, 6): V5 replayed from the template table + PDBe/RCSB cache"""
+    """AFDB template channel (Table 1, Sec. 4, 6): V5 replayed from the template table + PDBe/RCSB cache"""
     tab = load(f"{VER}/v5_afdb_template_table.json").get("accessions", {})
     roster = sorted({r["accession"] for r in S["orig"]})
     receipts = {}
     for b in (1, 2, 3, 4):
         for r in load(f"results/e422/batches/e422_batch0{b}_checkpoint.json")["receipts"]:
             receipts.setdefault(r["url"], r)
-    reconcile("Tab2", "template table: one AFDB file per roster protein, SHA-256 = census receipt",
+    reconcile("Tab1", "template table: one AFDB file per roster protein, SHA-256 = census receipt",
               {a: [get(tab, a, "sha256"), get(tab, a, "raw_name")] for a in sorted(set(tab) | set(roster))},
               {a: [get(receipts, get(tab, a, "url"), "sha256")] * 2 for a in roster},
               "v5_afdb_template_table.json vs results/e422/batches receipts")
@@ -686,7 +686,7 @@ def templates():
     t = Counter(cls.values())
     src = "template table + PDBe/RCSB cache"
     for c, n, p in (("SAME_ACC", 45, 32.6), ("OTHER", 88, 63.8), ("UNRESOLVED", 5, 3.6)):
-        check("RECOMPUTED", "Tab2", f"template class {c}", f"{n} ({p}%)", f"{t[c]} ({pct(t[c], len(roster))}%)", src)
+        check("RECOMPUTED", "Tab1", f"template class {c}", f"{n} ({p}%)", f"{t[c]} ({pct(t[c], len(roster))}%)", src)
     check("RECOMPUTED", "Abs", "same-protein template share, rounded", "33%", f"{round(100 * t['SAME_ACC'] / len(roster))}%",
           src)
     nt = [len(tab[a]["templates"]) for a in roster]
@@ -697,7 +697,7 @@ def templates():
     check("RECOMPUTED", "Sec6", "templates released after 2021-02-15", 0,
           sum(r > "2021-02-15" for r in dated.values()), "RCSB cache")
     mg = Counter(m for a in roster for m in tab[a]["model_group_name"])
-    check("RECOMPUTED", "Sec3", "model software", "AlphaFold Monomer v2.0 model: 138",
+    check("RECOMPUTED", "Sec4", "model software", "AlphaFold Monomer v2.0 model: 138",
           ", ".join(f"{k}: {v}" for k, v in mg.items()), "template table (AFDB files)")
     hcls = S["class"]
     xt = defaultdict(Counter)
@@ -715,13 +715,13 @@ def templates():
           hcls["Q9F0J8"] if "Q9F0J8" in extra else "not in set", "same")
     v5 = load(f"{VER}/out/v5_templates.json").get("results", {})
     per = v5.get("per_accession", {})
-    reconcile("Tab2", "out/v5 per-accession template classes equal the replay",
+    reconcile("Tab1", "out/v5 per-accession template classes equal the replay",
               {a: get(per, a, "template_class") for a in roster}, cls, "out/v5_templates.json per_accession")
-    reconcile("Tab2", "out/v5 class counts and cross-tab equal the replay",
+    reconcile("Tab1", "out/v5 class counts and cross-tab equal the replay",
               [v5.get("template_class_counts", MISSING), v5.get("crosstab_template_class_x_v2_training_class", MISSING)],
               [dict(t), {k: dict(v) for k, v in xt.items()}], "out/v5_templates.json")
     tl = lambda ts: [[x.get("pdb_id"), x.get("template_auth_asym_id")] for x in ts]  # noqa: E731
-    reconcile("Tab2", "out/v5 template lists, failed lookups, release range equal table + cache",
+    reconcile("Tab1", "out/v5 template lists, failed lookups, release range equal table + cache",
               [{a: tl(get(per, a, "templates")) if isinstance(get(per, a, "templates"), list) else MISSING
                 for a in roster}, v5.get("sifts_failed_pdb_ids", MISSING),
                v5.get("earliest_template_release_overall", MISSING), v5.get("latest_template_release_overall", MISSING),
@@ -732,7 +732,7 @@ def templates():
 
 # =========================================================================== V6
 def effect():
-    """Exploratory exposure effect on the corrected post-2022 census (Sec. 6, V6)"""
+    """Exploratory exposure effect on the corrected post-2022 census (Sec. 6.3, V6)"""
     census = load("results/e427/e421_relabel/census_results.json")
     rows = defaultdict(lambda: ([], []))
     for eid, e in sorted(census.items()):
@@ -790,16 +790,16 @@ def effect():
     rcp = load("results/e427/e421_relabel/receipts.json")
     got = {r["url"]: r["sha256"] for r in rcp if r.get("status") == 200 and re.match(
         r"^https://alphafold\.ebi\.ac\.uk/files/AF-[^/]+\.cif$", r["url"])}
-    reconcile("Sec3", "post-2022 model table: one row per downloaded AFDB file, SHA-256 = receipt",
+    reconcile("Sec4", "post-2022 model table: one row per downloaded AFDB file, SHA-256 = receipt",
               {u: get(v, "sha256") for u, v in mt.items()}, got, "afdb_model_table.json vs relabel receipts")
     kind = Counter("ColabFold" if any("ColabFold" in (g or "") for g in v["model_group_name"]) else
                    "AF2" if v["model_group_name"] == ["AlphaFold Monomer v2.0 model"] else "other" for v in mt.values())
     cf_acc = {a for v in mt.values() if any("ColabFold" in (g or "") for g in v["model_group_name"])
               for a in v["accessions_in_census"]}
-    check("RECOMPUTED", "Sec3", "post-2022 model files: total / ColabFold v1.5.2 / AF Monomer v2.0", "93/6/87",
+    check("RECOMPUTED", "Sec4", "post-2022 model files: total / ColabFold v1.5.2 / AF Monomer v2.0", "93/6/87",
           f"{len(mt)}/{sum('ColabFold Monomer v1.5.2 model' in v['model_group_name'] for v in mt.values())}/"
           f"{kind['AF2']}", "afdb_model_table.json")
-    check("RECOMPUTED", "Sec3", "ColabFold proteins among the 85 in the exposure comparison", 0,
+    check("RECOMPUTED", "Sec4", "ColabFold proteins among the 85 in the exposure comparison", 0,
           len(cf_acc & set(per)), "afdb_model_table.json x relabel census")
     v6 = load(f"{VER}/out/v6_exposure_effect.json").get("results", {})
     qn = ("median_lddt", "frac_lddt_lt_060", "frac_confident_error", "median_plddt")
@@ -858,7 +858,7 @@ def post2022():
     ys = [x["lddt"] for x in new_labs if fin(x.get("lddt"))]
     check("RECOMPUTED", "Sec7.3", "corrected post-2022: residues below 0.60 lDDT (%)", 2.6,
           round(100 * sum(y < 0.60 for y in ys) / len(ys), 1), src)
-    check("RECOMPUTED", "Sec3", "labelled entries / proteins: corrected; original", "139/85; 96/64",
+    check("RECOMPUTED", "Sec4", "labelled entries / proteins: corrected; original", "139/85; 96/64",
           f"{c['ok_entries']}/{c['ok_accessions']}; {o['ok_entries']}/{o['ok_accessions']}", src)
     oldok = {k for k, v in old.items() if v["status"] == "ok"}
     newok = {k for k, v in new.items() if v["status"] == "ok"}
@@ -941,7 +941,7 @@ def p5_eval(rows, open_interval=False, miss_level=None):
 
 
 def coverage():
-    """Registered coverage prediction P5 (Table 4, Sec. 7.2, 7.5): own re-implementation"""
+    """Registered coverage prediction P5 (Table 3, Sec. 7, 7.5): own re-implementation"""
     stored = load("p5_batch04_outcomes.json")
     res = {}
     for run, rows in (("original_e422", S["orig"]), ("corrected_e427", S["corr"])):
@@ -960,23 +960,23 @@ def coverage():
             reconcile("Sec7.2", "out/v4: K7PQ54 rows, eligible rows, top miss share, top protein",
                       [v4.get("k7pq54_rows", MISSING), v4.get("n_rows", MISSING), get(v4, "miss_share_top", "1"),
                        get(v4, "top10", 0, "accession")], [k7, n_elig, share, top], "out/v4_k7pq54.json")
-        reconcile("Tab4", f"{run}: stored n_rows_cumulative equals the ledger",
+        reconcile("Tab3", f"{run}: stored n_rows_cumulative equals the ledger",
                   get(stored, run, "n_rows_cumulative"), len(rows), "p5_batch04_outcomes.json")
     paper = {("original_e422", 0.90): (0.8580, 0.8760, "FAIL"), ("original_e422", 0.95): (0.9152, 0.9328, "FAIL"),
              ("corrected_e427", 0.90): (0.8945, 0.8914, "HOLD"), ("corrected_e427", 0.95): (0.9456, 0.9449, "HOLD")}
     for (run, lv), (pm, pt, po) in paper.items():
         r = res[run][lv]
         lab = f"{run.split('_')[0]} P5-{int(round(lv * 100))}"
-        check("RECOMPUTED", "Tab4", f"{lab} mean coverage", pm, round(r["mean_cov"], 4), "ledger, own P5")
-        check("RECOMPUTED", "Tab4", f"{lab} threshold (nominal - 3 MCSE)", pt, round(r["threshold"], 4), "same")
-        check("RECOMPUTED", "Tab4", f"{lab} outcome", po, r["outcome"], "same")
+        check("RECOMPUTED", "Tab3", f"{lab} mean coverage", pm, round(r["mean_cov"], 4), "ledger, own P5")
+        check("RECOMPUTED", "Tab3", f"{lab} threshold (nominal - 3 MCSE)", pt, round(r["threshold"], 4), "same")
+        check("RECOMPUTED", "Tab3", f"{lab} outcome", po, r["outcome"], "same")
         o5 = get(stored, run, f"p5_{int(round(lv * 100))}", "outcome")
-        reconcile("Tab4", f"{lab}: registered evaluator mean, MCSE, threshold, outcome (1e-12)",
+        reconcile("Tab3", f"{lab}: registered evaluator mean, MCSE, threshold, outcome (1e-12)",
                   [get(o5, "mean_cov"), get(o5, "mcse"), get(o5, "threshold"), get(o5, "outcome"), get(o5, "r_eff")],
                   [r["mean_cov"], r["mcse"], r["threshold"], r["outcome"], r["r_eff"]], "p5_batch04_outcomes.json")
     o90, o95 = res["original_e422"][0.90], res["original_e422"][0.95]
     c90, c95 = res["corrected_e427"][0.90], res["corrected_e427"][0.95]
-    check("RECOMPUTED", "Tab4", "original margins at 0.90 / 0.95", "-0.0180/-0.0176",
+    check("RECOMPUTED", "Tab3", "original margins at 0.90 / 0.95", "-0.0180/-0.0176",
           f"{o90['mean_cov'] - o90['threshold']:.4f}/{o95['mean_cov'] - o95['threshold']:.4f}", "own P5")
     check("RECOMPUTED", "Sec7.5", "original MCSE at 0.90 / 0.95", "0.0080/0.0057", f"{o90['mcse']:.4f}/{o95['mcse']:.4f}",
           "own P5")
@@ -1028,7 +1028,7 @@ def coverage():
 
 
 def crosscheck():
-    """Second label check (biotite), excluded residues, chance identity under a shift (Sec. 3, 7.2, 7.3)"""
+    """Second label check (biotite), excluded residues, chance identity under a shift (Sec. 4, 7.2, 7.3)"""
     fl = load("label_crosscheck_biotite/full_ledger_out.json", AUD)
     a21 = load("label_crosscheck_biotite/analyse_21xg_out.json", AUD)
     ns = load("label_crosscheck_biotite/nonstd_out.json", AUD)
@@ -1058,10 +1058,10 @@ def crosscheck():
                a21.get("median_lddt_biotite"), a21.get("median_lddt_ledger"), a21.get("n_below_0.60_ledger")],
               [x.get("n_diff_gt_1e-4"), x.get("max_abs_diff_segment"), x.get("bt_median_segment"),
                float(np.median(led21)), sum(v < 0.60 for v in led21)], "analyse_21xg_out.json")
-    check("RE-READ", "Sec3", "excluded residues: altloc other than A / modified other than MSE", "16/57",
+    check("RE-READ", "Sec4", "excluded residues: altloc other than A / modified other than MSE", "16/57",
           f"{ns.get('excluded_altloc_not_A_residues')}/{ns.get('excluded_modified_residues')}", src)
     pe = ns.get("per_entry", {})
-    reconcile("Sec3", "excluded-residue totals equal their per-entry and per-component records",
+    reconcile("Sec4", "excluded-residue totals equal their per-entry and per-component records",
               [ns.get("excluded_altloc_not_A_residues"), ns.get("excluded_modified_residues"),
                ns.get("excluded_modified_residues")],
               [sum(v["altloc_not_A"] for v in pe.values()), sum(v["modified"] for v in pe.values()),

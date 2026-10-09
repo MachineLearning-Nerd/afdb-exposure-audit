@@ -1,4 +1,4 @@
-"""Standalone recomputation of the registered P5 coverage prediction (Table 4).
+"""Standalone recomputation of the registered P5 coverage prediction (Table 3).
 
 Recomputes pooled, marginal residue-level split-conformal coverage over the
 cumulative batch 1-4 ledger, following the registered protocol
